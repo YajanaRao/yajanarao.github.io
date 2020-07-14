@@ -1,6 +1,14 @@
 ## Welcome to Yajana's Pages
 
-I use the [editor on GitHub](https://github.com/YajanaRao/yajanarao.github.io/edit/master/README.md) to maintain and preview the content for what I learn during the software development and sometime general stuff in Markdown files.
+I use the [website](https://github.com/YajanaRao/yajanarao.github.io/edit/master/README.md) to maintain and preview the content for what I learn during the software development and sometime general stuff in Markdown files.
+
+### Code
+
+```js
+function sayHi(){
+    console.log("hello world)
+}
+```
 
 ### Markdown
 
@@ -10,7 +18,9 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 Syntax highlighted code block
 
 # Header 1
+
 ## Header 2
+
 ### Header 3
 
 - Bulleted
