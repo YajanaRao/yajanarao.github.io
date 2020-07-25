@@ -2,7 +2,7 @@
 
 TextInput is a Core Component that allows the user to enter text.
 
-Make user experience of entering text as easy as possible
+> Make user experience of entering text as easy as possible
 
 ## [autoCompleteType](https://reactnative.dev/docs/textinput#autocompletetype)
 
@@ -20,7 +20,7 @@ Make user experience of entering text as easy as possible
 - cc-exp-month
 - cc-exp-year
 
-autoFocus
+## `autoFocus`
 
 Please make sure that experience is smooth
 
@@ -28,6 +28,6 @@ Please make sure that experience is smooth
 
 It is a component to solve the common problem of views that need to move out of the way of the virtual keyboard. It can automatically adjust either its height, position, or bottom padding based on the keyboard height.
 
-## onSubmitEditing
+## `onSubmitEditing`
 
 Gives an option to submit from keyboard

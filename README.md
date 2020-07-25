@@ -8,12 +8,12 @@ I have made notes of topics I found interesting and important. Most of them are 
 
 ### Shortcuts and Commands
 
-1. [Visual studio shortcuts](/vscode-shortcuts.md)
+1. [Visual Studio Code shortcuts](/vscode-shortcuts.md)
 2. [Changing remote git url](/change-git-remote.md)
 
 ### Technical Topics
 
-1. [GraphQL](/graphql-introduction.md)
+1. [Introduction GraphQL](/graphql-introduction.md)
 2. [React Native TextInput best practices](/best-practices-while-using-textinput.md)
 
 ### Code Snippets
