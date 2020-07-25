@@ -2,17 +2,27 @@
 
 I use the [website](https://github.com/YajanaRao/yajanarao.github.io/edit/master/README.md) to maintain and preview the content for what I learn during the software development and sometime general stuff in Markdown files.
 
-### Code
+### Blogs
 
-```js
-function sayHi(){
-    console.log("hello world)
-}
-```
+I have made notes of topics I found interesting and important. Most of them are related to software as I have a day job of software engineer.
 
-### Markdown
+### Shortcuts and Commands
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. [Visual studio shortcuts](/vscode-shortcuts.md)
+2. [Changing remote git url](/change-git-remote.md)
+
+### Technical Topics
+
+1. [GraphQL](/graphql-introduction.md)
+2. [React Native TextInput best practices](/best-practices-while-using-textinput.md)
+
+### Code Snippets
+
+1. [Greet user based on time of the day](/time-based-greeting.md)
+
+### Personality Development
+
+1. [Meditation](/guide-to-meditation.md)
 
 ```markdown
 Syntax highlighted code block
