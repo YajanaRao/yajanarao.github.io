@@ -10,6 +10,7 @@ I have made notes of topics I found interesting and important. Most of them are 
 
 1. [Visual Studio Code shortcuts](/vscode-shortcuts.md)
 2. [Changing remote git url](/change-git-remote.md)
+3. [Visual Studio Code extensions](/vscode-extensions.md)
 
 ### Technical Topics
 
