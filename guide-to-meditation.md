@@ -1,7 +1,10 @@
 # Meditation
 
-1. Concentration Meditation (Samatha)
-2. Awareness Meditation (Vipasana)
+1. Concentration Meditation / Tranquility meditation (Samatha)
+   the quality or state of being tranquil; calm.
+
+2. Awareness Meditation / Insight (Vipasana)
+   an accurate and deep understanding. (Wisdom)
 
 ## Vipasana
 
