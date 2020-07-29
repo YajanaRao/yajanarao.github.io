@@ -9,13 +9,14 @@ I have made notes of topics I found interesting and important. Most of them are 
 ### Shortcuts and Commands
 
 1. [Visual Studio Code shortcuts](/vscode-shortcuts.md)
-2. [Changing remote git url](/change-git-remote.md)
+2. [git commands](/git-commands.md)
 3. [Visual Studio Code extensions](/vscode-extensions.md)
 
 ### Technical Topics
 
 1. [Introduction GraphQL](/graphql-introduction.md)
 2. [React Native TextInput best practices](/best-practices-while-using-textinput.md)
+3. [Oracle DUAL table](/dual-table.md)
 
 ### Code Snippets
 
@@ -24,32 +25,6 @@ I have made notes of topics I found interesting and important. Most of them are 
 ### Personality Development
 
 1. [Meditation](/guide-to-meditation.md)
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/YajanaRao/yajanarao.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 

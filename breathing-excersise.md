@@ -3,17 +3,20 @@
 - Controlled by autonomous nervous system
 
 ## Inhale
-Excited 
+
+Excited
 Fear
 
 ## Exhale
-Peace 
+
+Peace
 Love
 
 Types of Breathing
 
 1. Water breathing
-- 4 - 6 brea
+
+- 4 - 6 breathing
 
 2. Wisky breathing
 

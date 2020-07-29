@@ -1,0 +1,23 @@
+## TMux
+descriptio://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily/
+
+C -> Control
+
+C - b % -> split window horizontally
+C - b " -> split window vertically
+C - b <arrow keys> Switch to window
+C - d delete window
+
+## VIM
+
+### Tabs
+https://www.freecodecamp.org/news/learn-linux-vim-basic-features-19134461ab85/
+:tabedit filename
+
+# switch between tabs
+gt -> Switch between tabs
+
+## Pluggins
+Light line
+Prettier 
+Typescript syntax hightlight as well
