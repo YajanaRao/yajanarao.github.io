@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Greet user based on time of the day"
 date: 2020-07-30 10:00:00 -0000
 categories: code-snippet
