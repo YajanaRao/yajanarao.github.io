@@ -45,6 +45,9 @@ dev dependencies
 
 2. Create `manifest.json` file to make it Progressive Web App
 
+
+`touch manifest.json`
+
 ```json
 {
   "short_name": "React Native Web",
@@ -69,7 +72,7 @@ dev dependencies
 
 1. Create serviceWorker.js for PWA
 
-A progressive web application is a type of application software delivered through the web, built using common web technologies including HTML, CSS and JavaScript.
+  A progressive web application is a type of application software delivered through the web, built using common web technologies including HTML, CSS and JavaScript.
 
 Download serviceWorker.js from the link
 [serviceWorker.js](https://gist.github.com/YajanaRao/e68b16b52c447d9ff032f3930d601135)
@@ -106,4 +109,5 @@ Add
 
 ### References
 
-https://callstack.github.io/react-native-paper/using-on-the-web.html
+- https://necolas.github.io/react-native-web/docs/?path=/docs/guides-multi-platform--page
+- https://callstack.github.io/react-native-paper/using-on-the-web.html
