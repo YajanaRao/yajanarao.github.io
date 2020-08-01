@@ -103,3 +103,7 @@ serviceWorker.unregister();
 
 Add
 `"web": "react-scripts start"` in `package.json` inside `scripts` tag
+
+### References
+
+https://callstack.github.io/react-native-paper/using-on-the-web.html
