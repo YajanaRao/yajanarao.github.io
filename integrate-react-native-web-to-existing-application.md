@@ -1,0 +1,105 @@
+# How to Integrate react-native-web to an existing application
+
+For using [react native on web](https://github.com/necolas/react-native-web) we can use the template of many build tools. I would like to use [Create React App](https://github.com/facebook/create-react-app) for this example.
+
+Please make sure to execute all the commands mentioned below in the root directory.
+
+## Install required packages for web
+
+`yarn add react-native-web react-dom` or `npm install react-native-web react-dom`
+
+dev dependencies
+
+`yarn add --dev react-scripts babel-jest` or `npm install --save-dev react-scripts babel-jest`
+
+## Create project structure
+
+### 1. Create `public/` folder in root directory
+
+`mkdir public`
+
+1. Create a html file and add basic html
+
+`touch index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="%PUBLIC_URL%/favicon.ico" rel="icon" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#ffffff" name="theme-color" />
+    <meta content="React Native App" name="description" />
+    <meta content="react native, react native web" name="keywords" />
+    <link href="%PUBLIC_URL%/manifest.json" rel="manifest" />
+
+    <title>React Native Web</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
+```
+
+2. Create `manifest.json` file to make it Progressive Web App
+
+```json
+{
+  "short_name": "React Native Web",
+  "name": "React Native Web",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
+```
+
+<!-- 4. Create a `favicon.ico` file -->
+
+### 2. Create `src/` directory in root folder
+
+1. Create serviceWorker.js for PWA
+
+A progressive web application is a type of application software delivered through the web, built using common web technologies including HTML, CSS and JavaScript.
+
+Download serviceWorker.js from the link
+[serviceWorker.js](https://gist.github.com/YajanaRao/e68b16b52c447d9ff032f3930d601135)
+
+<script src="https://gist.github.com/YajanaRao/e68b16b52c447d9ff032f3930d601135.js"></script>
+
+2. Create index.js file
+
+```js
+import React from "react";
+import { Text } from "react-native";
+import ReactDOM from "react-dom";
+import * as serviceWorker from "./serviceWorker";
+
+const App = () => <Text>Hello</Text>;
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
+```
+
+## Update script tag
+
+Add
+`"web": "react-scripts start"` in `package.json` inside `scripts` tag
