@@ -17,7 +17,7 @@ I have made notes of topics I found interesting and important. Most of them are 
 1. [Introduction GraphQL](/graphql-introduction.md)
 2. [React Native TextInput best practices](/best-practices-while-using-textinput.md)
 3. [Oracle DUAL table](/dual-table.md)
-4. [Adding React Native Web to existing react native application](/integrate-react-native-web-to-existing-applicaiton.md)
+4. [Adding React Native Web support to existing react native application](/integrate-react-native-web-to-existing-application.md)
 
 ### Code Snippets
 
