@@ -107,7 +107,9 @@ serviceWorker.unregister();
 Add
 `"web": "react-scripts start"` in `package.json` inside `scripts` tag
 
-### References
+Execute `npm run web` or `yarn web` and it should start developer server at `http://localhost:3000`
+
+## References
 
 - https://necolas.github.io/react-native-web/docs/?path=/docs/guides-multi-platform--page
 - https://callstack.github.io/react-native-paper/using-on-the-web.html
