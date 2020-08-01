@@ -1,6 +1,6 @@
 ## Welcome to Yajana's Pages
 
-I use the [website](https://github.com/YajanaRao/yajanarao.github.io/edit/master/README.md) to maintain and preview the content for what I learn during the software development and sometime general stuff in Markdown files.
+I use the [website](https://github.com/YajanaRao/yajanarao.github.io) to maintain and preview the content for what I learn during the software development and sometime general stuff in Markdown files.
 
 ### Blogs
 
@@ -27,6 +27,3 @@ I have made notes of topics I found interesting and important. Most of them are 
 
 1. [Meditation](/guide-to-meditation.md)
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
