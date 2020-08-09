@@ -6,6 +6,8 @@
 2. Awareness Meditation / Insight (Vipasana)
    an accurate and deep understanding. (Wisdom)
 
+https://isha.sadhguru.org/yoga/meditations/how-to-meditate/
+
 ## Vipasana
 
 - Uses breath as the primary focus of attention
