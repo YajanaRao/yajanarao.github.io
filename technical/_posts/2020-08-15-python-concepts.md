@@ -80,7 +80,7 @@ Machine learning (ML) is the study of computer algorithms that improve automatic
 
 Machine Learning is defined as the study of computer programs that leverage algorithms and statistical models to learn through inference and patterns without being explicitly programed.
 
-![Machine learning](../../assets/img/machine_learning.png)
+<img src="{{site.baseurl}}/assets/img/machine_learning.png">
 
 ### Types of Machine learning
 
