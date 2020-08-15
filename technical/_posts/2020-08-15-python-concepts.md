@@ -80,7 +80,7 @@ Machine learning (ML) is the study of computer algorithms that improve automatic
 
 Machine Learning is defined as the study of computer programs that leverage algorithms and statistical models to learn through inference and patterns without being explicitly programed.
 
-<img src="{{site.baseurl}}/assets/img/machine_learning.png">
+<img src="{{site.baseurl}}/assets/img/machine_learning.png" alt="Machine learning">
 
 ### Types of Machine learning
 
@@ -163,7 +163,7 @@ Python has four primitive types: integers, floats, booleans and strings.
 ## 5. What about name[-2] ?
 
 ```python
-    name=’python’
+    name="python"
 ```
 
 `name[-2]` will be ‘o’
@@ -243,64 +243,79 @@ integers, floating point numbers, and complex numbers
 
 1000
 
-3. Given (x = 1), what will be the value of after we run (x += 2)?
+## 3. Given (x = 1), what will be the value of after we run (x += 2)?
 
-   3
+3
 
-4. How can we round a number?
+## 4. How can we round a number?
 
 Using round function round(2.654,2) output will be 2.65
 
-5. What is the result of float(1)?
-   1.0
+## 5. What is the result of float(1)?
 
-6. What is the result of bool(“False”)?
-   True
+1.0
 
-7. What are the falsy values in Python?
-   Values that evaluate to False are considered Falsy.
+## 6. What is the result of bool(“False”)?
 
-8. What is the result of 10 == “10”?
-   False
+True
 
-9. What is the result of “bag” > “apple”?
-   True
+## 7. What are the falsy values in Python?
 
-10. What is the result of not(True or False)?
+Values that evaluate to False are considered Falsy.
+
+## 8. What is the result of 10 == “10”?
+
+False
+
+## 9. What is the result of “bag” > “apple”?
+
+True
+
+## 10. What is the result of not(True or False)?
+
     False
 
-11. Under what circumstances does the expression 18 <= age < 65 evaluate to True?
-    If age is greater or equal to 18 and less than 65 then it will be true like example age=19 will give output as True
+## 11. Under what circumstances does the expression 18 <= age < 65 evaluate to True?
 
-12. What does range(1, 10, 2) return?
-    1 3 5 7 9
+If age is greater or equal to 18 and less than 65 then it will be true like example age=19 will give output as True
 
-13. Name 3 iterable objects in Python.
+## 12. What does range(1, 10, 2) return?
 
-    **next**()
-    **iter**()
-    **init**()
+    `1 3 5 7 9`
 
-Functions
+## 13. Name 3 iterable objects in Python.
 
-1. What is the difference between a parameter and an argument?
-   A parameter is a variable in a method definition. When a method is called, the arguments are the data you pass into the method's parameters.
+```python
+    __next__()
+    __iter__()
+    __init__()
+```
 
-2. All functions in Python by default return …?
-   If we do not not specify a return value for a Python function, it returns None
+# Functions
 
-3. What are keyword arguments and when should we use them?
-   When we call a function with some values, these values get assigned to the arguments according to their position. Python allows functions to be called using keyword arguments.
-   We use them :
-   We can often leave out arguments that have default values
-   We can rearrange arguments in a way that makes them most readable
-   We call arguments by their names to make it more clear what they represent
+## 1. What is the difference between a parameter and an argument?
 
-4. How can we make a parameter of a function optional?
-   functionName( '1', name, '3', g="foo", h="bar" ){…}. After the required positional arguments, you can specify specific optional arguments by name.
+A parameter is a variable in a method definition. When a method is called, the arguments are the data you pass into the method's parameters.
 
-5. What happens when we prefix a parameter with an asterisk (\*)?
-   Single asterisk as used in function declaration allows variable number of arguments passed from calling environment. Inside the function it behaves as a tuple.
+## 2. All functions in Python by default return …?
+
+If we do not not specify a return value for a Python function, it returns None
+
+## 3. What are keyword arguments and when should we use them?
+
+When we call a function with some values, these values get assigned to the arguments according to their position. Python allows functions to be called using keyword arguments.
+We use them :
+We can often leave out arguments that have default values
+We can rearrange arguments in a way that makes them most readable
+We call arguments by their names to make it more clear what they represent
+
+## 4. How can we make a parameter of a function optional?
+
+functionName( '1', name, '3', g="foo", h="bar" ){…}. After the required positional arguments, you can specify specific optional arguments by name.
+
+## 5. What happens when we prefix a parameter with an asterisk (\*)?
+
+Single asterisk as used in function declaration allows variable number of arguments passed from calling environment. Inside the function it behaves as a tuple.
 
 6. What about two asterisks (**)?
    If we want to pass a keyworded variable lenght of arguments to a function, we use **
@@ -1077,7 +1092,7 @@ while True:
         Break
 ```
 
-33. Write a Python Program to Check String is Palindrome using Stack
+## 33. Write a Python Program to Check String is Palindrome using Stack
 
 ```python
 class Stack:
@@ -1110,22 +1125,31 @@ else:
     print('The string is not a palindrome.')
 ```
 
-35. Write Notes on the following points
-    1). What Is a Python NumPy Array?
-    A numpy array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers. The number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of the array along each dimension.
-    NumPy Arrays v/s List
-     A numpy array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers
-    A list is the Python equivalent of an array, but is resizeable and can contain elements of different types.
-    NumPy Operations
-    Mathematical and logical operation
-    Fourier tranforms and routines for the shape manipulation
-    Operations related to linear algebra. Numpy has in-build functions for linear algebra and random number getion
-    NumPy Special Functions
-    numpy.cbrt(arr, out = None, ufunc ‘cbrt’) This function helps the user to conjugate any complex number.
-    numpy.clip() This mathematical function helps user to calculate cube root of x for all x being the array elements.
+## 35. Write Notes on the following points
 
-convolve() Returns the discrete, linear convolution of two one-dimensional sequences.
-sqrt() Return the non-negative square-root of an array, element-wise.
+### 1). What Is a Python NumPy Array?
+
+A numpy array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers. The number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of the array along each dimension.
+
+### NumPy Arrays v/s List
+
+A numpy array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers
+A list is the Python equivalent of an array, but is resizeable and can contain elements of different types.
+
+### NumPy Operations
+
+##### Mathematical and logical operation
+
+Fourier tranforms and routines for the shape manipulation
+Operations related to linear algebra. Numpy has in-build functions for linear algebra and random number getion
+
+##### NumPy Special Functions
+
+`numpy.cbrt(arr, out = None, ufunc ‘cbrt’)` This function helps the user to conjugate any complex number.
+`numpy.clip()` This mathematical function helps user to calculate cube root of x for all x being the array elements.
+
+`convolve()` Returns the discrete, linear convolution of two one-dimensional sequences.
+`sqrt()` Return the non-negative square-root of an array, element-wise.
 square() Return the element-wise square of the input.
 absolute() Calculate the absolute value element-wise.
 fabs() Compute the absolute values element-wise.
@@ -1137,7 +1161,7 @@ real_if_close() If complex input returns a real array if complex parts are close
 nan_to_num() Replace NaN with zero and infinity with large finite numbers.
 heaviside() Compute the Heaviside step function.
 
-36. Write a python program for Matrix Multiplication Using Nested List Comprehension and using Using Nested Loop
+## 36. Write a python program for Matrix Multiplication Using Nested List Comprehension and using Using Nested Loop
 
 ```python
 # Program to multiply two matrices using nested loops
@@ -1167,7 +1191,7 @@ for r in result:
    print(r)
 ```
 
-37. Write a python program to find the H.C.F of two input number using loops
+## 37. Write a python program to find the H.C.F of two input number using loops
 
 ```python
 # Python program to find H.C.F of two numbers
@@ -1192,16 +1216,21 @@ num2 =  int(input('Please enter Second number'))
 print("The H.C.F. is", compute_hcf(num1, num2))
 ```
 
-38. Answer the following
-    1). What is SCipy?
-    SciPy, a scientific library for Python is an open source, BSD-licensed library for mathematics, science and engineering. The SciPy library depends on NumPy, which provides convenient and fast N-dimensional array manipulation. The main reason for building the SciPy library is that, it should work with NumPy arrays. It provides many user-friendly and efficient numerical practices such as routines for numerical integration and optimization. 
-    Difference between Scipy and Numpy?
-    NumPy is basically for basic operations such as sorting, indexing, and elementary functioning on the array data type. On the other hand, SciPy contains all the algebraic functions some of which are there in NumPy to some extent and not in full-fledged form.
+## 38. Answer the following
 
-2). Why use SciPy
+### 1). What is SCipy?
+
+SciPy, a scientific library for Python is an open source, BSD-licensed library for mathematics, science and engineering. The SciPy library depends on NumPy, which provides convenient and fast N-dimensional array manipulation. The main reason for building the SciPy library is that, it should work with NumPy arrays. It provides many user-friendly and efficient numerical practices such as routines for numerical integration and optimization.
+
+### Difference between Scipy and Numpy?
+
+NumPy is basically for basic operations such as sorting, indexing, and elementary functioning on the array data type. On the other hand, SciPy contains all the algebraic functions some of which are there in NumPy to some extent and not in full-fledged form.
+
+### 2). Why use SciPy
+
 SciPy is a library that uses NumPy for more mathematical functions. SciPy uses NumPy arrays as the basic data structure, and comes with modules for various commonly used tasks in scientific programming, including linear algebra, integration (calculus), ordinary differential equation solving, and signal processing.
 
-39. Write a python program to read a image and flip it using scipy library
+## 39. Write a python program to read a image and flip it using scipy library
 
 ```python
 import cv2
@@ -1226,7 +1255,7 @@ rotate_face_noreshape = ndimage.rotate(face, 45, reshape=False)
 plt.imshow(rotate_face_noreshape)
 ```
 
-40. Perform single integration using Scipy library
+## 40. Perform single integration using Scipy library
 
 ```python
 import scipy.integrate
