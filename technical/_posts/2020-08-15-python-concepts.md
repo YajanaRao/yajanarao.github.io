@@ -1,16 +1,16 @@
-# 1. What is python ?
+## 1. What is python ?
 
 Python is an `interpreted`, `high-level`, `general-purpose`, `object-oriented` programming language.
 
-## Benefits of python
+### Benefits of python
 
 1. Easy to learn
 2. Portability
 3. Extensive support libraries
 
-# 2. Explain mutable and immutable built in types of Python with example ?
+## 2. Explain mutable and immutable built in types of Python with example ?
 
-## Immutable data types
+### Immutable data types
 
 `int`
 `float`
@@ -28,7 +28,7 @@ tuple_sample = (0, 1, 2, 3)
 tuple_sample[2] = 4
 ```
 
-## Mutable
+### Mutable
 
 `list`
 `dictionary`
@@ -40,41 +40,41 @@ color_list = ["saffron", "white", "green"]
 color_list[1] = "blue"
 ```
 
-# 3. What is Numpy?
+## 3. What is Numpy?
 
 NumPy is a python library used for working with arrays.
 It also has functions for working in domain of linear algebra, fourier transform, and matrices.
 
-# 3.1 Why numpy is faster than lists?
+## 3.1 Why numpy is faster than lists?
 
 NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently.
 
 This behavior is called locality of reference in computer science.
 
-# 4. Difference between `numpy` and `scripy`
+## 4. Difference between `numpy` and `scripy`
 
 Ideally speaking, NumPy is basically for basic operations such as sorting, indexing, and elementary functioning on the array data type. On the other hand, SciPy contains all the algebraic functions some of which are there in NumPy to some extent and not in full-fledged form.
 
 Read more at: [link](https://www.freelancinggig.com/blog/2018/12/09/what-is-the-difference-between-numpy-and-scipy/)
 
-# 5. What is pandas ?
+## 5. What is pandas ?
 
 pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
 built on top of the Python programming language.
 
-# 6. What is pandas series ?
+## 6. What is pandas series ?
 
 One-dimensional ndarray with axis labels (including time series).
 
 [Reference](https://pandas.pydata.org/docs/reference/api/pandas.Series.html?highlight=series#pandas.Series)
 
-# 7. What is pandas Dataframe ?
+## 7. What is pandas Dataframe ?
 
 Two-dimensional (rows and columns), size-mutable, potentially heterogeneous tabular data.
 
 [Reference](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html?highlight=data%20frames)
 
-# Python Practice
+## Python Practice
 
 Basics
 
