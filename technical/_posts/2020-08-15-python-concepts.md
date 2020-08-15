@@ -80,6 +80,8 @@ Machine learning (ML) is the study of computer algorithms that improve automatic
 
 Machine Learning is defined as the study of computer programs that leverage algorithms and statistical models to learn through inference and patterns without being explicitly programed.
 
+![Machine learning](../../assets/img/machine_learning.png)
+
 ### Types of Machine learning
 
 #### 1. Supervised Learning
@@ -88,15 +90,36 @@ In this type, the machine learning algorithm is trained on labeled data.
 
 Supervised learning problems can be further grouped into regression and classification problems.
 
-1. **Classification**: A classification problem is when the output variable is a category, such as “red” or “blue” or “disease” and “no disease”.
+**1. Classification**: A classification problem is when the output variable is a category, such as “red” or “blue” or “disease” and “no disease”.
 
-2. **Regression**: A regression problem is when the output variable is a real value, such as “dollars” or “weight”.
+**2. Regression**: A regression problem is when the output variable is a real value, such as “dollars” or “weight”.
+
+Some popular examples of supervised machine learning algorithms are:
+
+- Linear regression for regression problems.
+- Random forest for classification and regression problems.
+- Support vector machines for classification problems.
 
 #### 2. Unsupervised Learning
 
 Unsupervised machine learning holds the advantage of being able to work with unlabeled data.
 
-#### 3. Reinforcement Learning
+Unsupervised learning problems can be further grouped into clustering and association problems.
+
+**1. Clustering**: A clustering problem is where you want to discover the inherent groupings in the data, such as grouping customers by purchasing behavior.
+
+**2. Association**: An association rule learning problem is where you want to discover rules that describe large portions of your data, such as people that buy X also tend to buy Y.
+
+Some popular examples of unsupervised learning algorithms are:
+
+- k-means for clustering problems.
+- Apriori algorithm for association rule learning problems.
+
+#### 3. Semi-supervised Learning
+
+Semi-supervised learning falls in between supervised and unsupervised learning
+
+#### 4. Reinforcement Learning
 
 Reinforcement learning directly takes inspiration from how human beings learn from data in their lives. It features an algorithm that improves upon itself and learns from new situations using a trial-and-error method. Favorable outputs are encouraged or `reinforced`, and non-favorable outputs are discouraged or `punished`.
 
@@ -104,38 +127,38 @@ Reinforcement learning directly takes inspiration from how human beings learn fr
 
 ## 1. What is an expression?
 
-    Expressions are representations of value. They are different from statements in the fact that statements do something while expressions are a representation of value. Python has some advanced constructs through which you can represent values and hence these constructs are also called expressions.
+Expressions are representations of value. They are different from statements in the fact that statements do something while expressions are a representation of value. Python has some advanced constructs through which you can represent values and hence these constructs are also called expressions.
 
 ## 2. What is a syntax error?
 
-    Syntax errors are the most basic type of error. They arise when the Python parser is unable to understand a line of code.
+Syntax errors are the most basic type of error. They arise when the Python parser is unable to understand a line of code.
 
 ## 3. What is PEP8?
 
-    PEP8 is a document that provides guidelines and best practices on how to write Python code
+PEP8 is a document that provides guidelines and best practices on how to write Python code
 
 ## 4. What does a linter do?
 
-    Linting highlights syntactical and stylistic problems in your Python source code, which oftentimes helps you identify and correct subtle programming errors or unconventional coding practices that can lead to errors.
+Linting highlights syntactical and stylistic problems in your Python source code, which oftentimes helps you identify and correct subtle programming errors or unconventional coding practices that can lead to errors.
 
 # Primitive Types
 
 ## 1. What is a variable?
 
-    Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in memory.
+Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in memory.
 
 ## 2. What are the primitive built-in types in Python?
 
-    Primitive Types are the most basic data structures. They are the building block for data manipulation, and such contains pure, simple values of data.
-    Python has four primitive types: integers, floats, booleans and strings.
+Primitive Types are the most basic data structures. They are the building block for data manipulation, and such contains pure, simple values of data.
+Python has four primitive types: integers, floats, booleans and strings.
 
 ## 3. When should we use `"""` (tripe quotes) to define strings?
 
-    `"""` This string is on multiple lines within three double quotes on either side. """ With triple quotes, you can print strings on multiple lines to make text, especially lengthy text, easier to read.
+`"""` This string is on multiple lines within three double quotes on either side. """ With triple quotes, you can print strings on multiple lines to make text, especially lengthy text, easier to read.
 
-## 4. when should we use (triple quotes) to define strings in python
+## 4. when should we use `"""` (triple quotes) to define strings in python ?
 
-    """ This string is on multiple lines within three double quotes on either side. """ With triple quotes, you can print strings on multiple lines to make text, especially lengthy text, easier to read.
+`"""` This string is on multiple lines within three double quotes on either side. `"""` With triple quotes, you can print strings on multiple lines to make text, especially lengthy text, easier to read.
 
 ## 5. What about name[-2] ?
 
@@ -151,9 +174,9 @@ Reinforcement learning directly takes inspiration from how human beings learn fr
 
 ## 7. How to get the length of name?
 
-    Using `len()` function `len(name)`
+Using `len()` function `len(name)`
 
-8.  What are the escape sequences in Python?
+## 8. What are the escape sequences in Python?
 
     `\newline`
     Backslash and newline ignored
@@ -182,65 +205,78 @@ Reinforcement learning directly takes inspiration from how human beings learn fr
     \xhh
     Character with hex value hh
 
-9.  What is the result of `f“{2+2}+{10%3}”`?
+## 9. What is the result of `f“{2+2}+{10%3}”`?
+
     ‘4+1'
 
-10. Given (name = “john smith”), what will name.title() return?
+## 10. Given (name = “john smith”), what will name.title() return?
+
     'John Smith’
 
-11. What does name.strip() do?
-    It removes all the extra spaces in the begining and the end of the string
+## 11. What does `name.strip()` do?
 
-          12. What will name.find(“Smith”) return?
+It removes all the extra spaces in the beginning and the end of the string
+
+## 12. What will `name.find(“Smith”)` return?
 
     -1
 
-          13. What will be the value of name after we call name.replace(“j”, “k”)?
+## 13. What will be the value of name after we call `name.replace(“j”, “k”)` ?
 
     'kohn smith’
 
-12. How can we check to see if name contains “John”?
-    name.find(‘John’) if output is 0 then it is present if -1 then its not present 15. What are the 3 types of numbers in Python?
-    integers, floating point numbers, and complex numbers
-    Control Flow
+## 14. How can we check to see if name contains “John”?
 
-What is the difference between 10 / 3 and 10 // 3?
+`name.find(‘John’)` if output is 0 then it is present if -1 then its not present 15.
+
+## 15. What are the 3 types of numbers in Python?
+
+integers, floating point numbers, and complex numbers
+
+# Control Flow
+
+## 1. What is the difference between 10 / 3 and 10 // 3?
+
 10/3 gives the 3.3333333333333335(result of the division) and 10//3 gives 3 (quotient)
 
-2. What is the result of 10 \*\* 3?
-   1000
+## 2. What is the result of 10 \*\* 3?
 
-3) Given (x = 1), what will be the value of after we run (x += 2)?
+1000
+
+3. Given (x = 1), what will be the value of after we run (x += 2)?
+
    3
 
-4) How can we round a number?
-   Using round function round(2.654,2) output will be 2.65
+4. How can we round a number?
 
-5) What is the result of float(1)?
+Using round function round(2.654,2) output will be 2.65
+
+5. What is the result of float(1)?
    1.0
 
-6) What is the result of bool(“False”)?
+6. What is the result of bool(“False”)?
    True
 
-7) What are the falsy values in Python?
+7. What are the falsy values in Python?
    Values that evaluate to False are considered Falsy.
 
-8) What is the result of 10 == “10”?
+8. What is the result of 10 == “10”?
    False
 
-9) What is the result of “bag” > “apple”?
+9. What is the result of “bag” > “apple”?
    True
 
-10) What is the result of not(True or False)?
+10. What is the result of not(True or False)?
     False
 
-11) Under what circumstances does the expression 18 <= age < 65 evaluate to True?
+11. Under what circumstances does the expression 18 <= age < 65 evaluate to True?
     If age is greater or equal to 18 and less than 65 then it will be true like example age=19 will give output as True
 
-12) What does range(1, 10, 2) return?
+12. What does range(1, 10, 2) return?
     1 3 5 7 9
 
-13) Name 3 iterable objects in Python.
+13. Name 3 iterable objects in Python.
+
     **next**()
     **iter**()
     **init**()
