@@ -319,20 +319,24 @@ functionName( '1', name, '3', g="foo", h="bar" ){…}. After the required positi
 
 Single asterisk as used in function declaration allows variable number of arguments passed from calling environment. Inside the function it behaves as a tuple.
 
-6. What about two asterisks (**)?
-   If we want to pass a keyworded variable lenght of arguments to a function, we use **
+## 6. What about two asterisks (\*\*)?
 
-7. What is scope?
-   Variables can only reach the area in which they are defined, which is called scope.
+If we want to pass a keyworded variable length of arguments to a function, we use \*\*
 
-8. What is the difference between local and global variables?
-   A global variable is a variable that is accessible globally. A local variable is one that is only accessible to the current scope, such as temporary variables used in a single function definition
+## 7. What is scope?
 
-9. Why is using the global statement a bad practice?
-   That means it makes it difficult in any reasonably complex program to keep track of what values are in that global at any time. It means that any function you write is now dependent on
-   Coding Exercises
+Variables can only reach the area in which they are defined, which is called scope.
 
-10. Write a function that returns the maximum of two numbers.
+## 8. What is the difference between local and global variables?
+
+A global variable is a variable that is accessible globally. A local variable is one that is only accessible to the current scope, such as temporary variables used in a single function definition
+
+## 9. Why is using the global statement a bad practice?
+
+That means it makes it difficult in any reasonably complex program to keep track of what values are in that global at any time. It means that any function you write is now dependent on
+Coding Exercises
+
+## 10. Write a function that returns the maximum of two numbers.
 
 ```python
 def max_two_no(a,b):
@@ -342,7 +346,8 @@ def max_two_no(a,b):
         return(b)
 ```
 
-11. Write a function called fizz_buzz that takes a number.
+## 11. Write a function called `fizz_buzz` that takes a number.
+
     If the number is divisible by 3, it should return “Fizz”.
     If it is divisible by 5, it should return “Buzz”.
     If it is divisible by both 3 and 5, it should return “FizzBuzz”.
@@ -357,10 +362,11 @@ def fizz_buzz(number):
     return(number)
 ```
 
-3. Write a function for checking the speed of drivers. This function should have one parameter: speed.
-   If speed is less than 70, it should print “Ok”.
-   Otherwise, for every 5km above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points. For example, if the speed is 80, it should print: “Points: 2”.
-   If the driver gets more than 12 points, the function should print: “License suspended”
+## 3. Write a function for checking the speed of drivers. This function should have one parameter: speed.
+
+If speed is less than 70, it should print “Ok”.
+Otherwise, for every 5km above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points. For example, if the speed is 80, it should print: “Points: 2”.
+If the driver gets more than 12 points, the function should print: “License suspended”
 
 ```python
 def speed_check(speed):
@@ -776,7 +782,7 @@ for i in range(0,len(B)):
 print('w=%s'%X[0],'x=%s'%X[1],'y=%s'%X[2],'z=%s'%X[3])
 ```
 
-18 Use Newton-Raphson method to solve given equation
+## 18 Use Newton-Raphson method to solve given equation
 
 ```python
 
@@ -845,7 +851,7 @@ else:
        print("Divisible by 11")
 ```
 
-21. Write a Python program to check if a number is positive or negative
+## 21. Write a Python program to check if a number is positive or negative
 
 ```python
 num = float(input("Enter a number: "))
@@ -857,7 +863,7 @@ else:
 print("Negative number")
 ```
 
-22. Write a python program to check leap year
+## 22. Write a python program to check leap year
 
 ```python
 year = int(input("Enter a year: "))
@@ -873,7 +879,7 @@ else:
    print("{0} is not a leap year".format(year))
 ```
 
-23. Write a Python Program to Read a Number n And Print the Series "1+2+…..+n= "
+## 23. Write a Python Program to Read a Number n And Print the Series "1+2+…..+n= "
 
 ```python
 n = int(input("Enter a Number : "))
@@ -887,7 +893,7 @@ for i in range(1,n+1):
 print(' = ', sum(series_sum), sep='')
 ```
 
-24. Write a Program to Compute a Polynomial Equation given that the Coefficients of the Polynomial are stored in a List
+## 24. Write a Program to Compute a Polynomial Equation given that the Coefficients of the Polynomial are stored in a List
 
 ```python
 import math
@@ -908,7 +914,7 @@ sum1=sum1+lst[3]
 print("The value of the polynomial is:",sum1)
 ```
 
-25 Write a Python Program to Compute the Value of Euler's Number e. Use the Formula: e = 1 + 1/1! + 1/2! + …… 1/n!
+## 25 Write a Python Program to Compute the Value of Euler's Number e. Use the Formula: e = 1 + 1/1! + 1/2! + …… 1/n!
 
 ```python
 # Function to find factorail of a number
@@ -932,7 +938,7 @@ n=int(input("Enter the number:"))
 sum(n)
 ```
 
-26. Write a Python Program to Convert Binary to Gray Code
+## 26. Write a Python Program to Convert Binary to Gray Code
 
 ```python
 def binary_to_gray(n):
@@ -950,7 +956,7 @@ b = binary_to_gray(g)
 print('Gray codeword:', b)
 ```
 
-27. Write a Python Program to Read a List of Words and Return the Length of the Longest One
+## 27. Write a Python Program to Read a List of Words and Return the Length of the Longest One
 
 ```python
 a=[]
@@ -968,7 +974,7 @@ print("The word with the longest length is:")
 print(temp)
 ```
 
-28. Write a Python Program to detect if Two Strings are Anagrams
+## 28. Write a Python Program to detect if Two Strings are Anagrams
 
 ```python
 s1= str(input("Enter first string:"))
@@ -979,7 +985,7 @@ else:
       print("The strings aren't anagrams.")
 ```
 
-29. Write a Python Program to Generate a Dictionary that Contains Numbers (between 1 and n) in the Form (x,x\*x).
+## 29. Write a Python Program to Generate a Dictionary that Contains Numbers (between 1 and n) in the Form (x,x\*x).
 
 ```python
 n=int(input("Input a number "))
@@ -991,7 +997,7 @@ for x in range(1,n+1):
 print(d)
 ```
 
-30. Write a Python Program to Count the Frequency of Words Appearing in a String Using a Dictionary
+## 30. Write a Python Program to Count the Frequency of Words Appearing in a String Using a Dictionary
 
 ```python
 test_string= str(input("Enter first string:"))
@@ -1001,7 +1007,7 @@ word_freq=[l.count(p) for p in l]
 print(dict(zip(l,word_freq)))
 ```
 
-31. Write a Python Program to Count the Number of Words in a Text File
+## 31. Write a Python Program to Count the Number of Words in a Text File
 
 ```python
 
@@ -1032,7 +1038,7 @@ print("Occurrences of the letter:")
 print(k)
 ```
 
-32. Write a Python Program to Implement Stack using One Queue
+## 32. Write a Python Program to Implement Stack using One Queue
 
 ```python
 class Stack:
