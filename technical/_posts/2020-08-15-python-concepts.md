@@ -74,57 +74,92 @@ Two-dimensional (rows and columns), size-mutable, potentially heterogeneous tabu
 
 [Reference](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html?highlight=data%20frames)
 
-## Python Practice
+## 8. What is Machine learning ?
 
-Basics
+Machine learning (ML) is the study of computer algorithms that improve automatically through experience.
 
-1.  What is an expression?
+Machine Learning is defined as the study of computer programs that leverage algorithms and statistical models to learn through inference and patterns without being explicitly programed.
+
+### Types of Machine learning
+
+#### 1. Supervised Learning
+
+In this type, the machine learning algorithm is trained on labeled data.
+
+Supervised learning problems can be further grouped into regression and classification problems.
+
+1. **Classification**: A classification problem is when the output variable is a category, such as “red” or “blue” or “disease” and “no disease”.
+
+2. **Regression**: A regression problem is when the output variable is a real value, such as “dollars” or “weight”.
+
+#### 2. Unsupervised Learning
+
+Unsupervised machine learning holds the advantage of being able to work with unlabeled data.
+
+#### 3. Reinforcement Learning
+
+Reinforcement learning directly takes inspiration from how human beings learn from data in their lives. It features an algorithm that improves upon itself and learns from new situations using a trial-and-error method. Favorable outputs are encouraged or `reinforced`, and non-favorable outputs are discouraged or `punished`.
+
+# Basics
+
+## 1. What is an expression?
+
     Expressions are representations of value. They are different from statements in the fact that statements do something while expressions are a representation of value. Python has some advanced constructs through which you can represent values and hence these constructs are also called expressions.
 
-2.  What is a syntax error?
+## 2. What is a syntax error?
+
     Syntax errors are the most basic type of error. They arise when the Python parser is unable to understand a line of code.
 
-3.  What is PEP8?
+## 3. What is PEP8?
+
     PEP8 is a document that provides guidelines and best practices on how to write Python code
 
-4.  What does a linter do?
+## 4. What does a linter do?
+
     Linting highlights syntactical and stylistic problems in your Python source code, which oftentimes helps you identify and correct subtle programming errors or unconventional coding practices that can lead to errors.
 
-5.  What is the result of this expression: “_” _ 10
-    '\***\*\*\*\*\***'
+# Primitive Types
 
-Primitive Types
+## 1. What is a variable?
 
-1.  What is a variable?
     Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in memory.
 
-2.  What are the primitive built-in types in Python?
+## 2. What are the primitive built-in types in Python?
+
     Primitive Types are the most basic data structures. They are the building block for data manipulation, and such contains pure, simple values of data.
     Python has four primitive types: integers, floats, booleans and strings.
 
-3.  When should we use “”” (tripe quotes) to define strings?
+## 3. When should we use `"""` (tripe quotes) to define strings?
+
+    `"""` This string is on multiple lines within three double quotes on either side. """ With triple quotes, you can print strings on multiple lines to make text, especially lengthy text, easier to read.
+
+## 4. when should we use (triple quotes) to define strings in python
+
     """ This string is on multiple lines within three double quotes on either side. """ With triple quotes, you can print strings on multiple lines to make text, especially lengthy text, easier to read.
 
-4.  when should we use (triple quotes) to define strings in python
-    """ This string is on multiple lines within three double quotes on either side. """ With triple quotes, you can print strings on multiple lines to make text, especially lengthy text, easier to read.
+## 5. What about name[-2] ?
 
-5.  What about name[-2] ?
+```python
+    name=’python’
+```
 
-    Let name=’python’
-    Name[-2] will be ‘o’
+`name[-2]` will be ‘o’
 
-6.  What about name[1:-1]?
+## 6. What about `name[1:-1]`?
+
     ‘ytho'
 
-7.  How to get the length of name?
-    Using len() function len(name)
+## 7. How to get the length of name?
+
+    Using `len()` function `len(name)`
 
 8.  What are the escape sequences in Python?
-    \newline
+
+    `\newline`
     Backslash and newline ignored
-    \\
+    `\\`
     Backslash (\)
-    \'
+    `\`
     Single quote (')
     \"
     Double quote (")
@@ -147,7 +182,7 @@ Primitive Types
     \xhh
     Character with hex value hh
 
-9.  What is the result of f“{2+2}+{10%3}”?
+9.  What is the result of `f“{2+2}+{10%3}”`?
     ‘4+1'
 
 10. Given (name = “john smith”), what will name.title() return?
