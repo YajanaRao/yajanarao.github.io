@@ -82,6 +82,8 @@ Machine Learning is defined as the study of computer programs that leverage algo
 
 <img src="{{site.baseurl}}/assets/img/machine_learning.png" alt="Machine learning">
 
+Copied from [here](https://towardsdatascience.com/types-of-machine-learning-algorithms-you-should-know-953a08248861)
+
 ### Types of Machine learning
 
 #### 1. Supervised Learning
@@ -1239,7 +1241,7 @@ import numpy as np
 import imageio
 import matplotlib.pyplot as plt
 #read the image
-face1=imageio.imread('C:/Users/Latika/Pictures/52-526122_nec-logo-png-clipart.png') # uses the Image module (PIL)
+face1=imageio.imread('/Pictures/52-526122_nec-logo-png-clipart.png') # uses the Image module (PIL)
 plt.imshow(face1)
 plt.show()
 #convert to greyscale
