@@ -6,15 +6,6 @@ I use the [website](https://github.com/YajanaRao/yajanarao.github.io) to maintai
 
 I have made notes of topics I found interesting and important. Most of them are related to software as I have a day job of software engineer.
 
-#### Index
-
-<!-- <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul> -->
 <div>
 {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}

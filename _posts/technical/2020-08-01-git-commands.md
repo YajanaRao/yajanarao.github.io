@@ -1,3 +1,8 @@
+---
+title: "git Commands"
+categories: commands-and-shortcuts
+---
+
 # git Commands
 
 ## Change your remote's URL

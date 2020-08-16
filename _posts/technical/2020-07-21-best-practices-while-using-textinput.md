@@ -1,6 +1,6 @@
 ---
 title: "TextInput best practices"
-categories: best practices
+categories: best-practices
 ---
 
 # [Text Input](https://github.com/facebook/react-native-website/blob/master/docs/textinput.md)

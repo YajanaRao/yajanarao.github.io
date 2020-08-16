@@ -1,6 +1,6 @@
 ---
 title: "Coding best practices"
-categories: best practices
+categories: best-practices
 ---
 
 # Best Practices

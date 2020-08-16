@@ -1,3 +1,8 @@
+---
+title: "Python tutorial"
+categories: technical-concepts
+---
+
 ## 1. What is python ?
 
 Python is an `interpreted`, `high-level`, `general-purpose`, `object-oriented` programming language.
