@@ -172,7 +172,7 @@ SQL style merges
 
 ## 6. What is pandas series ?
 
-One-dimensional ndarray with axis labels (including time series).
+One-dimensional `ndarray` with axis labels (including time series).
 
 [Reference](https://pandas.pydata.org/docs/reference/api/pandas.Series.html?highlight=series#pandas.Series)
 
@@ -338,6 +338,12 @@ Variables are nothing but reserved memory locations to store values. This means 
 
 Primitive Types are the most basic data structures. They are the building block for data manipulation, and such contains pure, simple values of data.
 Python has four primitive types: integers, floats, booleans and strings.
+
+## Built-in Functions
+
+The Python interpreter has a number of functions and types built into it that are always available. They are listed here in alphabetical order.
+
+<img src="{{site.baseurl}}/assets/img/built-in-functions.png" alt="built-in functions">
 
 ## 3. When should we use `"""` (tripe quotes) to define strings?
 
