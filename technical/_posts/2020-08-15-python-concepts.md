@@ -24,6 +24,12 @@ Python is an `interpreted`, `high-level`, `general-purpose`, `object-oriented` p
 str_value = "hi"
 str_value[0] = 'y'
 
+```
+
+> TypeError: 'str' object does not support item assignment
+
+```python
+
 tuple_sample = (0, 1, 2, 3)
 tuple_sample[2] = 4
 ```
