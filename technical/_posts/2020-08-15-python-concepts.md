@@ -85,12 +85,90 @@ SciPy is organized into subpackages covering different scientific computing doma
 
 Ideally speaking, NumPy is basically for basic operations such as sorting, indexing, and elementary functioning on the array data type. On the other hand, SciPy contains all the algebraic functions some of which are there in NumPy to some extent and not in full-fledged form.
 
+| Numpy                                            | Scipy                                    |
+| ------------------------------------------------ | ---------------------------------------- |
+| Numpy is written in c                            | Scipy is built on top of numpy           |
+| Basic operations like sorting, shaping, indexing | Fully featured version of linear algebra |
+
 Read more at: [link](https://www.freelancinggig.com/blog/2018/12/09/what-is-the-difference-between-numpy-and-scipy/)
 
 ## 5. What is pandas ?
 
 pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
 built on top of the Python programming language.
+
+#### Object creation
+
+Creating a Series by passing a list of values, letting pandas create a default integer index
+
+```python
+s = pd.Series([1, 3, 5, np.nan, 6, 8])
+```
+
+Creating a DataFrame by passing a NumPy array, with a datetime index and labeled columns
+
+```python
+dates = pd.date_range('20130101', periods=6)
+```
+
+#### Viewing data
+
+View the top and bottom rows of the frame:
+
+```python
+df.head()
+df.tail(3)
+```
+
+Display the index, columns
+
+```python
+df.index
+df.columns
+```
+
+#### Selection
+
+Selecting a single column, which yields a Series, equivalent to df.A:
+
+```python
+df['A']
+```
+
+Selecting via [], which slices the rows.
+
+```python
+# specific eleemnt [row, column]
+df[0:3]]
+
+# specific row
+df[0,:]
+
+# specific column
+df[:,0]
+```
+
+### Operations of Python pandas
+
+#### Stats
+
+Operations in general exclude missing data.
+
+df.mean()
+
+#### Apply
+
+Applying functions to the data
+
+df.apply(np.cumsum)
+
+#### Concat
+
+Concatenating pandas objects together with concat()
+
+#### Join
+
+SQL style merges
 
 ## 6. What is pandas series ?
 
