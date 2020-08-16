@@ -15,12 +15,10 @@ I have made notes of topics I found interesting and important. Most of them are 
     </li>
   {% endfor %}
 </ul> -->
-<ul>
+<div>
 {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <li id="#{{ category_name | slugize }}">
-    <a name="{{ category_name | slugize }}">{{ category_name }}</a>
-    </li>
+    <h2 id="#{{ category_name | slugize }}" name="{{ category_name | slugize }}">{{ category_name }}</h2>
     {% for post in site.categories[category_name] %}
     <ul class="archive-item">
       <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
@@ -29,4 +27,4 @@ I have made notes of topics I found interesting and important. Most of them are 
 
 {% endfor %}
 
-</ul>
+</div>
