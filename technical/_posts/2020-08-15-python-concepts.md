@@ -51,7 +51,31 @@ NumPy arrays are stored at one continuous place in memory unlike lists, so proce
 
 This behavior is called locality of reference in computer science.
 
-## 4. Difference between `numpy` and `scripy`
+## What is scipy ?
+
+SciPy is a collection of mathematical algorithms and convenience functions built on the NumPy extension of Python.
+
+SciPy is organized into subpackages covering different scientific computing domains. These are summarized in the following table:
+
+| Subpackage  | Description                                            |
+| ----------- | :----------------------------------------------------- |
+| cluster     | Clustering algorithms                                  |
+| constants   | Physical and mathematical constants                    |
+| fftpack     | Fast Fourier Transform routines                        |
+| integrate   | Integration and ordinary differential equation solvers |
+| interpolate | Interpolation and smoothing splines                    |
+| io          | Input and Output                                       |
+| linalg      | Linear algebra                                         |
+| ndimage     | N-dimensional image processing                         |
+| odr         | Orthogonal distance regression                         |
+| optimize    | Optimization and root-finding routines                 |
+| signal      | Signal processing                                      |
+| sparse      | Sparse matrices and associated routines                |
+| spatial     | Spatial data structures and algorithms                 |
+| special     | Special functions                                      |
+| stats       | Statistical distributions and functions                |
+
+## 4. Difference between `numpy` and `scipy`
 
 Ideally speaking, NumPy is basically for basic operations such as sorting, indexing, and elementary functioning on the array data type. On the other hand, SciPy contains all the algebraic functions some of which are there in NumPy to some extent and not in full-fledged form.
 
@@ -76,7 +100,9 @@ Two-dimensional (rows and columns), size-mutable, potentially heterogeneous tabu
 
 ## 8. What is Machine learning ?
 
-Machine learning (ML) is the study of computer algorithms that improve automatically through experience.
+Machine learning (ML) is the study of computer algorithms or programs that improve through experience.
+
+Computer algorithms are finite sequence of well-defined , computer implementable instructions to perform a computation.
 
 Machine Learning is defined as the study of computer programs that leverage algorithms and statistical models to learn through inference and patterns without being explicitly programed.
 
@@ -124,6 +150,81 @@ Semi-supervised learning falls in between supervised and unsupervised learning
 #### 4. Reinforcement Learning
 
 Reinforcement learning directly takes inspiration from how human beings learn from data in their lives. It features an algorithm that improves upon itself and learns from new situations using a trial-and-error method. Favorable outputs are encouraged or `reinforced`, and non-favorable outputs are discouraged or `punished`.
+
+## Program to multiply of 2 matrix with nested list and loops
+
+```python
+# 3x3 matrix
+x = [[12,7,3],
+    [4 ,5,6],
+    [7 ,8,9]]
+
+# 3x4 matrix
+y = [[5,8,1,2],
+    [6,7,3,0],
+    [4,5,9,1]]
+
+# result is 3x4
+result = [[0,0,0,0],
+         [0,0,0,0],
+         [0,0,0,0]]
+
+# iterate through the rows of x
+
+for i in range(len(x)):
+  for j in range(len(y[0])):
+    for k in range(len(y)):
+        result[i][j] += x[i][k] * y[k][j]
+
+for r in result:
+   print(r)
+```
+
+## Program to multiply of 5*3 matrix by 3*2 matrix and create a real matrix product
+
+```python
+import numpy as np
+
+x = np.random.random((5,3))
+
+print("first array")
+print(x)
+
+y = np.random.random((3, 2))
+
+print("second array")
+print(y)
+
+print("dot product of 2 matrix")
+
+z= np.dot(x, y)
+print(z)
+```
+
+## Single integration using scipy
+
+```python
+import numpy as np
+from scipy import integrate
+
+f = lambda x: np.exp(-x**2)
+i = integrate.quad(f, 0,1)
+print(i)
+
+```
+
+## Double integration using scipy
+
+```python
+import numpy as np
+from scipy import integrate
+
+# Compute the double integral of x * y**2 over the box x ranging from 0 to 2 and y ranging from 0 to 1.
+
+double_eqn = lambda y,x: x * y ** 2
+d = integrate.dblquad(double_eqn, 0, 2, lambda x: 0, lambda x:1)
+print(d)
+```
 
 # Basics
 
