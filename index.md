@@ -18,7 +18,7 @@ I have made notes of topics I found interesting and important. Most of them are 
 <div>
 {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <h2 id="#{{ category_name | slugize }}" name="{{ category_name | slugize }}">{{ category_name }}</h2>
+    <h2 id="#{{ category_name | slugize }}" name="{{ category_name | | capitalize }}">{{ category_name }}</h2>
     <ul>
     {% for post in site.categories[category_name] %}
       <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
