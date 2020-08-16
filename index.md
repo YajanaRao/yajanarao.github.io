@@ -19,11 +19,11 @@ I have made notes of topics I found interesting and important. Most of them are 
 {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <h2 id="#{{ category_name | slugize }}" name="{{ category_name | slugize }}">{{ category_name }}</h2>
+    <ul>
     {% for post in site.categories[category_name] %}
-    <ul class="archive-item">
       <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
-    </ul>
     {% endfor %}
+    </ul>
 
 {% endfor %}
 
