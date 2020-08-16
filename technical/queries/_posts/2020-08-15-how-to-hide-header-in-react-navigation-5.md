@@ -1,6 +1,6 @@
 ---
 title: "How to hide the header only for child component using react navigation v5?"
-categories: tech
+categories: questions
 date: 2020-08-15
 ---
 

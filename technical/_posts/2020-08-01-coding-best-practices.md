@@ -1,3 +1,8 @@
+---
+title: "Coding best practices"
+categories: best practices
+---
+
 # Best Practices
 
 ## Be consistence with your editor

@@ -1,3 +1,8 @@
+---
+title: "Dual table"
+categories: tech concepts
+---
+
 # Dual Table
 
 ## What is DUAL table?

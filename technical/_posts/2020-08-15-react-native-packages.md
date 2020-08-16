@@ -1,6 +1,6 @@
 ---
 title: "React Native Packages"
-categories: tech
+categories: technical
 ---
 
 # React Native Packages

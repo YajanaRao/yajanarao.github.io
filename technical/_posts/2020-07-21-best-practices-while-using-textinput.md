@@ -1,3 +1,8 @@
+---
+title: "TextInput best practices"
+categories: best practices
+---
+
 # [Text Input](https://github.com/facebook/react-native-website/blob/master/docs/textinput.md)
 
 TextInput is a Core Component that allows the user to enter text.
