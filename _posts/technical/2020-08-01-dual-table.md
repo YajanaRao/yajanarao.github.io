@@ -1,6 +1,6 @@
 ---
 title: "Dual table"
-categories: technical-concept
+categories: technical-concepts
 ---
 
 # Dual Table
