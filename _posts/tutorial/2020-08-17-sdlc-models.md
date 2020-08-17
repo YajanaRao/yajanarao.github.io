@@ -1,3 +1,8 @@
+---
+title: "SDLC Models"
+categories: technical-concepts
+---
+
 # SDLC Models
 
 - Waterfall Model
