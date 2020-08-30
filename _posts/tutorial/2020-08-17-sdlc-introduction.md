@@ -1,8 +1,3 @@
----
-title: "Software Development Lifecycle"
-categories: technical-concepts
----
-
 # SDLC (Software Development Lifecycle)
 
 Software Development Lifecycle (SDLC), also referred to as the application development life-cycle, is a process for planning, creating, testing, and deploying an Software application.
@@ -11,7 +6,7 @@ It consists of a detailed plan describing how to develop, maintain, replace and 
 
 The aim of SDLC is to
 
-- Produce a high-quality software that meets or exceeds customer expectations ([MVP](https://en.wikipedia.org/wiki/Minimum_viable_product), Minimum Lovable Product)
+- Produce a high-quality software that meets or exceeds customer expectations (MVP, MLP)
 - Reaches completion within times and cost estimates.
 
 Importance of SDLC
@@ -19,7 +14,7 @@ Importance of SDLC
 - Poor collaboration/communication among team members
 - Poor (or no) estimation of time to complete project
 - Missing or poorly planned features or functionality
-- Poor or no proritization of features
+- Poor or no prioritization of features
 
 ## Stages of SDLC
 

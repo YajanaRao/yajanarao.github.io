@@ -1,5 +1,5 @@
 ---
-title: "How to Integrate react-native-web to an existing application"
+title: "How to Integrate react-native-web in an existing react native application"
 categories: questions
 ---
 

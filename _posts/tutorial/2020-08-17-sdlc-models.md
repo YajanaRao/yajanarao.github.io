@@ -17,8 +17,8 @@ categories: technical-concepts
 The waterfall model is a breakdown of project activities into linear sequential phases, where each phase depends on the deliverables of the previous one and corresponds to a specialisation of tasks.
 
 1. **System and software requirements**: captured in a [product requirements document](https://docs.google.com/document/d/1KvtZIeaqxm18eqPbqv4y6AHD0oBisKiAGDCf_c5UijM/edit?usp=sharing)
-2. **Analysis**: resulting in models, schema, and business rules
-3. **Design**: resulting in the software architecture
+2. **Analysis**: resulting in models, schema, and business rules. [Software specification document](https://docs.google.com/document/d/18tNIrcVUuSx4cTeJfk9Lf-UpBQ-BBX4mKiFbItdIt1Q/edit?usp=sharing) the output of the phase.
+3. **Design**: resulting in the software architecture. End product will be Design specification document or wirefames
 4. **Coding**: the development, proving, and integration of software
 5. **Testing**: the systematic discovery and debugging of defects
 6. **Operations**: the installation, migration, support, and maintenance of complete systems
