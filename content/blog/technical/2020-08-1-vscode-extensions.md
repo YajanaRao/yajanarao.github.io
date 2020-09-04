@@ -1,3 +1,8 @@
+---
+title: "Fonts"
+categories: commands-and-shortcuts
+---
+
 ## Fonts
 
 [Fira Code](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)

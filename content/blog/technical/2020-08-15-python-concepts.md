@@ -195,7 +195,7 @@ Computer algorithms are finite sequence of well-defined , computer implementable
 
 Machine Learning is defined as the study of computer programs that leverage algorithms and statistical models to learn through inference and patterns without being explicitly programed.
 
-<img src="{{site.baseurl}}/assets/img/machine_learning.png" alt="Machine learning">
+![Machine learning](/machine_learning.png)
 
 Copied from [here](https://towardsdatascience.com/types-of-machine-learning-algorithms-you-should-know-953a08248861)
 
@@ -348,7 +348,7 @@ Python has four primitive types: integers, floats, booleans and strings.
 
 The Python interpreter has a number of functions and types built into it that are always available. They are listed here in alphabetical order.
 
-<img src="{{site.baseurl}}/assets/img/built-in-functions.png" alt="built-in functions">
+![built-in functions](/built-in-functions.png)
 
 ## 3. When should we use `"""` (tripe quotes) to define strings?
 
