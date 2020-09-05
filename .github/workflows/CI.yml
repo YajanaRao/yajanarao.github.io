@@ -22,7 +22,12 @@ jobs:
       uses: actions/setup-node@v1
       
     - run: npm ci
-    - run: git config --global user.email "yajananrao@gmail.com"
-    - run: git config --global user.name "YajanaRao"
-    - run: npm run deploy --if-present
+
+    - name: Deploy to GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v2
+      with:
+          target_branch: gh-pages
+          build_dir: public
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
