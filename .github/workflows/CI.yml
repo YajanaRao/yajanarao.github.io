@@ -22,5 +22,7 @@ jobs:
       uses: actions/setup-node@v1
       
     - run: npm ci
+    - run: git config --global user.email "yajananrao@gmail.com"
+    - run: git config --global user.name "YajanaRao"
     - run: npm run deploy --if-present
 
