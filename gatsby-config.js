@@ -9,6 +9,8 @@ module.exports = {
     siteUrl: `https://yajanarao.github.io/`,
     social: {
       twitter: `yajanarao`,
+      github: 'yajanarao',
+      medium: '@yajananrao'
     },
   },
   plugins: [

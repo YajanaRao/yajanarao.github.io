@@ -28,9 +28,6 @@ const Hero = () => {
             name
             summary
           }
-          social {
-            twitter
-          }
           title
         }
       }
@@ -38,6 +35,7 @@ const Hero = () => {
   `)
 
     const { author, title } = data.site.siteMetadata
+
     return (
         <div
             style={{
@@ -84,16 +82,17 @@ const Hero = () => {
                         {title}
                     </Link>
                 </h1>
-                <p 
+                <p
                     style={{
                         textAlign: "center",
                         marginBottom: 0
                     }}
                 >
-                 {author.summary}
+                    {author.summary}
                 </p>
             </div>
         </div>
+
     )
 }
 
