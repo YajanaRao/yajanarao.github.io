@@ -22,5 +22,13 @@ jobs:
       uses: actions/setup-node@v1
       
     - run: npm ci
-    - run: npm run deploy --if-present
+    - run: npm run build
+
+    - name: Deploy to GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v2
+      with:
+          target_branch: master
+          build_dir: public
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

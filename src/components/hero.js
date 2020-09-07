@@ -17,7 +17,7 @@ const Hero = () => {
     query HeroQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 150, height: 150) {
+          fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -41,6 +41,7 @@ const Hero = () => {
             style={{
                 display: `flex`,
                 marginBottom: rhythm(2.5),
+                justifyContent: "center"
             }}
         >
             <Image
@@ -49,7 +50,7 @@ const Hero = () => {
                 style={{
                     marginRight: rhythm(1 / 2),
                     marginBottom: 0,
-                    minWidth: 150,
+                    minWidth: 100,
                     borderRadius: `100%`,
                 }}
                 imgStyle={{
@@ -67,7 +68,7 @@ const Hero = () => {
             >
                 <h1
                     style={{
-                        ...scale(1.5),
+                        ...scale(0.8),
                         marginBottom: rhythm(1 / 4),
                         marginTop: 0,
                     }}

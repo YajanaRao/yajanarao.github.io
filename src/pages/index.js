@@ -14,9 +14,6 @@ const BlogIndex = ({ data, location }) => {
     filteredData: allPosts,
   });
 
-
-
-
   const { filteredData } = state
 
   const handleChange = event => {
@@ -38,7 +35,10 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <div style={{ display: "flex" }}>
-        <input type="text" id="search" name="Search Blogs" placeholder="Search Blogs" autoFocus onChange={handleChange} style={{ width: "100%" }} />
+        <input type="text" id="search" name="Search Blogs" placeholder="Search Blogs" autoFocus onChange={handleChange}
+          style={{
+            width: "100%", padding: "8px 20px", borderRadius: "4px", boxSizing: "border-box", border: "1px solid #ccc"
+          }} />
       </div>
       {
         filteredData.map(({ node }) => {
