@@ -1,3 +1,8 @@
+---
+title: "Conditional statements"
+categories: tutorial
+---
+
 ## Conditionals with if, else
 
 Decisions are based on conditions

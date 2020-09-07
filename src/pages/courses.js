@@ -12,8 +12,6 @@ const Courses = ({ data, location }) => {
     return (
         <Layout location={location} title={siteTitle}>
             <SEO title="Courses" />
-            <h1>C Programming</h1>
-            <p>C programs and explanations.</p>
             {
                 posts.map(({ node }) => {
                     const title = node.frontmatter.title || node.fields.slug
