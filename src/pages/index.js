@@ -14,9 +14,6 @@ const BlogIndex = ({ data, location }) => {
     filteredData: allPosts,
   });
 
-
-
-
   const { filteredData } = state
 
   const handleChange = event => {
