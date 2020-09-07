@@ -33,7 +33,7 @@ if (<condition>) {
 
 The condition is a Boolean expression: an expression that evaluates to either true or false.
 
-#### How if statement works?
+### How if statement works?
 
 The `if` statement evaluates the test expression inside the parenthesis ().
 
@@ -149,7 +149,6 @@ if (temperature < 25 || weather === "rain") {
 
 ```
 
-
 > **DRY**: Don't Repeat Yourself
 
 #### The AND operator
@@ -191,6 +190,46 @@ if (temperature < 70 || weather === "rain") {
 if (!(temperature < 70 || weather === "rain")) {
    println("Gardening day!");
 }
+```
+
+#### Example:
+
+```c
+#include<stdio.h>
+#include<string.h>
+#include <ctype.h>
+
+int allChars(const char *str){
+   size_t i;
+   for(i=0;str[i];i++)
+     if(!isalpha(str[i]))
+        return 0;
+   return 1;
+}
+
+int main(){
+    char password[20];
+    int verification_code;
+    printf("Enter the password: ");
+    scanf("%s", password);
+    printf("Enter the verification code: ");
+    scanf("%d", &verification_code);
+
+    if(strlen(password) < 8){
+        printf("Your password is weak");
+    } else if(allChars(password) || !strcmp(password, "password@123")){
+        printf("Your password is weak \n");
+        printf("Your password can be easily hacked \n");
+    } else {
+        printf("Welcome user\n");
+        if(!strcmp(password, "root@123") && verification_code == 5){
+            printf("You are an admin\n");
+        } else {
+            printf("You are a user\n");
+        }
+    }
+}
+
 ```
 
 ### Referrals
