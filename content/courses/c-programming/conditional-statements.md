@@ -46,10 +46,8 @@ The `if` statement evaluates the test expression inside the parenthesis ().
   1. statements inside the body of if are not executed.
   2. statements inside the body of else are executed
 
-Note:
-
-- Also called as branching
-- Also called as control statements (controls the flow of execution of a program.)
+> - Also called as branching
+> - Also called as control statements (controls the flow of execution of a program.)
 
 #### Comparison operators
 
@@ -102,9 +100,7 @@ if (number > 0) {
 
 ```
 
-Note:
-
-Pay attention to the syntax and formatting of your nested conditionals.
+> Pay attention to the syntax and formatting of your nested conditionals.
 
 ### Chained conditionals
 
@@ -142,9 +138,6 @@ if (weather === "rain") {
 
 ```
 
-Note:
-
-**DRY**: Don't Repeat Yourself
 or
 
 ```c
@@ -154,6 +147,9 @@ if (temperature < 25 || weather === "rain") {
 }
 
 ```
+
+
+> **DRY**: Don't Repeat Yourself
 
 #### The AND operator
 
