@@ -32,12 +32,13 @@ The condition is a Boolean expression: an expression that evaluates to either tr
 
 The `if` statement evaluates the test expression inside the parenthesis ().
 
-- If the test expression is evaluated to true,
+- If the expression is evaluated to true,
 
   1. statements inside the body of if are executed.
   2. statements inside the body of else are skipped from execution.
 
-- If the test expression is evaluated to false,
+- If the expression is evaluated to false,
+
   1. statements inside the body of if are not executed.
   2. statements inside the body of else are executed
 
