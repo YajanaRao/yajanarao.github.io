@@ -157,7 +157,7 @@ both of the conditions are true
 
 ```c
 
-if(weather === "rain){
+if(weather === "rain"){
     if(transportMode === "walking"){
         printf("Take an umbrella!");
     }
