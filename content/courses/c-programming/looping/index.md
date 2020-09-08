@@ -84,14 +84,9 @@ for(i =0; i< 13; i++ ){
 ![For Loop](./for-flowchart.png)
 
 ### Various forms of for loop in C
-I am using variable num as the counter in all the following examples –
-1) Here instead of num++, I’m using num=num+1 which is same as num++.
 
-```c 
-for (num=10; num<20; num=num+1)
-```
 
-2) Initialization part can be skipped from loop as shown below, the counter variable is declared before the loop.
+1) Initialization part can be skipped from the loop
 
 ```c
 int num=10;
@@ -100,7 +95,7 @@ for (;num<20;num++)
 
 Note: Even though we can skip initialization part but semicolon (;) before condition is must, without which you will get compilation error.
 
-3) Like initialization, you can also skip the increment part as we did below. In this case semicolon (;) is must after condition logic. In this case the increment or decrement part is done inside the loop.
+2) You can also skip the increment. Semicolon (;) is must after condition logic. 
 
 ```c
 for (num=10; num<20; )
@@ -110,7 +105,7 @@ for (num=10; num<20; )
 }
 ```
 
-4) This is also possible. The counter variable is initialized before the loop and incremented inside the loop.
+3) The counter variable is initialized before the loop and incremented inside the loop.
 
 ```c
 int num=10;
@@ -119,12 +114,6 @@ for (;num<20;)
       //Statements
       num++;
 }
-```
-
-5) As mentioned above, the counter variable can be decremented as well. In the below example the variable gets decremented each time the loop runs until the condition num>10 returns false.
-
-```c
-for(num=20; num>10; num--)
 ```
 
 ## Nested Loops
