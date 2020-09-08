@@ -67,8 +67,8 @@ It is a entry controlled or pre checking loop
 for(initialization; condition; increment/decrement)
 ```
 
-- Initial value of the for loop is performed only once
-- Condition check is done on every start of every iteration
+- Initialization of the for loop is performed only once
+- Condition check is done on every start of every iteration. If the test expression is evaluated to false, the for loop is terminated.
 - Incrementation/ Decrementation happens at the end of each iteration
 
 Example:
@@ -79,6 +79,52 @@ for(i =0; i< 13; i++ ){
     printf(9*1);
 }
 
+```
+
+![For Loop](./for-flowchart.png)
+
+### Various forms of for loop in C
+I am using variable num as the counter in all the following examples –
+1) Here instead of num++, I’m using num=num+1 which is same as num++.
+
+```c 
+for (num=10; num<20; num=num+1)
+```
+
+2) Initialization part can be skipped from loop as shown below, the counter variable is declared before the loop.
+
+```c
+int num=10;
+for (;num<20;num++)
+```
+
+Note: Even though we can skip initialization part but semicolon (;) before condition is must, without which you will get compilation error.
+
+3) Like initialization, you can also skip the increment part as we did below. In this case semicolon (;) is must after condition logic. In this case the increment or decrement part is done inside the loop.
+
+```c
+for (num=10; num<20; )
+{
+      //Statements
+      num++;
+}
+```
+
+4) This is also possible. The counter variable is initialized before the loop and incremented inside the loop.
+
+```c
+int num=10;
+for (;num<20;)
+{
+      //Statements
+      num++;
+}
+```
+
+5) As mentioned above, the counter variable can be decremented as well. In the below example the variable gets decremented each time the loop runs until the condition num>10 returns false.
+
+```c
+for(num=20; num>10; num--)
 ```
 
 ## Nested Loops
