@@ -103,7 +103,7 @@ if (number > 0) {
 
 > Pay attention to the syntax and formatting of your nested conditionals.
 
-### Chained conditionals
+### Chained conditionals (The if-else Ladder)
 
 To check possible values of a single variable.
 
