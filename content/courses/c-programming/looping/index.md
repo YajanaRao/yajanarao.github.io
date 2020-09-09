@@ -33,6 +33,7 @@ while(y < 400){
 ```
 
 > If condition inside the parenthesis never become false it will lead to **Infinite Loops**
+> while(true) or for(;;)
 
 ## Do While loop
 
@@ -126,7 +127,7 @@ for (;num<20;)
 }
 ```
 
-4. `for(;;;)` is valid infinite loop
+4. `for(;;)` is valid infinite loop
 
 ## Nested Loops
 
