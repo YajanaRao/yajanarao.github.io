@@ -38,6 +38,17 @@ while(y < 400){
 
 Condition is executed after the body of the loop. Also called as exist controlled loop.
 
+### Syntax:
+
+```c
+
+do{
+    <instructions>
+} while(<condition>)
+```
+
+### Example:
+
 ```c
 
 do {
@@ -89,7 +100,7 @@ Allows us to repeat along two dimensions
  int i, j;
  for(i=0;i<10: i++){
      for(j=1;j<10;j++){
-         printf(i * J);
+         printf(i * j);
      }
  }
 

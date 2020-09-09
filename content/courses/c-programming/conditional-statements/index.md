@@ -216,7 +216,7 @@ int main(){
     scanf("%d", &verification_code);
 
     if(strlen(password) < 8){
-        printf("Your password is weak");
+        printf("Your password is weak\n");
     } else if(allChars(password) || !strcmp(password, "password@123")){
         printf("Your password is weak \n");
         printf("Your password can be easily hacked \n");
