@@ -96,8 +96,7 @@ for(i =0; i< 13; i++ ){
 
 ### Various forms of for loop in C
 
-
-1) Initialization part can be skipped from the loop
+1. Initialization part can be skipped from the loop
 
 ```c
 int num=10;
@@ -106,7 +105,7 @@ for (;num<20;num++)
 
 Note: Even though we can skip initialization part but semicolon (;) before condition is must, without which you will get compilation error.
 
-2) You can also skip the increment. Semicolon (;) is must after condition logic. 
+2. You can also skip the increment. Semicolon (;) is must after condition logic.
 
 ```c
 for (num=10; num<20; )
@@ -116,7 +115,7 @@ for (num=10; num<20; )
 }
 ```
 
-3) The counter variable is initialized before the loop and incremented inside the loop.
+3. The counter variable is initialized before the loop and incremented inside the loop.
 
 ```c
 int num=10;
@@ -148,3 +147,33 @@ Used to exist the loop
 ## Continue statement
 
 Skip to next iteration without existing out of the loop
+
+## Example
+
+```c
+
+#include<stdio.h>
+
+int main(){
+    int on = 1;
+    int a, b;
+    while(on){
+        printf("Enter two number a and b: ");
+        scanf("%d %d", &a, &b);
+        if(a == 0 || b ==0){
+            break;
+        }
+
+        if(a == 1 || b == 1){
+            continue;
+        }
+
+        printf("The output of %d and %d is %d\n", a, b, a+b);
+        printf("enter 0 to turn of the calculator: ");
+        scanf("%d", &on);
+    }
+
+    printf("\nThank you!!");
+}
+
+```
