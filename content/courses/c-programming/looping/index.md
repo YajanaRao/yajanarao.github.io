@@ -126,6 +126,8 @@ for (;num<20;)
 }
 ```
 
+4. `for(;;;)` is valid infinite loop
+
 ## Nested Loops
 
 Allows us to repeat along two dimensions
