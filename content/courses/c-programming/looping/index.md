@@ -78,8 +78,8 @@ It is a entry controlled or pre checking loop
 for(initialization; condition; increment/decrement)
 ```
 
-- Initial value of the for loop is performed only once
-- Condition check is done on every start of every iteration
+- Initialization of the for loop is performed only once
+- Condition check is done on every start of every iteration. If the test expression is evaluated to false, the for loop is terminated.
 - Incrementation/ Decrementation happens at the end of each iteration
 
 Example:
@@ -90,6 +90,41 @@ for(i =0; i< 13; i++ ){
     printf(9*1);
 }
 
+```
+
+![For Loop](./for-flowchart.png)
+
+### Various forms of for loop in C
+
+
+1) Initialization part can be skipped from the loop
+
+```c
+int num=10;
+for (;num<20;num++)
+```
+
+Note: Even though we can skip initialization part but semicolon (;) before condition is must, without which you will get compilation error.
+
+2) You can also skip the increment. Semicolon (;) is must after condition logic. 
+
+```c
+for (num=10; num<20; )
+{
+      //Statements
+      num++;
+}
+```
+
+3) The counter variable is initialized before the loop and incremented inside the loop.
+
+```c
+int num=10;
+for (;num<20;)
+{
+      //Statements
+      num++;
+}
 ```
 
 ## Nested Loops
