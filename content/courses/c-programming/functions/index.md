@@ -3,7 +3,6 @@ title: "Functions"
 categories: tutorial
 ---
 
-## Functions
 
 A function is a block of code that performs a specific task.
 
@@ -35,6 +34,14 @@ Declaration of a function that specifies function's name, parameters and return 
 ```
 returnType functionName(type1 argument1, type2 argument2, ...);
 ```
+
+**return_type**: Return type can be of any data type such as int, double, char, void, short etc. 
+
+**function_name**: A name that convies the purpose of function.
+
+**argument list**: Input variables names along with their data types.
+
+**Block of code**:  Statements which will be executed whenever a call will be made to the function.
 
 ### Calling a function
 
@@ -84,6 +91,14 @@ returnType functionName(type1 argument1, type2 argument2, ...)
 - Standard library functions
 - User defined functions
 
+
+### Classification of function based on return values and arguments
+1. Function with arguments and with  return value
+2. Function with arguments and without return value
+3. Function without arguments and without return value
+4. Function without arguments and with return value
+
+
 ### Standard library functions
 
 The standard library functions are built-in functions in C programming.
@@ -99,6 +114,7 @@ The standard library functions are built-in functions in C programming.
 3. Saves development time
 4. Portable
 5. Provides abstraction
+
 ### User-defined function
 
 User created functions
@@ -110,3 +126,32 @@ User created functions
 > Every C program has a function called main() that is called by operating system when a user runs the program.
 
 > In C, functions can return any type except arrays and functions.
+
+> A function can call itself and it is known as “Recursion“. 
+
+## Example:
+
+```c
+
+#include<stdio.h>
+
+int multiply(int a, int b);     // function declaration
+
+int main() 
+{
+    int i, j, result;
+    printf("Please enter 2 numbers you want to multiply...");
+    scanf("%d%d", &i, &j);
+    
+    result = multiply(i, j);        // function call
+    printf("The result of muliplication is: %d", result);
+    
+    return 0;
+}
+
+int multiply(int a, int b)
+{
+    return (a*b);       // function defintion, this can be done in one line
+}
+
+```
