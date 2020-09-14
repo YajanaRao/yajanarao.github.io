@@ -33,7 +33,8 @@ while(y < 400){
 ```
 
 > If condition inside the parenthesis never become false it will lead to **Infinite Loops**
-> while(true) or for(;;)
+
+> Example for infinite loops are `while(true)` or `for(;;)`
 
 ## Do While loop
 
