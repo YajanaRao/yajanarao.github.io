@@ -1,3 +1,9 @@
+---
+title: "Arrays in C program"
+categories: tutorial
+---
+
+
 Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type.
 
 Collection of variables of the same type.
