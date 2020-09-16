@@ -3,7 +3,6 @@ title: "Arrays in C program"
 categories: tutorial
 ---
 
-
 Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type.
 
 Collection of variables of the same type.
@@ -54,14 +53,13 @@ A two-dimensional array is, in essence, a list of one-dimensional arrays
 
 ```c
 
-int a[3][4] = {  
+int a[3][4] = {
    {0, 1, 2, 3} ,   /*  initializers for row indexed by 0 */
    {4, 5, 6, 7} ,   /*  initializers for row indexed by 1 */
    {8, 9, 10, 11}   /*  initializers for row indexed by 2 */
 };
 
 ```
-
 
 #### Accessing Two-Dimensional Array Elements
 
@@ -77,7 +75,7 @@ a[2][3] = 5;
 
 ## Passing Arrays as Function Arguments
 
-1.  Parameters as a pointer 
+1.  Parameters as a pointer
 
 ```c
 
@@ -87,7 +85,7 @@ void myFunction(int *param) {
 
 ```
 
-2. parameters as a sized array 
+2. parameters as a sized array
 
 ```c
 void myFunction(int param[10]) {
@@ -115,7 +113,6 @@ int * myFunction() {
 
 ```
 
-
 ## Example
 
 ```c
@@ -126,7 +123,7 @@ int * getRandom( ) {
 
    static int  r[10];
    int i;
-  
+
    for ( i = 0; i < 10; ++i) {
       scanf("%d", &r[i]);
       printf( "r[%d] = %d\n", i, r[i]);
@@ -143,7 +140,7 @@ int main () {
    int i;
 
    p = getRandom();
-	
+
    for ( i = 0; i < 10; i++ ) {
       printf( "*(p + %d) : %d\n", i, *(p + i));
    }

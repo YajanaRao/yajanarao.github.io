@@ -3,10 +3,9 @@ title: "Strings and Character array"
 categories: tutorial
 ---
 
-
 String is a sequence of characters terminated by null character '\0'
 
-```c 
+```c
 char c[] = "c string";
 ```
 
@@ -25,7 +24,6 @@ Memory allocation
 char s[5];
 ```
 
-
 ## Initializing a string variables
 
 There are different ways to initialize a character array variable.
@@ -36,7 +34,7 @@ char name[13] = "StudyTonight";       // valid character array initialization
 
 char name[10] = {'L','e','s','s','o','n','s','\0'};     // valid initialization
 
-char c[] = "c string";
+char c[] = "c string";  // Valid initialization
 
 char ch[3] = "hell";    // Illegal
 
@@ -51,31 +49,30 @@ str = "hell";   // Illegal
 
 > The strcpy() function can be used to copy the string instead.
 
-
 ## String Input and Output
 
 Input function scanf() and gets() can be used with %s format specifier to read a string input from the terminal.
 
-- `Scanf()` terminates its input on the first white space it encounters.
+- `scanf()` terminates its input on the first white space it encounters.
 
 ```c
 
 #include<stdio.h>
 #include<string.h>
 
-void main()
+int main()
 {
     char str[20];
     char text[20];
-    
+
     // using gets
     gets(text);
-    printf("%s", text);
+    printf("%s\n", text);
 
     // using scanf
-    printf("Enter a string");
-    scanf("%[^\n]", &str);  //scanning the whole string, including the white spaces
-    printf("%s", str);
+    printf("Enter a string: ");
+    scanf("%[^\n]", str);  //scanning the whole string, including the white spaces
+    printf("%s\n", str);
 }
 
 ```
@@ -84,13 +81,13 @@ void main()
 
 C supports a large number of string handling functions in the standard library "string.h"
 
-| Method    | Description         |
-| --------- | ------------------- |
+| Method   | Description                      |
+| -------- | -------------------------------- |
 | strcat() | concatenate(combine) two strings |
-| strlen() | returns length of a string |
-| strrev() | reverse of a string |
-| strcpy() | Copies one string into another |
-| strcmp() | compare two string |
+| strlen() | returns length of a string       |
+| strrev() | reverse of a string              |
+| strcpy() | Copies one string into another   |
+| strcmp() | compare two string               |
 
 ## Passing strings to functions
 
@@ -103,8 +100,8 @@ int main()
 {
     char str[50];
     printf("Enter string: ");
-    gets(str);             
-    displayString(str);     // Passing string to function.    
+    gets(str);
+    displayString(str);     // Passing string to function.
     return 0;
 }
 void displayString(char str[])
