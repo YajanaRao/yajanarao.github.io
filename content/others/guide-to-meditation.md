@@ -1,5 +1,21 @@
 # Meditation
 
+## Asanas
+
+Learn to sit comfortably for some time.
+
+Cross legged posture is preferred.
+
+1. Siddasana
+2. Lotus posture
+
+### Asanas for Sitting Cross Legged
+
+1. Butterfly pose
+
+
+
+
 1. Concentration Meditation / Tranquility meditation (Samatha)
    the quality or state of being tranquil; calm.
 
