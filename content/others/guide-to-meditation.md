@@ -7,7 +7,7 @@ Learn to sit comfortably for some time.
 Cross legged posture is preferred.
 
 1. Siddasana
-2. Lotus posture
+2. Padmasana ( Lotus posture )
 
 ### Asanas for Sitting Cross Legged
 
