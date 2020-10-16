@@ -14,12 +14,25 @@ the act or state of applying the mind to something
 
 ### Awareness
 
-knowledge and understanding that something is happening or exists
+# knowledge and understanding that something is happening or exists
+
+## Asanas
+
+Learn to sit comfortably for some time.
+
+Cross legged posture is preferred.
+
+1. Siddasana
+2. Padmasana ( Lotus posture )
+
+### Supporting Asanas for Sitting Cross Legged
+
+1. Butterfly pose
 
 1. Concentration Meditation / Tranquility meditation (Samatha)
    the quality or state of being tranquil; calm.
 
-2. Awareness Meditation / Insight (Vipasana)
+1. Awareness Meditation / Insight (Vipasana)
    an accurate and deep understanding. (Wisdom)
 
 https://isha.sadhguru.org/yoga/meditations/how-to-meditate/
