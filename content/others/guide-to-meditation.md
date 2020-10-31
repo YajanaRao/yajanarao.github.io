@@ -1,5 +1,9 @@
 # Meditation
 
+“Meditation” or “Dhyana” means to go beyond the limitations of the physical body and the mind.
+
+Meditation is effortless focus
+
 ## Word meanings
 
 ### Concentration
@@ -7,6 +11,7 @@
 It is the ability to focus the attention, and at the same time, ignore other unrelated thoughts.
 
 1. Concentration will be intense if you remove all the distractions
+2. Requires effort
 
 ### Attention
 
@@ -14,20 +19,32 @@ the act or state of applying the mind to something
 
 ### Awareness
 
+Awareness is aliveness.
+
 # knowledge and understanding that something is happening or exists
 
 ## Asanas
 
 Learn to sit comfortably for some time.
+Posture reflect our internal state. Positivity expands negativity contracts
+If you just learn how to keep your body absolutely still, then your mind will also become still.
 
 Cross legged posture is preferred.
+Backbone must be straight
+Stable
+Comfortable
 
 1. Siddasana
 2. Padmasana ( Lotus posture )
 
+> > note:
+> > I want you to just observe yourself and see how many unnecessary movements your body makes when you stand, sit or speak.
+
 ### Supporting Asanas for Sitting Cross Legged
 
 1. Butterfly pose
+
+## Types of meditation
 
 1. Concentration Meditation / Tranquility meditation (Samatha)
    the quality or state of being tranquil; calm.
@@ -70,3 +87,5 @@ Improves blood circulation
 6. Take a few deep breaths
 
 Relaxes mind
+
+> > You cannot do meditation but you can become meditative.

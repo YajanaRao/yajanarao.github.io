@@ -1,23 +1,17 @@
-## Breathing Excersise
+## Breathing Exercise
 
-- Controlled by autonomous nervous system
+- Controlled by autonomous nervous system. Forceful exhale before Inhale is recommended
 
-## Inhale
+## Inhale ( Puraka )
 
+Energizing
 Excited
 Fear
 
-## Exhale
+## Hold ( Kumbaka )
 
+## Exhale ( Rechaka )
+
+Relaxing
 Peace
 Love
-
-Types of Breathing
-
-1. Water breathing
-
-- 4 - 6 breathing
-
-2. Wisky breathing
-
-3. Coffee breathing
