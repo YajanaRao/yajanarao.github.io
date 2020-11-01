@@ -15,7 +15,8 @@ It is the ability to focus the attention, and at the same time, ignore other unr
 
 ### Attention
 
-the act or state of applying the mind to something
+the act or state of applying the mind to something.
+Does not mean tension. Can be relaxed and attentive at the same time
 
 ### Awareness
 
