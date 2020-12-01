@@ -1,6 +1,6 @@
 ---
 title: "SDLC Models"
-categories: technical-concepts
+categories: SDLC
 ---
 
 # SDLC Models

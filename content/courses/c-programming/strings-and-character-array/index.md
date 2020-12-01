@@ -1,6 +1,6 @@
 ---
 title: "Strings and Character array"
-categories: tutorial
+categories: c-programming
 ---
 
 String is a sequence of characters terminated by null character '\0'

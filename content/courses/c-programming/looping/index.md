@@ -1,6 +1,6 @@
 ---
 title: "Looping"
-categories: tutorial
+categories: c-programming
 ---
 
 World is full of repetition
