@@ -1,6 +1,6 @@
 ---
 title: "Errors"
-categories: tutorial
+categories: c-programming
 ---
 
 ## Core Dump (Segmentation fault) in C

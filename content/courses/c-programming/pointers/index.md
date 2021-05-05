@@ -1,6 +1,6 @@
 ---
 title: "C Pointers"
-categories: tutorial
+categories: c-programming
 ---
 
 Pointers (pointer variables) are used to store addresses rather than values.

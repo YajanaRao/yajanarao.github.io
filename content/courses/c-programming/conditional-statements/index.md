@@ -1,6 +1,6 @@
 ---
 title: "Conditional statements"
-categories: tutorial
+categories: c-programming
 ---
 
 ## Conditionals with if, else

@@ -1,6 +1,6 @@
 ---
 title: "Structure and Unions"
-categories: tutorial
+categories: c-programming
 ---
 
 ## Define structures
