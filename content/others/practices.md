@@ -16,4 +16,6 @@
 
    link: https://youtu.be/EwQkfoKxRvo
 
-7. Relaxation and meditation
+7. Relaxation and Heartfullness Meditation meditation
+
+8. Sudarshan Kriya
