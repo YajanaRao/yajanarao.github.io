@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { graphql, Link, navigate } from "gatsby";
 
 import Layout from "../components/layout";
@@ -10,9 +10,11 @@ const Categories = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
 
-  if (!category) {
-    navigate("/404");
-  }
+  useEffect(() => {
+    if (!category) {
+      navigate("/404");
+    }
+  }, [category])
 
   return (
     <Layout location={location} title={siteTitle}>
