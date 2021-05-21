@@ -1,3 +1,10 @@
+---
+title: Happiness Program
+date: "2021-05-28T22:40:32.169Z"
+description: Through a tried and tested combination of yoga, powerful breathing exercises, meditation and practical wisdom, the Art of Living Happiness Program will help you live life the way you’ve always wanted to Calmly, confidently, and armed with the tools you need to deal with whatever life throws at you.
+---
+
+
 ## Main Take Aways
 
 1.    Opposites are complementary

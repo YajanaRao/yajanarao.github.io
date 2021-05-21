@@ -1,3 +1,9 @@
+---
+title: Tips
+date: "2021-05-28T22:40:32.169Z"
+description: Shorts notes for wellbeing
+---
+
 1. Shower Twice a Day
 
    Sadhguru: If you are showering with cold water, you will see a shower is not just about cleansing the skin. Even if you went in angry, when you shower and come out, all the nonsense feels washed off. There is a certain cleansing of the Akashic dimension of who you are. Most yogis take shower at least twice a day.

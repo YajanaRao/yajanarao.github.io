@@ -1,3 +1,9 @@
+---
+title: Practices
+date: "2021-05-28T22:40:32.169Z"
+description: Daily practices for wellbeing
+---
+
 1. Warm up
 2. Surya Namaskara - 6 rounds
 3. Nadi Shuddhi

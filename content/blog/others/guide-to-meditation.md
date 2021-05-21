@@ -1,8 +1,14 @@
-# Meditation
+---
+title: Meditation
+date: "2021-05-28T22:40:32.169Z"
+description: “Meditation” or “Dhyana” means to go beyond the limitations of the physical body and the mind.
+---
 
 “Meditation” or “Dhyana” means to go beyond the limitations of the physical body and the mind.
 
 Meditation is effortless focus
+
+>> Effortless focus brings up meditative state
 
 ## Word meanings
 
@@ -90,3 +96,12 @@ Improves blood circulation
 Relaxes mind
 
 > > You cannot do meditation but you can become meditative.
+
+
+References:
+
+- https://en.wikipedia.org/wiki/Meditation
+
+- https://www.headspace.com/meditation-101/what-is-meditation
+
+- https://isha.sadhguru.org/yoga/meditations/how-to-meditate/
