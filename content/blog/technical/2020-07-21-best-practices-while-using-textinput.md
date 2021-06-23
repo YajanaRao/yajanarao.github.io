@@ -5,11 +5,17 @@ categories: best-practices
 
 # [Text Input](https://github.com/facebook/react-native-website/blob/master/docs/textinput.md)
 
-TextInput is a Core Component that allows the user to enter text.
+TextInput is a Core Component that allows the user to enter text. They typically appear in forms and dialogs.
 
-> Make user experience of entering text as easy as possible
+## 1. Less is more
 
-## [autoCompleteType](https://reactnative.dev/docs/textinput#autocompletetype)
+Every field you ask users to fill out increases friction. The best thing you can do to get rid of as many fields as possible.
+
+## 2. Make typing easy.
+
+Make user experience of entering text as easy as possible. `autoCompleteType` specifies autocomplete hints for the system, so it can provide autofill.
+
+### [autoCompleteType](https://reactnative.dev/docs/textinput#autocompletetype)
 
 - off
 - username
@@ -25,14 +31,85 @@ TextInput is a Core Component that allows the user to enter text.
 - cc-exp-month
 - cc-exp-year
 
-## `autoFocus`
+## 3. Match keyboard to input
 
-Please make sure that experience is smooth
+Phone users appreciate apps that provide the appropriate keyboard for the text being requested. 
 
-## [KeyboardAvoidingView](https://reactnative.dev/docs/keyboardavoidingview)
+### [keyboardType](https://reactnative.dev/docs/textinput#keyboardtype)
+
+Determines which keyboard to open, e.g.numeric.
+
+The following values work across platforms:
+
+- default
+- number-pad
+- decimal-pad
+- numeric
+- email-address
+- phone-pad
+
+## 4. Offer field focus.
+
+If you have a form with multiple fields, you don’t want users to get lost in the form. 
+
+
+### `autoFocus`
+
+Autofocusing a field gives the user an indication and a starting point to quickly begin filling out a form. By setting `autoFocus` to true, the textinput will be focused on `componendDidMount`.
+
+### [KeyboardAvoidingView](https://reactnative.dev/docs/keyboardavoidingview)
 
 It is a component to solve the common problem of views that need to move out of the way of the virtual keyboard. It can automatically adjust either its height, position, or bottom padding based on the keyboard height.
 
-## `onSubmitEditing`
+### `onSubmitEditing`
 
 Gives an option to submit from keyboard
+
+## 5. Setting default values
+
+### [defaultValues](https://reactnative.dev/docs/textinput#defaultvalue)
+
+It’s better to avoid setting default values unless you believe a large portion of your users (say, 95% of them) will select the same values. People scan online forms quickly, and they don’t spend much time parsing through all of the choices. As a result, they can easily skip something that already has a value.
+
+But this rule doesn’t apply to smart defaults, which are pre-set values based on available information about the user.  Smart defaults can make form completion faster and more accurate. For example, preselect the user’s country based on geo-location data. Still, use these with caution, because users tend to leave preselected fields as they are.
+
+## 6. Avaoid uncontrolled TextInput
+
+```js
+import React, { Component } from 'react';
+import { TextInput } from 'react-native';
+
+export default function UselessTextInput() {
+  const [value, onChangeText] = React.useState('Text');
+
+  return (
+    <TextInput
+      style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
+      onChangeText={text => onChangeText(text)}
+      value={value}
+    />
+  );
+}
+
+```
+
+The above code sample will work in most of the cases. However, on slow devices, and in a situation where a user is typing really fast it may cause a problem with view updates. The reason for that is React Native’s asynchronous nature.
+
+One of the solutions for the synchronization problem is to remove value prop from TextInput entirely. As a result, the data will flow only one way, from native to the JavaScript side, eliminating the synchronization issues that were described earlier.
+
+## 7. Communicate errors clearly.
+
+Users will make mistakes. It’s inevitable. Even if you use every form design best practice, users will still ring up error messages. How you handle error messages matters.
+
+## 8. Avoid placeholders as a label
+
+Using a placeholder as a label puts a burden on short-term memory. The label disappears as soon as the user starts typing, and the user must clear input text to expose the placeholder label again.
+Placeholders create additional issues when they are too light or dark. When too dark, the placeholder can be mistaken for a filled input. When too light, some users might not see the placeholder.
+
+## References
+
+https://xd.adobe.com/ideas/principles/web-design/best-practices-form-design/
+
+https://callstack.com/blog/the-ultimate-guide-to-react-native-optimization/
+
+https://www.youtube.com/watch?v=83ffAY-CmL4&t=1483s
