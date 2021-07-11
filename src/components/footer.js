@@ -36,6 +36,15 @@ const Footer = () => {
           }
         }
       }
+
+      discordIcon: file(absolutePath: { regex: "/discord.png/" }) {
+        childImageSharp {
+          fixed(width: 25, height: 25) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+
       site {
         siteMetadata {
           author {
@@ -46,6 +55,7 @@ const Footer = () => {
             twitter
             github
             medium
+            discord
           }
         }
       }
@@ -97,6 +107,21 @@ const Footer = () => {
             <a href={`https://medium.com/${social.medium}`} style={{ color: "transparent", boxShadow: "none" }}>
                 <Image
                     fixed={data.mediumIcon.childImageSharp.fixed}
+                    alt={author.name}
+                    style={{
+                        margin: rhythm(1 / 2),
+                        minWidth: 25,
+                        borderRadius: `100%`,
+                    }}
+                    imgStyle={{
+                        borderRadius: `50%`,
+                    }}
+                />
+            </a>
+
+            <a href={social.discord} style={{ color: "transparent", boxShadow: "none" }}>
+                <Image
+                    fixed={data.discord.childImageSharp.fixed}
                     alt={author.name}
                     style={{
                         margin: rhythm(1 / 2),

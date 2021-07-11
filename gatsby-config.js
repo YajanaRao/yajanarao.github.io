@@ -10,7 +10,8 @@ module.exports = {
     social: {
       twitter: `yajanarao`,
       github: 'yajanarao',
-      medium: '@yajananrao'
+      medium: '@yajanarao',
+      discord: 'https://discord.gg/qYZPqpQ',
     },
   },
   plugins: [
