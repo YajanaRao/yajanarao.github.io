@@ -3,8 +3,6 @@ title: "Dual table"
 categories: technical-concepts
 ---
 
-# Dual Table
-
 ## What is DUAL table?
 
 The DUAL is special one row, one column table present by default in all Oracle databases.

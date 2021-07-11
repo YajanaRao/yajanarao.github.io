@@ -3,8 +3,6 @@ title: "git Commands"
 categories: commands-and-shortcuts
 ---
 
-# git Commands
-
 ## Change your remote's URL
 
 https://docs.github.com/en/github/using-git/changing-a-remotes-url
