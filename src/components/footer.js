@@ -121,7 +121,7 @@ const Footer = () => {
 
             <a href={social.discord} style={{ color: "transparent", boxShadow: "none" }}>
                 <Image
-                    fixed={data.discord.childImageSharp.fixed}
+                    fixed={data.discordIcon.childImageSharp.fixed}
                     alt={author.name}
                     style={{
                         margin: rhythm(1 / 2),
