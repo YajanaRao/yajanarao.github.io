@@ -1,3 +1,7 @@
+---
+title: "How to use multiple github actions in the same computer"
+categories: technical-concepts
+---
 
 ## Problem
 I have two Github accounts: *YajanaRao* (personal) and *superman* (for work).
