@@ -45,12 +45,15 @@ const Header = ({ location, title }) => {
                         {title}
                     </Link>}
                 </h3>
-                <div style={{ display: "flex", justifyContent: "flex-end", width: "100%" }}>
-                    <Link to={`/courses/`} style={{ marginRight: 12 }}>
+                <div style={{ display: "flex", justifyContent: "space-around", width: "100%" }}>
+                    <Link to={`/courses/`}>
                         Courses
                     </Link>
-                    <Link to={`/`} style={{ marginRight: 12 }}>
+                    <Link to={`/`}>
                         Blogs
+                    </Link>
+                    <Link to={`/about`}>
+                        About
                     </Link>
                 </div>
             </div>
