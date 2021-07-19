@@ -6,6 +6,9 @@ description: Daily practices for wellbeing
 
 1. Warm up
 2. Surya Namaskara - 6 rounds
+
+## Pranayama
+
 3. Nadi Shuddhi
 
    link: https://youtu.be/q5m6tMjcF8k
@@ -16,13 +19,11 @@ description: Daily practices for wellbeing
 
    link: https://youtu.be/Ug8OoFAFfZ0
 
-5. Yogeshwaraya chanting 12 times
 
 6. Isha Kriya
 
    link: https://youtu.be/EwQkfoKxRvo
 
-7. Relaxation and Heartfullness Meditation meditation
 
 8. Sudarshan Kriya
 
@@ -41,4 +42,10 @@ Breathe (out): Open your eyes and focus your gaze on a single point closeby, e.g
 3. Defocus
 Breathe (in): See the whole picture at once; relax your eyes and take in everything in your field of vision.
 
+Link: https://youtu.be/qksd7aHGAUQ
+
 Repeat.
+
+## Heartfullness Meditation meditation
+
+Link: https://heartfulness.org/in/
