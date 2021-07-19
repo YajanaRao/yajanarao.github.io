@@ -1,5 +1,6 @@
 ---
-title: 'Intense and Relaxed',
+title: 'Intense and Relaxed'
+description: "Being Intense and Relaxed is the only way"
 ---
 
 Intense is not tense and relaxity is not laxity.
