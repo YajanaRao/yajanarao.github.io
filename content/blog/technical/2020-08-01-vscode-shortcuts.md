@@ -14,5 +14,3 @@ How to search a text globally across the project ?
 ```markdown
 cmd/ctrl + shift + f
 ```
-
-

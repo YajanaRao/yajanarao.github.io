@@ -12,4 +12,4 @@ Get rid of things that are not needed or no longer used.
 
 By tracking you can reduce unnecessary investment of time and money.
 
-3. Reduce mobile usage ( Surfing and Browsing ) 
+3. Reduce mobile usage ( Surfing and Browsing )

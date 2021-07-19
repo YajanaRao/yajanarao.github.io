@@ -9,9 +9,9 @@ module.exports = {
     siteUrl: `https://yajanarao.github.io/`,
     social: {
       twitter: `yajanarao`,
-      github: 'yajanarao',
-      medium: '@yajanarao',
-      discord: 'https://discord.gg/qYZPqpQ',
+      github: "yajanarao",
+      medium: "@yajanarao",
+      discord: "https://discord.gg/qYZPqpQ",
     },
   },
   plugins: [
@@ -90,4 +90,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

@@ -14,7 +14,7 @@ const Categories = ({ data, location }) => {
     if (!category) {
       navigate("/404");
     }
-  }, [category])
+  }, [category]);
 
   return (
     <Layout location={location} title={siteTitle}>

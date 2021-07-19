@@ -16,20 +16,20 @@ ctrl+u – Jump back (up) one half screen.
 ## [vim-commentary](!https://github.com/tpope/vim-commentary)
 
 - `gcc` to comment out a line (takes a count)
-- `gc` to comment out the target of a motion (for example, gcap to comment out a paragraph), 
-- `gc` in visual mode to comment out the selection 
-- `gc` in operator pending mode to target a comment. 
+- `gc` to comment out the target of a motion (for example, gcap to comment out a paragraph),
+- `gc` in visual mode to comment out the selection
+- `gc` in operator pending mode to target a comment.
 
 ## [FZF](!https://github.com/junegunn/fzf/blob/master/README-VIM.md)
 
 - Look for files under current directory
-`:FZF`
+  `:FZF`
 
 - Look for files under your home directory
-`:FZF ~`
+  `:FZF ~`
 
 - With fzf command-line options
-`:FZF --reverse --info=inline /tmp`
+  `:FZF --reverse --info=inline /tmp`
 
 - Bang version starts fzf in fullscreen mode
-`:FZF!`
+  `:FZF!`

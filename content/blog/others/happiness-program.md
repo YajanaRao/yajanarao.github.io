@@ -4,15 +4,14 @@ date: "2021-05-28T22:40:32.169Z"
 description: Through a tried and tested combination of yoga, powerful breathing exercises, meditation and practical wisdom, the Art of Living Happiness Program will help you live life the way you’ve always wanted to Calmly, confidently, and armed with the tools you need to deal with whatever life throws at you.
 ---
 
-
 ## Main Take Aways
 
-1.    Opposites are complementary
-2.    Accept people and circumstances as they are. Act don’t react.
-3.    Whatever you do give your 100%.
-4.    Don’t get caught up in the opinions of others.
-5.    Don’t see the intentions of others.
-6.    The present moment in inevitable. 
+1.  Opposites are complementary
+2.  Accept people and circumstances as they are. Act don’t react.
+3.  Whatever you do give your 100%.
+4.  Don’t get caught up in the opinions of others.
+5.  Don’t see the intentions of others.
+6.  The present moment in inevitable.
 
 ### Short Sudarshan Kriya (Proper Vision by Purifying Action) Practice
 
@@ -74,49 +73,48 @@ Sources of Energy
     Sleep
     Breath
 
+- Responsibility is power
 
-* Responsibility is power
+- You must practice sadhana along with (spiritual practice) seva (service). They go together and your ego will increase if you do one without the other. Through sadhana love and joy blossoms inside you and service is an expression of that love and joy within in.
 
-* You must practice sadhana along with (spiritual practice) seva (service). They go together and your ego will increase if you do one without the other. Through sadhana love and joy blossoms inside you and service is an expression of that love and joy within in.
+- The entire universe is a play of the same energy.
 
-* The entire universe is a play of the same energy.
+- The whole universe is an extension of me. (SOHUM)
 
-* The whole universe is an extension of me.  (SOHUM)
+\*Love is your very existence, you cannot find it outside of yourself. You love someone because they are beautiful, intelligent, educated etc.—this is conditional love. When you love someone as they are, that is divine love. Nature loves you, your pets love you. The more you feel gratitude the more love blossoms in you. If you are thankful grace flows more and more. Meditation is feeling the love with in.
 
-*Love is your very existence, you cannot find it outside of yourself. You love someone because they are beautiful, intelligent, educated etc.—this is conditional love. When you love someone as they are, that is divine love. Nature loves you, your pets love you. The more you feel gratitude the more love blossoms in you. If you are thankful grace flows more and more. Meditation is feeling the love with in.
+- Desires are an endless cycle of suffering.
 
-* Desires are an endless cycle of suffering.
+- Being in love with yourself then you are in love with everyone.
 
-* Being in love with yourself then you are in love with everyone.
+- Work is worship. Stop seeking joy in action and joy becomes action—this is karma yoga.
 
-* Work is worship. Stop seeking joy in action and joy becomes action—this is karma yoga.
+- It is your responsibility to cultivate your growth.
 
-* It is your responsibility to cultivate your growth.
+- The difference between a problem and an adventure if your attitude and your outlook.
 
-* The difference between a problem and an adventure if your attitude and your outlook.
+- Try to eat sattvic food!
+  Mindful Eating exercise with the grape (Eat every bite as if it is your last)
 
-* Try to eat sattvic food!
-Mindful Eating exercise with the grape (Eat every bite as if it is your last)
+- You can only give what you have. If you have love and happiness then you can give it and these are within.
 
+- Accept everyone but you remain centered and then only you act.
 
-* You can only give what you have. If you have love and happiness then you can give it and these are within.
+- You can’t change others, you can only change yourself.
 
-* Accept everyone but you remain centered and then only you act.  
+#### Eye Gazing Exercise:
 
-* You can’t change others, you can only change yourself.
-
-#### Eye Gazing Exercise: 
 Looking deep into the eyes of another… “If God came to you as this person would you accept them?” Upanayan
 
+#### TV Exercise:
 
-#### TV Exercise: 
 Being in the present moment, being natural, not showing off, having fun but also an exercising in seeing how we please others when they push certain buttons.
 
 Two types of tears: salty and sweet
 
-* Your guru takes you from the known to the unknown.
+- Your guru takes you from the known to the unknown.
 
-* When you commit 100% to a process only then will results come.
+- When you commit 100% to a process only then will results come.
 
 Yoga Sequence (All Movements Should Be Coordinated With Your Breath)
 

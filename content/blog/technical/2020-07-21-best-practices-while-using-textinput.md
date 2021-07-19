@@ -33,7 +33,7 @@ Make user experience of entering text as easy as possible. `autoCompleteType` sp
 
 ## 3. Match keyboard to input
 
-Phone users appreciate apps that provide the appropriate keyboard for the text being requested. 
+Phone users appreciate apps that provide the appropriate keyboard for the text being requested.
 
 ### [keyboardType](https://reactnative.dev/docs/textinput#keyboardtype)
 
@@ -50,8 +50,7 @@ The following values work across platforms:
 
 ## 4. Offer field focus.
 
-If you have a form with multiple fields, you don’t want users to get lost in the form. 
-
+If you have a form with multiple fields, you don’t want users to get lost in the form.
 
 ### `autoFocus`
 
@@ -71,26 +70,25 @@ Gives an option to submit from keyboard
 
 It’s better to avoid setting default values unless you believe a large portion of your users (say, 95% of them) will select the same values. People scan online forms quickly, and they don’t spend much time parsing through all of the choices. As a result, they can easily skip something that already has a value.
 
-But this rule doesn’t apply to smart defaults, which are pre-set values based on available information about the user.  Smart defaults can make form completion faster and more accurate. For example, preselect the user’s country based on geo-location data. Still, use these with caution, because users tend to leave preselected fields as they are.
+But this rule doesn’t apply to smart defaults, which are pre-set values based on available information about the user. Smart defaults can make form completion faster and more accurate. For example, preselect the user’s country based on geo-location data. Still, use these with caution, because users tend to leave preselected fields as they are.
 
 ## 6. Avaoid uncontrolled TextInput
 
 ```js
-import React, { Component } from 'react';
-import { TextInput } from 'react-native';
+import React, { Component } from "react";
+import { TextInput } from "react-native";
 
 export default function UselessTextInput() {
-  const [value, onChangeText] = React.useState('Text');
+  const [value, onChangeText] = React.useState("Text");
 
   return (
     <TextInput
-      style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
-      onChangeText={text => onChangeText(text)}
+      style={{ height: 40, borderColor: "gray", borderWidth: 1 }}
+      onChangeText={(text) => onChangeText(text)}
       value={value}
     />
   );
 }
-
 ```
 
 The above code sample will work in most of the cases. However, on slow devices, and in a situation where a user is typing really fast it may cause a problem with view updates. The reason for that is React Native’s asynchronous nature.

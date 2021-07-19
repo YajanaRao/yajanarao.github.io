@@ -8,7 +8,7 @@ description: “Meditation” or “Dhyana” means to go beyond the limitations
 
 Meditation is effortless focus
 
->> Effortless focus brings up meditative state
+> > Effortless focus brings up meditative state
 
 ## Word meanings
 
@@ -96,7 +96,6 @@ Improves blood circulation
 Relaxes mind
 
 > > You cannot do meditation but you can become meditative.
-
 
 References:
 

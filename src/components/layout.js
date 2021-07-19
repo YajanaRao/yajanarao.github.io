@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
-import { rhythm } from "../utils/typography"
-import Footer from "./footer"
-import Header from "./header"
+import { rhythm } from "../utils/typography";
+import Footer from "./footer";
+import Header from "./header";
 
 const Layout = ({ location, title, children }) => {
   return (
@@ -18,7 +18,7 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

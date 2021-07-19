@@ -4,13 +4,16 @@ categories: technical-concepts
 ---
 
 ## Problem
-I have two Github accounts: *YajanaRao* (personal) and *superman* (for work).
+
+I have two Github accounts: _YajanaRao_ (personal) and _superman_ (for work).
 I want to use both accounts on same computer (without typing password everytime, when doing git push or pull).
 
 ## Solution
+
 Use ssh keys and define host aliases in ssh config file (each alias for an account).
 
 ## How to?
+
 1. [Generate ssh key pairs for accounts](https://help.github.com/articles/generating-a-new-ssh-key/) and [add them to GitHub accounts](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/).
 2. Edit/Create ssh config file (`~/.ssh/config`):
 
@@ -20,14 +23,14 @@ Use ssh keys and define host aliases in ssh config file (each alias for an accou
       HostName github.com
       IdentityFile ~/.ssh/yajanarao_private_key
       IdentitiesOnly yes
-      
+
    # Other github account: superman
    Host github-superman
       HostName github.com
       IdentityFile ~/.ssh/superman_private_key
       IdentitiesOnly yes
    ```
-   
+
 3. [Add ssh private keys to your agent](https://help.github.com/articles/adding-a-new-ssh-key-to-the-ssh-agent/):
 
    ```shell
@@ -55,7 +58,7 @@ Use ssh keys and define host aliases in ssh config file (each alias for an accou
    ```shell
    Hi oanhnn! You've successfully authenticated, but GitHub does not provide shell access.
    ```
-   
+
    ```shell
    Hi superman! You've successfully authenticated, but GitHub does not provide shell access.
    ```
