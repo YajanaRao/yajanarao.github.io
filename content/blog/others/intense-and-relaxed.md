@@ -8,6 +8,9 @@ Intense is not tense and relaxity is not laxity.
 Being intense and relaxed makes us more perceptive
 
 Inablity to be at ease is disease.
+
+Stable energitic body or pranamaya kosha will lead to ease
+
 It is time you work upon bringing yourself to ease – not only with other people, just with life. The life that you are must be at ease. If you are not at ease, you will never realize your full potential.
 
 ![Alert and Calm](./intense-and-relaxed.jpeg)
@@ -32,6 +35,10 @@ If you want to be at ease you must have
 - An open mind
 - A Loving heart
 - Intensity of energy in the system
+
+Practice:
+
+Everytime observer yourself for tensions in the body. Bring everything under consiciouness to ease.
 
 References:
 
