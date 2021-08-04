@@ -1,3 +1,8 @@
+---
+title: const, let and var
+description: All about const, let and var
+---
+
 `const` and `let` are block scoped and `var` is global scoped.
 
 when we create a variable using var we see it in global context and for let and scope it is not
