@@ -5,13 +5,14 @@ categories: technical-concepts
 
 ## Install @welldone-software/why-did-you-render package
 
-npm
-
+```shell
+# npm
 npm install @welldone-software/why-did-you-render --save-dev
 
-yarn
-
+# yarn
 yarn add --dev @welldone-software/why-did-you-render
+```
+
 
 ## Create wdyr.js file for configaring why did you render
 

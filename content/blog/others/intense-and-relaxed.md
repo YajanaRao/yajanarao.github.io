@@ -3,6 +3,8 @@ title: "Intense and Relaxed"
 description: "Being Intense and Relaxed is the only way"
 ---
 
+> Intensity has to come with ease, not with tension.
+
 Intense is not tense and relaxity is not laxity.
 
 Being intense and relaxed makes us more perceptive
@@ -15,11 +17,9 @@ It is time you work upon bringing yourself to ease – not only with other peopl
 
 ![Alert and Calm](./intense-and-relaxed.jpeg)
 
-In agitation, everything is distorted. So, being at ease is most important, otherwise you will not experience life the way it is.
+In agitation, everything is distorted. So, being at ease is most important, otherwise you will not experience life the way it is. ~ Sadhguru
 
-- Sadhguru
-
-- Remember to play.
+## Remember to play.
 
 Playfulness, says Sadhguru, has been wrongly equated with irresponsibility. Instead of walking around with a long face, entangled with your own creation, if you are playful with life and in tune with the larger creation, it is the most responsible way to live. If you want to walk the path of devotion, you cannot save yourself – you must burn with passion.
 
