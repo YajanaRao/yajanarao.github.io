@@ -1,4 +1,5 @@
 import * as React from "react";
+import { graphql } from 'gatsby'
 import Layout from "../components/layout";
 
 function About({ data, location }) {
@@ -24,7 +25,7 @@ function About({ data, location }) {
       </p>
       <h3>You can support me via:</h3>
       <div className="flex justify-between items-center">
-        <a href="https://www.buymeacoffee.com/YajanaRao" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style={{ height: 51, width: 217, boxShadow: 0 }} /></a>
+        <a href="https://www.buymeacoffee.com/YajanaRao" target="_blank" style={{ boxShadow: 0 }}><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style={{ height: 51, width: 217 }} /></a>
         <div className="items-center">
           <a href="https://www.patreon.com/bePatron?u=28198536">Become a Patron!</a>
         </div>
