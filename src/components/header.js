@@ -53,10 +53,10 @@ const Header = ({ location, title }) => {
           style={{ marginBottom: rhythm(0.6)}}
         >
           <div className="justify-center flex sm:justify-start">
-            <Link to={`/courses/`}>Courses</Link>
+            <Link to={`/`}>Blogs</Link>
           </div>
           <div className="justify-center flex sm:justify-start">
-            <Link to={`/`}>Blogs</Link>
+            <Link to={`/courses/`}>Courses</Link>
           </div>
           <div className="justify-center flex sm:justify-start">
             <Link to={`/about`}>About</Link>
