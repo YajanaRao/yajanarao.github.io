@@ -1,3 +1,8 @@
+/* ./src/styles/global.css */
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -12,13 +17,4 @@
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
-}
-
-/* Create three equal columns that floats next to each other */
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
 }

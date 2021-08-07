@@ -70,8 +70,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Yajana's Blog`,
+        short_name: `YajanaRao`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -89,5 +89,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-postcss`,
   ],
 };

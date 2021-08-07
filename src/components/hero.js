@@ -38,27 +38,31 @@ const Hero = () => {
 
   return (
     <div
+      className="flex flex-col sm:flex-row"
       style={{
-        display: `flex`,
         marginBottom: rhythm(2.5),
-        justifyContent: "center",
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author.name}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 100,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
+      <div
+        className="justify-center items-center flex"
+      >
+        <Image
+          fixed={data.avatar.childImageSharp.fixed}
+          alt={author.name}
+          style={{
+            marginRight: rhythm(1 / 2),
+            marginBottom: 0,
+            minWidth: 100,
+            borderRadius: `100%`,
+          }}
+          imgStyle={{
+            borderRadius: `50%`,
+          }}
+        />
+      </div>
 
       <div
+        className="justify-center"
         style={{
           justifyContent: "center",
           alignItems: "center",

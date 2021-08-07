@@ -18,10 +18,10 @@ const Courses = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Courses" />
-      <div className="row">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {categories.map((category, index) => {
           return (
-            <article key={index} className="column" style={{ margin: 12 }}>
+            <article key={index}>
               <div className="card">
                 <Link
                   style={{ boxShadow: `none` }}
