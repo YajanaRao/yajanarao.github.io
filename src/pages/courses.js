@@ -6,14 +6,22 @@ import SEO from "../components/seo";
 
 const Courses = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
-  const posts = data.allMarkdownRemark.edges;
-  const categories = [];
-  posts.forEach(({ node }) => {
-    const title = node.frontmatter.categories;
-    if (title && !categories.includes(title)) {
-      categories.push(title);
-    }
-  });
+  const categories = [{
+    title: "C Programming",
+    description: "Beginer concepts related to c programming language",
+    link: "c-programming"
+  },
+  {
+    title: "Javascript",
+    description: "In this course, you'll learn fundamental programming concepts in JavaScript.",
+    link: "javascript"
+  },
+  {
+    title: "SDLC",
+    description: "Software development life cycle",
+    link: "sdlc"
+  }
+  ];
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -22,21 +30,27 @@ const Courses = ({ data, location }) => {
         {categories.map((category, index) => {
           return (
             <article key={index}>
-              <div className="card">
-                <Link
-                  style={{ boxShadow: `none` }}
-                  to={`/categories?${category}`}
-                >
-                  <img
-                    src={"https://source.unsplash.com/random"}
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                  <div className="container">
-                    <h3 style={{ marginTop: 0, marginBottom: 12 }}>
-                      {category}
-                    </h3>
-                  </div>
-                </Link>
+              <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
+
+                <img
+                  className="rounded-t-lg mb-0"
+                  src={`https://source.unsplash.com/1600x900/?${category.link}`}
+                />
+                <div className="px-4 py-6">
+                  <h3
+                    className="text-gray-700 font-bold text-2xl mb-3 hover:text-gray-900 hover:cursor-pointer mt-0"
+                  >
+                    {category.title}
+                  </h3>
+                  <p className="text-gray-700 tracking-wide mb-2">{category.description}</p>
+                  <Link
+                    className="bg-blue-500 hover:shadow-lg transition duration-300 text-white font-bold py-2 px-4 rounded-lg shadow-md "
+                    style={{ boxShadow: `none` }}
+                    to={`/categories?${category.link}`}
+                  >
+                    Visit
+                  </Link>
+                </div>
               </div>
             </article>
           );
@@ -53,25 +67,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: { regex: "/courses/" } }
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-            categories
-          }
-        }
       }
     }
   }

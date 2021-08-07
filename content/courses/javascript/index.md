@@ -1,9 +1,35 @@
 ---
-title: "Javascript"
-category: "Javascript"
+title: "00. Introduction to Javascript"
+categories: javascript
 ---
 
-## Comments
+JavaScript is a scripting language you can use to make web pages interactive. It is one of the core technologies of the web, along with HTML and CSS, and is supported by all modern browsers.
 
-`//` Single line comment
-`/* */` for multi line comment
+### Why Learn JavaScript?
+
+JavaScript is among the most powerful and flexible programming languages of the web. It powers the dynamic behavior on most websites, including this one.
+
+JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+
+**Client-side JavaScript** extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.
+
+**Server-side JavaScript** extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
+
+### JavaScript and the ECMAScript specification
+
+JavaScript is standardized at Ecma International — the European association for standardizing information and communication systems (ECMA was formerly an acronym for the European Computer Manufacturers Association) to deliver a standardized, international programming language based on JavaScript. This standardized version of JavaScript, called ECMAScript, behaves the same way in all applications that support the standard.
+
+ECMAScript 6
+It is the sixth edition of the ECMA-262 standard, and features major changes and improvements to the ECMAScript specification.
+
+This edition of ECMAScript changed its name from ES6 to ES2015 because in 2015 Ecma International decided to switch to annual releases of ECMAScript. Accordingly, Ecma International also started to name new editions of the ECMAScript specification based on the year they are released. In short, ES6 and ES2015 are two different names for the same thing.
+
+
+**Babel**
+A transpiler that can convert ES6 code to ES5 code.
+
+>> Edge and Internet Explorer do not fully support features from the ES6 specification.
+
+## Reference
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction

@@ -62,13 +62,7 @@ const Hero = () => {
       </div>
 
       <div
-        className="justify-center"
-        style={{
-          justifyContent: "center",
-          alignItems: "center",
-          display: "flex",
-          flexDirection: "column",
-        }}
+        className="justify-center items-center flex flex-col"
       >
         <h1
           style={{

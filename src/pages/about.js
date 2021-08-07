@@ -22,6 +22,16 @@ function About({ data, location }) {
           react-track-player
         </a>
       </p>
+      <h3>You can support me via:</h3>
+      <div className="flex justify-between items-center">
+        <a href="https://www.buymeacoffee.com/YajanaRao" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style={{ height: 51, width: 217, boxShadow: 0 }} /></a>
+        <div className="items-center">
+          <a href="https://www.patreon.com/bePatron?u=28198536">Become a Patron!</a>
+        </div>
+        <div>
+          <a href="https://paypal.me/YajanaRao?locale.x=en_GB">Support via Paypal</a>
+        </div>
+      </div>
     </Layout>
   );
 }
