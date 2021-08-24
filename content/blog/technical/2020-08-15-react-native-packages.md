@@ -1,6 +1,7 @@
 ---
 title: "React Native Packages"
-categories: technical-concepts
+date: "2020-08-15T22:40:32.169Z"
+categories: react-native
 ---
 
 ## Input field for phone number based on country code

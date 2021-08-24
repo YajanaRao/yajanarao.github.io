@@ -1,6 +1,7 @@
 ---
 title: "React Native useAsyncStorage hook implementation"
-categories: code-snippet
+date: "2020-08-16T22:40:32.169Z"
+categories: react-native
 ---
 
 ## `useAsyncStorage` Hook Implementation for react native

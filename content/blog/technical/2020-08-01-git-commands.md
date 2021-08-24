@@ -1,5 +1,6 @@
 ---
 title: "git Commands"
+date: "2020-08-01T22:40:32.169Z"
 categories: commands-and-shortcuts
 ---
 

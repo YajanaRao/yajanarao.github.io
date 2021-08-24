@@ -1,5 +1,7 @@
 ---
 title: "Greet user based on time of the day"
+description: "Code snippet to greet user based on the time of the day"
+date: "2020-08-19T22:40:32.169Z"
 categories: code-snippet
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Dual table"
-categories: technical-concepts
+date: "2020-08-01T22:40:32.169Z"
+categories: database
 ---
 
 ## What is DUAL table?

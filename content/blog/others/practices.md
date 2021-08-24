@@ -9,6 +9,22 @@ description: Daily practices for wellbeing
 
 ## Pranayama
 
+- Controlled by autonomous nervous system. Forceful exhale before Inhale is recommended
+
+## Inhale ( Puraka )
+
+- Energizing
+- Excited
+- Fear
+
+## Hold ( Kumbaka )
+
+## Exhale ( Rechaka )
+
+- Relaxing
+- Peace
+- Love
+
 3. Nadi Shuddhi
 
    link: https://youtu.be/q5m6tMjcF8k

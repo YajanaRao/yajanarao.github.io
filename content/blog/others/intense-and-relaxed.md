@@ -1,5 +1,6 @@
 ---
 title: "Intense and Relaxed"
+categories: "spirituality"
 description: "Being Intense and Relaxed is the only way"
 ---
 

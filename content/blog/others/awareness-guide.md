@@ -1,6 +1,7 @@
 ---
 title: Spirituality
 date: "2021-05-28T22:40:32.169Z"
+categories: "meditation"
 description: Effortless focus brings up meditative state
 ---
 

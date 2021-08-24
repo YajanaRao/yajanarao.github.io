@@ -1,6 +1,7 @@
 ---
 title: "How to use multiple github actions in the same computer"
-categories: technical-concepts
+date: "2021-07-13T22:40:32.169Z"
+categories: questions
 ---
 
 ## Problem

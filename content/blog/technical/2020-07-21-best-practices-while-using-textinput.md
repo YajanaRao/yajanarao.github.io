@@ -1,6 +1,8 @@
 ---
 title: "TextInput best practices"
-categories: best-practices
+date: "2020-07-21T22:40:32.169Z"
+description: "React Native TextInput best practices"
+categories: react-native
 ---
 
 ## [Text Input](https://github.com/facebook/react-native-website/blob/master/docs/textinput.md)

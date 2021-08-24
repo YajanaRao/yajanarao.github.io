@@ -3,7 +3,7 @@ module.exports = {
     title: `Yajana Rao`,
     author: {
       name: `Yajana Rao`,
-      summary: `A Software engineer working on React Native`,
+      summary: `A Software engineer, writer and an aspiring Yogi `,
     },
     description: `Personal blog of Yajana Rao`,
     siteUrl: `https://yajanarao.github.io/`,

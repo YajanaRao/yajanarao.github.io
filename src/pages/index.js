@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import * as React from "react";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
@@ -9,33 +9,34 @@ const BlogIndex = ({ data, location }) => {
   const allPosts = data.allMarkdownRemark.edges;
   const siteTitle = data.site.siteMetadata.title;
 
-  const filters = ["All", "Tech", "Others"]
-  const [filter, setFilter] = React.useState("All");
-  const posts = allPosts.filter(({node }) => node.frontmatter.categories === filter.toLocaleLowerCase());
-  console.log(posts);
-
-  const [state, setState] = useState({
-    query: "",
-    filteredData: allPosts,
+  let categories = allPosts.map(({ node }) => node.frontmatter.categories);
+  categories = categories.filter((value, index, self) => {
+    return self.indexOf(value) === index && value !== null;
   });
 
-  const { filteredData } = state;
+  const [query, setQuery] = React.useState("");
+  const [posts, setPosts] = React.useState(allPosts);
+
+
+  function filterPosts() {
+    const filteredData = allPosts.filter((post) => {
+      const { title, categories } = post.node.frontmatter;
+      return (
+        title.toLowerCase().includes(query.toLowerCase()) ||
+        (categories && categories.toLowerCase().includes(query.toLowerCase()))
+      );
+    });
+    setPosts(filteredData);
+  }
 
   const handleChange = (event) => {
     const query = event.target.value;
-    const filteredData = allPosts.filter((post) => {
-      const { title, tags } = post.node.frontmatter;
-
-      return (
-        title.toLowerCase().includes(query.toLowerCase()) ||
-        (tags && tags.join("").toLowerCase().includes(query.toLowerCase()))
-      );
-    });
-    setState({
-      query,
-      filteredData,
-    });
+    setQuery(query);
   };
+
+  React.useEffect(() => {
+    filterPosts();
+  }, [query]);
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -47,32 +48,30 @@ const BlogIndex = ({ data, location }) => {
           name="Search Blogs"
           placeholder="Search Blogs"
           autoFocus
+          value={query}
           onChange={handleChange}
-          style={{
-            width: "100%",
-            padding: "8px 20px",
-            borderRadius: "4px",
-            boxSizing: "border-box",
-            border: "1px solid #ccc",
-          }}
+          className="px-2 py-2 w-full rounded border-gray-300 border-2"
         />
       </div>
       <div
-        className="py-2 my-1 w-3/4 mx-auto flex items-center"
+        className="py-2 my-1 mx-auto flex items-center"
       >
         <div className="w-full text-center mx-auto">
-          {filters.map(text =>
-          (<button
-            onClick={() => { setFilter(text)}}
-            type="button"
-            className={ filter === text ? "mx-1 border-transparent bg-blue-600 px-4 py-1 text-sm shadow-sm font-medium tracking-wider text-blue-100 rounded-full hover:shadow-2xl hover:bg-blue-700" : "mx-1 border-transparent bg-blue-50 px-4 py-1 text-sm shadow-sm font-medium tracking-wider  text-blue-600 rounded-full hover:shadow-2xl hover:bg-blue-100"}
-          >
-            {text}
-          </button>)
+          {categories.map(category =>
+          (
+            <button
+              key={category}
+              onClick={() => { setQuery(category) }}
+              type="button"
+              className={query === category ? "m-1 border-transparent bg-green-600 px-2 py-1 text-sm shadow-sm font-medium tracking-wider text-green-100 rounded-full hover:shadow-2xl hover:bg-green-700" : "m-1 border-transparent bg-green-50 px-2 py-1 text-sm shadow-sm font-medium tracking-wider  text-green-600 rounded-full hover:shadow-2xl hover:bg-green-100"}
+            >
+              {`#${category}`}
+            </button>
+          )
           )}
         </div>
       </div>
-      {filteredData.map(({ node }) => {
+      {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug;
         return (
           <article key={node.fields.slug}>
@@ -124,6 +123,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            categories
             description
           }
         }

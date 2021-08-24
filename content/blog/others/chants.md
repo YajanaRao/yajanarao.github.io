@@ -1,6 +1,6 @@
 ---
 title: "Sanskrit Chants"
-category: "others"
+categories: "spirituality"
 description: "Sanskrit chants"
 ---
 
