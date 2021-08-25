@@ -45,13 +45,9 @@ function About({ data, location }) {
       </p>
       <h3>You can support me via:</h3>
       <div className="flex justify-between items-center">
-        <a href="https://www.buymeacoffee.com/YajanaRao" target="_blank" style={{ boxShadow: "none" }}><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style={{ height: 51, width: 217 }} /></a>
-        <div className="items-center">
-          <a href="https://www.patreon.com/bePatron?u=28198536">Become a Patron!</a>
-        </div>
-        <div>
-          <a href="https://paypal.me/YajanaRao?locale.x=en_GB">Support via Paypal</a>
-        </div>
+        <a href="https://www.buymeacoffee.com/YajanaRao" className="hover:bg-white" target="_blank" style={{ boxShadow: "none" }}><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style={{ height: 51, width: 217 }} /></a>
+        <a href="https://www.patreon.com/bePatron?u=28198536" className="hover:bg-white" target="_blank" style={{ boxShadow: "none" }}><img src="https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white" alt="Become a Patron!" style={{ height: 51, width: 217 }} /></a>
+        <a href="https://paypal.me/YajanaRao?locale.x=en_GB" className="hover:bg-white" target="_blank" style={{ boxShadow: "none" }}><img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="Support via Paypal" style={{ height: 51, width: 217 }} /></a>
       </div>
     </Layout>
   );

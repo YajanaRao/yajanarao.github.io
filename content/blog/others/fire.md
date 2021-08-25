@@ -13,6 +13,7 @@ categories: "finance"
 - Your income should not depend upon you.
 - Income diversification ( Multiple sources of Income )
 
+
 Those seeking to attain FIRE intentionally maximize their savings rate by finding ways to increase income and/or decrease expenses.
 
 ## 50-30-20 Rule:
@@ -36,5 +37,6 @@ Live on bare minimum and save on rest.
 
 > You’re not going to get rich renting out your time. You must own equity - a piece of a business - to gain your financial freedom.
 
+Get paid by the value you bring. Not by the time
 Reference:
 https://twitter.com/naval/status/1002103670400417792?s=20
