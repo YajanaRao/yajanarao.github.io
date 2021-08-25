@@ -31,6 +31,18 @@ function About({ data, location }) {
         </a>
       </p>
       <p>When I am not writing code or working on a blog post, I'm probably spending my time either reading a book or meditating.</p>
+      <h3>👋 Let's talk</h3>
+      <p>
+        Feel free to contact if you have any questions or if you are looking forward to collaborate.
+
+        Here are two most efficient ways to reach me:
+        <ul className="m-8">
+          <li>✉️	<a href="mailto: yajananrao@gmail.com"> yajananrao@gmail.com</a></li>
+          <li>🐦  <a href="https://twitter.com/yajanarao"> twitter/@yajanarao</a></li>
+        </ul>
+
+
+      </p>
       <h3>You can support me via:</h3>
       <div className="flex justify-between items-center">
         <a href="https://www.buymeacoffee.com/YajanaRao" target="_blank" style={{ boxShadow: "none" }}><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style={{ height: 51, width: 217 }} /></a>
