@@ -1,6 +1,6 @@
 ---
 title: "Software Development Lifecycle Introduction"
-categories: SDLC
+categories: sdlc
 ---
 
 # SDLC (Software Development Lifecycle)

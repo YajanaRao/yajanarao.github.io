@@ -2,6 +2,7 @@
 title: "Time Management"
 description: "My time management notes"
 categories: "productivity"
+date: "2020-08-25"
 ---
 
 We own all our time

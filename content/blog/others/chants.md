@@ -1,6 +1,7 @@
 ---
 title: "Sanskrit Chants"
 categories: "spirituality"
+date: "2020-08-25"
 description: "Sanskrit chants"
 ---
 

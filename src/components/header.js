@@ -26,31 +26,32 @@ const Header = ({ location, title }) => {
     return (
       <div
         className="grid sm:grid-cols-2 grid-cols-1"
-        style={{  width: "100%", marginBottom: rhythm(1.5) }}
+        style={{ width: "100%", marginBottom: rhythm(1.5) }}
       >
-        <h3
+        <h2
           style={{
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
             width: "inherit",
             marginBottom: rhythm(0.6)
           }}
+          className="justify-center flex sm:justify-start"
         >
           {!isRoot && (
             <Link
               style={{
                 boxShadow: `none`,
-                color: `inherit`,
               }}
+              className="hover:bg-white hover:text-green-600 text-black"
               to={`/`}
             >
               {title}
             </Link>
           )}
-        </h3>
+        </h2>
         <div
           className="grid grid-cols-3 gap-4"
-          style={{ marginBottom: rhythm(0.6)}}
+          style={{ marginBottom: rhythm(0.6) }}
         >
           <div className="justify-center flex sm:justify-start">
             <Link to={`/`}>Blogs</Link>

@@ -13,7 +13,7 @@ const Courses = ({ data, location }) => {
   },
   {
     title: "Javascript",
-    description: "In this course, you'll learn fundamental programming concepts in JavaScript.",
+    description: "Fundamental programming concepts in JavaScript.",
     link: "javascript"
   },
   {
@@ -44,7 +44,7 @@ const Courses = ({ data, location }) => {
                   </h3>
                   <p className="text-gray-700 tracking-wide mb-2">{category.description}</p>
                   <Link
-                    className="bg-blue-500 hover:shadow-lg transition duration-300 text-white font-bold py-2 px-4 rounded-lg shadow-md "
+                    className="bg-green-600 hover:shadow-lg transition duration-300 text-white font-bold py-2 px-4 rounded-lg shadow-md "
                     style={{ boxShadow: `none` }}
                     to={`/categories?${category.link}`}
                   >

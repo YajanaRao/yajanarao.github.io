@@ -2,3 +2,19 @@
 /* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
+
+::-moz-selection {
+  /* Code for Firefox */
+  /* color: red; */
+  background: #6ee7b7;
+}
+
+::selection {
+  /* color: red; */
+  background: #6ee7b7;
+}
+
+a:hover {
+  color: white;
+  background-color: #059669;
+}

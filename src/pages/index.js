@@ -50,7 +50,7 @@ const BlogIndex = ({ data, location }) => {
           autoFocus
           value={query}
           onChange={handleChange}
-          className="px-2 py-2 w-full rounded border-gray-300 border-2"
+          className="shadow appearance-none w-full py-2 px-3 text-gray-700 leading-tight w-full rounded focus:ring-2 focus:ring-green-600"
         />
       </div>
       <div
