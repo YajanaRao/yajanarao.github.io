@@ -10,7 +10,8 @@ function About({ data, location }) {
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
       <h1>Hi! I am Yajana.</h1>
-      <p>My aspiration is to bring human wellbeing into people lives through Technology and other means. I currently live in Hubli, Karnataka, India 🇮🇳 .   I am a Software enginner, I have been working on developing cross
+      <p>Software Engineer <span className="text-green-600 font-bold text-lg">+</span> Writer <span className="text-green-600 font-bold text-lg">+</span> Aspiring Yogi</p>
+      <p>My aspiration is to bring wellbeing into people lives through Technology and other means. I currently live in Hubli, Karnataka, India 🇮🇳 .   I am a Software enginner, I have been working on developing cross
         platform application using react native for last 3 years. I am currently working at Merahkee Technology Solutions. I have a completed B. Sc in Electronics and Communication.</p>
       <p>Currently I am enthusiastic about:</p>
       <ul className="ml-8">
@@ -38,7 +39,7 @@ function About({ data, location }) {
         Here are two most efficient ways to reach me:
         <ul className="m-8">
           <li>✉️	<a href="mailto: yajananrao@gmail.com"> yajananrao@gmail.com</a></li>
-          <li>🐦  <a href="https://twitter.com/yajanarao"> twitter/@yajanarao</a></li>
+          <li>🐦  <a href="https://twitter.com/yajanarao"> twitter/@YajanaRao</a></li>
         </ul>
 
 
