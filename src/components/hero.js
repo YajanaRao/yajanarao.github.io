@@ -76,7 +76,7 @@ const Hero = () => {
               boxShadow: `none`,
             }}
             to={`/`}
-            className="hover:bg-white hover:text-green-600 text-black"
+            className="hover:bg-white hover:text-green-600"
           >
             {title}
           </Link>
@@ -86,6 +86,7 @@ const Hero = () => {
             textAlign: "center",
             marginBottom: 0,
           }}
+          className="text-black dark:text-white"
         >
           {author.summary}
         </p>

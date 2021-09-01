@@ -1,6 +1,6 @@
 ---
 title: "Coding best practices"
-date: "2020-08-01T22:40:32.169Z"
+date: "2021-08-01T22:40:32.169Z"
 categories: best-practices
 ---
 ## Be consistence with your editor

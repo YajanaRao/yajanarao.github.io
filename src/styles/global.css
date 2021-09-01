@@ -18,3 +18,8 @@ a:hover {
   color: white;
   background-color: #059669;
 }
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #48bb78;
+}

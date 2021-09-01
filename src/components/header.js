@@ -22,6 +22,33 @@ const Header = ({ location, title }) => {
     }
   }
 
+  function toggleTheme() {
+    if (localStorage.theme === "dark") {
+      // Whenever the user explicitly chooses light mode
+      localStorage.theme = "light";
+      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.add("light");
+    } else {
+      // Whenever the user explicitly chooses dark mode
+      localStorage.theme = "dark";
+      document.documentElement.classList.remove("light");
+      document.documentElement.classList.add("dark");
+    }
+  }
+
+  React.useEffect(() => {
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
+
   function AppBar() {
     return (
       <div
@@ -33,7 +60,7 @@ const Header = ({ location, title }) => {
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
             width: "inherit",
-            marginBottom: rhythm(0.6)
+            marginBottom: rhythm(0.6),
           }}
           className="justify-center flex sm:justify-start"
         >
@@ -42,7 +69,7 @@ const Header = ({ location, title }) => {
               style={{
                 boxShadow: `none`,
               }}
-              className="hover:bg-white hover:text-green-600 text-black"
+              className="hover:bg-white hover:text-green-600 text-black dark:text-white dark:hover:bg-black"
               to={`/`}
             >
               {title}
@@ -50,17 +77,35 @@ const Header = ({ location, title }) => {
           )}
         </h2>
         <div
-          className="grid grid-cols-3 gap-4"
+          className="grid grid-cols-4 gap-4"
           style={{ marginBottom: rhythm(0.6) }}
         >
           <div className="justify-center flex sm:justify-start">
-            <Link to={`/`}>Blogs</Link>
+            <Link to={`/`} className="h-6">Blogs</Link>
           </div>
           <div className="justify-center flex sm:justify-start">
-            <Link to={`/courses/`}>Courses</Link>
+            <Link to={`/courses/`} className="h-6">Courses</Link>
           </div>
           <div className="justify-center flex sm:justify-start">
-            <Link to={`/about`}>About</Link>
+            <Link to={`/about`} className="h-6">
+              About
+            </Link>
+          </div>
+          <div className="justify-center flex sm:justify-start">
+            <div class="flex items-center justify-center w-full mb-12">
+              <label className="flex items-center cursor-pointer">
+                <div className="relative">
+                  <input
+                    type="checkbox"
+                    id="toggleB"
+                    className="sr-only"
+                    onClick={toggleTheme}
+                  />
+                  <div className="block bg-gray-600 w-14 h-8 rounded-full"></div>
+                  <div className="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                </div>
+              </label>
+            </div>
           </div>
         </div>
       </div>
