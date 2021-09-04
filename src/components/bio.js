@@ -56,7 +56,9 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
+      <p 
+      className="text-black dark:text-white"
+      >
         Personal blog by{" "}
         <a href={`https://twitter.com/${social.twitter}`}>
           <strong>{author.name}</strong>

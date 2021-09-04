@@ -17,7 +17,6 @@ const BlogIndex = ({ data, location }) => {
   const [query, setQuery] = React.useState("");
   const [posts, setPosts] = React.useState(allPosts);
 
-
   function filterPosts() {
     const filteredData = allPosts.filter((post) => {
       const { title, categories } = post.node.frontmatter;
@@ -53,22 +52,24 @@ const BlogIndex = ({ data, location }) => {
           className="shadow appearance-none w-full py-2 px-3 text-gray-700 leading-tight w-full rounded focus:ring-2 focus:ring-green-600"
         />
       </div>
-      <div
-        className="py-2 my-1 mx-auto flex items-center"
-      >
+      <div className="py-2 my-1 mx-auto flex items-center">
         <div className="w-full text-center mx-auto">
-          {categories.map(category =>
-          (
+          {categories.map((category) => (
             <button
               key={category}
-              onClick={() => { setQuery(category) }}
+              onClick={() => {
+                setQuery(category);
+              }}
               type="button"
-              className={query === category ? "m-1 border-transparent bg-green-600 px-2 py-1 text-sm shadow-sm font-medium tracking-wider text-green-100 rounded-full hover:shadow-2xl hover:bg-green-700" : "m-1 border-transparent bg-green-50 px-2 py-1 text-sm shadow-sm font-medium tracking-wider  text-green-600 rounded-full hover:shadow-2xl hover:bg-green-100"}
+              className={
+                query === category
+                  ? "m-1 border-transparent bg-green-600 px-2 py-1 text-sm shadow-sm font-medium tracking-wider text-green-100 rounded-full hover:shadow-2xl hover:bg-green-700"
+                  : "m-1 border-transparent bg-green-50 px-2 py-1 text-sm shadow-sm font-medium tracking-wider  text-green-600 rounded-full hover:shadow-2xl hover:bg-green-100"
+              }
             >
               {`#${category}`}
             </button>
-          )
-          )}
+          ))}
         </div>
       </div>
       {posts.map(({ node }) => {
@@ -85,13 +86,16 @@ const BlogIndex = ({ data, location }) => {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small className="text-gray-800 dark:text-gray-300">
+                {node.frontmatter.date}
+              </small>
             </header>
             <section>
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
+                className="text-black dark:text-white"
               />
             </section>
           </article>
