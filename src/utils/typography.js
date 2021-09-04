@@ -9,7 +9,7 @@ Wordpress2016.overrideThemeStyles = () => {
     "a": {
       color: '#059669',
       transition: 'all 0.3s'
-    }
+    },
   };
 };
 
