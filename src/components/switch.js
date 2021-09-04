@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Switch = () => {
+const Switch = React.memo(() => {
     const [theme, setTheme] = React.useState("light")
     function toggleTheme() {
         if (localStorage.theme === "dark") {
@@ -49,7 +49,7 @@ const Switch = () => {
             </label>
         </div>
     );
-}
+})
 
 
 export default Switch;
