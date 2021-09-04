@@ -10,8 +10,9 @@ function About({ data, location }) {
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
       <h1>Hi! I am Yajana.</h1>
-      <p>My aspiration is to bring human wellbeing into people lives through Technology and other means. I currently live in Hubli, Karnataka, India 🇮🇳 .   I am a Software enginner, I have been working on developing cross
+      <p>My aspiration is to bring human wellbeing into people lives through Technology and other means.  I currently live in Hubli, Karnataka, India 🇮🇳 .   I am a Software enginner, I have been working on developing cross
         platform application using react native for last 3 years. I am currently working at Merahkee Technology Solutions. I have a completed B. Sc in Electronics and Communication.</p>
+      <p> I created this website as a place to document my journey as I learn new things and share them with you.</p>
       <p>Currently I am enthusiastic about:</p>
       <ul className="ml-8">
         <li>React Native</li>
