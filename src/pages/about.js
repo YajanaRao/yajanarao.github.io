@@ -36,13 +36,18 @@ function About({ data, location }) {
       <p className="text-black dark:text-white">
         I have created and contributed to few open source project. Major ones
         are
-        <a className="mx-1" href="https://github.com/YajanaRao/Serenity">
+        <a
+          target="_blank"
+          className="mx-1"
+          href="https://github.com/YajanaRao/Serenity"
+        >
           Serenity Music Player
         </a>
         and
         <a
+          target="_blank"
           className="mx-1"
-          href="https://github.com/YajanaRao/react-track-player"
+          href="https://www.npmjs.com/package/react-track-player"
         >
           react-track-player
         </a>
@@ -68,7 +73,6 @@ function About({ data, location }) {
       <div className="flex justify-between items-center">
         <a
           href="https://www.buymeacoffee.com/YajanaRao"
-          className="hover:bg-white"
           target="_blank"
           style={{ boxShadow: "none" }}
         >
@@ -80,7 +84,6 @@ function About({ data, location }) {
         </a>
         <a
           href="https://www.patreon.com/bePatron?u=28198536"
-          className="hover:bg-white"
           target="_blank"
           style={{ boxShadow: "none" }}
         >
@@ -92,7 +95,6 @@ function About({ data, location }) {
         </a>
         <a
           href="https://paypal.me/YajanaRao?locale.x=en_GB"
-          className="hover:bg-white"
           target="_blank"
           style={{ boxShadow: "none" }}
         >

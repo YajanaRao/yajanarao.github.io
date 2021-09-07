@@ -69,7 +69,7 @@ const Header = ({ location, title }) => {
               style={{
                 boxShadow: `none`,
               }}
-              className="hover:bg-white hover:text-green-600 text-black dark:text-white dark:hover:bg-black"
+              className="text-black dark:text-white"
               to={`/`}
             >
               {title}

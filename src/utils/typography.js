@@ -7,8 +7,7 @@ Wordpress2016.overrideThemeStyles = () => {
       boxShadow: `none`,
     },
     "a": {
-      color: '#059669',
-      transition: 'all 0.3s'
+      color: '#059669'
     }
   };
 };

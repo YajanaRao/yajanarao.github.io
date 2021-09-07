@@ -14,10 +14,6 @@
   background: #6ee7b7;
 }
 
-a:hover {
-  color: white;
-  background-color: #059669;
-}
 
 input:checked ~ .dot {
   transform: translateX(100%);

@@ -76,7 +76,6 @@ const Hero = () => {
               boxShadow: `none`,
             }}
             to={`/`}
-            className="hover:bg-white hover:text-green-600"
           >
             {title}
           </Link>
