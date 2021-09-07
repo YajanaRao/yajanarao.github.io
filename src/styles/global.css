@@ -14,8 +14,11 @@
   background: #6ee7b7;
 }
 
-
 input:checked ~ .dot {
   transform: translateX(100%);
   background-color: #48bb78;
+}
+
+blockquote {
+  @apply text-gray-700 dark:text-gray-400;
 }

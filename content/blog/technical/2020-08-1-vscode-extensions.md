@@ -1,7 +1,7 @@
 ---
 title: "Shortcuts and Fonts in VSCode"
 description: "Visual studio code shortcuts and fonts"
-date: "2021-08-24T22:40:32.169Z"
+date: "2020-08-24"
 categories: vscode
 ---
 

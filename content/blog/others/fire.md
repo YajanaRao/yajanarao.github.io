@@ -13,7 +13,6 @@ categories: "finance"
 - Your income should not depend upon you.
 - Income diversification ( Multiple sources of Income )
 
-
 Those seeking to attain FIRE intentionally maximize their savings rate by finding ways to increase income and/or decrease expenses.
 
 ## 50-30-20 Rule:

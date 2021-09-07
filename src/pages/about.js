@@ -24,6 +24,7 @@ function About({ data, location }) {
         at Merahkee Technology Solutions. I have a completed B. Sc in
         Electronics and Communication.
       </p>
+      <p className="text-black dark:text-white"> I created this website as a place to document my journey as I learn new things and share them with you.</p>
       <p className="text-black dark:text-white">
         Currently I am enthusiastic about:
       </p>

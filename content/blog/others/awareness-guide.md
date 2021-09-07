@@ -5,8 +5,6 @@ categories: "meditation"
 description: Effortless focus brings up meditative state
 ---
 
-# Spirituality
-
 About not doing anything or absolute nothing will show the real awareness.
 
 Awareness is nothing (no-thing).
