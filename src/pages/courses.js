@@ -9,32 +9,34 @@ const Courses = ({ data, location }) => {
   const categories = [{
     title: "C Programming",
     description: "Beginer concepts related to c programming language",
-    link: "c-programming"
+    link: "c-programming",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIB9RGGmBt2PonMbyOzZFHmLOzymmouBi11g&usqp=CAU"
   },
   {
     title: "Javascript",
     description: "Fundamental programming concepts in JavaScript.",
-    link: "javascript"
+    link: "javascript",
+    image: "https://usefulangle.com/img/thumb/javascript.png"
   },
   {
     title: "SDLC",
     description: "Software development life cycle",
-    link: "sdlc"
+    link: "sdlc",
+    image: "https://bleuwire.com/wp-content/uploads/2020/02/software-development-life-cycle-sdlc.png"
   }
   ];
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Courses" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 min-h-screen">
         {categories.map((category, index) => {
           return (
             <article key={index}>
-              <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-
+              <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg"> 
                 <img
-                  className="rounded-t-lg mb-0"
-                  src={`https://source.unsplash.com/1600x900/?${category.link}`}
+                  className="rounded-t-lg mb-0 min-h-60"
+                  src={category.image}
                 />
                 <div className="px-4 py-6">
                   <h3
