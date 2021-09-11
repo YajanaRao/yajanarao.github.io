@@ -1,6 +1,31 @@
 import React from 'react';
+// import sun from '../sun';
+// import moon from '../moon';
+import Toggle from './Toggle/Toggle';
+import { useStaticQuery, graphql } from 'gatsby';
+import Image from "gatsby-image";
 
 const Switch = React.memo(() => {
+
+    const data = useStaticQuery(graphql`
+    query SwitchQuery {
+      moon: file(absolutePath: { regex: "/switch/moon.png/" }) {
+        childImageSharp {
+          fixed(width: 16, height: 16) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      sun: file(absolutePath: { regex: "/switch/sun.png/" }) {
+        childImageSharp {
+          fixed(width: 16, height: 16) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `);
+
     const [theme, setTheme] = React.useState("light")
     function toggleTheme() {
         if (localStorage.theme === "dark") {
@@ -32,23 +57,36 @@ const Switch = React.memo(() => {
     }, []);
 
     return (
-        <div className="flex items-center justify-center w-full mb-12">
-            <label className="flex items-center cursor-pointer">
-                <div className="relative">
-                    <input
-                        type="checkbox"
-                        id="toggleB"
-                        className="sr-only"
-                        onChange={toggleTheme}
-                        checked={theme === "dark"}
-                        aria-label="Switch between Dark and Light mode"
-                    />
-                    <div className="block bg-gray-600 w-14 h-8 rounded-full"></div>
-                    <div className="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
-                </div>
-            </label>
+        <div style={{ height: 24 }}>
+            <Toggle
+                icons={{
+                    checked: (
+                        <Image
+                            fixed={data.moon.childImageSharp.fixed}
+                            alt={"moon"}
+                            style={{
+                                pointerEvents: "none",
+                            }}
+                            role="presentation"
+
+                        />
+                    ),
+                    unchecked: (
+                        <Image
+                            fixed={data.sun.childImageSharp.fixed}
+                            alt={"sun"}
+                            role="presentation"
+                            style={{
+                                pointerEvents: "none"
+                            }}
+                        />
+                    ),
+                }}
+                checked={theme === "dark"}
+                onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
+            />
         </div>
-    );
+    )
 })
 
 

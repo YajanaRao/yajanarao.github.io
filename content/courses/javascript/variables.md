@@ -55,14 +55,15 @@ The `+` and `*` symbols are called operators. When operators appear together wit
 
 #### Special numbers
 
-**Infinity**
+- **Infinity**
+
 The first two are Infinity and -Infinity, which represent the positive and negative infinities.
 
-**NaN**
+- **NaN**
 
 NaN stands for “not a number”, even though it is a value of the number type.
 
-When you try to calculate 0 / 0 (zero divided by zero), Infinity - Infinity, or any number of other numeric operations you will be NaN.
+When you try to calculate `0 / 0` (zero divided by zero), `Infinity - Infinity`, or any number of other numeric operations you will be NaN.
 
 ## Strings
 
@@ -114,18 +115,93 @@ There are two special values, written null and undefined, that are used to denot
 
 The logical operators && and || handle values of different types in a peculiar way. They will convert the value on their left side to Boolean type in order to decide what to do, but depending on the operator and the result of that conversion, they will return either the original left-hand value or the right-hand value.
 
-`||` operator:
+#### Type coercion
+
+`true` and `false` are Boolean values. To coerce a value into a boolean means to take any value that is NOT true or false and try to convert it to either of those. In JavaScript, you can easily check what the outcome of any value is when coerced into a Boolean by typing: `Boolean(value)`.
+
+```js
+Boolean("Hello");
+// true
+Boolean("");
+// false
+Boolean([]);
+// true
+Boolean({});
+// true
+Boolean(undefined);
+// false
+Boolean(null);
+// false
+Boolean(42);
+// true
+Boolean(0);
+// false
+```
+
+You can see that some values evaluate to true and others to false. These values are usually called **truthy** and **falsy** values.
+
+#### `||` operator:
 
 will return the value to its left when that can be converted to true and will return the value on its right otherwise.
 
 ```js
 console.log(null || "user");
-// → user
+// user
 console.log("Agnes" || "user");
-// → Agnes
+// Agnes
+console.log(false || false || true);
+// true
 ```
 
-The rules for converting strings and numbers to Boolean values state that 0, NaN, and the empty string ("") count as false, while all the other values count as true.
+Practical application:
+
+```js
+let userIsLoggedIn = true;
+function greet() {
+  return "Welcome user!";
+}
+userIsLoggedIn && greet();
+// "Welcome user!"
+
+if (userIsLoggedIn) {
+  greet();
+}
+```
+
+In React application:
+
+```jsx
+function App({ name }) {
+  return <div>{name && <h1>Hello ${name}</h1>}</div>;
+}
+```
+
+Examples of expressions that can be converted to false are:
+
+- null;
+- NaN;
+- 0;
+- empty string ("" or '' or ``);
+- undefined.
+
+while all the other values count as true.
+
+#### Logical AND (&&) operator:
+
+In a chain of &&s, each value will be evaluated from left to right. If any of these values happen to be falsy, that value will be returned and the chain will not continue.
+
+```js
+console.log("user" && "");
+// ""
+console.log("Agnes" && "user");
+// user
+console.log("Agnes" && true && "user");
+// user
+console.log("Agnes" && undefined && "user");
+// undefined
+console.log("Agnes" && false && "user");
+// false
+```
 
 ## Data types
 
@@ -135,14 +211,9 @@ Javascript provides eight different data types which are
 2. `null`
 3. `boolean`
 4. `string`
-
-Example "12", "Hello world", "123 Cats"
-
 5. `symbol`
 6. `bigint`
 7. `number`
-
-Example 12, 1, 100 8. `object`.
 
 We tell JavaScript to create or declare a variable by putting the keyword var in front of it, like so:
 
@@ -178,10 +249,18 @@ when we create a variable using var we see it in global context and for let and 
 
 closes function along with lexical scope
 
+## Summary
+
+We looked at four types of JavaScript values in this chapter: numbers, strings, Booleans, and undefined values.
+
+Such values are created by typing in their name (true, null) or value (13, "abc"). You can combine and transform values with operators. We saw binary operators for arithmetic (+, -, \*, /, and %), string concatenation (+), comparison (==, !=, ===, !==, <, >, <=, >=), and logic (&&, ||), as well as several unary operators (- to negate a number, ! to negate logically, and typeof to find a value’s type) and a ternary operator (?:) to pick one of two values based on a third value.
+
 ## Reference:
 
-https://www.freecodecamp.org/news/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5/
+- https://www.freecodecamp.org/news/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5/
 
-https://github.com/lydiahallie/javascript-questions
+- https://github.com/lydiahallie/javascript-questions
 
-https://eloquentjavascript.net/01_values.html
+- https://eloquentjavascript.net/01_values.html
+
+- https://medium.com/@nicolasmarcora/mastering-javascripts-and-logical-operators-fd619b905c8f

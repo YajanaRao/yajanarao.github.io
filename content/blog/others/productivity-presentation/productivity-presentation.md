@@ -1,6 +1,6 @@
 ---
 title: "Productivity"
-description: "All about being productive"
+description: "A detailed notes of being productive"
 date: "2021-08-25"
 categories: "productivity"
 ---
