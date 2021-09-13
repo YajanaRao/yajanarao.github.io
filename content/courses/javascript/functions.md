@@ -1,0 +1,64 @@
+How functions are used
+
+## Mapping
+
+Functions map input arguments to return values, meaning that for each set of inputs, there exists an output. A function will take the inputs and return the corresponding output.
+procedures
+i/o˝
+
+pure functions has no side effects
+
+given same input produces same output
+
+Not pure functions
+
+Dependent on time
+random numbers
+
+## What is Functional Programming
+
+## Higher order functions
+
+Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.
+
+Higher-order functions allow us to abstract over actions, not just values.
+
+```js
+function greaterThan(n) {
+  return (m) => m > n;
+}
+
+// detailed version
+function lesserThan(n) {
+  return function (m) {
+    return m < n;
+  };
+}
+let greaterThan10 = greaterThan(10);
+let lesserThan10 = lesserThan(10);
+
+console.log(greaterThan10(11), lesserThan10(11));
+// true false
+console.log(greaterThan10(9), lesserThan10(9));
+// false true
+```
+
+## Higher order components (HOC's)
+
+```js
+//withdLoading.js
+import React from "react";
+function WithLoading(Component) {
+  return function WihLoadingComponent({ isLoading, ...props }) {
+    if (!isLoading) return <Component {...props} />;
+    return <p>Hold on, fetching data might take some time.</p>;
+  };
+}
+export default WithLoading;
+
+const Welcome = WithLoading(<h1>Hello world</h1>);
+```
+
+### References:
+
+- https://www.smashingmagazine.com/2020/06/higher-order-components-react/

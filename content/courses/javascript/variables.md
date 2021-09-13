@@ -203,6 +203,13 @@ console.log("Agnes" && false && "user");
 // false
 ```
 
+## Null safety operator ( ? ):
+
+?. is a null safety operator, returns undefined if property is non-existent.
+
+```js
+const univ = { college: { stream: 'BSc' }};
+result = univ?.college?.stream?.year
 ## Data types
 
 Javascript provides eight different data types which are
