@@ -74,7 +74,7 @@ However, when we use the `===` operator, both value _and_ type should be the sam
 </p>
 </details>
 
-### 10. What happens when we do this?
+### What happens when we do this?
 
 ```javascript
 function bark() {
@@ -139,7 +139,7 @@ console.log(values.city);
 
 The two main ways to access properties in JavaScript are with a dot and with square brackets. Both value.x and value[x] access a property on value—but not necessarily the same property. The difference is in how x is interpreted. When using a dot, the word after the dot is the literal name of the property. When using square brackets, the expression between the brackets is evaluated to get the property name.
 
-### 5. Which one is true?
+### Which one is true?
 
 ```javascript
 const bird = {
@@ -195,7 +195,7 @@ console.log(sequence);
 
 ---
 
-###### 136. Which of the following will modify the `person` object?
+### Which of the following will modify the `person` object?
 
 ```javascript
 const person = { name: "Lydia Hallie" };
@@ -222,7 +222,7 @@ However, you can still modify the value of existing properties.
 
 ---
 
-###### 137. Which of the following will modify the `person` object?
+### Which of the following will modify the `person` object?
 
 ```javascript
 const person = {
@@ -384,7 +384,7 @@ score.visitors = 1;
 score = { visitors: 1, home: 1 };
 ```
 
-### 6. What's the output?
+### What's the output?
 
 ```javascript
 let c = { greeting: "Hey!" };
@@ -454,7 +454,7 @@ Sometimes you want to add new properties (or methods) to an object constructor.
 
 ---
 
-### 14. All object have prototypes.
+### All object have prototypes.
 
 - A: true
 - B: false
@@ -493,7 +493,7 @@ myFather.nationality;
 
 ---
 
-### 11. What's the output?
+### What's the output?
 
 ```javascript
 function Person(firstName, lastName) {
@@ -535,7 +535,7 @@ Person.prototype.getFullName = function () {
 
 ---
 
-###### 28. What's the output?
+### What's the output?
 
 ```javascript
 String.prototype.giveLydiaPizza = () => {
@@ -568,7 +568,7 @@ name.giveLydiaPizza();
 
 ---
 
-###### 60. What's the output?
+### What's the output?
 
 ```javascript
 const user = { name: "Lydia", age: 21 };
@@ -598,7 +598,7 @@ It's possible to combine objects using the spread operator `...`. It lets you cr
 
 ---
 
-###### 94. What's the output?
+### What's the output?
 
 ```javascript
 function getItems(fruitList, ...args, favoriteFruit) {
