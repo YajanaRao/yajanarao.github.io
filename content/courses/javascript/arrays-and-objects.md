@@ -4,9 +4,7 @@ categories: javascript
 description: "Understanding objects and arrays in javascript"
 ---
 
----
-
-### 39. Everything in JavaScript is either a...
+### Everything in JavaScript is either a...
 
 - A: primitive or object
 - B: function or object
@@ -29,98 +27,6 @@ What differentiates a primitive from an object is that primitives do not have an
 
 ---
 
-## Arrays
-
-JavaScript provides a data type specifically for storing sequences of values. It is called an array and is written as a list of values between square brackets, separated by commas.
-
-```js
-let listOfNumbers = [2, 3, 5, 7, 11];
-console.log(listOfNumbers[2]);
-// → 5
-console.log(listOfNumbers[0]);
-// → 2
-console.log(listOfNumbers[2 - 1]);
-// → 3
-```
-
----
-
-### 59. What's the output?
-
-```javascript
-const numbers = [1, 2, 3, 4, 5];
-const [y] = numbers;
-
-console.log(y);
-```
-
-- A: `[[1, 2, 3, 4, 5]]`
-- B: `[1, 2, 3, 4, 5]`
-- C: `1`
-- D: `[1]`
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-#### Answer: C
-
-We can unpack values from arrays or properties from objects through destructuring. For example:
-
-```javascript
-[a, b] = [1, 2];
-```
-
-<img src="https://i.imgur.com/ADFpVop.png" width="200">
-
-The value of `a` is now `1`, and the value of `b` is now `2`. What we actually did in the question, is:
-
-```javascript
-[y] = [1, 2, 3, 4, 5];
-```
-
-<img src="https://i.imgur.com/NzGkMNk.png" width="200">
-
-This means that the value of `y` is equal to the first value in the array, which is the number `1`. When we log `y`, `1` is returned.
-
-</p>
-</details>
-
----
-
-### 29. What's the output?
-
-```javascript
-const a = {};
-const b = { key: "b" };
-const c = { key: "c" };
-
-a[b] = 123;
-a[c] = 456;
-
-console.log(a[b]);
-```
-
-- A: `123`
-- B: `456`
-- C: `undefined`
-- D: `ReferenceError`
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-#### Answer: B
-
-Object keys are automatically converted into strings. We are trying to set an object as a key to object `a`, with the value of `123`.
-
-However, when we stringify an object, it becomes `"[object Object]"`. So what we are saying here, is that `a["[object Object]"] = 123`. Then, we can try to do the same again. `c` is another object that we are implicitly stringifying. So then, `a["[object Object]"] = 456`.
-
-Then, we log `a[b]`, which is actually `a["[object Object]"]`. We just set that to `456`, so it returns `456`.
-
-</p>
-</details>
-
----
-
 ## Objects
 
 In JavaScript, almost "everything" is an object.
@@ -137,7 +43,7 @@ In JavaScript, almost "everything" is an object.
 
 Objects are Variables
 
-### 7. What's the output?
+### What's the output?
 
 ```javascript
 let a = 3;
@@ -342,6 +248,98 @@ Object.freeze(person);
 The `Object.freeze` method _freezes_ an object. No properties can be added, modified, or removed.
 
 However, it only _shallowly_ freezes the object, meaning that only _direct_ properties on the object are frozen. If the property is another object, like `address` in this case, the properties on that object aren't frozen, and can be modified.
+
+</p>
+</details>
+
+---
+
+## Arrays
+
+JavaScript provides a data type specifically for storing sequences of values. It is called an array and is written as a list of values between square brackets, separated by commas.
+
+```js
+let listOfNumbers = [2, 3, 5, 7, 11];
+console.log(listOfNumbers[2]);
+// → 5
+console.log(listOfNumbers[0]);
+// → 2
+console.log(listOfNumbers[2 - 1]);
+// → 3
+```
+
+---
+
+### What's the output?
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const [y] = numbers;
+
+console.log(y);
+```
+
+- A: `[[1, 2, 3, 4, 5]]`
+- B: `[1, 2, 3, 4, 5]`
+- C: `1`
+- D: `[1]`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+We can unpack values from arrays or properties from objects through destructuring. For example:
+
+```javascript
+[a, b] = [1, 2];
+```
+
+<img src="https://i.imgur.com/ADFpVop.png" width="200">
+
+The value of `a` is now `1`, and the value of `b` is now `2`. What we actually did in the question, is:
+
+```javascript
+[y] = [1, 2, 3, 4, 5];
+```
+
+<img src="https://i.imgur.com/NzGkMNk.png" width="200">
+
+This means that the value of `y` is equal to the first value in the array, which is the number `1`. When we log `y`, `1` is returned.
+
+</p>
+</details>
+
+---
+
+### What's the output?
+
+```javascript
+const a = {};
+const b = { key: "b" };
+const c = { key: "c" };
+
+a[b] = 123;
+a[c] = 456;
+
+console.log(a[b]);
+```
+
+- A: `123`
+- B: `456`
+- C: `undefined`
+- D: `ReferenceError`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: B
+
+Object keys are automatically converted into strings. We are trying to set an object as a key to object `a`, with the value of `123`.
+
+However, when we stringify an object, it becomes `"[object Object]"`. So what we are saying here, is that `a["[object Object]"] = 123`. Then, we can try to do the same again. `c` is another object that we are implicitly stringifying. So then, `a["[object Object]"] = 456`.
+
+Then, we log `a[b]`, which is actually `a["[object Object]"]`. We just set that to `456`, so it returns `456`.
 
 </p>
 </details>
@@ -657,5 +655,7 @@ When such a function is called, the rest parameter is bound to an array containi
 ## References:
 
 - https://developer.mozilla.org/en-US/docs/Glossary/Mutable
+
+- https://github.com/lydiahallie/javascript-questions/blob/master/README.md
 
 - http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D
