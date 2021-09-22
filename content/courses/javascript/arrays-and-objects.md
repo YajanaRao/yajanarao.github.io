@@ -4,29 +4,6 @@ categories: javascript
 description: "Understanding objects and arrays in javascript"
 ---
 
-### Everything in JavaScript is either a...
-
-- A: primitive or object
-- B: function or object
-- C: trick question! only objects
-- D: number or object
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-#### Answer: A
-
-JavaScript only has primitive types and objects.
-
-Primitive types are `boolean`, `null`, `undefined`, `bigint`, `number`, `string`, and `symbol`.
-
-What differentiates a primitive from an object is that primitives do not have any properties or methods; however, you'll note that `'foo'.toUpperCase()` evaluates to `'FOO'` and does not result in a `TypeError`. This is because when you try to access a property or method on a primitive like a string, JavaScript will implicitly wrap the primitive type using one of the wrapper classes, i.e. `String`, and then immediately discard the wrapper after the expression evaluates. All primitives except for `null` and `undefined` exhibit this behaviour.
-
-</p>
-</details>
-
----
-
 ## Objects
 
 In JavaScript, almost "everything" is an object.
@@ -40,66 +17,6 @@ In JavaScript, almost "everything" is an object.
 - Arrays are always objects
 - Functions are always objects
 - Objects are always objects
-
-Objects are Variables
-
-### What's the output?
-
-```javascript
-let a = 3;
-let b = new Number(3);
-let c = 3;
-
-console.log(a == b);
-console.log(a === b);
-console.log(b === c);
-```
-
-- A: `true` `false` `true`
-- B: `false` `false` `true`
-- C: `true` `false` `false`
-- D: `false` `true` `true`
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-#### Answer: C
-
-`new Number()` is a built-in function constructor. Although it looks like a number, it's not really a number: it has a bunch of extra features and is an object.
-
-When we use the `==` operator, it only checks whether it has the same _value_. They both have the value of `3`, so it returns `true`.
-
-However, when we use the `===` operator, both value _and_ type should be the same. It's not: `new Number()` is not a number, it's an **object**. Both return `false.`
-
-</p>
-</details>
-
-### What happens when we do this?
-
-```javascript
-function bark() {
-  console.log("Woof!");
-}
-
-bark.animal = "dog";
-```
-
-- A: Nothing, this is totally fine!
-- B: `SyntaxError`. You cannot add properties to a function this way.
-- C: `"Woof"` gets logged.
-- D: `ReferenceError`
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-#### Answer: A
-
-This is possible in JavaScript, because functions are objects! (Everything besides primitive types are objects)
-
-A function is a special type of object. The code you write yourself isn't the actual function. The function is an object with properties. This property is invocable.
-
-</p>
-</details>
 
 Object values are written as name : value pairs (name and value separated by a colon).
 
@@ -139,6 +56,246 @@ console.log(values.city);
 
 The two main ways to access properties in JavaScript are with a dot and with square brackets. Both value.x and value[x] access a property on value—but not necessarily the same property. The difference is in how x is interpreted. When using a dot, the word after the dot is the literal name of the property. When using square brackets, the expression between the brackets is evaluated to get the property name.
 
+## Methods
+
+Methods are actions that can be performed on objects.
+
+Object properties can be both primitive values, other objects, and functions.
+
+An object method is an object property containing a function definition.
+
+```js
+let sequence = [1, 2, 3];
+sequence.push(4);
+sequence.push(5);
+console.log(sequence);
+// → [1, 2, 3, 4, 5]
+console.log(sequence.pop());
+// → 5
+console.log(sequence);
+// → [1, 2, 3, 4]
+```
+
+## Arrays
+
+JavaScript provides a data type specifically for storing sequences of values. It is called an array and is written as a list of values between square brackets, separated by commas.
+
+```js
+let listOfNumbers = [2, 3, 5, 7, 11];
+console.log(listOfNumbers[2]);
+// → 5
+console.log(listOfNumbers[0]);
+// → 2
+console.log(listOfNumbers[2 - 1]);
+// → 3
+```
+
+## Mutability
+
+Mutable is a type of variable that can be changed. In JavaScript, only objects and arrays are mutable, not primitive values.
+
+You can make a variable name point to a new value, but the previous value is still held in memory.
+
+A **mutable object** is an object whose state can be modified after it is created.
+
+**Immutables** are the objects whose state cannot be changed once the object is created.
+
+**Strings** and **Numbers** are Immutable. Lets understand this with an example:
+
+```js
+var immutableString = "Hello";
+
+// In the above code, a new object with string value is created.
+
+immutableString = immutableString + "World";
+
+// We are now appending "World" to the existing value.
+```
+
+On appending the "immutableString" with a string value, following events occur:
+
+1. Existing value of "immutableString" is retrieved
+2. "World" is appended to the existing value of "immutableString"
+3. The resultant value is then allocated to a new block of memory
+4. "immutableString" object now points to the newly created memory space
+5. Previously created memory space is now available for garbage collection.
+
+```js
+const score = { visitors: 0, home: 0 };
+// This is okay
+score.visitors = 1;
+// This isn't allowed
+score = { visitors: 1, home: 1 };
+```
+
+## JavaScript Object Prototypes
+
+All JavaScript objects inherit properties and methods from a prototype.
+
+```js
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+Person.nationality = "English";
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+
+// you can not add a new property to an existing object constructor:
+myFather.nationality;
+// undefined
+```
+
+`Date` objects inherit from `Date.prototype`
+`Array` objects inherit from `Array.prototype`
+`Person` objects inherit from `Person.prototype`
+The `Object.prototype` is on the top of the prototype inheritance chain:
+
+`Date` objects, `Array` objects, and `Person` objects inherit from `Object.prototype`.
+
+### Adding Properties and Methods to Objects
+
+Sometimes you want to add new properties (or methods) to all existing objects of a given type.
+
+Sometimes you want to add new properties (or methods) to an object constructor.
+
+### Prototype Property
+
+The JavaScript prototype property allows you to add new properties to object constructors:
+
+```js
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+Person.prototype.nationality = "English";
+
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+
+myFather.nationality;
+// 'English'
+```
+
+> Only modify your own prototypes. Never modify the prototypes of standard JavaScript objects.
+
+## Spread operators
+
+Spread Operator (...) takes in an iterable (e.g an array) and expands it into individual elements.
+
+## Rest Operator
+
+It can be useful for a function to accept any number of arguments. For example, Math.max computes the maximum of all the arguments it is given.
+
+To write such a function, you put three dots before the function’s last parameter, like this:
+
+```js
+function max(...numbers) {
+  let result = -Infinity;
+  for (let number of numbers) {
+    if (number > result) result = number;
+  }
+  return result;
+}
+console.log(max(4, 1, 9, -2));
+// → 9
+```
+
+When such a function is called, the rest parameter is bound to an array containing all further arguments. If there are other parameters before it, their values aren’t part of that array. When, as in max, it is the only parameter, it will hold all arguments.
+
+---
+
+### Everything in JavaScript is either a...
+
+- A: primitive or object
+- B: function or object
+- C: trick question! only objects
+- D: number or object
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+JavaScript only has primitive types and objects.
+
+Primitive types are `boolean`, `null`, `undefined`, `bigint`, `number`, `string`, and `symbol`.
+
+What differentiates a primitive from an object is that primitives do not have any properties or methods; however, you'll note that `'foo'.toUpperCase()` evaluates to `'FOO'` and does not result in a `TypeError`. This is because when you try to access a property or method on a primitive like a string, JavaScript will implicitly wrap the primitive type using one of the wrapper classes, i.e. `String`, and then immediately discard the wrapper after the expression evaluates. All primitives except for `null` and `undefined` exhibit this behaviour.
+
+</p>
+</details>
+
+---
+
+### What's the output?
+
+```javascript
+let a = 3;
+let b = new Number(3);
+let c = 3;
+
+console.log(a == b);
+console.log(a === b);
+console.log(b === c);
+```
+
+- A: `true` `false` `true`
+- B: `false` `false` `true`
+- C: `true` `false` `false`
+- D: `false` `true` `true`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+`new Number()` is a built-in function constructor. Although it looks like a number, it's not really a number: it has a bunch of extra features and is an object.
+
+When we use the `==` operator, it only checks whether it has the same _value_. They both have the value of `3`, so it returns `true`.
+
+However, when we use the `===` operator, both value _and_ type should be the same. It's not: `new Number()` is not a number, it's an **object**. Both return `false.`
+
+</p>
+</details>
+
+---
+
+### What happens when we do this?
+
+```javascript
+function bark() {
+  console.log("Woof!");
+}
+
+bark.animal = "dog";
+```
+
+- A: Nothing, this is totally fine!
+- B: `SyntaxError`. You cannot add properties to a function this way.
+- C: `"Woof"` gets logged.
+- D: `ReferenceError`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+This is possible in JavaScript, because functions are objects! (Everything besides primitive types are objects)
+
+A function is a special type of object. The code you write yourself isn't the actual function. The function is an object with properties. This property is invocable.
+
+</p>
+</details>
+
+---
+
 ### Which one is true?
 
 ```javascript
@@ -172,26 +329,6 @@ However, with dot notation, this doesn't happen. `mouse` does not have a key cal
 
 </p>
 </details>
-
-## Methods
-
-Methods are actions that can be performed on objects.
-
-Object properties can be both primitive values, other objects, and functions.
-
-An object method is an object property containing a function definition.
-
-```js
-let sequence = [1, 2, 3];
-sequence.push(4);
-sequence.push(5);
-console.log(sequence);
-// → [1, 2, 3, 4, 5]
-console.log(sequence.pop());
-// → 5
-console.log(sequence);
-// → [1, 2, 3, 4]
-```
 
 ---
 
@@ -251,22 +388,6 @@ However, it only _shallowly_ freezes the object, meaning that only _direct_ prop
 
 </p>
 </details>
-
----
-
-## Arrays
-
-JavaScript provides a data type specifically for storing sequences of values. It is called an array and is written as a list of values between square brackets, separated by commas.
-
-```js
-let listOfNumbers = [2, 3, 5, 7, 11];
-console.log(listOfNumbers[2]);
-// → 5
-console.log(listOfNumbers[0]);
-// → 2
-console.log(listOfNumbers[2 - 1]);
-// → 3
-```
 
 ---
 
@@ -346,44 +467,6 @@ Then, we log `a[b]`, which is actually `a["[object Object]"]`. We just set that 
 
 ---
 
-## Mutability
-
-Mutable is a type of variable that can be changed. In JavaScript, only objects and arrays are mutable, not primitive values.
-
-You can make a variable name point to a new value, but the previous value is still held in memory.
-
-A **mutable object** is an object whose state can be modified after it is created.
-
-**Immutables** are the objects whose state cannot be changed once the object is created.
-
-**Strings** and **Numbers** are Immutable. Lets understand this with an example:
-
-```js
-var immutableString = "Hello";
-
-// In the above code, a new object with string value is created.
-
-immutableString = immutableString + "World";
-
-// We are now appending "World" to the existing value.
-```
-
-On appending the "immutableString" with a string value, following events occur:
-
-1. Existing value of "immutableString" is retrieved
-2. "World" is appended to the existing value of "immutableString"
-3. The resultant value is then allocated to a new block of memory
-4. "immutableString" object now points to the newly created memory space
-5. Previously created memory space is now available for garbage collection.
-
-```js
-const score = { visitors: 0, home: 0 };
-// This is okay
-score.visitors = 1;
-// This isn't allowed
-score = { visitors: 1, home: 1 };
-```
-
 ### What's the output?
 
 ```javascript
@@ -416,41 +499,6 @@ When you change one object, you change all of them.
 
 </p>
 </details>
-## JavaScript Object Prototypes
-
-All JavaScript objects inherit properties and methods from a prototype.
-
-```js
-function Person(first, last, age, eyecolor) {
-  this.firstName = first;
-  this.lastName = last;
-  this.age = age;
-  this.eyeColor = eyecolor;
-}
-
-Person.nationality = "English";
-const myFather = new Person("John", "Doe", 50, "blue");
-const myMother = new Person("Sally", "Rally", 48, "green");
-
-// you can not add a new property to an existing object constructor:
-myFather.nationality;
-// undefined
-```
-
-`Date` objects inherit from `Date.prototype`
-`Array` objects inherit from `Array.prototype`
-`Person` objects inherit from `Person.prototype`
-The `Object.prototype` is on the top of the prototype inheritance chain:
-
-`Date` objects, `Array` objects, and `Person` objects inherit from `Object.prototype`.
-
-### Adding Properties and Methods to Objects
-
-Sometimes you want to add new properties (or methods) to all existing objects of a given type.
-
-Sometimes you want to add new properties (or methods) to an object constructor.
-
-#### Using the prototype Property
 
 ---
 
@@ -468,28 +516,6 @@ All objects have prototypes, except for the **base object**. The base object is 
 
 </p>
 </details>
----
-
-The JavaScript prototype property allows you to add new properties to object constructors:
-
-```js
-function Person(first, last, age, eyecolor) {
-  this.firstName = first;
-  this.lastName = last;
-  this.age = age;
-  this.eyeColor = eyecolor;
-}
-
-Person.prototype.nationality = "English";
-
-const myFather = new Person("John", "Doe", 50, "blue");
-const myMother = new Person("Sally", "Rally", 48, "green");
-
-myFather.nationality;
-// 'English'
-```
-
-> Only modify your own prototypes. Never modify the prototypes of standard JavaScript objects.
 
 ---
 
@@ -564,10 +590,6 @@ name.giveLydiaPizza();
 
 ---
 
-## Spread operators
-
----
-
 ### What's the output?
 
 ```javascript
@@ -591,10 +613,6 @@ It's possible to combine objects using the spread operator `...`. It lets you cr
 
 </p>
 </details>
-
----
-
-## Rest operators
 
 ---
 
@@ -634,23 +652,6 @@ The above example works. This returns the array `[ 'banana', 'apple', 'orange', 
 </details>
 
 ---
-
-##
-
-It can be useful for a function to accept any number of arguments. For example, Math.max computes the maximum of all the arguments it is given.
-
-To write such a function, you put three dots before the function’s last parameter, like this:
-
-function max(...numbers) {
-let result = -Infinity;
-for (let number of numbers) {
-if (number > result) result = number;
-}
-return result;
-}
-console.log(max(4, 1, 9, -2));
-// → 9
-When such a function is called, the rest parameter is bound to an array containing all further arguments. If there are other parameters before it, their values aren’t part of that array. When, as in max, it is the only parameter, it will hold all arguments.
 
 ## References:
 
