@@ -4,6 +4,31 @@ categories: javascript
 description: "Understanding objects and arrays in javascript"
 ---
 
+---
+
+### 39. Everything in JavaScript is either a...
+
+- A: primitive or object
+- B: function or object
+- C: trick question! only objects
+- D: number or object
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+JavaScript only has primitive types and objects.
+
+Primitive types are `boolean`, `null`, `undefined`, `bigint`, `number`, `string`, and `symbol`.
+
+What differentiates a primitive from an object is that primitives do not have any properties or methods; however, you'll note that `'foo'.toUpperCase()` evaluates to `'FOO'` and does not result in a `TypeError`. This is because when you try to access a property or method on a primitive like a string, JavaScript will implicitly wrap the primitive type using one of the wrapper classes, i.e. `String`, and then immediately discard the wrapper after the expression evaluates. All primitives except for `null` and `undefined` exhibit this behaviour.
+
+</p>
+</details>
+
+---
+
 ## Arrays
 
 JavaScript provides a data type specifically for storing sequences of values. It is called an array and is written as a list of values between square brackets, separated by commas.
@@ -20,12 +45,54 @@ console.log(listOfNumbers[2 - 1]);
 
 ---
 
+### 59. What's the output?
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const [y] = numbers;
+
+console.log(y);
+```
+
+- A: `[[1, 2, 3, 4, 5]]`
+- B: `[1, 2, 3, 4, 5]`
+- C: `1`
+- D: `[1]`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+We can unpack values from arrays or properties from objects through destructuring. For example:
+
+```javascript
+[a, b] = [1, 2];
+```
+
+<img src="https://i.imgur.com/ADFpVop.png" width="200">
+
+The value of `a` is now `1`, and the value of `b` is now `2`. What we actually did in the question, is:
+
+```javascript
+[y] = [1, 2, 3, 4, 5];
+```
+
+<img src="https://i.imgur.com/NzGkMNk.png" width="200">
+
+This means that the value of `y` is equal to the first value in the array, which is the number `1`. When we log `y`, `1` is returned.
+
+</p>
+</details>
+
+---
+
 ### 29. What's the output?
 
 ```javascript
 const a = {};
-const b = { key: 'b' };
-const c = { key: 'c' };
+const b = { key: "b" };
+const c = { key: "c" };
 
 a[b] = 123;
 a[c] = 456;
@@ -220,6 +287,67 @@ console.log(sequence);
 // → [1, 2, 3, 4]
 ```
 
+---
+
+###### 136. Which of the following will modify the `person` object?
+
+```javascript
+const person = { name: "Lydia Hallie" };
+
+Object.seal(person);
+```
+
+- A: `person.name = "Evan Bacon"`
+- B: `person.age = 21`
+- C: `delete person.name`
+- D: `Object.assign(person, { age: 21 })`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+With `Object.seal` we can prevent new properies from being _added_, or existing properties to be _removed_.
+
+However, you can still modify the value of existing properties.
+
+</p>
+</details>
+
+---
+
+###### 137. Which of the following will modify the `person` object?
+
+```javascript
+const person = {
+  name: "Lydia Hallie",
+  address: {
+    street: "100 Main St",
+  },
+};
+
+Object.freeze(person);
+```
+
+- A: `person.name = "Evan Bacon"`
+- B: `delete person.address`
+- C: `person.address.street = "101 Main St"`
+- D: `person.pet = { name: "Mara" }`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+The `Object.freeze` method _freezes_ an object. No properties can be added, modified, or removed.
+
+However, it only _shallowly_ freezes the object, meaning that only _direct_ properties on the object are frozen. If the property is another object, like `address` in this case, the properties on that object aren't frozen, and can be modified.
+
+</p>
+</details>
+
+---
+
 ## Mutability
 
 Mutable is a type of variable that can be changed. In JavaScript, only objects and arrays are mutable, not primitive values.
@@ -327,6 +455,7 @@ Sometimes you want to add new properties (or methods) to an object constructor.
 #### Using the prototype Property
 
 ---
+
 ### 14. All object have prototypes.
 
 - A: true
@@ -365,6 +494,7 @@ myFather.nationality;
 > Only modify your own prototypes. Never modify the prototypes of standard JavaScript objects.
 
 ---
+
 ### 11. What's the output?
 
 ```javascript
@@ -411,10 +541,10 @@ Person.prototype.getFullName = function () {
 
 ```javascript
 String.prototype.giveLydiaPizza = () => {
-  return 'Just give Lydia pizza already!';
+  return "Just give Lydia pizza already!";
 };
 
-const name = 'Lydia';
+const name = "Lydia";
 
 name.giveLydiaPizza();
 ```
@@ -436,7 +566,93 @@ name.giveLydiaPizza();
 
 ---
 
+## Spread operators
 
+---
+
+###### 60. What's the output?
+
+```javascript
+const user = { name: "Lydia", age: 21 };
+const admin = { admin: true, ...user };
+
+console.log(admin);
+```
+
+- A: `{ admin: true, user: { name: "Lydia", age: 21 } }`
+- B: `{ admin: true, name: "Lydia", age: 21 }`
+- C: `{ admin: true, user: ["Lydia", 21] }`
+- D: `{ admin: true }`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: B
+
+It's possible to combine objects using the spread operator `...`. It lets you create copies of the key/value pairs of one object, and add them to another object. In this case, we create copies of the `user` object, and add them to the `admin` object. The `admin` object now contains the copied key/value pairs, which results in `{ admin: true, name: "Lydia", age: 21 }`.
+
+</p>
+</details>
+
+---
+
+## Rest operators
+
+---
+
+###### 94. What's the output?
+
+```javascript
+function getItems(fruitList, ...args, favoriteFruit) {
+  return [...fruitList, ...args, favoriteFruit]
+}
+
+getItems(["banana", "apple"], "pear", "orange")
+```
+
+- A: `["banana", "apple", "pear", "orange"]`
+- B: `[["banana", "apple"], "pear", "orange"]`
+- C: `["banana", "apple", ["pear"], "orange"]`
+- D: `SyntaxError`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: D
+
+`...args` is a rest parameter. The rest parameter's value is an array containing all remaining arguments, **and can only be the last parameter**! In this example, the rest parameter was the second parameter. This is not possible, and will throw a syntax error.
+
+```javascript
+function getItems(fruitList, favoriteFruit, ...args) {
+  return [...fruitList, ...args, favoriteFruit];
+}
+
+getItems(["banana", "apple"], "pear", "orange");
+```
+
+The above example works. This returns the array `[ 'banana', 'apple', 'orange', 'pear' ]`
+
+</p>
+</details>
+
+---
+
+##
+
+It can be useful for a function to accept any number of arguments. For example, Math.max computes the maximum of all the arguments it is given.
+
+To write such a function, you put three dots before the function’s last parameter, like this:
+
+function max(...numbers) {
+let result = -Infinity;
+for (let number of numbers) {
+if (number > result) result = number;
+}
+return result;
+}
+console.log(max(4, 1, 9, -2));
+// → 9
+When such a function is called, the rest parameter is bound to an array containing all further arguments. If there are other parameters before it, their values aren’t part of that array. When, as in max, it is the only parameter, it will hold all arguments.
 
 ## References:
 
