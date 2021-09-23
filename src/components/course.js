@@ -1,8 +1,5 @@
 import React from "react";
-import { graphql, Link } from "gatsby"
-
-import Layout from "./layout"
-import SEO from "./seo"
+import { Link } from "gatsby"
 import { rhythm } from "../utils/typography";
 
 const Course = ({ data, title }) => {

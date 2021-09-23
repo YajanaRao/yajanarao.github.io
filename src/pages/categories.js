@@ -19,7 +19,7 @@ const Categories = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Categories" />
-      <div className="min-h-screen">
+      <div>
       {posts.map(({ node }) => {
         if (node.frontmatter.categories === category.replace("?", "")) {
           const title = node.frontmatter.title || node.fields.slug;
