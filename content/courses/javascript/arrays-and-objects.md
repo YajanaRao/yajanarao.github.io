@@ -167,26 +167,14 @@ score.visitors = 1;
 score = { visitors: 1, home: 1 };
 ```
 
-## JavaScript Object Prototypes
+## Prototype Property
+
+JavaScript is often described as a **prototype-based language** — to provide inheritance, objects can have a prototype object, which acts as a template object that it inherits methods and properties from.
+
+An object's prototype object may also have a prototype object, which it inherits methods and properties from, and so on. This is often referred to as a prototype chain, and explains why different objects have properties and methods defined on other objects available to them.
 
 All JavaScript objects inherit properties and methods from a prototype.
 
-```js
-function Person(first, last, age, eyecolor) {
-  this.firstName = first;
-  this.lastName = last;
-  this.age = age;
-  this.eyeColor = eyecolor;
-}
-
-Person.nationality = "English";
-const myFather = new Person("John", "Doe", 50, "blue");
-const myMother = new Person("Sally", "Rally", 48, "green");
-
-// you can not add a new property to an existing object constructor:
-myFather.nationality;
-// undefined
-```
 
 `Date` objects inherit from `Date.prototype`
 `Array` objects inherit from `Array.prototype`
@@ -195,17 +183,6 @@ The `Object.prototype` is on the top of the prototype inheritance chain:
 
 `Date` objects, `Array` objects, and `Person` objects inherit from `Object.prototype`.
 
-### Adding Properties and Methods to Objects
-
-Sometimes you want to add new properties (or methods) to all existing objects of a given type.
-
-Sometimes you want to add new properties (or methods) to an object constructor.
-
-### Prototype Property
-
-JavaScript is often described as a **prototype-based language** — to provide inheritance, objects can have a prototype object, which acts as a template object that it inherits methods and properties from.
-
-An object's prototype object may also have a prototype object, which it inherits methods and properties from, and so on. This is often referred to as a prototype chain, and explains why different objects have properties and methods defined on other objects available to them.
 
 The JavaScript prototype property allows you to add new properties to object constructors:
 
