@@ -4,7 +4,6 @@ description: "Software Development Life Cycle (SDLC) is a process used by the so
 categories: sdlc
 ---
 
-# SDLC Models
 
 - Waterfall Model
 - Iterative Model
