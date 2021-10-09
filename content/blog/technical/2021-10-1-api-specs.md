@@ -1,5 +1,12 @@
 ---
+title: API documentation using Swagger
+description: API documentation is a technical content deliverable, containing instructions about how to effectively use and integrate with an API.
+categories: technical-concepts
 ---
+
+## What Is API Documentation?
+
+API documentation is technical content that documents the API. It includes instructions on how to effectively use and integrate the API. It also provides updates on the API’s lifecycle such as new versions or retirement. Some aspects of API documentation can be generated automatically via Swagger or other documents.
 
 ## Let's start with clarifying Swagger vs OpenAPI
 
@@ -84,9 +91,9 @@ Supported authentication methods are:
 
 ### Path
 
-The path items are the endpoints of your API under which you can specify HTTP verbs for manipulating the resources in the desired manner. These endpoints are relative to the server URL, which in our example is https://example.io/v1.
+The path items are the endpoints of your API under which you can specify HTTP verbs for manipulating the resources in the desired manner. These endpoints are relative to the server URL, which in our example is `https://example.io/v1`.
 
-We will define the /artists endpoint and the GET method for this endpoint. So, a client will use GET https://example.io/v1/artists to get a list of artists.
+We will define the `/artists` endpoint and the GET method for this endpoint. So, a client will use GET `https://example.io/v1/artists` to get a list of artists.
 
 ```yaml
 openapi: 3.0.0
@@ -176,7 +183,7 @@ paths:
 
 ### Parameters
 
-Operations can have parameters passed via URL path (/users/{userId}), query string (/users?role=admin), headers (X-CustomHeader: Value) or cookies (Cookie: debug=0). You can define the parameter data types, format, whether they are required or optional, and other details:
+Operations can have parameters passed via URL path (`/users/{userId}`), query string (`/users?role=admin`), headers (X-CustomHeader: Value) or cookies (Cookie: debug=0). You can define the parameter data types, format, whether they are required or optional, and other details:
 
 #### Query parameters
 
@@ -192,7 +199,7 @@ GET https://example.io/v1/artists?limit=20&offset=3
 
 #### Path parameters
 
-The path parameters can be used to isolate a specific component of the data that the client is working with, for example, https://example.io/v1/artists/{username}. Path parameters are part of the hierarchical component of the URL, and are thus stacked sequentially.
+The path parameters can be used to isolate a specific component of the data that the client is working with, for example, `https://example.io/v1/artists/{username}`. Path parameters are part of the hierarchical component of the URL, and are thus stacked sequentially.
 
 ## Reusable components
 
