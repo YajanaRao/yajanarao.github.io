@@ -4,6 +4,7 @@ categories: javascript
 description: "Understanding objects and arrays in javascript"
 ---
 
+
 ## Objects
 
 In JavaScript, almost "everything" is an object.
@@ -18,15 +19,20 @@ In JavaScript, almost "everything" is an object.
 - Functions are always objects
 - Objects are always objects
 
-Object values are written as name : value pairs (name and value separated by a colon).
 
 ```js
+const rememberMe = new Boolean(true);
+const age = new Number(10);
+const name = new String("Yajana");
+const marks = new Array(1,2,3,4,5,6);
+
 const person = {
   firstName: "John",
   lastName: "Doe",
   age: 50,
   eyeColor: "blue",
 };
+
 ```
 
 It is a common practice to declare objects with the const keyword.
@@ -35,13 +41,22 @@ It is a common practice to declare objects with the const keyword.
 
 ## Properties
 
-Almost all JavaScript values have properties. The exceptions are null and undefined.
-
 The named values, in JavaScript objects, are called properties.
 
+Almost all JavaScript values have properties. The exceptions are `null` and `undefined`.
+
+
+### Accessing properties
+
+1. Using dot notation (.)
+
+When using a dot, the word after the dot is the literal name of the property.
+
+2. Array like notation ([])
+
+When using square brackets, the expression between the brackets is evaluated to get the property name.
+
 ```js
-null.length;
-// → TypeError: null has no properties
 
 const values = {
   1: "Hello world",
@@ -52,9 +67,7 @@ const values = {
 console.log(values[2 - 1]);
 console.log(values["John Doe"]);
 console.log(values.city);
-```
-
-The two main ways to access properties in JavaScript are with a dot and with square brackets. Both value.x and value[x] access a property on value—but not necessarily the same property. The difference is in how x is interpreted. When using a dot, the word after the dot is the literal name of the property. When using square brackets, the expression between the brackets is evaluated to get the property name.
+```  
 
 ## Methods
 
@@ -65,15 +78,23 @@ Object properties can be both primitive values, other objects, and functions.
 An object method is an object property containing a function definition.
 
 ```js
-let sequence = [1, 2, 3];
-sequence.push(4);
-sequence.push(5);
-console.log(sequence);
-// → [1, 2, 3, 4, 5]
-console.log(sequence.pop());
-// → 5
-console.log(sequence);
-// → [1, 2, 3, 4]
+let user = {
+  name: "John",
+  age: 30
+};
+
+user.sayHi = function() {
+  alert("Hello!");
+};
+
+user.sayHi(); // Hello!
+
+// method shorthand looks better, right?
+user = {
+  sayHi() { // same as "sayHi: function(){...}"
+    alert("Hello");
+  }
+};
 ```
 
 ## Arrays
@@ -84,10 +105,28 @@ JavaScript provides a data type specifically for storing sequences of values. It
 let listOfNumbers = [2, 3, 5, 7, 11];
 console.log(listOfNumbers[2]);
 // → 5
-console.log(listOfNumbers[0]);
+console.log(listOfNumbers.__proto__);
 // → 2
 console.log(listOfNumbers[2 - 1]);
 // → 3
+```
+
+### Array Objects
+
+```
+function bookInfo( name, author, pubDate) { 
+  
+    this.name = name; 
+    this.author = author; 
+    this.date = pubDate; 
+} 
+
+var book = new Array(); 
+book[0] = new bookInfo("Jane Eyre", "C. Bronte", "1847"); 
+book[1] = new bookInfo("The Stranger", "A. Camus", "1942"); 
+book[2] = new bookInfo("Oliver Twist", "C. Dickens", "1846"); 
+book[3] = new bookInfo("Rebecca", "D. DuMaurier", "1938"); 
+book[4] = new bookInfo("Stranger in a Strange Land", "R. Heinlein", "1961"); 
 ```
 
 ## Mutability
@@ -128,26 +167,14 @@ score.visitors = 1;
 score = { visitors: 1, home: 1 };
 ```
 
-## JavaScript Object Prototypes
+## Prototype Property
+
+JavaScript is often described as a **prototype-based language** — to provide inheritance, objects can have a prototype object, which acts as a template object that it inherits methods and properties from.
+
+An object's prototype object may also have a prototype object, which it inherits methods and properties from, and so on. This is often referred to as a prototype chain, and explains why different objects have properties and methods defined on other objects available to them.
 
 All JavaScript objects inherit properties and methods from a prototype.
 
-```js
-function Person(first, last, age, eyecolor) {
-  this.firstName = first;
-  this.lastName = last;
-  this.age = age;
-  this.eyeColor = eyecolor;
-}
-
-Person.nationality = "English";
-const myFather = new Person("John", "Doe", 50, "blue");
-const myMother = new Person("Sally", "Rally", 48, "green");
-
-// you can not add a new property to an existing object constructor:
-myFather.nationality;
-// undefined
-```
 
 `Date` objects inherit from `Date.prototype`
 `Array` objects inherit from `Array.prototype`
@@ -156,13 +183,6 @@ The `Object.prototype` is on the top of the prototype inheritance chain:
 
 `Date` objects, `Array` objects, and `Person` objects inherit from `Object.prototype`.
 
-### Adding Properties and Methods to Objects
-
-Sometimes you want to add new properties (or methods) to all existing objects of a given type.
-
-Sometimes you want to add new properties (or methods) to an object constructor.
-
-### Prototype Property
 
 The JavaScript prototype property allows you to add new properties to object constructors:
 
@@ -189,6 +209,16 @@ myFather.nationality;
 
 Spread Operator (...) takes in an iterable (e.g an array) and expands it into individual elements.
 
+```js
+const numbers = [1,2];
+
+function sum(a, b){
+  return a + b;
+}
+
+console.log(sum(...numbers))
+// -> 3
+```
 ## Rest Operator
 
 It can be useful for a function to accept any number of arguments. For example, Math.max computes the maximum of all the arguments it is given.
@@ -196,18 +226,20 @@ It can be useful for a function to accept any number of arguments. For example, 
 To write such a function, you put three dots before the function’s last parameter, like this:
 
 ```js
-function max(...numbers) {
-  let result = -Infinity;
+function sum(...numbers) {
+  let result = 0;
   for (let number of numbers) {
-    if (number > result) result = number;
+    result = result + number;
   }
   return result;
 }
-console.log(max(4, 1, 9, -2));
-// → 9
+console.log(sum(4, 1, 9, -2));
+// → 12
 ```
 
 When such a function is called, the rest parameter is bound to an array containing all further arguments. If there are other parameters before it, their values aren’t part of that array. When, as in max, it is the only parameter, it will hold all arguments.
+
+## Quiz
 
 ---
 
@@ -655,8 +687,12 @@ The above example works. This returns the array `[ 'banana', 'apple', 'orange', 
 
 ## References:
 
+- https://eloquentjavascript.net/04_data.html
+
 - https://developer.mozilla.org/en-US/docs/Glossary/Mutable
 
 - https://github.com/lydiahallie/javascript-questions/blob/master/README.md
+
+- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes
 
 - http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D
