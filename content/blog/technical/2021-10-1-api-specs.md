@@ -1,0 +1,215 @@
+---
+---
+
+## Let's start with clarifying Swagger vs OpenAPI
+
+The easiest way to understand the difference is:
+
+- OpenAPI = Specification
+- Swagger = Tools for implementing the specification
+
+OpenAPI Specification (formerly known as Swagger Specification) is an open-source format for describing and documenting APIs.
+
+The Specification was originally developed in 2010 by Reverb Technologies (formerly Wordnik) as a way to keep the API design and documentation in sync.
+
+The latest version of OpenAPI is 3.0. OpenAPI definitions can be written in JSON or YAML. We recommend YAML, because it is easier to read and write.
+
+## Prerequisites
+
+- Basic knowledge of RESTful APIs.
+
+- Basic knowledge of YAML is recommended.
+
+# Create an API
+
+An API defined using the OpenAPI Specification can be divided into 3 main sections –
+
+- Meta information
+- Path items (endpoints):
+  - Parameters
+  - Request bodies
+  - Responses
+- Reusable components:
+  - Schemas (data models)
+  - Parameters
+  - Responses
+  - Other components
+
+## Meta information
+
+Let’s start with a simple API definition that contains just meta information, such as the API title, version, server URL and other descriptive information.
+
+> All keyword names are case-sensitive.
+
+```yaml
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Simple Artist API
+  description: A simple API to illustrate OpenAPI concepts
+
+servers:
+  - url: https://example.io/v1
+
+# Basic authentication
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+security:
+  - BasicAuth: []
+
+paths: {}
+```
+
+### Info
+
+Each API definition starts with the `version` of the OpenAPI Specification that this definition uses. In our example, it is `openapi: 3.0.0`. The `info` object contains the API `title` and `version`, which are required, and an optional `description`.
+
+### Servers
+
+The `servers` array specifies one or more server URLs for API calls. The API endpoint paths are appended to the server URL. Some APIs have a single server, others may have multiple servers, such as production, staging and sandbox. In our example, the server URL is https://example.io/v1.
+
+### Security
+
+We also secure the API using Basic authentication, so that only authorized users can consume the API.
+
+Supported authentication methods are:
+
+- HTTP authentication: Basic, Bearer, and so on.
+- API key as a header or query parameter or in cookies
+- OAuth 2
+- OpenID Connect Discovery
+
+### Path
+
+The path items are the endpoints of your API under which you can specify HTTP verbs for manipulating the resources in the desired manner. These endpoints are relative to the server URL, which in our example is https://example.io/v1.
+
+We will define the /artists endpoint and the GET method for this endpoint. So, a client will use GET https://example.io/v1/artists to get a list of artists.
+
+```yaml
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Simple API
+  description: A simple API to illustrate OpenAPI concepts
+
+servers:
+  - url: https://example.io/v1
+
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+security:
+  - BasicAuth: []
+
+#  ----- Added lines  ----------------------------------------
+paths:
+  /artists:
+    get:
+      description: Returns a list of artists
+#  ---- /Added lines  ----------------------------------------
+```
+
+### Responses
+
+Every response would need at least one HTTP status code to describe the kind of responses a consumer is likely to expect. The description gives details on what the responses of the API would be. In our sample code, we have specified 200, which is a successful client request, while 400 is an unsuccessful request.
+
+```yaml
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Simple API
+  description: A simple API to illustrate OpenAPI concepts
+
+servers:
+  - url: https://example.io/v1
+
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+security:
+  - BasicAuth: []
+
+paths:
+  /artists:
+    get:
+      description: Returns a list of artists
+      #  ----- Added lines  ----------------------------------------
+      responses:
+        "200":
+          description: Successfully returned a list of artists
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  required:
+                    - username
+                  properties:
+                    artist_name:
+                      type: string
+                    artist_genre:
+                      type: string
+                    albums_recorded:
+                      type: integer
+                    username:
+                      type: string
+
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+      #  ---- /Added lines  ----------------------------------------
+```
+
+### Parameters
+
+Operations can have parameters passed via URL path (/users/{userId}), query string (/users?role=admin), headers (X-CustomHeader: Value) or cookies (Cookie: debug=0). You can define the parameter data types, format, whether they are required or optional, and other details:
+
+#### Query parameters
+
+Query parameters appear at the end of a URL following a question mark. Query parameters are optional and non unique, so they can be specified multiple times in the URL. It is a non-hierarchical component of the URL.
+
+```
+GET https://example.io/v1/artists?limit=20&offset=3
+```
+
+#### Request body
+
+`POST`, `PUT` and `PATCH` requests typically contain the request body. The request body is defined by using the `requestBody` object. For this API, let’s add the ability for a user to post an artist to our database. This would be under the `/artists` resource.
+
+#### Path parameters
+
+The path parameters can be used to isolate a specific component of the data that the client is working with, for example, https://example.io/v1/artists/{username}. Path parameters are part of the hierarchical component of the URL, and are thus stacked sequentially.
+
+## Reusable components
+
+The Specification defines various types of reusable components:
+
+- Schemas (data models)
+- Parameters
+- Request bodies
+- Responses
+- Response headers
+- Examples
+- Links
+- Callbacks
+
+# References:
+
+- https://support.smartbear.com/swaggerhub/docs/tutorials/openapi-3-tutorial.html
+- https://swagger.io/specification/
+- https://swagger.io/docs/specification/basic-structure/
+- https://commonmark.org/help/
