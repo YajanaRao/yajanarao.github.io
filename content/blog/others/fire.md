@@ -48,6 +48,20 @@ Get paid by the value you bring. Not by the time
 
 A stock or share (also known as a company's "equity") is a financial instrument that represents ownership in a company or corporation and represents a proportionate claim on its assets (what it owns) and earnings (what it generates in profits).
 
+The 11 sectors are:
+
+- Energy
+- Materials
+- Industrials
+- Consumer Discretionary
+- Consumer Staples
+- Health Care
+- Financials
+- Information Technology
+- Communication Services
+- Utilities
+- Real Estate
+
 - Dont put all eggs in one basket
 - Always buy in SIP mode. If you want to invest 50k in Infosys(For example). Then buy in 50:20:20:10 ratio or any ratio that you wish. So you can buy on dip or breakout
 - Invest in the shares who are market leaders of their sector.
