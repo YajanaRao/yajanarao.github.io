@@ -7,20 +7,21 @@ categories: technical
 
 ## Commands
 
-Listing files
+### Listing files
 ```shell
 ls
 dir
 ```
 
-Path
+### Path
+```shell
 pwd
+```
 
-Remove
+### Remove files and folder
+
+```shell
 rm filename.txt
 rm -r foldername (Recursive)
 rm -rf foldername (Force)
-
-
-1. Resources
-2. Google docs
+```

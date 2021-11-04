@@ -44,6 +44,34 @@ Live on bare minimum and save on rest.
 
 Get paid by the value you bring. Not by the time
 
+## Investments
+
+The following are some of the popular asset classes.
+
+1. Fixed income instruments
+
+Typical fixed income investment includes:
+
+- Fixed deposits offered by banks.
+- Bonds issued by the Government of India
+- Bonds issued by Government related agencies such as HUDCO, NHAI, etc
+- Bonds issued by corporate’s
+
+2. Equity
+
+Investment in Equities involves buying shares of publicly listed companies. The shares are traded on the Bombay Stock Exchange (BSE), and the National Stock Exchange (NSE).
+
+3. Real estate
+
+Real Estate Investment involves transacting (buying and selling) commercial and non-commercial land.
+
+4. Commodities (precious metals)
+
+Investments in gold and silver are considered one of the most popular investment avenues.
+
+
+The technique of allocating money across assets classes is termed as ‘Asset Allocation’.
+
 ## Stocks
 
 A stock or share (also known as a company's "equity") is a financial instrument that represents ownership in a company or corporation and represents a proportionate claim on its assets (what it owns) and earnings (what it generates in profits).
