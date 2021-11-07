@@ -58,3 +58,5 @@ Just as one of the coding best practices is to keep your code readable, you shou
 **References**:
 - https://web.archive.org/web/20150906155800/http:/www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf
 - https://youtu.be/agkWYPUcLpg
+- https://kentcdodds.com/blog/aha-programming
+- https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction
