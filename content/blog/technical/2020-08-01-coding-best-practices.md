@@ -41,6 +41,8 @@ SOLID is a popular set of design principles that are used in object-oriented sof
 
 > prefer duplication over the wrong abstraction
 
+AHA stands for "Avoid Hasty Abstractions", described by Kent C. Dodds as optimizing for change first, and avoiding premature optimization.  AHA programming assumes that both WET and DRY solutions inevitably create software that is rigid and difficult to maintain. Instead of starting with an abstraction, or abstracting at a specific number of duplications, software can be more flexible and robust if abstraction is done when it is needed, or, when the duplication itself has become the barrier and it is known how the abstraction needs to function.
+
 ## DRY ( Don't repeat yourself )
 
 The DRY Principle states that “Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.” This is also sometimes known as DIE: Duplication Is Evil. 
@@ -51,7 +53,9 @@ Simply stated, the same piece of code should never be repeated over and over.
 
 > You can ask yourself "Haven't I written this before?" two times, but never three.
 
-## Keep it simple
+## KISS (Keep It Simple, Stupid or Keep It Short and Simple)
+
+The KISS principle states that most systems work best if they are kept simple rather than made complicated; therefore, simplicity should be a key goal in design, and unnecessary complexity should be avoided.
 
 Just as one of the coding best practices is to keep your code readable, you should also strive to keep it simple. Complex code means the likelihood of more bugs and more mistakes. 
 
@@ -60,3 +64,4 @@ Just as one of the coding best practices is to keep your code readable, you shou
 - https://youtu.be/agkWYPUcLpg
 - https://kentcdodds.com/blog/aha-programming
 - https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction
+- https://en.wikipedia.org/wiki/KISS_principle
