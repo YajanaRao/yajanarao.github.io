@@ -39,9 +39,21 @@ SOLID is a popular set of design principles that are used in object-oriented sof
 
 ## AHA ( Avoid hasty abstractions )
 
+> prefer duplication over the wrong abstraction
+
 ## DRY ( Don't repeat yourself )
 
+The DRY Principle states that “Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.” This is also sometimes known as DIE: Duplication Is Evil. 
+
+Simply stated, the same piece of code should never be repeated over and over. 
+
 ## WET ( Write everything twice )
+
+> You can ask yourself "Haven't I written this before?" two times, but never three.
+
+## Keep it simple
+
+Just as one of the coding best practices is to keep your code readable, you should also strive to keep it simple. Complex code means the likelihood of more bugs and more mistakes. 
 
 **References**:
 - https://web.archive.org/web/20150906155800/http:/www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf
