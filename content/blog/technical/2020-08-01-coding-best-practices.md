@@ -7,11 +7,11 @@ categories: best-practices
 
 It might be your IDE or code editor, Please don\'92t change them often. Code editors or IDE\'92s has there own keybindings, themes and functionality which takes a while for to get comfortable with
 
-## Make some space for your code
+- Make some space for your code
 
 Remove unwanted distractions apart from code from the editor space
 
-## Know your editor well.
+- Know your editor well.
 
 Understand the shortcuts for navigation and text input. It improves your performance
 
@@ -19,9 +19,7 @@ Understand the shortcuts for navigation and text input. It improves your perform
 
 In case if you want to replace the library, You don't need to change every where if you have a wrapper created around it.
 
-## Under SOLID design principle
-
-https://youtu.be/agkWYPUcLpg
+## Understand SOLID design principle
 
 SOLID is a popular set of design principles that are used in object-oriented software development. SOLID is an acronym that stands for five key design principles: 
 - **Single responsibility principle**
@@ -39,10 +37,12 @@ SOLID is a popular set of design principles that are used in object-oriented sof
     high level modules should not depend upon low level modules. Both should depend on abstractions.
     abstractions should not depend on details. Details should depend upon abstractions.
 
-**References**:
-https://web.archive.org/web/20150906155800/http:/www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf
 ## AHA ( Avoid hasty abstractions )
 
 ## DRY ( Don't repeat yourself )
 
 ## WET ( Write everything twice )
+
+**References**:
+- https://web.archive.org/web/20150906155800/http:/www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf
+- https://youtu.be/agkWYPUcLpg
