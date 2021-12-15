@@ -13,8 +13,7 @@ function About({ data, location }) {
       <p className="text-black dark:text-white">
         Software Engineer{" "}
         <span className="text-green-600 font-bold text-lg">+</span> Writer{" "}
-        <span className="text-green-600 font-bold text-lg">+</span> Aspiring
-        Yogi
+        <span className="text-green-600 font-bold text-lg">+</span> Seeker of Truth
       </p>
       <p className="text-black dark:text-white">
         My aspiration is to bring wellbeing into people lives through Technology
