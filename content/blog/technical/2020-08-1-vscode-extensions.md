@@ -17,6 +17,18 @@ How to search a text globally across the project ?
 cmd/ctrl + shift + f
 ```
 
+How to search for a function ?
+
+```md
+cmd/ctrl + shift + o
+```
+
+How to search across the files ?
+
+```md
+cmd/ctrl + t
+```
+
 ## Fonts
 
 [Fira Code](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)
