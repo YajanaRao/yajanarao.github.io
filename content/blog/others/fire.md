@@ -94,6 +94,40 @@ The 11 sectors are:
 - Always buy in SIP mode. If you want to invest 50k in Infosys(For example). Then buy in 50:20:20:10 ratio or any ratio that you wish. So you can buy on dip or breakout
 - Invest in the shares who are market leaders of their sector.
 
+### Type of Investments
+
+- Invest in Lump Sum
+Investing in a lump sum would benefit investers with large amounts of money. Do this once a year.
+
+- Systematic Investent Plan
+
+A systematic investment plan (SIP) assits a paid person in investing a set amount each month.
+
+- Buy on Dips
+
+Purchasing an assets after it has dropped in price with the hope that it will rebound or exhibit an uptrend in the future is known as buying the dips. The method can be used to buy a new assets or to smooth out an existing porffolio.
+
+### Investment strategies
+
+#### 1. Coffee Can Investing
+
+Coffee Can Investing is a low-risk way to build enormous wealth by purchasing shares of outstanding companies and keeping them for 10 years without actively buying and selling them.
+
+• The company should have been in existence for at least 10 years.
+• The revenue growth should be at least 10% year on year, not CAGR or SAGR.
+• ROCE of at least 15% for 10 years
+• Market capitalization should be more than 100 crores
+• The company should have good brand value.
+• The company should have a competitive edge.
+• Use a Coffee Can Portfolio screener
+
+$-step framework while building a coffee can portfolio
+
+1. Chose companies that are market leaders
+2. Build a portfolio of 10-15 companies and intended churn of less than one stock per year.
+3. Choose companies that have an excellent growth track record of over a decade.
+4. Don't focus on one type of stock; Keep it diversified.
+
 ## Reference:
 - https://twitter.com/naval/status/1002103670400417792?s=20
 - https://www.investopedia.com/articles/investing/082614/how-stock-market-works.asp
