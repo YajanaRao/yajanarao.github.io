@@ -10,7 +10,7 @@ function About({ data, location }) {
       <h1>Hi! I am Yajana</h1>
       <p>
         I am a Software enginner, I have been working on developing cross
-        platform application using react native for last 3 years.
+        platform application using react native for last 5 years.
       </p>
       <p>
         I have created and contributed to few open source project. Major ones

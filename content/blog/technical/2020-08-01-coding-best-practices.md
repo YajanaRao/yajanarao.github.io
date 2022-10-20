@@ -30,3 +30,6 @@ https://youtu.be/agkWYPUcLpg
 ## DRY ( Don't repeat yourself )
 
 ## WET ( Write everything twice )
+
+## More declarative code with built-in functions
+
