@@ -9,6 +9,7 @@ import React from "react";
 import { Link } from "gatsby";
 import Hero from "../components/hero";
 import { rhythm } from "../utils/typography";
+import Switch from "./switch";
 
 const Header = ({ location, title }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -26,40 +27,46 @@ const Header = ({ location, title }) => {
     return (
       <div
         className="grid sm:grid-cols-2 grid-cols-1"
-        style={{  width: "100%", marginBottom: rhythm(1.5) }}
+        style={{ width: "100%", marginBottom: rhythm(1.5) }}
       >
-        <h3
+        <h2
           style={{
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
             width: "inherit",
-            marginBottom: rhythm(0.6)
+            marginBottom: rhythm(0.6),
           }}
+          className="justify-center flex sm:justify-start"
         >
           {!isRoot && (
             <Link
               style={{
                 boxShadow: `none`,
-                color: `inherit`,
               }}
+              className="text-black dark:text-white"
               to={`/`}
             >
               {title}
             </Link>
           )}
-        </h3>
+        </h2>
         <div
-          className="grid grid-cols-3 gap-4"
-          style={{ marginBottom: rhythm(0.6)}}
+          className="grid grid-cols-4 gap-4"
+          style={{ marginBottom: rhythm(0.6) }}
         >
           <div className="justify-center flex sm:justify-start">
-            <Link to={`/`}>Blogs</Link>
+            <Link to={`/`} className="h-6">Blogs</Link>
           </div>
           <div className="justify-center flex sm:justify-start">
-            <Link to={`/courses/`}>Courses</Link>
+            <Link to={`/courses/`} className="h-6">Courses</Link>
           </div>
           <div className="justify-center flex sm:justify-start">
-            <Link to={`/about`}>About</Link>
+            <Link to={`/about`} className="h-6">
+              About
+            </Link>
+          </div>
+          <div className="justify-center flex sm:justify-start">
+            <Switch />
           </div>
         </div>
       </div>

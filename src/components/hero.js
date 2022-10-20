@@ -74,7 +74,6 @@ const Hero = () => {
           <Link
             style={{
               boxShadow: `none`,
-              color: `inherit`,
             }}
             to={`/`}
           >
@@ -86,6 +85,7 @@ const Hero = () => {
             textAlign: "center",
             marginBottom: 0,
           }}
+          className="text-black dark:text-white"
         >
           {author.summary}
         </p>

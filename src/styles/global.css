@@ -3,8 +3,22 @@
 @tailwind components;
 @tailwind utilities;
 
+::-moz-selection {
+  /* Code for Firefox */
+  /* color: red; */
+  background: #6ee7b7;
+}
 
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
+::selection {
+  /* color: red; */
+  background: #6ee7b7;
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #48bb78;
+}
+
+blockquote {
+  @apply text-gray-700 dark:text-gray-400;
 }

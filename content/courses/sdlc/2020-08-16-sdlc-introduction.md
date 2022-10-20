@@ -1,9 +1,7 @@
 ---
 title: "Software Development Lifecycle Introduction"
-categories: SDLC
+categories: sdlc
 ---
-
-# SDLC (Software Development Lifecycle)
 
 Software Development Lifecycle (SDLC), also referred to as the application development life-cycle, is a process for planning, creating, testing, and deploying an Software application.
 

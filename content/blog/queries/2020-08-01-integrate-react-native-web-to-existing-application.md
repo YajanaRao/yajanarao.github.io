@@ -1,6 +1,7 @@
 ---
 title: "How to Integrate react-native-web in an existing react native application"
 categories: questions
+date: "2021-08-13"
 ---
 
 For using [react native on web](https://github.com/necolas/react-native-web) we can use the template of many build tools. I would like to use [Create React App](https://github.com/facebook/create-react-app) for this example.

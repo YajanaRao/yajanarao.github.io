@@ -3,7 +3,7 @@ module.exports = {
     title: `Yajana Rao`,
     author: {
       name: `Yajana Rao`,
-      summary: `A Software engineer working on React Native`,
+      summary: `Software engineer + Writer + Seeker of Truth`,
     },
     description: `Personal blog of Yajana Rao`,
     siteUrl: `https://yajanarao.github.io/`,
@@ -74,7 +74,7 @@ module.exports = {
         short_name: `YajanaRao`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#059669`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },

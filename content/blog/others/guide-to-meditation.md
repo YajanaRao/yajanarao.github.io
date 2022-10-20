@@ -1,6 +1,7 @@
 ---
 title: Meditation
 date: "2021-05-28T22:40:32.169Z"
+categories: "meditation"
 description: “Meditation” or “Dhyana” means to go beyond the limitations of the physical body and the mind.
 ---
 

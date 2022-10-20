@@ -1,6 +1,7 @@
 ---
 title: "How to use why did you render in react native"
-categories: technical-concepts
+date: "2021-07-13T22:40:32.169Z"
+categories: react-native
 ---
 
 ## Install @welldone-software/why-did-you-render package
@@ -12,7 +13,6 @@ npm install @welldone-software/why-did-you-render --save-dev
 # yarn
 yarn add --dev @welldone-software/why-did-you-render
 ```
-
 
 ## Create wdyr.js file for configaring why did you render
 

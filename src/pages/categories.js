@@ -19,6 +19,7 @@ const Categories = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Categories" />
+      <div>
       {posts.map(({ node }) => {
         if (node.frontmatter.categories === category.replace("?", "")) {
           const title = node.frontmatter.title || node.fields.slug;
@@ -39,6 +40,7 @@ const Categories = ({ data, location }) => {
               </header>
               <section>
                 <p
+                  className="text-black dark:text-white"
                   dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description || node.excerpt,
                   }}
@@ -48,6 +50,7 @@ const Categories = ({ data, location }) => {
           );
         }
       })}
+      </div>
     </Layout>
   );
 };

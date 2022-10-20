@@ -1,57 +1,64 @@
 ---
 title: Tips
 date: "2021-05-28T22:40:32.169Z"
+categories: "spirituality"
 description: Shorts notes for wellbeing
 ---
 
 ## 1. Shower Twice a Day
 
-   Sadhguru: If you are showering with cold water, you will see a shower is not just about cleansing the skin. Even if you went in angry, when you shower and come out, all the nonsense feels washed off. There is a certain cleansing of the Akashic dimension of who you are. Most yogis take shower at least twice a day.
-   For extra benefits use herbal powder instead of soap. Buy Online Herbal Powder by Isha Shoppe
-   You should always start your yoga practices after taking a cold shower in Morning
+Sadhguru: If you are showering with cold water, you will see a shower is not just about cleansing the skin. Even if you went in angry, when you shower and come out, all the nonsense feels washed off. There is a certain cleansing of the Akashic dimension of who you are. Most yogis take shower at least twice a day.
+For extra benefits use herbal powder instead of soap. Buy Online Herbal Powder by Isha Shoppe
+You should always start your yoga practices after taking a cold shower in Morning
 
 ## 2. Fire Bathing
-   Sadhguru: If you wish to do some form of cleansing at home, light a lamp with vegetable oil or ghee and be around this lamp. First, sit facing the lamp, then turn around and sit so that the fire element within you gets rekindled.
-   Watch below video on how to cleanse five body elements? ⇓
+
+Sadhguru: If you wish to do some form of cleansing at home, light a lamp with vegetable oil or ghee and be around this lamp. First, sit facing the lamp, then turn around and sit so that the fire element within you gets rekindled.
+Watch below video on how to cleanse five body elements? ⇓
 
 ## 3. Creating Shrine at Home
 
-   Sadhguru: If you are living in a family situation with a few other people, it is best to create a space for sadhana that is kept in a certain way and not used for any other purpose. If you have a yantra or a sannidhi, that is great. Otherwise, at least keep a picture, light an oil lamp, and put a little flower there every day. If you can create a dedicated, cared-for space, it can provide a lot of support – a little shrine in your own place.
-   How To Create Your Own Shrine at Home ?
+Sadhguru: If you are living in a family situation with a few other people, it is best to create a space for sadhana that is kept in a certain way and not used for any other purpose. If you have a yantra or a sannidhi, that is great. Otherwise, at least keep a picture, light an oil lamp, and put a little flower there every day. If you can create a dedicated, cared-for space, it can provide a lot of support – a little shrine in your own place.
+How To Create Your Own Shrine at Home ?
 
 ## 4. Remain in Touch With Earth & Nature
 
-   Sadhguru: In India, for example in Tamil Nadu, we traditionally called soil as “thai mannu” – Mother Earth
-   Please watch wonderful video below which has simple ways to connect to earth ⇓
+Sadhguru: In India, for example in Tamil Nadu, we traditionally called soil as “thai mannu” – Mother Earth
+Please watch wonderful video below which has simple ways to connect to earth ⇓
 
 Why We Must Eat Food with Our Hands ?
 How to cleanse your Auric Field? ⇓
 
 ## 5. Consuming Neem, Honey & Detoxifying Herbs
-   Sadhguru: In Isha Yoga Center, you will be given Neem & Turmeric balls. If you take this, this is a simple way of cleansing your system.It is a very natural herb which takes away certain type of harmful bacteria from your system, above all it keeps your colon clean. How clean your colon is also decides how well your mind functions. How to Consume Turmeric and Neem with Honey?
-   Soak 8-10 peppercorns together with 2-3 vilva or neem leaves in honey, and a handful of groundnuts in water, overnight. After the Sadhana and chanting, chew the leaves, consume the peppercorns after mixing them with lemon juice, and eat the groundnuts as well.
-   Trifla – Magical Herbal Formula
-   Health Benefits of Ginger Root- Wonder Spice
+
+Sadhguru: In Isha Yoga Center, you will be given Neem & Turmeric balls. If you take this, this is a simple way of cleansing your system.It is a very natural herb which takes away certain type of harmful bacteria from your system, above all it keeps your colon clean. How clean your colon is also decides how well your mind functions. How to Consume Turmeric and Neem with Honey?
+Soak 8-10 peppercorns together with 2-3 vilva or neem leaves in honey, and a handful of groundnuts in water, overnight. After the Sadhana and chanting, chew the leaves, consume the peppercorns after mixing them with lemon juice, and eat the groundnuts as well.
+Trifla – Magical Herbal Formula
+Health Benefits of Ginger Root- Wonder Spice
+
 ## 6. Chanting Mantras
 
-   Sadhguru on Brahmananda Swaroopa: This chant is significant not just for its meaning, but because it is a consecrated chant and it is the simplest way for you to connect with what you refer to as Isha. You can use this as my ID. When we invoke a chant like this, this is not just a chant, a certain amount of work has been done on it. Chant this Brahmananda Swaroopa at presence tie everyday.
-   Sadhguru: A mantra is not something that you utter. It is something that you strive to become because unless you become the key, existence will not open up for you. Becoming the mantra means you are becoming the key. Only if you are the key can you open the lock. Otherwise someone else has to open it for you and you have to listen to him. Becoming a Mantra : How a Mantra Can Bring Transformation
-   Download Isha Chants App
-   Mantra Science ⇓
+Sadhguru on Brahmananda Swaroopa: This chant is significant not just for its meaning, but because it is a consecrated chant and it is the simplest way for you to connect with what you refer to as Isha. You can use this as my ID. When we invoke a chant like this, this is not just a chant, a certain amount of work has been done on it. Chant this Brahmananda Swaroopa at presence tie everyday.
+Sadhguru: A mantra is not something that you utter. It is something that you strive to become because unless you become the key, existence will not open up for you. Becoming the mantra means you are becoming the key. Only if you are the key can you open the lock. Otherwise someone else has to open it for you and you have to listen to him. Becoming a Mantra : How a Mantra Can Bring Transformation
+Download Isha Chants App
+Mantra Science ⇓
 
 ## 7. Wearing Rudraksha Beads Maala
-   Sadhguru: It is a kind of shield against negative energies. It is possible for some people to use negative energies to cause harm to someone else. For someone who is constantly on the move and who eats and sleeps in various places, rudraksha is a very good support because it creates a cocoon of your own energy. Five-faced beads or panchmukhi is safe and good for everyone – man, woman and child.
-   Significance of Wearing Rudraksha Beads Maala
+
+Sadhguru: It is a kind of shield against negative energies. It is possible for some people to use negative energies to cause harm to someone else. For someone who is constantly on the move and who eats and sleeps in various places, rudraksha is a very good support because it creates a cocoon of your own energy. Five-faced beads or panchmukhi is safe and good for everyone – man, woman and child.
+Significance of Wearing Rudraksha Beads Maala
 
 ## 8. What to Wear
-   Sadhguru: Traditionally, a person who wears orange cuts himself off from family and social situations. The one who chooses white walks the spiritual path, but is still involved in the other aspects of life. Those who are on a path where they don’t want to gather anything will wear white.
-   Benefits of Wearing Organic Cotton or Silk Clothing
+
+Sadhguru: Traditionally, a person who wears orange cuts himself off from family and social situations. The one who chooses white walks the spiritual path, but is still involved in the other aspects of life. Those who are on a path where they don’t want to gather anything will wear white.
+Benefits of Wearing Organic Cotton or Silk Clothing
 
 ## 9. Full Body Oil Massage/Bath
-   Balances the Vata, Pitta and Kapha known as Tridosha
-   Best Anti-ageing, younger skins, natural moistening, healthy blood circulation, healthy eyes, cool head, reduces headache, feel lighter, frees from stiffness and body pain, healthy hair, scalp, etc
-   At a spiritual level, it cleanses the Aura, balances the chakra and keep the body at alert and aware state and the list goes on.
-   Click For Complete Article On How To Do Oil Bathing At Home
+
+Balances the Vata, Pitta and Kapha known as Tridosha
+Best Anti-ageing, younger skins, natural moistening, healthy blood circulation, healthy eyes, cool head, reduces headache, feel lighter, frees from stiffness and body pain, healthy hair, scalp, etc
+At a spiritual level, it cleanses the Aura, balances the chakra and keep the body at alert and aware state and the list goes on.
+Click For Complete Article On How To Do Oil Bathing At Home
 
 ## 10. Indian Classical & Devotional Music
 
@@ -199,18 +206,20 @@ Sadhguru: Unwavering attention to anything will lead to ultimate liberation. Not
 Nishchala Tattvam: Creating An Unwavering Intention
 
 ## 34. Inner Engineering Crash Course (for those who have done the course)
-Every time before you do Shambhavi, give yourself a crash course of Inner Engineering for two or three minutes and implement it each day. Even today, it will work.
-So first thing in the morning you smile. Remind yourself or give yourself a crash course in Inner Engineering. Now, 
 
-- All the rules in my life, in the existence are mine, my rules. 
-- My ability to respond is limitless. 
-- This moment the way it is, is the way it is, it cannot be any other way not this day, not this life only this moment and 
-- I am not the body, I am not the mind and 
+Every time before you do Shambhavi, give yourself a crash course of Inner Engineering for two or three minutes and implement it each day. Even today, it will work.
+So first thing in the morning you smile. Remind yourself or give yourself a crash course in Inner Engineering. Now,
+
+- All the rules in my life, in the existence are mine, my rules.
+- My ability to respond is limitless.
+- This moment the way it is, is the way it is, it cannot be any other way not this day, not this life only this moment and
+- I am not the body, I am not the mind and
 - I am a mother to the world,
 
-’ just start with the crash course. It takes twenty seconds. Okay? If you can’t smile at somebody who is next to you, just smile. 
+’ just start with the crash course. It takes twenty seconds. Okay? If you can’t smile at somebody who is next to you, just smile.
 
 ## 35. Sadhanapada From Home
+
 Recently I came across one of the document by Isha foundation in which they have given tips for people to do the Sadhanapada from home who are not able to attend full Sadhanapada course in Ashram. Make sure you read this document on below link, it has lot of good tips. Read all the Sadhana tips given by Isha Foundation here on this link.
 Isha Sadhanapada From Home Tips and Guidelines
 Namaskaram

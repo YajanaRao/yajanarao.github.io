@@ -1,6 +1,7 @@
 ---
 title: "How to use multiple github actions in the same computer"
-categories: technical-concepts
+date: "2021-07-13T22:40:32.169Z"
+categories: questions
 ---
 
 ## Problem
@@ -73,3 +74,5 @@ Use ssh keys and define host aliases in ssh config file (each alias for an accou
    ```
 
 Done! Goodluck!
+
+> Note: Please don't have a separate accounts for work and personal projects. Most of the time we want to show what we have done in office hours in our portfolio as well. Get if resolved as soon as you can.

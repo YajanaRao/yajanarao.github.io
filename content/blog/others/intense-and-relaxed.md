@@ -1,5 +1,7 @@
 ---
 title: "Intense and Relaxed"
+categories: "spirituality"
+date: "2020-08-25"
 description: "Being Intense and Relaxed is the only way"
 ---
 

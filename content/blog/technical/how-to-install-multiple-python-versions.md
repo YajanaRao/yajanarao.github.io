@@ -1,5 +1,6 @@
 ---
 title: How to install multiple python versions
+date: "2020-08-15T22:40:32.169Z"
 categories: technical-concepts
 ---
 
