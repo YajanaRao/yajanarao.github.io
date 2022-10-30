@@ -1,0 +1,356 @@
+---
+title: "Sapiens: A Brief History of Humankind"
+categories: "book summary"
+date: "2020-08-25"
+description: "Three important revolutions shaped the course of history: the
+Cognitive Revolution kick-started history about 70,000 years ago. The
+Agricultural Revolution sped it up about 12,000 years ago. The Scientific
+Revolution, which got under way only 500 years ago, may well end
+history and start something completely different. This book tells the
+story of how these three revolutions have affected humans and their
+fellow organisms"
+---
+
+
+![Sapiens - Book Cover.jpeg](./Sapiens_-_Book_Cover.jpeg)
+
+Yuval Noah Harari
+
+Three important revolutions shaped the course of history: the
+Cognitive Revolution kick-started history about 70,000 years ago. The
+Agricultural Revolution sped it up about 12,000 years ago. The Scientific
+Revolution, which got under way only 500 years ago, may well end
+history and start something completely different. This book tells the
+story of how these three revolutions have affected humans and their
+fellow organisms.
+
+## Chapters:
+
+1. The Cognitive Revolution ( 70,000 years ago )
+    1. The evolution of imagination or the ability to tell stories, sometimes based on real things and sometimes abstract.
+2. The Agricultural Revolution ( 12,000 years ago )
+3. The Unification of Humankind
+    1. Money
+    2. Religion
+    3. Empires
+4. The Scientific Revolution ( 500 years ago )
+
+## Notes:
+
+The history is split into 4 parts in sync with the 4 major shifts that Homo Sapiens have gone through during the last 75000 years.
+
+ABOUT 13.5 BILLION YEARS AGO, MATTER, energy, time and space
+came into being in what is known as the Big Bang. The story of these
+fundamental features of our universe is called **physics**.
+
+About 300,000 years after their appearance, matter and energy started
+to coalesce into complex structures, called atoms, which then combined
+into molecules. The story of atoms, molecules and their interactions is
+called **chemistry**.
+
+About 3.8 billion years ago, on a planet called Earth, certain molecules
+combined to form particularly large and intricate structures called
+organisms. The story of organisms is called **biology**.
+
+About 70,000 years ago, organisms belonging to the species Homo
+sapiens started to form even more elaborate structures called cultures.
+The subsequent development of these human cultures is called **history**.
+
+## 1. Cognitive Revolution
+
+- The most important thing to know about prehistoric humans is that they were insignificant animals with no more impact on their environment than gorillas, fireflies or jellyfish.
+- Just 6 million years ago, a single female ape had two daughters. One became the ancestor of all chimpanzees, the other is our own grandmother.
+- Humans first evolved in East Africa about 2.5 million years ago from an earlier genus of apes called Australopithecus, which means ‘Southern Ape’. About 2 million years ago.
+- About 2 million years ago, some of these archaic men and women left their homeland to journey through and settle vast areas of North Africa, Europe and Asia. Since survival in the snowy forests of northern Europe required different traits than those needed to stay alive in Indonesia’s steaming jungles, human populations evolved in different directions. The result was several distinct species, to each of which scientists have assigned a pompous Latin name.
+- from about 2 million years ago until around 10,000 years ago, the world was home, at one and the same time, to several human species
+    - Europe and western Asia - Homo neanderthalensis (‘Man from the Neander Valley’)
+    - eastern regions of Asia - Homo erectus, ‘Upright Man’
+    - Indonesia, lived Homo soloensis, ‘Man from the Solo Valley’
+    - Homo floresiensis, reached a maximum height of only one metre and weighed no more than twenty-five kilograms.
+    - Homo rudolfensis, ‘Man from Lake Rudolf’,
+    - Homo ergaster, ‘Working Man’,
+    - and eventually our own species, which we’ve immodestly named **Homo sapiens**, ‘**Wise Man**’.
+- humans have extraordinarily large brains compared to other animals. with large brain comes large requirement of energy.
+- In Homo sapiens, the brain accounts for about 2–3
+per cent of total body weight, but it consumes 25 per cent of the body’s
+energy when the body is at rest. By comparison, the brains of other apes
+require only 8 per cent of rest-time energy.
+- With large brains comes
+    - More time for searching food
+    - Muscles reduced
+- By walking upright freed two limbs for other purpose. which lead to manufacting of tools and other actions like siganlling
+- Because of upright posture, human has to compensate with lofty vision and industrious hands with backaches and stiff necks. Women paid extra. An upright gait required narrower hips,
+constricting the birth canal – and this just when babies’ heads were
+getting bigger and bigger. because of which Maternal Mortality Rate increased.
+- Genus Homo’s position in the food chain was, until quite recently, solidly in the
+middle. For millions of years, humans hunted smaller creatures and
+gathered what they could, all the while being hunted by larger
+predators. It was only 400,000 years ago that several species of man
+began to hunt large game on a regular basis, and only in the last
+100,000 years – with the rise of Homo sapiens – that man jumped to the
+top of the food chain.
+- That spectacular leap from the middle to the top had enormous consequences. **Other animals at the top of the pyramid, such as lions and sharks, evolved into that position very gradually, over millions of years. This enabled the ecosystem to develop checks** and balances that prevent lions and sharks from wreaking too much havoc. As lions became
+deadlier, so gazelles evolved to run faster, hyenas to cooperate better,
+and rhinoceroses to be more bad-tempered. In contrast, **humankind
+ascended to the top so quickly that the ecosystem was not given time to
+adjust. Moreover, humans themselves failed to adjust.** Most top
+predators of the planet are majestic creatures. Millions of years of
+dominion have filled them with self-confidence. Sapiens by contrast is
+more like a banana republic dictator. Having so recently been one of the
+underdogs of the savannah, we are full of fears and anxieties over our
+position, which makes us doubly cruel and dangerous. Many historical
+calamities, from deadly wars to ecological catastrophes, have resulted
+from this over-hasty jump.
+- A significant step on the way to the top was the domestication of fire.
+    - Which lead to cooking of food which intern reduce the load on digestive system.
+    - Warming body, scaring animals and buring down entire forest if they want to.
+- The appearance of new ways of thinking and communicating, between
+70,000 and 30,000 years ago, constitutes the Cognitive Revolution. but almost all animals have a way of communicating.
+- The difference between other animals and human way of communicating is humans can gossip. which led to complex relationships
+- Legends, myths, gods and religions appeared for the first time with the
+Cognitive Revolution. Many animals and human species could previously
+say, ‘Careful! A lion!’ Thanks to the Cognitive Revolution, Homo sapiens
+acquired the ability to say, ‘The lion is the guardian spirit of our tribe.’
+This ability to speak about fictions is the most unique feature of Sapiens
+language.
+- Sapiens can cooperate in extremely flexible ways with countless numbers of
+strangers. That’s why Sapiens rule the world, whereas ants eat our
+leftovers and chimps are locked up in zoos and research laboratories.
+- In the wake of the Cognitive Revolution, gossip helped Homo sapiens
+to form larger and more stable bands. But even gossip has its limits.
+Sociological research has shown that the maximum ‘natural’ size of a
+group bonded by gossip is about 150 individuals. Most people can
+neither intimately know, nor gossip effectively about, more than 150
+human beings.
+- Any large-scale human cooperation – whether a modern state, a
+medieval church, an ancient city or an archaic tribe – is rooted in
+common myths that exist only in peoples collective imagination.
+- Ever since the Cognitive Revolution, Sapiens has thus been living in a
+dual reality. On the one hand, the objective reality of rivers, trees and
+lions; and on the other hand, the imagined reality of gods, nations and
+corporations. As time went by, the imagined reality became ever more
+powerful, so that today the very survival of rivers, trees and lions
+depends on the grace of imagined entities such as gods, nations and
+corporations.
+- We still inhibit the characteristics of hunter gather ancestors.
+    - High calory sugary food.
+    - Over eating.
+
+- Pre agricultural life
+    - Majority of people lived in small bands ( Greater than dozen less than several 100)
+    - The dog is the first domesticated animal
+    - Lonelyness and privacy were rare
+- The average forager had wider, deeper and more
+varied knowledge of her immediate surroundings than most of her
+modern descendants.
+- While people in today’s affluent societies work an average of forty to forty-five hours a week, and people in the developing world work sixty
+and **even eighty hours a week**, hunter-gatherers living today in the most
+inhospitable of habitats – such as the Kalahari Desert work on average
+for just **thirty-five to forty-five hours a week**. They hunt only one day out
+of three, and gathering takes up just three to six hours daily. In normal
+times, this is enough to feed the band. It may well be that ancient
+hunter-gatherers living in zones more fertile than the Kalahari spent
+even less time obtaining food and raw materials. On top of that, foragers
+enjoyed a lighter load of household chores. They had no dishes to wash,
+no carpets to vacuum, no floors to polish, no nappies to change and no
+bills to pay.
+- **The forager economy provided most people with more interesting lives than agriculture or industry do**. Today, a Chinese factory hand leaves
+home around seven in the morning, makes her way through polluted
+streets to a sweatshop, and there operates the same machine, in the same
+way, day in, day out, for ten long and mind-numbing hours, returning
+home around seven in the evening in order to wash dishes and do the
+laundry. Thirty thousand years ago, a Chinese forager might leave camp
+with her companions at, say, eight in the morning. They’d roam the
+nearby forests and meadows, gathering mushrooms, digging up edible
+roots, catching frogs and occasionally running away from tigers. By early
+afternoon, they were back at the camp to make lunch. That left them
+plenty of time to gossip, tell stories, play with the children and just hang
+out. Of course the tigers sometimes caught them, or a snake bit them,
+but on the other hand they didn’t have to deal with automobile
+accidents and industrial pollution.
+- Hunter gathers had better nutritions then the modren world
+- Hunter gathers had better immunity and less disease.
+- Hunter gathers were more peaceful then modren society.
+
+## 2. Agricultural Revolution
+
+- About 10,000 years ago, Sapiens began to
+devote almost all their time and effort to manipulating the lives of a few
+animal and plant species in hope of more meat, grain and fruit.
+- Our minds of from hunter gathers and cousine of ancient farmers
+- the Agricultural Revolution left farmers with lives generally more difficult and less
+satisfying than those of foragers.
+    - Less simulating jobs and life
+    - Diseases
+    - Lack of varity in food and nutrition.
+    - More work
+    - Weaked bones because of high manual labour work.
+    - More stress because of theift, famine and voilence
+- Human body was  adapted to climbing apple trees and running after gazelles, not to
+clearing rocks and carrying water buckets.
+- The word ‘**domesticate**’ comes from the Latin domus, which means ‘house’. Who’s the one living in a house? Not the wheat. It’s the Sapiens.
+- Population increased dratically during this period as womens settled and more labours required for the field.
+- **The pursuit of an easier life resulted in much hardship**, and not for the
+last time. It happens to us today. How many young college graduates
+have taken demanding jobs in high-powered firms, vowing that they will
+work hard to earn money that will enable them to retire and pursue
+their real interests when they are thirty-five? But by the time they reach
+that age, they have large mortgages, children to school, houses in the
+suburbs that necessitate at least two cars per family, and a sense that life
+is not worth living without really good wine and expensive holidays
+abroad. What are they supposed to do, go back to digging up roots? No,
+they double their efforts and keep slaving away.
+- **One of history’s few iron laws is that luxuries tend to become necessities and to spawn new obligations.** Once people get used to a certain luxury, they take it for granted. Then they begin to count on it. Finally they reach a point where they can’t live without it. Let’s take another familiar example from our own time. Over the last few decades, we have invented countless time-saving devices that are supposed to make life more relaxed – washing machines, vacuum cleaners, dishwashers, telephones, mobile phones, computers, email. Previously it took a lot of work to write a letter, address and stamp an envelope, and take it to the mailbox. It took days or weeks, maybe even months, to get a reply. Nowadays I can dash off an email, send it halfway around the globe, and (if my addressee is online) receive a reply a minute later. I’ve saved all that trouble and time, but do I live a more relaxed life?
+- Unfortunately, the evolutionary perspective is an incomplete measure
+of success. It judges everything by the criteria of survival and
+reproduction, with no regard for individual suffering and happiness. **Domesticated chickens and cattle may well be an evolutionary success story, but they are also among the most miserable creatures that ever lived**. The domestication of animals was founded on a series of brutal
+practices that only became crueller with the passing of the centuries.
+
+![Calf](./Calf.png)
+
+- **People found it difficult to leave their artificial islands. They could not abandon their houses, fields and granaries without grave risk of loss.**
+Furthermore, as time went on they accumulated more and more things –
+objects, not easily transportable, that tied them down. Ancient farmers
+might seem to us dirt poor, but a typical family possessed more artefacts
+than an entire forager tribe.
+- While agricultural space shrank, agricultural time expanded. Foragers
+usually didn’t waste much time thinking about next week or next month.
+Farmers sailed in their imagination years and decades into the future.
+
+Three main factors prevent people from realising that the order
+
+organising their lives exists only in their imagination:
+
+1. The imagined order is embedded in the material world.
+2. The imagined order shapes our desires.
+3. The imagined order is inter-subjective.
+    1. An objective phenomenon exists independently of human
+    consciousness and human beliefs. Radioactivity, for example, is not a
+    myth.
+    2. The subjective is something that exists depending on the
+    consciousness and beliefs of a single individual. Like Santa
+    3. The inter-subjective is something that exists within the
+    communication network linking the subjective consciousness of many
+    individuals. If a single individual changes his or her beliefs, or even dies,
+    it is of little importance. However, if most individuals in the network die
+    or change their beliefs, the inter-subjective phenomenon will mutate or
+    disappear. Ex, Law, Money, God, Nations
+
+![Maths](./Maths.png)
+
+## 3. The Unification of Humankind
+
+- Money
+    - Hunter-gatherers had no money. Each band hunted, gathered and
+    manufactured almost everything it required
+    - Agricultural Revolution. Most people continued to live in small, intimate communities. Much like a hunter-gatherer band, each village was a self-sufficient economic unit
+    - barter is effective only when exchanging a limited range of
+    products. It cannot form the basis for a complex economy.
+    - Some societies tried to solve the problem by establishing a central
+    barter system that collected products from specialist growers and
+    manufacturers and distributed them to those who needed them.
+    - Money is the inter-subjective reality that exists solely in people’s shared imagination.
+    - Money is not coins and banknotes. Money is anything that people are
+    willing to use in order to represent systematically the value of other
+    things for the purpose of exchanging goods and services. Ex: shells, cattle, skins, salt, grain, beads, cloth and promissory notes, Cigarates.
+    - Money is a universal medium of exchange that enables people to
+    convert almost everything into almost anything else.
+- Religion:
+    - Religion can thus be defined as a system of human norms and values that
+    is founded on a belief in a superhuman order.
+    - This involves two distinct criteria:
+        1. Religions hold that there is a superhuman order, which is not the
+        product of human whims or agreements. Ex: Football is not religion because it is created by human
+        2. Based on this superhuman order, religion establishes norms and
+        values that it considers binding.
+    - Religion must be universal and misionary.
+    - polytheistic religions (from the Greek: poly = many, theos = god) understood the world to be controlled by a group of powerful gods, such as the fertility goddess, the rain god and the war god.
+    - Animists thought that humans were just one of many creatures inhabiting the world.
+    Polytheists, on the other hand, increasingly saw the world as a reflection
+    of the relationship between gods and humans. Our prayers, our
+    sacrifices, our sins and our good deeds determined the fate of the entire
+    ecosystem. **A terrible flood might wipe out billions of ants, grasshoppers, turtles, antelopes, giraffes and elephants, just because a few stupid Sapiens made the gods angry.** Polytheism thereby exalted not only the
+    status of the gods, but also that of humankind. Less fortunate members
+    of the old animist system lost their stature and became either extras or
+    silent decor in the great drama of man’s relationship with the gods.
+    - In classical Greek
+    polytheism, Zeus, Hera, Apollo and their colleagues were subject to an
+    **omnipotent** **and all-encompassing power – Fate** (Moira, Ananke). Nordic
+    gods, too, were in thrall to fate, which doomed them to perish in the
+    cataclysm of Ragnarök (the Twilight of the Gods). In the polytheistic religion of the Yoruba of West Africa, all gods were born of the supreme
+    god Olodumare, and remained subject to him. In Hindu polytheism, a
+    single principle, **Atman**, controls the myriad gods and spirits,
+    humankind, and the biological and physical world. **Atman is the eternal
+    essence or soul of the entire universe, as well as of every individual and every phenomenon.**
+    - The fundamental insight of polytheism, which distinguishes it from monotheism, **is that the supreme power governing the world is devoid of interests and biases, and therefore it is unconcerned with the mundane desires, cares and worries of humans**.
+    - Polytheism belives in good and evil whereas Monotheism everything is god.
+    - Mind is mostly dissatisfied because
+        - When experience is distateful, it craves to get rid of it.
+        - When experience is pleasent, it craves for more and intensity.
+    - When mind is absent of craving then there is peace
+    - Recent religions like buddhism, stocism, jainish focus not on god instead of human.
+    
+    ![Religion](./Religion.png)
+    
+    ## 4. Scientific Revolution
+    
+- The willingness to admin the ignorance is the first step of revolution
+- Capitalism:
+    - an economic and political system in which a country's trade and industry are controlled by private owners for profit, rather than by the state.
+- Market and Family replaced joint familiy with nuclear family by providing safety of job, pension and insurance along with security.
+- In recent times more people die of sucide then of war.
+- Wars have reduced in recent times because of
+    - the price of war has gone up dramatically. nuclear weapons make war more distructive.
+    - while the price of war soared, its profits declined.because most wealths in nore loatable
+        - Today, wealth consists mainly of
+        human capital, technical know-how and complex socio-economic
+        structures such as banks. Consequently it is difficult to carry it off or
+        incorporate it into one’s territory.
+    - Global peace is lucrative to the nation economy
+    - Most countries are dependent on other countries for trade.
+    
+    ### Happiness
+    
+- Power corrupts, they say, and as humankind gained more and
+more power, it created a cold mechanistic world ill-suited to our real needs.
+- people in modern affluent societies suffer
+greatly from alienation and meaninglessness despite their prosperity.
+And perhaps our less well-to-do ancestors found much contentment in
+community, religion and a bond with nature.
+- money does indeed bring happiness.
+But only up to a point, and beyond that point it has little significance.
+- illness decreases happiness in the
+short term, but is a source of long-term distress only if a person’s
+condition is constantly deteriorating or if the disease involves ongoing
+and debilitating pain.
+- Family and community seem to have more impact on our happiness than money and health.
+- Happiness depends on the correlation between objective
+conditions and subjective expectations.
+- Some scholars compare human biochemistry to an air-conditioning
+system that keeps the temperature constant, come heatwave or snowstorm. Events might momentarily change the temperature, but the air-conditioning system always returns the temperature to the same set point.
+- world is based on the biological assumption that
+happiness equals pleasure. To be happy is no more and no less than
+experiencing pleasant bodily sensations. Since our biochemistry limits
+the volume and duration of these sensations, the only way to make
+people experience a high level of happiness over an extended period of
+time is to manipulate their biochemical system.
+- Another is that the findings demonstrate that happiness is not the surplus of pleasant over unpleasant moments. Rather, happiness consists in seeing one’s life in its entirety as
+meaningful and worthwhile.
+- If you have a why to live, you can bear almost any how. ~ Nietzsche
+- If happiness is based on feeling pleasant sensations, then in order to be
+happier we need to re-engineer our biochemical system. If happiness is
+based on feeling that life is meaningful, then in order to be happier we
+need to delude ourselves more effectively.
+
+### Buddhism
+
+- Our feelings are no more than fleeting vibrations, changing every moment, like the ocean waves.
+- the root of suffering is neither the
+feeling of pain nor of sadness nor even of meaninglessness. Rather, the
+real root of suffering is this never-ending and pointless pursuit of
+ephemeral feelings, which causes us to be in a constant state of tension,
+restlessness and dissatisfaction.
+- People are liberated from suffering not when they experience this or
+that fleeting pleasure, but rather when they understand the impermanent
+nature of all their feelings, and stop craving them. This is the aim of
+Buddhist meditation practices.
