@@ -17,9 +17,9 @@ function About({ data, location }) {
       </p>
       <p className="text-black dark:text-white">
         My aspiration is to bring wellbeing into people lives through Technology
-        and other means. I currently live in Hubli, Karnataka, India 🇮🇳 . I am a
+        and other means. I currently live in Sagar, Karnataka, India 🇮🇳 . I am a
         Software enginner, I have been working on developing cross platform
-        application using react native for last 5 years. I am currently working
+        application using react native for last 6 years. I am currently working
         at Merahkee Technology Solutions. I have a completed B. Sc in
         Electronics and Communication.
       </p>

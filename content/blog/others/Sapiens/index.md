@@ -1,7 +1,7 @@
 ---
 title: "Sapiens: A Brief History of Humankind"
 categories: "book summary"
-date: "2020-08-25"
+date: "2022-10-30"
 description: "Three important revolutions shaped the course of history: the
 Cognitive Revolution kick-started history about 70,000 years ago. The
 Agricultural Revolution sped it up about 12,000 years ago. The Scientific
@@ -10,7 +10,6 @@ history and start something completely different. This book tells the
 story of how these three revolutions have affected humans and their
 fellow organisms"
 ---
-
 
 ![Sapiens - Book Cover.jpeg](./Sapiens_-_Book_Cover.jpeg)
 
