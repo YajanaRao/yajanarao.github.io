@@ -36,24 +36,13 @@ fellow organisms.
 
 ## Notes:
 
-The history is split into 4 parts in sync with the 4 major shifts that Homo Sapiens have gone through during the last 75000 years.
+The history is split into 4 parts in sync with the 4 major shifts that Homo Sapiens have gone through during the last 75000 years.  ABOUT 13.5 BILLION YEARS AGO, MATTER, energy, time and space came into being in what is known as the Big Bang. The story of these fundamental features of our universe is called **physics**.
 
-ABOUT 13.5 BILLION YEARS AGO, MATTER, energy, time and space
-came into being in what is known as the Big Bang. The story of these
-fundamental features of our universe is called **physics**.
+About 300,000 years after their appearance, matter and energy started to coalesce into complex structures, called atoms, which then combined into molecules. The story of atoms, molecules and their interactions is called **chemistry**.
 
-About 300,000 years after their appearance, matter and energy started
-to coalesce into complex structures, called atoms, which then combined
-into molecules. The story of atoms, molecules and their interactions is
-called **chemistry**.
+About 3.8 billion years ago, on a planet called Earth, certain molecules combined to form particularly large and intricate structures called organisms. The story of organisms is called **biology**.
 
-About 3.8 billion years ago, on a planet called Earth, certain molecules
-combined to form particularly large and intricate structures called
-organisms. The story of organisms is called **biology**.
-
-About 70,000 years ago, organisms belonging to the species Homo
-sapiens started to form even more elaborate structures called cultures.
-The subsequent development of these human cultures is called **history**.
+About 70,000 years ago, organisms belonging to the species Homo sapiens started to form even more elaborate structures called cultures. The subsequent development of these human cultures is called **history**.
 
 ## 1. Cognitive Revolution
 
@@ -70,57 +59,24 @@ The subsequent development of these human cultures is called **history**.
     - Homo ergaster, ‘Working Man’,
     - and eventually our own species, which we’ve immodestly named **Homo sapiens**, ‘**Wise Man**’.
 - humans have extraordinarily large brains compared to other animals. with large brain comes large requirement of energy.
-- In Homo sapiens, the brain accounts for about 2–3
-per cent of total body weight, but it consumes 25 per cent of the body’s
-energy when the body is at rest. By comparison, the brains of other apes
-require only 8 per cent of rest-time energy.
+- In Homo sapiens, the brain accounts for about 2–3 per cent of total body weight, but it consumes 25 per cent of the body’s energy when the body is at rest. By comparison, the brains of other apes require only 8 per cent of rest-time energy.
 - With large brains comes
     - More time for searching food
     - Muscles reduced
 - By walking upright freed two limbs for other purpose. which lead to manufacting of tools and other actions like siganlling
-- Because of upright posture, human has to compensate with lofty vision and industrious hands with backaches and stiff necks. Women paid extra. An upright gait required narrower hips,
-constricting the birth canal – and this just when babies’ heads were
-getting bigger and bigger. because of which Maternal Mortality Rate increased.
-- Genus Homo’s position in the food chain was, until quite recently, solidly in the
-middle. For millions of years, humans hunted smaller creatures and
-gathered what they could, all the while being hunted by larger
-predators. It was only 400,000 years ago that several species of man
-began to hunt large game on a regular basis, and only in the last
-100,000 years – with the rise of Homo sapiens – that man jumped to the
+- Because of upright posture, human has to compensate with lofty vision and industrious hands with backaches and stiff necks. Women paid extra. An upright gait required narrower hips, constricting the birth canal – and this just when babies’ heads were getting bigger and bigger. because of which Maternal Mortality Rate increased.
+- Genus Homo’s position in the food chain was, until quite recently, solidly in the middle. For millions of years, humans hunted smaller creatures and gathered what they could, all the while being hunted by larger predators. It was only 400,000 years ago that several species of man began to hunt large game on a regular basis, and only in the last 100,000 years – with the rise of Homo sapiens – that man jumped to the
 top of the food chain.
-- That spectacular leap from the middle to the top had enormous consequences. **Other animals at the top of the pyramid, such as lions and sharks, evolved into that position very gradually, over millions of years. This enabled the ecosystem to develop checks** and balances that prevent lions and sharks from wreaking too much havoc. As lions became
-deadlier, so gazelles evolved to run faster, hyenas to cooperate better,
-and rhinoceroses to be more bad-tempered. In contrast, **humankind
-ascended to the top so quickly that the ecosystem was not given time to
-adjust. Moreover, humans themselves failed to adjust.** Most top
-predators of the planet are majestic creatures. Millions of years of
-dominion have filled them with self-confidence. Sapiens by contrast is
-more like a banana republic dictator. Having so recently been one of the
-underdogs of the savannah, we are full of fears and anxieties over our
-position, which makes us doubly cruel and dangerous. Many historical
-calamities, from deadly wars to ecological catastrophes, have resulted
-from this over-hasty jump.
+- That spectacular leap from the middle to the top had enormous consequences. **Other animals at the top of the pyramid, such as lions and sharks, evolved into that position very gradually, over millions of years. This enabled the ecosystem to develop checks** and balances that prevent lions and sharks from wreaking too much havoc. As lions became deadlier, so gazelles evolved to run faster, hyenas to cooperate better, and rhinoceroses to be more bad-tempered. In contrast, **humankind ascended to the top so quickly that the ecosystem was not given time to adjust. Moreover, humans themselves failed to adjust.** Most top predators of the planet are majestic creatures. Millions of years of dominion have filled them with self-confidence. Sapiens by contrast is more like a banana republic dictator. Having so recently been one of the underdogs of the savannah, we are full of fears and anxieties over our position, which makes us doubly cruel and dangerous. Many historical calamities, from deadly wars to ecological  catastrophes, have resulted from this over-hasty jump.
 - A significant step on the way to the top was the domestication of fire.
     - Which lead to cooking of food which intern reduce the load on digestive system.
     - Warming body, scaring animals and buring down entire forest if they want to.
 - The appearance of new ways of thinking and communicating, between
 70,000 and 30,000 years ago, constitutes the Cognitive Revolution. but almost all animals have a way of communicating.
 - The difference between other animals and human way of communicating is humans can gossip. which led to complex relationships
-- Legends, myths, gods and religions appeared for the first time with the
-Cognitive Revolution. Many animals and human species could previously
-say, ‘Careful! A lion!’ Thanks to the Cognitive Revolution, Homo sapiens
-acquired the ability to say, ‘The lion is the guardian spirit of our tribe.’
-This ability to speak about fictions is the most unique feature of Sapiens
-language.
-- Sapiens can cooperate in extremely flexible ways with countless numbers of
-strangers. That’s why Sapiens rule the world, whereas ants eat our
-leftovers and chimps are locked up in zoos and research laboratories.
-- In the wake of the Cognitive Revolution, gossip helped Homo sapiens
-to form larger and more stable bands. But even gossip has its limits.
-Sociological research has shown that the maximum ‘natural’ size of a
-group bonded by gossip is about 150 individuals. Most people can
-neither intimately know, nor gossip effectively about, more than 150
-human beings.
+- Legends, myths, gods and religions appeared for the first time with the Cognitive Revolution. Many animals and human species could previously say, ‘Careful! A lion!’ Thanks to the Cognitive Revolution, Homo sapiens acquired the ability to say, ‘The lion is the guardian spirit of our tribe.’ This ability to speak about fictions is the most unique feature of Sapiens language.
+- Sapiens can cooperate in extremely flexible ways with countless numbers of strangers. That’s why Sapiens rule the world, whereas ants eat our leftovers and chimps are locked up in zoos and research laboratories.
+- In the wake of the Cognitive Revolution, gossip helped Homo sapiens to form larger and more stable bands. But even gossip has its limits. Sociological research has shown that the maximum ‘natural’ size of a group bonded by gossip is about 150 individuals. Most people can neither intimately know, nor gossip effectively about, more than 150 human beings.
 - Any large-scale human cooperation – whether a modern state, a
 medieval church, an ancient city or an archaic tribe – is rooted in
 common myths that exist only in peoples collective imagination.
