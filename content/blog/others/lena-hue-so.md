@@ -1,7 +1,7 @@
 ---
 title: "Lena Hue So"
 categories: "spirituality"
-date: "2022-11-3"
+date: "2022-11-03"
 description: "Sufi poet Rohal Faqir urges people to delve into the deeper dimensions of life, so that they can be open to receive what grace has to offer."
 ---
 
