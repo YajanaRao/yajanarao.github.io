@@ -19,6 +19,10 @@ It is time you work upon bringing yourself to ease – not only with other peopl
 
 ![Alert and Calm](./intense-and-relaxed.jpeg)
 
+For all the obsession about accessing states of flow, creativity, hyper-focus, neuroplasticity etc. the two states of mind that serve as foundational entry points to all the rest are: 
+1) Alert but Calm
+2) Asleep
+
 In agitation, everything is distorted. So, being at ease is most important, otherwise you will not experience life the way it is. ~ Sadhguru
 
 ## Remember to play.
@@ -44,4 +48,5 @@ Everytime observer yourself for tensions in the body. Bring everything under con
 
 References:
 
-https://youtu.be/diFkCJ802vY
+- https://youtu.be/diFkCJ802vY
+- https://twitter.com/hubermanlab/status/1433151192385740800?s=20&t=c7gbKcMvX_YMDHsxdtIkeA
