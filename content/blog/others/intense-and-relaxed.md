@@ -18,6 +18,12 @@ It is time you work upon bringing yourself to ease – not only with other peopl
 
 > In agitation, everything is distorted. So, being at ease is most important, otherwise you will not experience life the way it is. ~ Sadhguru
 
+For all the obsession about accessing states of flow, creativity, hyper-focus, neuroplasticity etc. the two states of mind that serve as foundational entry points to all the rest are: 
+1) Alert but Calm
+2) Asleep
+
+In agitation, everything is distorted. So, being at ease is most important, otherwise you will not experience life the way it is. ~ Sadhguru
+
 ## Remember to play.
 
 Playfulness, says Sadhguru, has been wrongly equated with irresponsibility. Instead of walking around with a long face, entangled with your own creation, if you are playful with life and in tune with the larger creation, it is the most responsible way to live. If you want to walk the path of devotion, you cannot save yourself – you must burn with passion.
@@ -41,4 +47,5 @@ Everytime observer yourself for tensions in the body. Bring everything under con
 
 ###  References:
 
-https://youtu.be/diFkCJ802vY
+- https://youtu.be/diFkCJ802vY
+- https://twitter.com/hubermanlab/status/1433151192385740800?s=20&t=c7gbKcMvX_YMDHsxdtIkeA

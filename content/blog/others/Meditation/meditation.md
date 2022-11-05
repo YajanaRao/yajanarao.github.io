@@ -28,8 +28,7 @@ Does not mean tension. Can be relaxed and attentive at the same time
 ### Awareness
 
 Awareness is aliveness.
-
-# knowledge and understanding that something is happening or exists
+Awarebess is the knowledge and understanding that something is happening or exists
 
 ## Asanas
 
@@ -60,7 +59,6 @@ Comfortable
 1. Awareness Meditation / Insight (Vipasana)
    an accurate and deep understanding. (Wisdom)
 
-https://isha.sadhguru.org/yoga/meditations/how-to-meditate/
 
 ## Vipasana
 
@@ -105,3 +103,5 @@ References:
 - https://www.headspace.com/meditation-101/what-is-meditation
 
 - https://isha.sadhguru.org/yoga/meditations/how-to-meditate/
+
+- https://youtu.be/wTBSGgbIvsY
