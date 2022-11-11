@@ -2,6 +2,7 @@
 title: API documentation using Swagger
 description: API documentation is a technical content deliverable, containing instructions about how to effectively use and integrate with an API.
 categories: technical-concepts
+date: "2021-10-11"
 ---
 
 ## What Is API Documentation?

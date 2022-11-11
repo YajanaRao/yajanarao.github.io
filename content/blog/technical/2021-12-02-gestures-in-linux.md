@@ -1,6 +1,7 @@
 ---
 title: Setting up Touchpad Gestures in your Ubuntu Laptop
 description: Touchpad gestures for linux on laptops
+date: "2022-01-10"
 ---
 
 ```

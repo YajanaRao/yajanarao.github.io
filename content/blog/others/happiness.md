@@ -84,5 +84,7 @@ Let’s say I’m trying to quit smoking. There are techniques I can try, but th
 
 People are liberated from suffering not when they experience this or that fleeting pleasure, but rather when they understand the impermanent nature of all their feelings, and stop craving them. This is the aim of Buddhist meditation practices. In meditation, you are supposed to closely observe your mind and body, witness the ceaseless arising and passing of all your feelings, and realise how pointless it is to pursue them. When the pursuit stops, the mind becomes very relaxed, clear and satisfied. All kinds of feelings go on arising and passing  *joy, anger, boredom, lust* but once you stop craving particular feelings, you can just accept them for what they are. You live in the present moment instead of fantasising about what might have been.
 
+> The name of God is truth.
+
 ## References:
 - https://nav.al/happiness
