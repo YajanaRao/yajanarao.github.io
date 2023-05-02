@@ -1,0 +1,25 @@
+---
+title: Waking up - A Guide to Spirituality Without Religion
+date: "2023-04-02"
+categories: "book summary"
+description: Waking Up: A Guide to Spirituality Without Religion is a book by Sam Harris that discusses a wide range of topics including secular spirituality, the illusion of the self, psychedelics, and meditation.
+---
+
+This book starts by explaining the fleeting nature of happiness and introduces Vipassana or Mindfulness as a solution. It also talks about Illusion of self, Consciousness and Meditation.
+
+It helped me differentiate between religion and spirituality, and my expectations of meditation have been clarified as a result. It is also a good resource if you want to use Waking Up app created by Sam Harris.
+
+Few quotes that Impacted me are:
+
+- And a true spiritual practitioner is someone who has discovered that it is possible to be at ease in the world for no reason, if only for a few moments at a time, and that such ease is synonymous with transcending the apparent boundaries of the self.
+
+- Being mindful is not a matter of thinking more clearly about experience; it is the act of experiencing more clearly, including the arising of thoughts themselves.
+
+- According to the Buddhist view, by seeing things as they are, we cease to suffer in the usual
+ways, and our minds can open to states of well-being that are intrinsic to the nature of consciousness.
+
+- In my view, the realistic goal to be attained through spiritual practice is not some permanent state of enlightenment that admits of no further efforts but a capacity to be free in this moment, in the midst of whatever is happening. If you can do that, you have already solved most of the problems you will encounter in life.
+
+- How we pay attention to the present moment largely determines the character of our experience and, therefore, the quality of our lives. 
+
+- Everything that we want to accomplish is towards having a relaxed and joyful life. Quanlity of live depends on quality of experiences and experiences depend on quality of attension we pay to the present moment. Thoughts interfear in the present moment to something past and future and dwell in all kinds of positive and negative emotions distracting from present moment. So All our experiences are influenced by mind. 
