@@ -2,7 +2,7 @@
 title: Waking up - A Guide to Spirituality Without Religion
 date: "2023-04-02"
 categories: "book summary"
-description: Waking Up: A Guide to Spirituality Without Religion is a book by Sam Harris that discusses a wide range of topics including secular spirituality, the illusion of the self, psychedelics, and meditation.
+description: Waking Up - A Guide to Spirituality Without Religion is a book by Sam Harris that discusses a wide range of topics including secular spirituality, the illusion of the self, psychedelics, and meditation.
 ---
 
 This book starts by explaining the fleeting nature of happiness and introduces Vipassana or Mindfulness as a solution. It also talks about Illusion of self, Consciousness and Meditation.
