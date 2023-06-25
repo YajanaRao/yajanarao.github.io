@@ -1,7 +1,7 @@
 ---
 title: "The Beginning of Infinity"
 categories: "book summary"
-date: "2022-10-31"
+date: "2023-06-25"
 description: "Explanations that Transform the World"
 ---
 
