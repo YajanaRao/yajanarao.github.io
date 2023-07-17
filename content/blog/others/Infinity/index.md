@@ -8,10 +8,9 @@ description: "Explanations that Transform the World"
 [David Deutsch](!https://en.wikipedia.org/wiki/David_Deutsch)
 
 Behind it all is surely an idea so simple, so beautiful, that when
-we grasp it – in a decade, a century, or a millennium – we will
-all say to each other, how could it have been otherwise?
+we grasp it – in a decade, a century, or a millennium – we will all say to each other, how could it have been otherwise?
 
-- John Archibald Wheeler,
+~ John Archibald Wheeler,
 
 ## Resources:
 
