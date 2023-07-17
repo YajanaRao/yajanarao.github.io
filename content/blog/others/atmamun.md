@@ -37,9 +37,8 @@ imprisoned forever.
 - When you have likes and dislikes, you have a desire for one thing and an aversion for another.
 - For most humans current existance consists of following:
 
-```
-Thought -> Emotions -> Behaviour -> Consequence -> Thought -> Emotion ->  ....
-```
+
+![Alt text](image.png)
 
 ### 2. What Is The Mind?
 
@@ -57,7 +56,7 @@ Thought -> Emotions -> Behaviour -> Consequence -> Thought -> Emotion ->  ....
 
 ### 4. Your Manufactured Self
 
-For your entire life, you have lived as a slave to this person in the mirror. And it has destroyed your life.
+- For your entire life, you have lived as a slave to this person in the mirror. And it has destroyed your life.
 
 ### 5. You Are Not YOU
 
@@ -94,14 +93,14 @@ For your entire life, you have lived as a slave to this person in the mirror. An
 
 - Life is simply a joke. An absurdity. A non-linear, haphazard, and unpredictable trail that is fertile for the imagination of hallucinatory human beings.
 
-```
-Life is the leaf that falls and tumbles onto a bed of leaves.
-Life is the dog that barks in the distance.
-Life is a breeze which blows through your hair.
-Life is the very thing that you ignore every day.
-Life is the most insignificant event of the hour.
-Life is not a series of events. Rather it is the substrate in which the events
-take place.
-```
+    ```
+    Life is the leaf that falls and tumbles onto a bed of leaves.
+    Life is the dog that barks in the distance.
+    Life is a breeze which blows through your hair.
+    Life is the very thing that you ignore every day.
+    Life is the most insignificant event of the hour.
+    Life is not a series of events. Rather it is the substrate in which the events
+    take place.
+    ```
 
 - My friend, there was a day that you were not here. And there will soon be a day when you are no longer here. And once you realize this, you will understand that all there is left to do is play.

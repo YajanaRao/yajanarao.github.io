@@ -5,7 +5,7 @@ date: "2016-07-29"
 description: "Archive"
 ---
 
-"Most people go to their graves with music still in them"- Oliver Windall Holmes
+> "Most people go to their graves with music still in them"- Oliver Windall Holmes
 
 We have 86400 seconds every day, like that we have many hundred days in our life. In that period we will do some or other thing.  so the question is were we doing the thing that is really what we wanted?, are we harvesting as much as possible from the land of life?, will we feel the self-satisfaction at the end of it, or we will be a disappointed soul.
 
@@ -18,4 +18,4 @@ Spend much of your time with yourself. search for deep hidden amazing person in 
 
 Don't let the voice of other people to suppress your inner voice. Trust yourself, create the kind of life , you will be happy to live with all yourself. Make the most of yourself by fanning the tiny inner sparks of possibility into flames of achievement
 
-"Life is no brief candle for me. It is a sort of splendid torch which I got hold of for the moment,and I want to make it burn as brightly as possible before handing it on to future generations" -George Bernard Shaw
+> "Life is no brief candle for me. It is a sort of splendid torch which I got hold of for the moment,and I want to make it burn as brightly as possible before handing it on to future generations" -George Bernard Shaw

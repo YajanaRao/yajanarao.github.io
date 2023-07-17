@@ -1,5 +1,5 @@
 ---
-title: The rural Hostels - life of Hostellians 
+title: The Rural Hostels - Life of Hostellians 
 categories: "personal"
 date: "2016-08-06"
 description: "Archive"
