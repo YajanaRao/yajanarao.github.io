@@ -42,13 +42,13 @@ As you get going, keep in mind why you’re doing what you’re doing. Great bus
 
 - Embrace constraints
 
-    “I don’t have enough time/money/people/experience.” Stop whining. Less is a good thing. Constraints are advantages in disguise. Limited resources force you to make do with what you’ve got. There’s no room for waste. And that forces you to be creative.
+“I don’t have enough time/money/people/experience.” Stop whining. Less is a good thing. Constraints are advantages in disguise. Limited resources force you to make do with what you’ve got. There’s no room for waste. And that forces you to be creative.
 
 - Making the call is making progress
 
-    When you put off decisions, they pile up. And piles end up ignored, dealt with in haste, or thrown out. As a result, the individual problems in those piles stay unresolved.
+When you put off decisions, they pile up. And piles end up ignored, dealt with in haste, or thrown out. As a result, the individual problems in those piles stay unresolved.
 
-    The problem comes when you postpone decisions in the hope that a perfect answer will come to you later. It won’t. You’re as likely to make a great call today as you are tomorrow.
+The problem comes when you postpone decisions in the hope that a perfect answer will come to you later. It won’t. You’re as likely to make a great call today as you are tomorrow.
 
 - Be a curator
 You don’t make a great museum by putting all the art in the world into a single room. That’s a warehouse. What makes a museum great is the stuff that’s not on the walls.
