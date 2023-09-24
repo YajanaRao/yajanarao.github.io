@@ -1,4 +1,3 @@
-
 ---
 title: "The Lean Startup"
 categories: "book summary"
@@ -22,7 +21,8 @@ description: "How Constant Innovation Creates Radically Successful Businesses"
 
 - Every startup in any industry is a grand experiment. The question is not "Can this product we built ?".  Instead "Should this product be built ?"
 
-https://theleanstartup.com/images/methodology_diagram.jpg
+
+![The Lean Startup Methodology](https://theleanstartup.com/images/methodology_diagram.jpg "The Lean Startup Methodology")
 
 ## Principles
 
@@ -36,6 +36,9 @@ Version of a new product which allows a team to cllect the maximum amount of val
 - Continuous deployment 
 
 All the code written for an application is immediately deployed in production.
+
+
+When you have only one test, you don’t have entrepreneurs, you have politicians, because you have to sell. Out of a hundred good ideas, you’ve got to sell your idea. So you build up a society of politicians and salespeople. When you have five hundred tests you’re running, then everybody’s ideas can run. And then you create entrepreneurs who run and learn and can retest and relearn as opposed to a society of politicians.
 
 - Split testing (A/B testing)
 
