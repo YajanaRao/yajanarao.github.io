@@ -130,8 +130,11 @@ The primary goal of the technique is to determine the root cause of a defect or 
 
 - https://youtu.be/F5vtCRFRAK0?si=rKRctWA0S-cf-89T
 - https://youtu.be/0wVAPXswE6E?si=IO42aZou9i_3v4ol
+- https://www.kimhartman.se/wp-content/uploads/2013/10/the-lean-startup-summary.pdf
+-https://en.wikipedia.org/wiki/The_Toyota_Way
 
 ## Similar Books
 
 - [Rework](./rework.md)
-- [Zero to One]
+- Zero to One
+- The Tayota Way
