@@ -1,0 +1,123 @@
+import * as React from "react";
+import Link from "next/link";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { getSortedPostsData } from "../lib/posts";
+import { siteMetadata } from "../config";
+import { useRouter } from "next/router";
+import { useSearchParams } from "next/navigation";
+
+const BlogIndex = ({ allPosts }) => {
+  const siteTitle = siteMetadata.title;
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const query = searchParams.get("q");
+  let categories = React.useMemo(
+    () =>
+      allPosts
+        .map((node) => node.categories)
+        .filter((value, index, self) => {
+          return self.indexOf(value) === index && value !== null;
+        })
+        .filter((c) => c),
+    [allPosts]
+  );
+
+  const posts = React.useMemo(
+    () =>
+      allPosts
+        .filter((post) => {
+          console.log(post);
+          const { title, categories } = post;
+          return (
+            title.toLowerCase().includes(query?.toLowerCase() || "") ||
+            (categories &&
+              categories.toLowerCase().includes(query?.toLowerCase() || ""))
+          );
+        })
+        .filter((post) => post),
+    [query, allPosts]
+  );
+
+  const handleChange = (event) => {
+    const query = event.target.value;
+    router.query.q = query;
+    router.push(router);
+  };
+
+  function setCategory(category) {
+    router.query.q = category;
+    router.push(router);
+  }
+
+
+  return (
+    <Layout title={siteTitle}>
+      <SEO title="All posts" />
+      <div style={{ display: "flex" }}>
+        <input
+          type="text"
+          id="search"
+          name="Search Blogs"
+          placeholder="Search Blogs"
+          autoFocus
+          defaultValue={query}
+          onChange={handleChange}
+          className="shadow appearance-none w-full py-2 px-3 text-gray-700 leading-tight w-full rounded focus:ring-2 focus:ring-green-600"
+        />
+      </div>
+      <div className="py-2 mb-4 mx-auto flex items-center">
+        <div className="w-full text-center mx-auto">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setCategory(category)}
+              type="button"
+              className={
+                query === category
+                  ? "m-1 border-transparent bg-green-600 px-2 py-1 text-sm shadow-sm font-medium tracking-wider text-green-100 rounded-full hover:shadow-2xl hover:bg-green-700"
+                  : "m-1 border-transparent bg-green-50 px-2 py-1 text-sm shadow-sm font-medium tracking-wider  text-green-600 rounded-full hover:shadow-2xl hover:bg-green-100"
+              }
+            >
+              {`#${category}`}
+            </button>
+          ))}
+        </div>
+      </div>
+      {posts.map((node) => {
+        const title = node.title;
+        return (
+          <article key={node.id} className="mb-8">
+            <header>
+              <h3 className="mb-0">
+                <Link href={`/posts/${node.id}`}>{title}</Link>
+              </h3>
+              <small className="text-gray-800 dark:text-gray-300">
+                {node.date}
+              </small>
+            </header>
+            <section>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.description || node.excerpt,
+                }}
+                className="text-black dark:text-white"
+              />
+            </section>
+          </article>
+        );
+      })}
+    </Layout>
+  );
+};
+
+export default BlogIndex;
+
+export async function getStaticProps() {
+  const allPosts = getSortedPostsData();
+  return {
+    props: {
+      allPosts,
+    },
+  };
+}

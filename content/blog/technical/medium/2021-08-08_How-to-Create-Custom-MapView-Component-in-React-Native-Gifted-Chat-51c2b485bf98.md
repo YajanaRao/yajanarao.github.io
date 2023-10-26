@@ -7,7 +7,7 @@ date: "2021-08-08T07:05:48.910Z"
 categories: react-native
 ---
 
-![](./img/1__eNVnZl3wvFygxMBzNVThnw.png)
+![](/images/1__eNVnZl3wvFygxMBzNVThnw.png)
 
 [React Native Gifted Chat](https://github.com/FaridSafi/react-native-gifted-chat) is a feature rich chat UI for React Native & Web. I would like to show you, how to create a custom view for gifted chat component. We will build a map view component for the react native gifted chat. When there is location property in the chat, we will display react native maps MapView instead of default chat bubble.
 

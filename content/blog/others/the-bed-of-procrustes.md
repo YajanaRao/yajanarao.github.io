@@ -2,7 +2,7 @@
 title: The Bed of Procrustes
 date: "2022-11-11"
 categories: "book summary"
-description: Collection of thought provoking aphorisms by Nasim Taleb
+description: Collection of thought provoking aphorisms by Nassim Taleb
 ---
 
 - If you know, in the morning, what your day looks like with any precision, you are a little bit dead the more precision, the more dead you are.

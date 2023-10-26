@@ -7,7 +7,7 @@ categories: "react-native"
 
 We will use `react-navigation-collapsible` to make react navigation header collapsible. The use case that we are trying to replicate is sometime similar to Spotify search page UI.
 
-![search.gif](./img/search.gif)
+![search.gif](/images/search.gif)
 
 We will use react-native-collapsible [sticky header](https://github.com/benevbright/react-navigation-collapsible/blob/main/example/src/StickyHeaderScreen.tsx) to get the desired effect of the header.
 

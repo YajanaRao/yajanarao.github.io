@@ -1,0 +1,23 @@
+/* ./src/styles/global.css */
+@tailwind utilities;
+
+::-moz-selection {
+  /* Code for Firefox */
+  /* color: red; */
+  background: #6ee7b7;
+}
+
+::selection {
+  /* color: red; */
+  background: #6ee7b7;
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #48bb78;
+}
+
+a {
+  color: #059669;
+  text-decoration: none;
+}

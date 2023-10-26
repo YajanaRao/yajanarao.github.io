@@ -11,7 +11,7 @@ story of how these three revolutions have affected humans and their
 fellow organisms"
 ---
 
-![Sapiens - Book Cover.jpeg](./Sapiens_-_Book_Cover.jpeg)
+![Sapiens - Book Cover.jpeg](/images/Sapiens_-_Book_Cover.jpeg)
 
 Yuval Noah Harari
 

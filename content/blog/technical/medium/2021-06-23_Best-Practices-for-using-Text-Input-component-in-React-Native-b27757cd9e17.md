@@ -7,7 +7,7 @@ date: "2021-06-23T17:43:11.288Z"
 categories: react-native
 ---
 
-![](./img/1__lSbm5so0zwaSZFwh0BlXfg.jpeg)
+![](/images/1__lSbm5so0zwaSZFwh0BlXfg.jpeg)
 
 TextInput is a Core Component that allows the user to enter text. They typically appear in forms and dialogs.
 
@@ -61,7 +61,7 @@ But this rule doesn’t apply to smart defaults, which are pre-set values based 
 
 ### **6\. Avoid uncontrolled TextInput**
 
-![](./img/1__w6goMCU__uv3BMuE6__hQvYw.png)
+![](/images/1__w6goMCU__uv3BMuE6__hQvYw.png)
 
 The above code sample will work in most of the cases. However, on slow devices, and in a situation where a user is typing really fast it may cause a problem with view updates. The reason for that is React Native’s asynchronous nature.
 

@@ -9,7 +9,7 @@ categories: react-native
 
 In this blog I will show you how to build a responsive react native components using Restyle.
 
-![](./img/1__CSjAyYK8cK0T2amo2gCyQQ.png)
+![](/images/1__CSjAyYK8cK0T2amo2gCyQQ.png)
 
 The Restyle library provides a type-enforced system for building UI components in React Native with TypeScript. It’s a library for building UI libraries, with themability as the core focus.
 

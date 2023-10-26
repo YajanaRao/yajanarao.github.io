@@ -38,7 +38,7 @@ imprisoned forever.
 - For most humans current existance consists of following:
 
 
-![Alt text](image.png)
+![Alt text](/images/image.png)
 
 ### 2. What Is The Mind?
 

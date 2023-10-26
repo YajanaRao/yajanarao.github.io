@@ -24,3 +24,5 @@ logs
 pids
 *.pid
 *.seed
+
+.next/

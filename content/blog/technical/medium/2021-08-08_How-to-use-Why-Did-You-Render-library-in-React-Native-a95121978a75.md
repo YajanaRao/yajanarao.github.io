@@ -9,7 +9,7 @@ categories: react-native
 
 _why-did-you-render_ can be used to detect unnecessary re renders in react native.
 
-![](./img/1__WhR0GNM__wrfEawQ4HfU2ZQ.jpeg)
+![](/images/1__WhR0GNM__wrfEawQ4HfU2ZQ.jpeg)
 
 ### Setup
 
@@ -31,15 +31,15 @@ Setting flag `trackAllPureComponents` will enable logging for all pure component
 
 You can track a component by setting `whyDidYouRender` to true
 
-![](./img/1__4evAFZ5JpCQco3iibdkeXQ.png)
+![](/images/1__4evAFZ5JpCQco3iibdkeXQ.png)
 
 Import `wdyr` as the first import in index.js
 
-![](./img/1____LIu6rbQpiJvMbpj8C8RXA.png)
+![](/images/1____LIu6rbQpiJvMbpj8C8RXA.png)
 
 Run the application and you should be able to see the logs
 
-![](./img/1__nA3n6X__jp8CuSoDywDCLhg.png)
+![](/images/1__nA3n6X__jp8CuSoDywDCLhg.png)
 
 #### References:
 

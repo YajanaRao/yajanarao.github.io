@@ -5,7 +5,7 @@ date: "2023-09-24"
 description: "How Constant Innovation Creates Radically Successful Businesses"
 ---
 
->> There is surely nothing quite so useless as doing with great efficiency what should not be done at all ~ Peter Drucker
+> There is surely nothing quite so useless as doing with great efficiency what should not be done at all ~ Peter Drucker
 
 
 - Startup is a human institution designed to create new products and services under conditions of extreme uncertainty.

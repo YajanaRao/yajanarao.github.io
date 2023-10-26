@@ -5,7 +5,7 @@ date: "2021-06-27T18:13:56.273Z"
 categories: react-native
 ---
 
-![](./img/1__VStEGWJRRFZXIBXpe8ZmwQ.jpeg)
+![](/images/1__VStEGWJRRFZXIBXpe8ZmwQ.jpeg)
 
 There are many component libraries are there for react native in the market. Here top cross platform component libraries are listed not in particular order.
 
@@ -15,7 +15,7 @@ There are many component libraries are there for react native in the market. Her
 
 Paper is a collection of customisable and production-ready components for React Native, following Google’s Material Design guidelines.
 
-![](./img/1__YBcGqUtkERIfknUZoMNwRg.png)
+![](/images/1__YBcGqUtkERIfknUZoMNwRg.png)
 
 Pros:
 
@@ -41,7 +41,7 @@ Cons:
 
 React Native Elements is another extensive cross-platform UI toolkit with many contributed components. The library includes components such as avatar, pricing, badge, overlay, divider, social icon buttons, and more. There is also a demo app on Expo, developed using all of the React Native Elements components. Incredibly, all these can also be used in React Native Web apps.
 
-![](./img/1__2QMfvqoJsCLlkEwEiL30rg.png)
+![](/images/1__2QMfvqoJsCLlkEwEiL30rg.png)
 
 Pros:
 
@@ -65,7 +65,7 @@ Cons:
 
 NativeBase is an accessible, utility-first library that helps you build a consistent design system across Android, iOS and Web (alpha)
 
-![](./img/1__u1R55wNkHRy__KWNMv0zXSA.png)
+![](/images/1__u1R55wNkHRy__KWNMv0zXSA.png)
 
 Pros:
 
@@ -89,7 +89,7 @@ Cons:
 
 UI Kitten is a React Native implementation of the Eva Design System. The framework contains a set of general-purpose UI components styled in a similar way. The most awesome thing about Ui Kitten is that the themes can be changed in the runtime without reloading the application. This way, you may easily focus on business logic, while UI Kitten takes care of the visual appearance of your product.
 
-![](./img/1__gzPnmUEeB8__y__HNRNvBbKQ.png)
+![](/images/1__gzPnmUEeB8__y__HNRNvBbKQ.png)
 
 Pros:
 
@@ -114,7 +114,7 @@ Cons:
 
 Magnus UI is a design system for react-native based on the atomic design principle. It helps developers and designers to build consistent components quickly in terms of UI and UX. Like Chakra UI for react.
 
-![](./img/1__BgnDvo8niyP9QQrDGSFiYg.png)
+![](/images/1__BgnDvo8niyP9QQrDGSFiYg.png)
 
 Pros:
 
@@ -135,6 +135,6 @@ Cons:
 
 **Rapi UI**
 
-![](./img/1__FJMBYJZWyfejeMZ__iRHADA.png)
+![](/images/1__FJMBYJZWyfejeMZ__iRHADA.png)
 
 Link to the site: [https://rapi-ui.kikiding.space/](https://rapi-ui.kikiding.space/)

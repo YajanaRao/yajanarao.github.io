@@ -14,7 +14,7 @@ description: "Being Intense and Relaxed is the only way"
 
 It is time you work upon bringing yourself to ease – not only with other people, just with life. The life that you are must be at ease. If you are not at ease, you will never realize your full potential.
 
-![Alert and Calm](./intense-and-relaxed.jpeg)
+![Alert and Calm](/images/intense-and-relaxed.jpeg)
 
 > In agitation, everything is distorted. So, being at ease is most important, otherwise you will not experience life the way it is. ~ Sadhguru
 
