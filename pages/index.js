@@ -1,14 +1,11 @@
 import * as React from "react";
 import Link from "next/link";
-import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { getSortedPostsData } from "../lib/posts";
-import { siteMetadata } from "../config";
 import { useRouter } from "next/router";
 import { useSearchParams } from "next/navigation";
 
 const BlogIndex = ({ allPosts }) => {
-  const siteTitle = siteMetadata.title;
   const router = useRouter();
   const searchParams = useSearchParams();
   const query = searchParams.get("q");
@@ -27,7 +24,6 @@ const BlogIndex = ({ allPosts }) => {
     () =>
       allPosts
         .filter((post) => {
-          console.log(post);
           const { title, categories } = post;
           return (
             title.toLowerCase().includes(query?.toLowerCase() || "") ||
@@ -50,9 +46,8 @@ const BlogIndex = ({ allPosts }) => {
     router.push(router);
   }
 
-
   return (
-    <Layout title={siteTitle}>
+    <div>
       <SEO title="All posts" />
       <div style={{ display: "flex" }}>
         <input
@@ -107,7 +102,7 @@ const BlogIndex = ({ allPosts }) => {
           </article>
         );
       })}
-    </Layout>
+    </div>
   );
 };
 

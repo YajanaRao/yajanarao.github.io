@@ -1,19 +1,20 @@
 import React from "react";
-import Link from "next/link";
 import Bio from "@/components/bio";
 import SEO from "@/components/seo";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import {
+  getPostSuggestions,
+  getTopicContent,
+  getTopicSlugs,
+} from "../../lib/topics";
+import Link from "next/link";
 
-const BlogPostTemplate = ({ post }) => {
-  // const { previous, next } = pageContext;
-
+const BlogPostTemplate = ({ post, next, previous }) => {
   return (
     <div>
       <SEO title={post.title} description={post.description || post.excerpt} />
       <article>
         <header>
           <h1 className="text-black dark:text-white mt-8 mb-0">{post.title}</h1>
-          <p className="text-black dark:text-white mb-2 mt-0">{post.date}</p>
         </header>
 
         <section
@@ -26,7 +27,7 @@ const BlogPostTemplate = ({ post }) => {
         </footer>
       </article>
 
-      {/* <nav>
+      <nav>
         <ul
           style={{
             display: `flex`,
@@ -38,20 +39,20 @@ const BlogPostTemplate = ({ post }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link href={`${next.id}`} rel="prev">
+                ← {previous.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+              <Link href={`${next.id}`} rel="next">
+                {next.title} →
               </Link>
             )}
           </li>
         </ul>
-      </nav> */}
+      </nav>
     </div>
   );
 };
@@ -59,16 +60,19 @@ const BlogPostTemplate = ({ post }) => {
 export default BlogPostTemplate;
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+  const postData = await getTopicContent(params.slug);
+  const { nextPost, previousPost } = await getPostSuggestions(params.slug);
   return {
     props: {
       post: postData,
+      next: nextPost,
+      previous: previousPost,
     },
   };
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = getTopicSlugs();
   return {
     paths,
     fallback: false,

@@ -13,7 +13,7 @@ fellow organisms"
 
 ![Sapiens - Book Cover.jpeg](/images/Sapiens_-_Book_Cover.jpeg)
 
-Yuval Noah Harari
+Written by Yuval Noah Harari
 
 Three important revolutions shaped the course of history: the Cognitive Revolution kick-started history about 70,000 years ago. The
 Agricultural Revolution sped it up about 12,000 years ago. The Scientific Revolution, which got under way only 500 years ago, may well end history and start something completely different. This book tells the story of how these three revolutions have affected humans and their fellow organisms.
@@ -107,7 +107,7 @@ top of the food chain.
 - **One of history’s few iron laws is that luxuries tend to become necessities and to spawn new obligations.** Once people get used to a certain luxury, they take it for granted. Then they begin to count on it. Finally they reach a point where they can’t live without it. Let’s take another familiar example from our own time. Over the last few decades, we have invented countless time-saving devices that are supposed to make life more relaxed – washing machines, vacuum cleaners, dishwashers, telephones, mobile phones, computers, email. Previously it took a lot of work to write a letter, address and stamp an envelope, and take it to the mailbox. It took days or weeks, maybe even months, to get a reply. Nowadays I can dash off an email, send it halfway around the globe, and (if my addressee is online) receive a reply a minute later. I’ve saved all that trouble and time, but do I live a more relaxed life?
 - Unfortunately, the evolutionary perspective is an incomplete measure of success. It judges everything by the criteria of survival and reproduction, with no regard for individual suffering and happiness. **Domesticated chickens and cattle may well be an evolutionary success story, but they are also among the most miserable creatures that ever lived**. The domestication of animals was founded on a series of brutal practices that only became crueller with the passing of the centuries.
 
-![Calf](./Calf.png)
+![Calf](/images/Calf.png)
 
 - **People found it difficult to leave their artificial islands. They could not abandon their houses, fields and granaries without grave risk of loss.** Furthermore, as time went on they accumulated more and more things – objects, not easily transportable, that tied them down. Ancient farmers might seem to us dirt poor, but a typical family possessed more artefacts than an entire forager tribe.
 - While agricultural space shrank, agricultural time expanded. Foragers usually didn’t waste much time thinking about next week or next month. Farmers sailed in their imagination years and decades into the future.
@@ -123,7 +123,7 @@ organising their lives exists only in their imagination:
     2. The subjective is something that exists depending on the consciousness and beliefs of a single individual. Like Santa
     3. The inter-subjective is something that exists within the communication network linking the subjective consciousness of many individuals. If a single individual changes his or her beliefs, or even dies, it is of little importance. However, if most individuals in the network die or change their beliefs, the inter-subjective phenomenon will mutate or disappear. Ex, Law, Money, God, Nations
 
-![Maths](./Maths.png)
+![Maths](/images/Maths.png)
 
 ## 3. The Unification of Humankind
 
@@ -153,9 +153,10 @@ organising their lives exists only in their imagination:
     - When mind is absent of craving then there is peace
     - Recent religions like buddhism, stocism, jainish focus not on god instead of human.
     
-    ![Religion](./Religion.png)
+    ![Religion](/images/Religion.png)
     
-    ## 4. Scientific Revolution
+
+## 4. Scientific Revolution
     
 - The willingness to admin the ignorance is the first step of revolution
 - Capitalism:
@@ -169,7 +170,8 @@ organising their lives exists only in their imagination:
     - Global peace is lucrative to the nation economy
     - Most countries are dependent on other countries for trade.
     
-    ### Happiness
+
+### Happiness
     
 - Power corrupts, they say, and as humankind gained more and more power, it created a cold mechanistic world ill-suited to our real needs.
 - people in modern affluent societies suffer greatly from alienation and meaninglessness despite their prosperity. And perhaps our less well-to-do ancestors found much contentment in community, religion and a bond with nature.

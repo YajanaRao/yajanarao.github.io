@@ -7,9 +7,6 @@ date: "2023-10-12"
 
 Framework is for organizing thoughts not the code or files. Most of us fall in love with solving problems. So we end up creating new problems to solve in places where even there is no problem to solve. I would like to use my blog to create a framework to organize my thoughts. I have used gatsby now. The problem had been that third party frameworks will lock us to a pattern and lots of code which is not what we need in the first place.
 
-- I want to write as less code as possible to render articles in effective manner.
-- Optimize for speed and aesthetics
-- Experience of writing new article should be smooth.
 
 ### Web primitives
 
@@ -25,7 +22,7 @@ Here are some specific examples of how developers are going back to web primitiv
 
 - Svelte is a JavaScript framework that is known for its small size and fast performance. It uses web primitives like forms and custom elements to build web apps.
 
-
+## References
 - https://youtu.be/zMf_xeGPn6s?si=5XuHRlzng97t0LEP
 - https://github.com/reactwg/server-components/discussions/5
 - https://youtu.be/uXCipjbcQfM?si=-ghK2XoO4H90U3XW

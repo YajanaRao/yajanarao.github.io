@@ -26,3 +26,4 @@ pids
 *.seed
 
 .next/
+out/

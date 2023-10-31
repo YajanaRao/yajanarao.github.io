@@ -1,5 +1,5 @@
 ---
-title: "C Pointers"
+title: "02. C Pointers"
 categories: c-programming
 ---
 

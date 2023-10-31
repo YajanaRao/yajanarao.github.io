@@ -1,5 +1,5 @@
 ---
-title: "Strings and Character array"
+title: "07. Strings and Character array"
 categories: c-programming
 ---
 

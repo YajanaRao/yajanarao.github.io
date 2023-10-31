@@ -10,19 +10,13 @@ import Image from "next/image";
 import { siteMetadata } from "../config";
 
 const Bio = () => {
-
   const { author, social } = siteMetadata;
   return (
-    <div
-      className="mb-2"
-      style={{
-        display: `flex`,
-      }}
-    >
+    <div className="mb-2 flex items-center flex-row">
       <Image
-        src={'/assets/profile-pic.jpg'}
+        src={"/assets/profile-pic.jpg"}
         alt={author.name}
-        className="mr-4"
+        className="mr-4 mb-1"
         style={{
           minWidth: 50,
           borderRadius: `50%`,
@@ -30,9 +24,7 @@ const Bio = () => {
         width={"50"}
         height={"50"}
       />
-      <p 
-      className="text-black dark:text-white"
-      >
+      <p className="text-black dark:text-white">
         Personal blog by{" "}
         <a href={`https://twitter.com/${social.twitter}`}>
           <strong>{author.name}</strong>

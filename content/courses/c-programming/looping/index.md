@@ -1,5 +1,5 @@
 ---
-title: "Looping"
+title: "06. Looping"
 categories: c-programming
 ---
 

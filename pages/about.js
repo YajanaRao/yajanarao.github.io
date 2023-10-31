@@ -1,15 +1,12 @@
 import * as React from "react";
-import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { siteMetadata } from "../config";
 
 function About() {
-  const siteTitle = siteMetadata.title;
 
   return (
-    <Layout title={siteTitle}>
+    <div>
       <SEO title="About" />
-      <h1 className="text-black dark:text-white">Hi! I am Yajana.</h1>
+      <h1 className="text-black dark:text-white mb-0">Hi! I am Yajana.</h1>
       <p className="text-black dark:text-white">
         Software Engineer{" "}
         <span className="text-green-600 font-bold text-lg">+</span> Writer{" "}
@@ -19,8 +16,8 @@ function About() {
         My aspiration is to bring wellbeing into people lives through Technology
         and other means. I currently live in Sagar, Karnataka, India 🇮🇳 . I am a
         Software enginner, I have been working on developing cross platform
-        application using react native for last 6 years. I am currently working
-        at Merahkee Technology Solutions. I have a completed B. Sc in
+        application using react native for almost 6 years. I am currently working
+        at [Mammoth Analytics](https://mammoth.io). I have a completed B. Sc in
         Electronics and Communication.
       </p>
       <p className="text-black dark:text-white"> I created this website as a place to document my journey as I learn new things and share them with you.</p>
@@ -29,8 +26,9 @@ function About() {
       </p>
       <ul className="ml-8">
         <li className="text-black dark:text-white">React Native</li>
-        <li className="text-black dark:text-white">React</li>
-        <li className="text-black dark:text-white">Redux</li>
+        <li className="text-black dark:text-white">React.js</li>
+        <li className="text-black dark:text-white">Vue.js</li>
+        <li className="text-black dark:text-white">Redux / Vuex</li>
         <li className="text-black dark:text-white">Typescript</li>
       </ul>
       <p className="text-black dark:text-white">
@@ -105,7 +103,7 @@ function About() {
           />
         </a>
       </div>
-    </Layout>
+    </div>
   );
 }
 
