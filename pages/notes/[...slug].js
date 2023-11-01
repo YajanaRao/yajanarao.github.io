@@ -8,7 +8,7 @@ import {
 } from "../../lib/topics";
 import Link from "next/link";
 
-const BlogPostTemplate = ({ post, next, previous }) => {
+const BlogPostTemplate = ({ topic, post, next, previous }) => {
   return (
     <div>
       <SEO title={post.title} description={post.description || post.excerpt} />
@@ -39,14 +39,14 @@ const BlogPostTemplate = ({ post, next, previous }) => {
         >
           <li>
             {previous && (
-              <Link href={`${next.id}`} rel="prev">
+              <Link href={`${topic}/${previous.id}`} rel="prev">
                 ← {previous.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link href={`${next.id}`} rel="next">
+              <Link href={`${topic}/${next.id}`} rel="next">
                 {next.title} →
               </Link>
             )}
@@ -64,6 +64,7 @@ export async function getStaticProps({ params }) {
   const { nextPost, previousPost } = await getPostSuggestions(params.slug);
   return {
     props: {
+      topic: params.slug[0],
       post: postData,
       next: nextPost,
       previous: previousPost,
