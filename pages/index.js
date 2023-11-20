@@ -3,8 +3,10 @@ import Link from "next/link";
 import SEO from "../components/seo";
 import { getSortedPostsData } from "../lib/posts";
 import { useSearchParams } from "next/navigation";
+import { useRouter } from "next/router";
 
 const BlogIndex = ({ allPosts }) => {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const query = searchParams.get("q");
   let categories = React.useMemo(
@@ -33,10 +35,18 @@ const BlogIndex = ({ allPosts }) => {
     [query, allPosts]
   );
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const query = formData.get("q");
+    router.query.q = query;
+    router.push(router);
+  }
+
   return (
     <div>
       <SEO title="All posts" />
-      <form>
+      <form onChange={handleSubmit}>
         <div style={{ display: "flex" }}>
           <input
             type="text"
@@ -51,21 +61,23 @@ const BlogIndex = ({ allPosts }) => {
       </form>
       <div className="py-2 mb-4 mx-auto flex items-center">
         <div className="w-full text-center mx-auto">
-          <form>
-            {categories.map((category) => (
-              <input
-                key={category}
-                className={
-                  query === category
-                    ? "m-1 border-transparent bg-green-600 px-2 py-1 text-sm shadow-sm font-medium tracking-wider text-green-100 rounded-full hover:shadow-2xl hover:bg-green-700"
-                    : "m-1 border-transparent bg-green-50 px-2 py-1 text-sm shadow-sm font-medium tracking-wider  text-green-600 rounded-full hover:shadow-2xl hover:bg-green-100"
-                }
-                type="submit"
-                name="q"
-                value={category}
-              />
-            ))}
-          </form>
+          {categories.map((category) => (
+            <button
+              key={category}
+              className={
+                query === category
+                  ? "m-1 border-transparent bg-green-600 px-2 py-1 text-sm shadow-sm font-medium tracking-wider text-green-100 rounded-full hover:shadow-2xl hover:bg-green-700"
+                  : "m-1 border-transparent bg-green-50 px-2 py-1 text-sm shadow-sm font-medium tracking-wider  text-green-600 rounded-full hover:shadow-2xl hover:bg-green-100"
+              }
+              type="button"
+              onClick={() => {
+                router.query.q = category;
+                router.push(router);
+              }}
+            >
+              {category}
+            </button>
+          ))}
         </div>
       </div>
       {posts.map((node) => {
