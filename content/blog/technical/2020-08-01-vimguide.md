@@ -7,13 +7,27 @@ categories: vim
 
 ## Navigation Commands
 
-H – Go to the first line of current screen.
-M – Go to the middle line of current screen.
-L – Go to the last line of current screen.
-ctrl+f – Jump forward one full screen.
-ctrl+b – Jump backwards one full screen.
-ctrl+d – Jump forward (down) a half screen.
-ctrl+u – Jump back (up) one half screen.
+- `H` – Go to the first line of current screen.
+- `M` – Go to the middle line of current screen.
+- `L` – Go to the last line of current screen.
+- `ctrl+f` – Jump forward one full screen.
+- `ctrl+b` – Jump backwards one full screen.
+- `ctrl+d` – Jump forward (down) a half screen.
+- `ctrl+u` – Jump back (up) one half screen.
+- `gd` go to function definition
+- `g;` go to the previous change location
+- `g,` go to the newer change location
+- `gi` place the cursor at the same position where it was left last time in the Insert mode
+
+## Edit commands
+
+- `ci"` change inside `"`
+- `ca"` change around `"`
+- `cit` change inside tag
+- `cs'"` change surround `'` with `"`
+- `di"` delete inside `"`
+- `da"` delete around `"`
+- `dit` change inside tag
 
 ## [vim-commentary](!https://github.com/tpope/vim-commentary)
 
@@ -21,6 +35,7 @@ ctrl+u – Jump back (up) one half screen.
 - `gc` to comment out the target of a motion (for example, gcap to comment out a paragraph),
 - `gc` in visual mode to comment out the selection
 - `gc` in operator pending mode to target a comment.
+
 
 ## [FZF](!https://github.com/junegunn/fzf/blob/master/README-VIM.md)
 
@@ -36,30 +51,9 @@ ctrl+u – Jump back (up) one half screen.
 - Bang version starts fzf in fullscreen mode
   `:FZF!`
 
-## TMux
-
-descriptio://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily/
-
-C -> Control
-
-C - b % -> split window horizontally
-C - b " -> split window vertically
-C - b <arrow keys> Switch to window
-C - d delete window
-
-## VIM
-
-### Tabs
-
-https://www.freecodecamp.org/news/learn-linux-vim-basic-features-19134461ab85/
-:tabedit filename
 
 # switch between tabs
 
 gt -> Switch between tabs
 
-## Pluggins
 
-Light line
-Prettier
-Typescript syntax hightlight as well
