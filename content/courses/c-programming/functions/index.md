@@ -1,5 +1,5 @@
 ---
-title: "Functions"
+title: "05. Functions"
 categories: c-programming
 ---
 

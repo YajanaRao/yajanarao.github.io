@@ -16,10 +16,8 @@ async function createPostImageFoldersForCopy(postsDir) {
   for (const slug of postSlugs) {
     const postDir = `${postsDir}/${slug}`;
     if (fs.lstatSync(postDir).isDirectory()) {
-      console.log("->", postDir);
       createPostImageFoldersForCopy(postDir);
     } else {
-      console.log(":", postDir, slug);
       const allowedImageFileExtensions = [".png", ".jpg", ".jpeg", ".gif"];
       if (allowedImageFileExtensions.includes(path.extname(postDir))) {
         await copyImagesToPublic(postDir, slug);

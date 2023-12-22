@@ -1,18 +1,18 @@
 import React from "react";
 
-import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { siteMetadata } from "../config";
 
 const NotFoundPage = ({ data, location }) => {
-  const siteTitle = siteMetadata.title;
-
   return (
-    <Layout location={location} title={siteTitle}>
+    <div>
       <SEO title="404: Not Found" />
-      <h1>Not Found</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </Layout>
+      <div style={{ height: "75vh" }} className="flex items-center justify-center flex-col">
+        <h1 className="text-black dark:text-white">Not Found</h1>
+        <p className="text-black dark:text-white">
+          You just hit a route that doesn&#39;t exist... the sadness.
+        </p>
+      </div>
+    </div>
   );
 };
 

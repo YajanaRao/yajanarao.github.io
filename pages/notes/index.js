@@ -1,13 +1,10 @@
 import React from "react";
 import Link from "next/link";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import { siteMetadata } from "../config";
+import SEO from "@/components/seo";
 import Image from "next/image";
 
-const Courses = ({ data, location }) => {
-  const siteTitle = siteMetadata.title;
+const Courses = ({}) => {
   const categories = [
     {
       key: "c-programming",
@@ -33,7 +30,7 @@ const Courses = ({ data, location }) => {
   ];
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <div>
       <SEO title="Courses" />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {categories.map((category, index) => {
@@ -60,7 +57,7 @@ const Courses = ({ data, location }) => {
                   </p>
                   <Link
                     className="bg-green-600 hover:shadow-lg transition duration-300 text-white font-bold py-2 px-4 rounded-lg shadow-md "
-                    href={`/courses/${category.link}`}
+                    href={`/notes/${category.link}`}
                   >
                     Visit
                   </Link>
@@ -70,7 +67,7 @@ const Courses = ({ data, location }) => {
           );
         })}
       </div>
-    </Layout>
+    </div>
   );
 };
 

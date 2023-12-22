@@ -1,5 +1,5 @@
 ---
-title: "Arrays in C program"
+title: "01. Arrays in C program"
 categories: c-programming
 ---
 

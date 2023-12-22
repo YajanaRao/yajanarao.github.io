@@ -46,8 +46,8 @@ const Header = React.memo(function Header({ title }) {
             </Link>
           </div>
           <div className="justify-center flex sm:justify-start">
-            <Link href={`/courses/`} className="h-6">
-              Courses
+            <Link href={`/notes/`} className="h-6">
+              Notes
             </Link>
           </div>
           <div className="justify-center flex sm:justify-start">

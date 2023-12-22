@@ -1,3 +1,8 @@
+---
+title: "04. Functions"
+categories: javascript
+---
+
 How functions are used
 
 ## Mapping
