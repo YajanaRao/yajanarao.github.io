@@ -1,0 +1,53 @@
+/* ./src/styles/global.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@font-face {
+  font-family: "Fira Sans";
+  src: url("./fonts/FiraSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@layer base {
+  html {
+    font-family: Fira Sans, sans-serif;
+  }
+
+  /* Heading Styles */
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+  }
+}
+
+
+/* a:not(nav a) {
+  @apply underline decoration-cyan-700 hover:decoration-cyan-900;
+} */
+
+::-moz-selection {
+  /* Code for Firefox */
+  /* color: red; */
+  background: #6ee7b7;
+}
+
+::selection {
+  /* color: red; */
+  background: #6ee7b7;
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #48bb78;
+}
+
+a {
+  color: #059669 !important;
+  text-decoration: none;
+}

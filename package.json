@@ -1,42 +1,46 @@
 {
   "name": "yajana-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "sideEffects": false,
+  "description": "A starter for a blog powered by Remix and Markdown",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Yajana N Rao <yajananrao@gmail.com>",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "@remix-run/node": "^2.1.0",
-    "@remix-run/react": "^2.1.0",
-    "@remix-run/serve": "^2.1.0",
-    "fs-extra": "^11.1.1",
-    "gray-matter": "^4.0.3",
-    "isbot": "^3.7.0",
-    "next": "^13.5.6",
+    "@remix-run/node": "^2.6.0",
+    "@remix-run/react": "^2.6.0",
+    "@remix-run/serve": "^2.6.0",
+    "isbot": "^4.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "remark": "^15.0.1",
-    "remark-gfm": "^4.0.0",
-    "remark-html": "^16.0.1",
-    "remark-prism": "^1.3.6"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.1.0",
+    "@mdx-js/rollup": "^3.0.1",
+    "@remix-run/dev": "^2.6.0",
+    "@tailwindcss/typography": "^0.5.10",
     "@types/node": "20.8.7",
     "@types/react": "18.2.30",
-    "autoprefixer": "^10.4.16",
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.23.1",
     "gh-pages": "^3.2.3",
-    "postcss": "^8.4.31",
+    "postcss": "^8.4.35",
     "prettier": "2.3.2",
-    "sass": "^1.69.4",
-    "tailwindcss": "^2.2.19"
+    "rehype-pretty-code": "^0.12.3",
+    "remark-frontmatter": "^5.0.0",
+    "remark-mdx-frontmatter": "^4.0.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.1.6",
+    "vite": "^5.1.3",
+    "vite-tsconfig-paths": "^4.3.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
-    "nextjs"
+    "remix"
   ],
   "license": "0BSD",
   "main": "n/a",
@@ -45,16 +49,10 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "copyimages": "node ./bin/copy-images.mjs",
-    "prebuild": "npm run copyimages",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "develop": "gatsby develop",
-    "deploy": "gatsby build && gh-pages -d public -b master",
+    "dev": "remix vite:dev",
+    "build": "remix vite:build",
+    "start": "npx http-server build/client",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }

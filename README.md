@@ -3,11 +3,21 @@
 This is my personal blog where I experiment with life.
 
 Principles behind building this blog is
+
 - Simplicity
 - Curiosity
 - Fun
 
+# todo
 
-https://nextjs.org/blog/markdown
+I would like to focus on url design specifically for the site
 
-https://www.hatimeria.com/blog/article/how-to-migrate-from-gatsby-to-next-js
+I am thinking of base url as
+
+https://yajana.in
+
+https://yajana.in/book/infinity
+
+https://blog.yajana.in/book/infinity
+
+-

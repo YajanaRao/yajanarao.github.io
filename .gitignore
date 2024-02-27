@@ -26,4 +26,4 @@ pids
 *.seed
 
 .next/
-out/
+build/
