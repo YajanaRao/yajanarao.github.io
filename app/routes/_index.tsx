@@ -1,15 +1,24 @@
 import * as React from "react";
 import { Link, useSearchParams } from "@remix-run/react";
 import { getPosts } from "../lib/posts";
+import { useUpdateQueryStringValueWithoutNavigation } from "../lib/utils";
 
 export const meta = () => {
-  return [{ title: "All Posts" }];
+  return [{ title: "All Posts | Yajana N Rao" }];
 };
 
 const BlogIndex = () => {
   const allPosts = getPosts();
-  const [searchParams, setSearchParams] = useSearchParams();
-  const query = searchParams.get("q");
+  const [searchParams] = useSearchParams();
+
+  const [queryValue, setQuery] = React.useState(() => {
+    return searchParams.get('q') ?? ''
+  })
+  const query = queryValue.trim()
+
+  useUpdateQueryStringValueWithoutNavigation('q', query)
+
+
   let categories = React.useMemo(
     () =>
       allPosts
@@ -37,19 +46,9 @@ const BlogIndex = () => {
     [query, allPosts]
   );
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const query = formData.get("q") as string;
-    const params = new URLSearchParams();
-    params.set("q", query);
-    setSearchParams(params);
-  }
-
   return (
     <div>
-      {/* <SEO title="All posts" /> */}
-      <form onChange={handleSubmit}>
+      <form onChange={e => e.preventDefault()}>
         <div style={{ display: "flex" }}>
           <input
             type="text"
@@ -58,7 +57,10 @@ const BlogIndex = () => {
             placeholder="Search Blogs"
             autoFocus
             defaultValue={query}
-            className="shadow appearance-none w-full py-2 px-3 text-gray-700 leading-tight w-full rounded focus:ring-2 focus:ring-green-600"
+            onChange={event =>
+              setQuery(event.currentTarget.value.toLowerCase())
+            }
+            className="shadow dark:bg-[#282c35] border-secondary appearance-none w-full py-4 pl-7 pr-3 text-black leading-tight w-full rounded-full border focus:ring-2 focus:ring-green-600"
           />
         </div>
       </form>
@@ -69,14 +71,12 @@ const BlogIndex = () => {
               key={category}
               className={
                 query === category
-                  ? "m-1 border-transparent bg-green-600 px-2 py-1 text-sm shadow-sm font-medium tracking-wider text-green-100 rounded-full hover:shadow-2xl hover:bg-green-700"
-                  : "m-1 border-transparent bg-green-50 px-2 py-1 text-sm shadow-sm font-medium tracking-wider  text-green-600 rounded-full hover:shadow-2xl hover:bg-green-100"
+                  ? "m-1 px-4 py-1 rounded-full bg-secondary text-[#000000] border"
+                  : "m-1 px-4 py-1 rounded-full bg-inverse text-inverse border"
               }
               type="button"
               onClick={() => {
-                const params = new URLSearchParams();
-                params.set("q", category);
-                setSearchParams(params);
+                setQuery(category);
               }}
             >
               {category}
@@ -92,7 +92,7 @@ const BlogIndex = () => {
               <h3 className="text-2xl mb-0 not-prose">
                 <Link to={`/${node.slug}`}>{title}</Link>
               </h3>
-              <small className="text-gray-800 dark:text-gray-300">
+              <small className="text-gray-500 dark:text-gray-300">
                 {new Date(date).toLocaleDateString("en", {
                   day: "numeric",
                   month: "long",
