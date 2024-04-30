@@ -1,5 +1,5 @@
 ---
-title: "Functions"
+title: "05. Functions"
 categories: c-programming
 ---
 
@@ -50,7 +50,7 @@ functionName(argument1, argument2, ...);
 
 #### Passing arguments to a function
 
-![Passing arguments to a function](./passing-arguments.png)
+![Passing arguments to a function](/images/passing-arguments.png)
 
 **Pass by value**:
 
@@ -76,7 +76,7 @@ returnType functionName(type1 argument1, type2 argument2, ...)
 }
 ```
 
-![Return statement](./return-statement.png)
+![Return statement](/images/return-statement.png)
 
 ### Types of functions
 
@@ -112,7 +112,7 @@ User created functions
 
 ### How functions work in C
 
-![How functions work](./how-functions-work.png)
+![How functions work](/images/how-functions-work.png)
 
 > Every C program has a function called main() that is called by operating system when a user runs the program.
 

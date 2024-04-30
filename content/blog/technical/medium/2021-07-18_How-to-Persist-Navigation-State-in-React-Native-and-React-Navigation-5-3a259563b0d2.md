@@ -7,7 +7,7 @@ date: "2021-07-18T11:56:05.076Z"
 categories: react-native
 ---
 
-![](./img/1__ug0tR8qQhUYJkJDQAJe1Sg.png)
+![](/images/1__ug0tR8qQhUYJkJDQAJe1Sg.png)
 
 You might want to save the navigation state in the app, so that the same screen is show after the app is restarted.
 

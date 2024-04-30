@@ -1,5 +1,5 @@
 ---
-title: "Looping"
+title: "06. Looping"
 categories: c-programming
 ---
 
@@ -94,7 +94,7 @@ for(i =0; i< 13; i++ ){
 
 ```
 
-![For Loop](./for-flowchart.png)
+![For Loop](/images/for-flowchart.png)
 
 ### Various forms of for loop in C
 

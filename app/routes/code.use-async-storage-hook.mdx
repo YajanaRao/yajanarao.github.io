@@ -1,0 +1,49 @@
+---
+title: "React Native useAsyncStorage hook implementation"
+date: "2020-08-16T22:40:32.169Z"
+categories: react-native
+---
+import Info from '@/components/info';
+
+<Info {...frontmatter} />
+
+## `useAsyncStorage` Hook Implementation for react native
+
+```js
+function useAsyncStorage(key, initialValue) {
+  const [storedValue, setStoredValue] = useState();
+
+  async function getStoredItem(key, initialValue) {
+    try {
+      const item = await AsyncStorage.getItem(key);
+      const value = item ? JSON.parse(item) : initialValue;
+      setStoredValue(value);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  useEffect(() => {
+    getStoredItem(key, initialValue);
+  }, [key, initialValue]);
+
+  const setValue = async (value) => {
+    try {
+      const valueToStore =
+        value instanceof Function ? value(storedValue) : value;
+      setStoredValue(valueToStore);
+      await AsyncStorage.setItem(key, JSON.stringify(valueToStore));
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  return [storedValue, setValue];
+}
+```
+
+[Link to demo Snack](https://snack.expo.io/@yajana/useasyncstorage)
+
+[Reference](https://usehooks.com/useLocalStorage/)
+
+[Other similar implementation](https://github.com/react-native-hooks/async-storage/blob/master/src/index.js)

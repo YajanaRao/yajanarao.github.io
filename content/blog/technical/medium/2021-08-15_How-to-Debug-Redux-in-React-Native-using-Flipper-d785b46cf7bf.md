@@ -9,7 +9,7 @@ categories: react-native
 
 The [flipper-plugin-redux-debugger](https://classic.yarnpkg.com/en/package/flipper-plugin-redux-debugger) allows you to read React Native redux logs inside [Flipper](https://fbflipper.com/) now:
 
-![](./img/1__Zci4wV7eHmxYsr5ebUQfvA.png)
+![](/images/1__Zci4wV7eHmxYsr5ebUQfvA.png)
 
 #### Install required packages
 
@@ -43,7 +43,7 @@ Open Flipper desktop client and install `redux-debugger` plugin
 
 1.  `Plugin Manager > Install Plugins > search "redux-debugger" > Install redux-debugger`
 
-![](./img/1__xmU__0mAmfBvkMbVNKlVdrg.gif)
+![](/images/1__xmU__0mAmfBvkMbVNKlVdrg.gif)
 
 #### Enable redux debugger
 
@@ -53,7 +53,7 @@ The `redux-debugger` plugin will be listed in the disabled plugin section. Enabl
 Disabled > Redux Debugger > Enable Plugin
 ```
 
-![](./img/1__HIXzvdYYHmSKfAac72__Heg.gif)
+![](/images/1__HIXzvdYYHmSKfAac72__Heg.gif)
 
 #### Start the app to see the logs in Redux debugger
 
@@ -61,4 +61,4 @@ Disabled > Redux Debugger > Enable Plugin
 
 **NOTE**: Click on action to see the state
 
-![](./img/1__tXVljblKZ1LJwzvjP6x81Q.png)
+![](/images/1__tXVljblKZ1LJwzvjP6x81Q.png)

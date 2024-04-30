@@ -1,5 +1,5 @@
 ---
-title: "Conditional statements"
+title: "03. Conditional statements"
 categories: c-programming
 ---
 
@@ -13,7 +13,7 @@ Computer programs also make decisions, using **Boolean expressions** (true/false
 
 ### Example
 
-![Simple Conditional](./simple-conditions.png)
+![Simple Conditional](/images/simple-conditions.png)
 
 ```c
 if(raining){
@@ -83,7 +83,7 @@ if (password === "TOPSECRET") {
 
 When a program selects one of many paths, it can use nested or chained conditionals.
 
-![Nested Conditional](./nested-conditions.png)
+![Nested Conditional](/images/nested-conditions.png)
 
 ```c
 int number = 10;

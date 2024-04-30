@@ -51,4 +51,4 @@ UI and UX development
 
 ## Deployment and maintenance Phase
 
-![SDLC](./SDLC.png)
+![SDLC](/images/SDLC.png)

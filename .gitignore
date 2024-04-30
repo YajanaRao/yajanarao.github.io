@@ -8,7 +8,7 @@ node_modules
 .sass-cache/
 .cache/
 .DS_Store
-public
+public/images
 
 cypress/videos
 cypress/screenshots
@@ -24,3 +24,6 @@ logs
 pids
 *.pid
 *.seed
+
+.next/
+build/
