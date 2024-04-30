@@ -71,8 +71,8 @@ const BlogIndex = () => {
               key={category}
               className={
                 query === category
-                  ? "m-1 px-4 py-1 rounded-full bg-secondary text-[#000000] border"
-                  : "m-1 px-4 py-1 rounded-full bg-inverse text-inverse border"
+                  ? "m-1 px-4 py-1 rounded-full bg-secondary text-[#000000]"
+                  : "m-1 px-4 py-1 rounded-full bg-[#f7f7f7] dark:bg-[#2e3039] text-inverse"
               }
               type="button"
               onClick={() => {
