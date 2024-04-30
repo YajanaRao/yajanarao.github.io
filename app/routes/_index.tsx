@@ -9,7 +9,18 @@ const absoluteOgImageUrl = new URL(ogImageUrl, import.meta.url).toString();
 export const meta = [
   {
     title: "All Posts | Yajana N Rao",
-    description: "Yajana's blog on Programming, life and books",
+  },
+  {
+    property: "og:title",
+    content: "All Posts | Yajana N Rao",
+  },
+  {
+    name: "description",
+    content: "Yajana's blog on Programming, life and books",
+  },
+  {
+    name: "og:description",
+    content: "Yajana's blog on Programming, life and books",
   },
   {
     property: "og:image",
