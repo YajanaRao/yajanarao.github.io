@@ -2,22 +2,31 @@ import * as React from "react";
 import { Link, useSearchParams } from "@remix-run/react";
 import { getPosts } from "../lib/posts";
 import { useUpdateQueryStringValueWithoutNavigation } from "../lib/utils";
+import ogImageUrl from "../../public/assets/profile-pic.jpg";
 
-export const meta = () => {
-  return [{ title: "All Posts | Yajana N Rao" }];
-};
+const absoluteOgImageUrl = new URL(ogImageUrl, import.meta.url).toString();
+
+export const meta = [
+  {
+    title: "All Posts | Yajana N Rao",
+    description: "Yajana's blog on Programming, life and books",
+  },
+  {
+    property: "og:image",
+    content: absoluteOgImageUrl,
+  },
+];
 
 const BlogIndex = () => {
   const allPosts = getPosts();
   const [searchParams] = useSearchParams();
 
   const [queryValue, setQuery] = React.useState(() => {
-    return searchParams.get('q') ?? ''
-  })
-  const query = queryValue.trim()
+    return searchParams.get("q") ?? "";
+  });
+  const query = queryValue.trim();
 
-  useUpdateQueryStringValueWithoutNavigation('q', query)
-
+  useUpdateQueryStringValueWithoutNavigation("q", query);
 
   let categories = React.useMemo(
     () =>
@@ -48,7 +57,7 @@ const BlogIndex = () => {
 
   return (
     <div>
-      <form onChange={e => e.preventDefault()}>
+      <form onChange={(e) => e.preventDefault()}>
         <div style={{ display: "flex" }}>
           <input
             type="text"
@@ -57,7 +66,7 @@ const BlogIndex = () => {
             placeholder="Search Blogs"
             autoFocus
             defaultValue={query}
-            onChange={event =>
+            onChange={(event) =>
               setQuery(event.currentTarget.value.toLowerCase())
             }
             className="shadow dark:bg-[#282c35] border-secondary appearance-none w-full py-4 pl-7 pr-3 text-black leading-tight w-full rounded-full border focus:ring-2 focus:ring-green-600"
