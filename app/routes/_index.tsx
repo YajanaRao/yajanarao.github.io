@@ -11,20 +11,24 @@ export const meta = [
     title: "All Posts | Yajana N Rao",
   },
   {
-    property: "og:title",
-    content: "All Posts | Yajana N Rao",
-  },
-  {
+    content: "Yajana's blog on Programming, life and books",
     name: "description",
-    content: "Yajana's blog on Programming, life and books",
   },
   {
-    name: "og:description",
-    content: "Yajana's blog on Programming, life and books",
-  },
-  {
-    property: "og:image",
     content: absoluteOgImageUrl,
+    property: "image",
+  },
+  {
+    content: "All Posts | Yajana N Rao",
+    property: "og:title",
+  },
+  {
+    content: "Yajana's blog on Programming, life and books",
+    name: "og:description",
+  },
+  {
+    content: absoluteOgImageUrl,
+    property: "og:image",
   },
 ];
 

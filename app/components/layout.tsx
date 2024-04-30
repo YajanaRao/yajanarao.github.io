@@ -7,7 +7,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <div className="bg-white dark:bg-[#282c35] min-h-screen">
       <div className="container max-w-screen-md mx-auto p-8 prose dark:prose-invert">
         <Header />
-        <main className="my-16">{children}</main>
+        <main className="mb-16">{children}</main>
         <Footer />
       </div>
     </div>
