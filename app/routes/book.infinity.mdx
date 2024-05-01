@@ -6,8 +6,11 @@ description: "Explanations that Transform the World"
 ---
 
 import Info from '@/components/info';
+import { getMetaTags } from '@/lib/utils';
+
 
 <Info {...frontmatter} />
+export const meta = getMetaTags(frontmatter);
 
 [David Deutsch](!https://en.wikipedia.org/wiki/David_Deutsch)
 

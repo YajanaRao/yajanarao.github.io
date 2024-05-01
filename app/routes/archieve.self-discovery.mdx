@@ -4,6 +4,13 @@ categories: "personal"
 date: "2016-07-29"
 description: "Archive"
 ---
+import Info from '@/components/info';
+import { getMetaTags } from '@/lib/utils';
+
+<Info {...frontmatter} />
+
+export const meta = getMetaTags(frontmatter);
+
 
 > "Most people go to their graves with music still in them"- Oliver Windall Holmes
 

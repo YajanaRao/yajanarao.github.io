@@ -7,6 +7,14 @@ export function getMetaTags(frontmatter: Frontmatter) {
   return [
     { title: frontmatter.title },
     { name: "description", content: frontmatter.description },
+    {
+      content: frontmatter.title,
+      property: "og:title",
+    },
+    {
+      content: frontmatter.description,
+      name: "og:description",
+    },
   ];
 }
 

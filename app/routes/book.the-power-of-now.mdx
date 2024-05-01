@@ -6,8 +6,12 @@ description: My Summary of book The Power of Now by Eckart Tolle.
 ---
 
 import Info from '@/components/info';
+import { getMetaTags } from '@/lib/utils';
+
 
 <Info {...frontmatter} />
+
+export const meta = getMetaTags(frontmatter);
 
 ## Chapter 1: You are not your mind
 

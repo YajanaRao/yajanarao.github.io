@@ -6,8 +6,11 @@ description: "Three important revolutions shaped the course of history: the Cogn
 ---
 
 import Info from '@/components/info';
+import { getMetaTags } from '@/lib/utils';
 
 <Info {...frontmatter} />
+
+export const meta = getMetaTags(frontmatter);
 
 import SapiensBookCover from './Sapiens_-_Book_Cover.jpeg';
 

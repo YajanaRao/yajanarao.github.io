@@ -6,8 +6,11 @@ description: Collection of thought provoking aphorisms by Nassim Taleb
 ---
 
 import Info from '@/components/info';
+import { getMetaTags } from '@/lib/utils';
 
 <Info {...frontmatter} />
+
+export const meta = getMetaTags(frontmatter);
 
 - If you know, in the morning, what your day looks like with any precision, you are a little bit dead the more precision, the more dead you are.
 - Nothing is more permanent than “temporary” arrangements, deficits, truces, and relationships; and nothing is more temporary than “permanent” ones.

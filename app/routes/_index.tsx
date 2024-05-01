@@ -84,7 +84,7 @@ const BlogIndex = () => {
             onChange={(event) =>
               setQuery(event.currentTarget.value.toLowerCase())
             }
-            className="shadow dark:bg-[#282c35] border-secondary appearance-none w-full py-4 pl-7 pr-3 text-black leading-tight w-full rounded-full border focus:ring-2 focus:ring-green-600"
+            className="shadow dark:bg-[#282c35] border-[#ecc94b] appearance-none w-full py-4 pl-7 pr-3 leading-tight w-full rounded-full border focus:ring-[#ecc94b]"
           />
         </div>
       </form>
@@ -95,7 +95,7 @@ const BlogIndex = () => {
               key={category}
               className={
                 query === category
-                  ? "m-1 px-4 py-1 rounded-full bg-secondary text-[#000000]"
+                  ? "m-1 px-4 py-1 rounded-full bg-[#ecc94b] text-[#000000]"
                   : "m-1 px-4 py-1 rounded-full bg-[#f7f7f7] dark:bg-[#2e3039] text-inverse"
               }
               type="button"
