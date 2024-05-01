@@ -59,7 +59,6 @@ const BlogIndex = () => {
       allPosts
         .filter((post) => {
           const { title, categories } = post.frontmatter;
-          console.log(title, categories);
           return (
             title.toLowerCase().includes(query?.toLowerCase() || "") ||
             (categories &&

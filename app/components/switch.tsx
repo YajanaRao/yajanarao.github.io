@@ -93,7 +93,6 @@ function DarkModeToggle() {
 
   function toggleTheme() {
     setMode(mode === "dark" ? "light" : "dark");
-    console.log("toggleTheme", mode);
     if (localStorage.theme === "dark") {
       localStorage.theme = "light";
       document.documentElement.classList.remove("dark");

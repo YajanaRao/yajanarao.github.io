@@ -18,9 +18,7 @@ export const getPosts = (): PostMeta[] => {
   const posts = Object.entries(modules).map(([file, post]) => {
     if (file.includes("route.mdx")) file = file.replace("/route.mdx", "");
     let id = file.replace("../", "").replace(/\.mdx$/, "");
-    console.log(id);
     let slug = id.split("routes/")[1].replace(".", "/");
-    console.log(slug);
     if (slug === undefined) throw new Error(`No route for ${id}`);
 
     return {
