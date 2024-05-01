@@ -1,13 +1,11 @@
 import React from "react";
 
-import SEO from "../components/seo";
 import Layout from "@/components/layout";
 
 const NotFoundPage = () => {
   return (
     <Layout>
       <div>
-        <SEO title="404: Not Found" />
         <div
           style={{ height: "75vh" }}
           className="flex items-center justify-center flex-col"

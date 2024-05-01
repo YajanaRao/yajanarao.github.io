@@ -1,6 +1,5 @@
 import React from "react";
 import Bio from "@/components/bio";
-import SEO from "@/components/seo";
 import {
   getPostSuggestions,
   getTopicContent,
@@ -12,7 +11,6 @@ import { Link } from "@remix-run/react";
 const BlogPostTemplate = ({ topic, post, next, previous }) => {
   return (
     <div>
-      <SEO title={post.title} description={post.description || post.excerpt} />
       <article>
         <header>
           <h1 className="text-black dark:text-white mt-8 mb-0">{post.title}</h1>

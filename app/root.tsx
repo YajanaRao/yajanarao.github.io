@@ -1,7 +1,6 @@
 import { Links, Meta, Outlet, Scripts } from "@remix-run/react";
 import "../styles/globals.css";
 import Layout from "@/components/layout";
-import Favicon from "../public/favicon.ico";
 
 export default function App() {
   return (
@@ -11,7 +10,10 @@ export default function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:url" content="https://yajana.in" />
         <meta property="og:type" content="website" />
-        <link rel="shortcut icon" href={Favicon} />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <Meta />
         <Links />
       </head>

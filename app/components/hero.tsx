@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "@remix-run/react";
-
+import ProfilePic from "../assets/images/profile-pic.jpg";
 import { siteMetadata } from "../constants";
 
 const Hero = () => {
@@ -10,7 +10,7 @@ const Hero = () => {
     <div className="flex flex-col sm:flex-row my-10">
       <div className="justify-center items-center flex">
         <img
-          src={"/assets/profile-pic.jpg"}
+          src={ProfilePic}
           alt={author.name}
           height={"100"}
           width={"100"}

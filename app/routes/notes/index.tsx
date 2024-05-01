@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "@remix-run/react";
 
-import SEO from "../../components/seo";
-
 const Courses = ({}) => {
   const categories = [
     {
@@ -30,7 +28,6 @@ const Courses = ({}) => {
 
   return (
     <div>
-      <SEO title="Courses" />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {categories.map((category, index) => {
           return (

@@ -1,5 +1,9 @@
 import React from "react";
 import { siteMetadata } from "../constants";
+import Discord from "../assets/images/discord.png";
+import Medium from "../assets/images/medium.png";
+import Twitter from "../assets/images/twitter.png";
+import Github from "../assets/images/github.png";
 
 const Footer = React.memo(() => {
   const { author, social } = siteMetadata;
@@ -17,7 +21,7 @@ const Footer = React.memo(() => {
         style={{ color: "transparent", boxShadow: "none" }}
       >
         <img
-          src={"/assets/twitter.png"}
+          src={Twitter}
           alt={author.name}
           width={"32"}
           height={"32"}
@@ -34,7 +38,7 @@ const Footer = React.memo(() => {
         style={{ color: "transparent", boxShadow: "none" }}
       >
         <img
-          src={"/assets/github.png"}
+          src={Github}
           alt={author.name}
           width={"32"}
           height={"32"}
@@ -49,7 +53,7 @@ const Footer = React.memo(() => {
         style={{ color: "transparent", boxShadow: "none" }}
       >
         <img
-          src={"/assets/medium.png"}
+          src={Medium}
           alt={author.name}
           width={"32"}
           height={"32"}
@@ -62,7 +66,7 @@ const Footer = React.memo(() => {
 
       <a href={social.discord} style={{ boxShadow: "none" }}>
         <img
-          src={"/assets/discord.png"}
+          src={Discord}
           alt={author.name}
           width={"32"}
           height={"32"}

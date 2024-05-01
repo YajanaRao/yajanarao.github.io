@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "@remix-run/react";
 
-import SEO from "@/components/seo";
 import { getAllCourseIds, getCourseData } from "../../lib/topics";
 
 const Course = ({ posts, topic }) => {
   return (
     <div>
-      <SEO title="Categories" />
       <div>
         {posts.map((node) => {
           const title = node.title;

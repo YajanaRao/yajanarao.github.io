@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link, useSearchParams } from "@remix-run/react";
 import { getPosts } from "../lib/posts";
 import { useUpdateQueryStringValueWithoutNavigation } from "../lib/utils";
-import ogImageUrl from "../../public/assets/profile-pic.jpg";
+import ogImageUrl from "../assets/images/profile-pic.jpg";
 
 const absoluteOgImageUrl = new URL(ogImageUrl, import.meta.url).toString();
 
