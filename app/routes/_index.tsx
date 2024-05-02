@@ -15,7 +15,7 @@ export const meta = [
     name: "description",
   },
   {
-    content: absoluteOgImageUrl,
+    content: ogImageUrl,
     property: "image",
   },
   {
@@ -27,7 +27,7 @@ export const meta = [
     name: "og:description",
   },
   {
-    content: absoluteOgImageUrl,
+    content: ogImageUrl,
     property: "og:image",
   },
   {
