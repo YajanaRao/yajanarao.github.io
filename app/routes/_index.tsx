@@ -38,6 +38,10 @@ export const meta = [
     content: "300",
     property: "og:image:height",
   },
+  {
+    content: "image/jpeg",
+    property: "og:image:type",
+  },
 ];
 
 const BlogIndex = () => {
