@@ -2,7 +2,9 @@ import * as React from "react";
 import { Link, useSearchParams } from "@remix-run/react";
 import { getPosts } from "../lib/posts";
 import { useUpdateQueryStringValueWithoutNavigation } from "../lib/utils";
-import ogImageUrl from "/logo.jpg";
+import ogImageUrl from "../assets/images/profile-pic.jpg";
+
+const absoluteOgImageUrl = new URL(ogImageUrl, import.meta.url).toString();
 
 export const meta = [
   {
@@ -13,7 +15,7 @@ export const meta = [
     name: "description",
   },
   {
-    content: ogImageUrl,
+    content: absoluteOgImageUrl,
     property: "image",
   },
   {
@@ -25,8 +27,16 @@ export const meta = [
     name: "og:description",
   },
   {
-    content: ogImageUrl,
+    content: absoluteOgImageUrl,
     property: "og:image",
+  },
+  {
+    content: "300",
+    property: "og:image:width",
+  },
+  {
+    content: "300",
+    property: "og:image:height",
   },
 ];
 
