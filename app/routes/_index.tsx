@@ -20,7 +20,7 @@ export const meta = [
     property: "image",
   },
   {
-    content: "All Posts | Yajana N Rao",
+    content: "Yajana's Blog",
     property: "og:title",
   },
   {
