@@ -4,7 +4,7 @@ import { getPosts } from "../lib/posts";
 import { useUpdateQueryStringValueWithoutNavigation } from "../lib/utils";
 import ogImageUrl from "https://blog.yajana.in/logo.jpg";
 
-const absoluteOgImageUrl = new URL(ogImageUrl, import.meta.url).toString();
+// const absoluteOgImageUrl = new URL(ogImageUrl, import.meta.url).toString();
 
 export const meta = [
   {
@@ -15,7 +15,7 @@ export const meta = [
     name: "description",
   },
   {
-    content: "https://blog.yajana.in/logo.jpg",
+    content: ogImageUrl,
     property: "image",
   },
   {
@@ -27,7 +27,7 @@ export const meta = [
     name: "og:description",
   },
   {
-    content: "https://blog.yajana.in/logo.jpg",
+    content: ogImageUrl,
     property: "og:image",
   },
   {
