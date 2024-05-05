@@ -5,6 +5,13 @@ date: "2021-08-25"
 categories: "finance"
 ---
 
+import Info from '@/components/info';
+import { getMetaTags } from '@/lib/utils';
+
+<Info {...frontmatter} />
+export const meta = getMetaTags(frontmatter);
+
+
 ## Financial independence or Financial Freedom:
 
 - Money work for you instead you working for money.

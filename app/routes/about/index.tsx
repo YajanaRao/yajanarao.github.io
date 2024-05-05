@@ -133,7 +133,17 @@ function About() {
         alternative to react-native-track-player with simple and easy to use
         API.
       </p>
-
+      <h2>Elsewhere on the web</h2>
+      <p>
+        I share interesting quotes/ passages in my whatsapp channel
+        <a
+          href="https://whatsapp.com/channel/0029VaAbdNgJ93wSWi9YAi3X"
+          target="_blank"
+          className="mx-2"
+        >
+          Seeking Truth
+        </a>
+      </p>
       <h2> 👋 Let's talk </h2>
       <p>
         Feel free to contact if you have any questions or if you are looking

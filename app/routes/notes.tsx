@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "@remix-run/react";
+import CProgramming from "../assets/images/topics/c-program.png";
+import Javascript from "../assets/images/topics/javascript.png";
+import Sdlc from "../assets/images/topics/sdlc.png";
 
 const Courses = ({}) => {
   const categories = [
@@ -8,21 +11,21 @@ const Courses = ({}) => {
       title: "C Programming",
       description: "Beginer concepts related to c programming language",
       link: "c-programming",
-      image: "/assets/topics/c-program.png",
+      image: CProgramming,
     },
     {
       key: "javascript",
       title: "Javascript",
       description: "Fundamental programming concepts in JavaScript.",
       link: "javascript",
-      image: "/assets/topics/javascript.png",
+      image: Javascript,
     },
     {
       key: "sdlc",
       title: "SDLC",
       description: "Software development life cycle",
       link: "sdlc",
-      image: "/assets/topics/sdlc.png",
+      image: Sdlc,
     },
   ];
 
@@ -41,7 +44,6 @@ const Courses = ({}) => {
                     style={{ width: "100%" }}
                     width={"0"}
                     height={"100"}
-                    quality={75}
                   />
                 </div>
                 <div className="px-4 py-6">
@@ -53,7 +55,7 @@ const Courses = ({}) => {
                   </p>
                   <Link
                     className="bg-green-600 hover:shadow-lg transition duration-300 text-white font-bold py-2 px-4 rounded-lg shadow-md "
-                    href={`/notes/${category.link}`}
+                    to={`/notes/${category.link}`}
                   >
                     Visit
                   </Link>

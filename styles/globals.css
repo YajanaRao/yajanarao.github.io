@@ -26,8 +26,8 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
   }
-  a {
-    /* color: #059669 !important; */
+  p > a {
+    color: #059669 !important;
     text-decoration: none;
   }
 }
