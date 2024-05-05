@@ -2,18 +2,17 @@ import * as React from "react";
 import { Link, useSearchParams } from "@remix-run/react";
 import { getPosts } from "../lib/posts";
 import { useUpdateQueryStringValueWithoutNavigation } from "../lib/utils";
-// import ogImageUrl from "https://blog.yajana.in/logo.jpg";
 
-const ogImageUrl = "https://blog.yajana.in/logo.jpg";
+const ogImageUrl = "https://yajana.in/logo.jpg";
 
 // const absoluteOgImageUrl = new URL(ogImageUrl, import.meta.url).toString();
 
 export const meta = [
   {
-    title: "All Posts | Yajana N Rao",
+    title: "Yajana's Blog",
   },
   {
-    content: "Yajana's blog on Programming, life and books",
+    content: "Yajana Rao's blog on Programming, Spirituality and Books",
     name: "description",
   },
   {
@@ -25,7 +24,7 @@ export const meta = [
     property: "og:title",
   },
   {
-    content: "Yajana's blog on Programming, life and books",
+    content: "Yajana Rao's blog on Programming, Spirituality and Books",
     name: "og:description",
   },
   {
