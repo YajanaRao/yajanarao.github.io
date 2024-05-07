@@ -50,9 +50,9 @@ function About() {
       <p>
         My aspiration is to bring wellbeing into people lives through Technology
         and other means. I currently live in Sagar, Karnataka, India 🇮🇳 . I am a
-        Software engineer, I have been working on developing cross platform
-        application using react native for almost 6 years. I am currently
-        working at{" "}
+        Software engineer, I have been working on converting ideas into software
+        application for almost {new Date().getFullYear() - 2017} + years. I am
+        currently working at{" "}
         <a href="https://mammoth.io" target="_blank">
           Mammoth Analytics
         </a>
