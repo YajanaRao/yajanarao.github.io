@@ -125,9 +125,9 @@ const BlogIndex = () => {
         return (
           <article key={node.slug} className="mb-8">
             <header>
-              <h3 className="text-2xl mb-0 not-prose">
+              <h2 className="text-2xl mb-0 not-prose">
                 <Link to={`/${node.slug}`}>{title}</Link>
-              </h3>
+              </h2>
               <small className="text-gray-500 dark:text-gray-300">
                 {new Date(date).toLocaleDateString("en", {
                   day: "numeric",

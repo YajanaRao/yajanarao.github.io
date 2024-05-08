@@ -123,6 +123,7 @@ function DarkModeToggle() {
     <div>
       <button
         type="button"
+        aria-label="Toggle Dark Mode"
         onClick={toggleTheme}
         className="border-[#ecc94b] inline-flex items-center justify-center overflow-hidden rounded-full border-2 p-1 transition focus:outline-none"
       >

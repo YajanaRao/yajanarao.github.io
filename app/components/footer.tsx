@@ -18,6 +18,7 @@ const Footer = React.memo(() => {
     >
       <a
         href={`https://twitter.com/${social.twitter}`}
+        target="_blank"
         style={{ color: "transparent", boxShadow: "none" }}
       >
         <img
@@ -35,6 +36,7 @@ const Footer = React.memo(() => {
 
       <a
         href={`https://github.com/${social.github}`}
+        target="_blank"
         style={{ color: "transparent", boxShadow: "none" }}
       >
         <img
@@ -50,6 +52,7 @@ const Footer = React.memo(() => {
       </a>
       <a
         href={`https://medium.com/${social.medium}`}
+        target="_blank"
         style={{ color: "transparent", boxShadow: "none" }}
       >
         <img
@@ -64,7 +67,7 @@ const Footer = React.memo(() => {
         />
       </a>
 
-      <a href={social.discord} style={{ boxShadow: "none" }}>
+      <a href={social.discord} target="_blank" style={{ boxShadow: "none" }}>
         <img
           src={Discord}
           alt={author.name}
