@@ -14,7 +14,9 @@ Computer programs also make decisions, using **Boolean expressions** (true/false
 
 ### Example
 
-![Simple Conditional](/images/simple-conditions.png)
+import SimpleConditions from './simple-conditions.png';
+
+<img src={SimpleConditions} alt="simple conditions" />
 
 ```c
 if(raining){
@@ -55,14 +57,14 @@ The `if` statement evaluates the test expression inside the parenthesis ().
 
 | operator | Greater               | True Expressions |
 | -------- | --------------------- | ---------------- |
-| >        | Greater than          | 60 > 32          |
-| >=       | Greater than or equal | 60 >= 32         |
-| <        | Less than             | 20 < 32          |
-| <=       | Less than or equal    | 20 <= 32         |
-| ===      | Strict equality       | 32 === 32        |
-| ==       | Equality              | 32 == 32         |
-| !==      | Strict inequality     | 30 !== 32        |
-| !=       | Inequality            | 30 != 32         |
+| `>`        | Greater than          | 60 > 32          |
+| `>=`       | Greater than or equal | 60 >= 32         |
+| `<`        | Less than             | 20 < 32          |
+| `<=`       | Less than or equal    | 20 `<=` 32         |
+| `===`      | Strict equality       | 32 === 32        |
+| `==`       | Equality              | 32 == 32         |
+| `!==`      | Strict inequality     | 30 !== 32        |
+| `!=`       | Inequality            | 30 != 32         |
 
 ### The else statement
 
@@ -84,7 +86,9 @@ if (password === "TOPSECRET") {
 
 When a program selects one of many paths, it can use nested or chained conditionals.
 
-![Nested Conditional](/images/nested-conditions.png)
+import NestedConditions from './nested-conditions.png';
+
+<img src={NestedConditions} alt="nested conditions" />
 
 ```c
 int number = 10;

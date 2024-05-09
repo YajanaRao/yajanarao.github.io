@@ -6,7 +6,7 @@ import { Link, useLoaderData } from "@remix-run/react";
 import * as Introduction from "./introduction.mdx";
 import * as Strings from "./strings-and-character-array.md";
 import * as Arrays from "./arrays.md";
-import * as ConditionalStatements from "./conditional-statements/index.md";
+import * as ConditionalStatements from "./conditional-statements/index.mdx";
 import * as Pointers from "./pointers.md";
 import * as StructAndUnions from "./unions-and-struct.md";
 import * as Looping from "./looping/index.md";
@@ -55,31 +55,34 @@ export default function Index() {
         ))}
       </ul>
 
-      <section id={Introduction.frontmatter.slug}>
+      <section id={Introduction.frontmatter.slug} style={{ marginBottom: 20 }}>
         <h1>{Introduction.frontmatter.title}</h1>
         <p>{Introduction.frontmatter.description}</p>
         <Introduction.default />
       </section>
 
-      <section id={Arrays.frontmatter.slug}>
+      <section id={Arrays.frontmatter.slug} style={{ marginBottom: 20 }}>
         <h1>{Arrays.frontmatter.title}</h1>
         <p>{Arrays.frontmatter.description}</p>
         <Arrays.default />
       </section>
 
-      <section id={Pointers.frontmatter.slug}>
+      <section id={Pointers.frontmatter.slug} style={{ marginBottom: 20 }}>
         <h1>{Pointers.frontmatter.title}</h1>
         <p>{Pointers.frontmatter.description}</p>
         <Pointers.default />
       </section>
 
-      <section id={ConditionalStatements.frontmatter.slug}>
+      <section
+        id={ConditionalStatements.frontmatter.slug}
+        style={{ marginBottom: 20 }}
+      >
         <h1>{ConditionalStatements.frontmatter.title}</h1>
         <p>{ConditionalStatements.frontmatter.description}</p>
         <ConditionalStatements.default />
       </section>
 
-      <section id={Errors.frontmatter.slug}>
+      <section id={Errors.frontmatter.slug} style={{ marginBottom: 20 }}>
         <h1>{Errors.frontmatter.title}</h1>
         <p>{Errors.frontmatter.description}</p>
         <Errors.default />
@@ -89,17 +92,20 @@ export default function Index() {
         <p>{Functions.frontmatter.description}</p>
         <Functions.default />
       </section>
-      <section id={Looping.frontmatter.slug}>
+      <section id={Looping.frontmatter.slug} style={{ marginBottom: 20 }}>
         <h1>{Looping.frontmatter.title}</h1>
         <p>{Looping.frontmatter.description}</p>
         <Looping.default />
       </section>
-      <section id={Strings.frontmatter.slug}>
+      <section id={Strings.frontmatter.slug} style={{ marginBottom: 20 }}>
         <h1>{Strings.frontmatter.title}</h1>
         <p>{Strings.frontmatter.description}</p>
         <Strings.default />
       </section>
-      <section id={StructAndUnions.frontmatter.slug}>
+      <section
+        id={StructAndUnions.frontmatter.slug}
+        style={{ marginBottom: 20 }}
+      >
         <h1>{StructAndUnions.frontmatter.title}</h1>
         <p>{StructAndUnions.frontmatter.description}</p>
         <StructAndUnions.default />

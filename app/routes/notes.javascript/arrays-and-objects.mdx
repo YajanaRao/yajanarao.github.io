@@ -1,4 +1,5 @@
 ---
+slug: "object-and-arrays"
 title: 03. Objects and arrays
 categories: javascript
 description: "Understanding objects and arrays in javascript"
@@ -250,7 +251,8 @@ When such a function is called, the rest parameter is bound to an array containi
 - C: trick question! only objects
 - D: number or object
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: A
@@ -283,7 +285,8 @@ console.log(b === c);
 - C: `true` `false` `false`
 - D: `false` `true` `true`
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: C
@@ -314,7 +317,8 @@ bark.animal = "dog";
 - C: `"Woof"` gets logged.
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: A
@@ -346,7 +350,8 @@ const mouse = {
 - C: `mouse[bird["size"]]` is not valid
 - D: All of them are valid
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: A
@@ -377,7 +382,8 @@ Object.seal(person);
 - C: `delete person.name`
 - D: `Object.assign(person, { age: 21 })`
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: A
@@ -409,7 +415,8 @@ Object.freeze(person);
 - C: `person.address.street = "101 Main St"`
 - D: `person.pet = { name: "Mara" }`
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: C
@@ -437,7 +444,8 @@ console.log(y);
 - C: `1`
 - D: `[1]`
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: C
@@ -448,7 +456,7 @@ We can unpack values from arrays or properties from objects through destructurin
 [a, b] = [1, 2];
 ```
 
-<img src="https://i.imgur.com/ADFpVop.png" width="200">
+<img src="https://i.imgur.com/ADFpVop.png" width="200"/>
 
 The value of `a` is now `1`, and the value of `b` is now `2`. What we actually did in the question, is:
 
@@ -456,7 +464,7 @@ The value of `a` is now `1`, and the value of `b` is now `2`. What we actually d
 [y] = [1, 2, 3, 4, 5];
 ```
 
-<img src="https://i.imgur.com/NzGkMNk.png" width="200">
+<img src="https://i.imgur.com/NzGkMNk.png" width="200" />
 
 This means that the value of `y` is equal to the first value in the array, which is the number `1`. When we log `y`, `1` is returned.
 
@@ -483,7 +491,8 @@ console.log(a[b]);
 - C: `undefined`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: B
@@ -516,7 +525,8 @@ console.log(d.greeting);
 - D: `ReferenceError`
 - E: `TypeError`
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: A
@@ -525,7 +535,7 @@ In JavaScript, all objects interact by _reference_ when setting them equal to ea
 
 First, variable `c` holds a value to an object. Later, we assign `d` with the same reference that `c` has to the object.
 
-<img src="https://i.imgur.com/ko5k0fs.png" width="200">
+<img src="https://i.imgur.com/ko5k0fs.png" width="200" />
 
 When you change one object, you change all of them.
 
@@ -539,7 +549,8 @@ When you change one object, you change all of them.
 - A: true
 - B: false
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: B
@@ -572,7 +583,8 @@ console.log(member.getFullName());
 - C: `Lydia Hallie`
 - D: `undefined` `undefined`
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: A
@@ -610,7 +622,8 @@ name.giveLydiaPizza();
 - C: `SyntaxError`
 - D: `undefined`
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: A
@@ -636,7 +649,8 @@ console.log(admin);
 - C: `{ admin: true, user: ["Lydia", 21] }`
 - D: `{ admin: true }`
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: B
@@ -663,7 +677,8 @@ getItems(["banana", "apple"], "pear", "orange")
 - C: `["banana", "apple", ["pear"], "orange"]`
 - D: `SyntaxError`
 
-<details><summary><b>Answer</b></summary>
+<details>
+<summary><b>Answer</b></summary>
 <p>
 
 #### Answer: D

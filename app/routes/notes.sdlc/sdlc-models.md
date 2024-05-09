@@ -1,9 +1,10 @@
 ---
 title: "SDLC Models"
 description: "Software Development Life Cycle (SDLC) is a process used by the software industry to design, develop and test high quality softwares."
+slug: models
+date: "2020-08-17"
 categories: sdlc
 ---
-
 
 - Waterfall Model
 - Iterative Model
