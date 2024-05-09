@@ -13,17 +13,17 @@ categories: "spirituality"
 
 - "It ain't what you don't know that gets you into trouble. It's what you know for sure that just ain't so." ~ Mark Twain
 
-- When you demand nothing of the world, nor of God, when you want nothing, seek nothing, expect nothing, then the Supreme State will come to you uninvited and unexpected.  ~ Nisargadatta  Maharaj
+- When you demand nothing of the world, nor of God, when you want nothing, seek nothing, expect nothing, then the Supreme State will come to you uninvited and unexpected. ~ Nisargadatta Maharaj
 
 - Humans are pattern-seeking story-telling animals, and we are quite adept at telling stories about patterns, whether they exist or not. ~ Michael Shermer
 
 - It is not daily increase but daily decrease, hack away the unessential. ~ Bruce Lee
 
-- Close your eyes, and notice that the darkness is ac- tually filled with color and shadow-and that you can gaze into this space like you would into a boundless sky.
+- Close your eyes, and notice that the darkness is actually filled with color and shadow-and that you can gaze into this space like you would into a boundless sky.
 
 - As long as you are scared of putting yourself out there and failing publicly, you will always be outperformed by competitors who are less talented but more courageous than you.
 
-- Your peers will be more grateful when you ask them for advice than when you give them advice.  ~ Nassim Nicholas Taleb
+- Your peers will be more grateful when you ask them for advice than when you give them advice. ~ Nassim Nicholas Taleb
 
 - A fit body, a calm mind, a house full of love. These things cannot be bought - they must be earned. ~ Naval
 
@@ -47,9 +47,9 @@ categories: "spirituality"
 
 - To live fully is to allow yourself to experience something totally. If you avoid any experience—whether pain or pleasure, sorrow or joy—it is big karma. But if you go through the experience without resisting it, the karma dissolves. This is why Krishna in the great Indian epic the Mahabharata says that hesitation is the worst of all crimes.
 
--  Living totally does not mean just having a good time. It means experiencing anything that comes your way fully and intensely. The very process of life is the dissolution of karma. If you live every moment of your life totally, you dissolve an enormous volume of karma.
+- Living totally does not mean just having a good time. It means experiencing anything that comes your way fully and intensely. The very process of life is the dissolution of karma. If you live every moment of your life totally, you dissolve an enormous volume of karma.
 
-- "Paradoxically, the more we're willing to be uncomfortable, the more ease we'll find."  ~ Seth Gillihan
+- "Paradoxically, the more we're willing to be uncomfortable, the more ease we'll find." ~ Seth Gillihan
 
 - Most people don’t want to acknowledge the uncomfortable truth that distraction is always an unhealthy escape from reality. How we deal with uncomfortable internal triggers determines whether we pursue healthful acts of traction or self-defeating distractions. ~ Indistractable by Nir Eyal
 
