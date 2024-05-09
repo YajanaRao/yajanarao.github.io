@@ -12,7 +12,12 @@ export type PostMeta = {
 
 export const getPosts = (): PostMeta[] => {
   const modules = import.meta.glob<{ frontmatter: Frontmatter }>(
-    ["../routes/*.*.mdx", "../routes/*/route.mdx", "!../routes/draft.*.mdx"],
+    [
+      "../routes/*.*.mdx",
+      "../routes/*/route.mdx",
+      "!../routes/draft.*.mdx",
+      // "!../routes/notes.*/*",
+    ],
     { eager: true }
   );
   const posts = Object.entries(modules).map(([file, post]) => {

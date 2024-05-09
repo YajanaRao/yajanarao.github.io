@@ -1,4 +1,5 @@
 ---
+slug: structure-and-unions
 title: "08. Structure and Unions"
 categories: c-programming
 ---

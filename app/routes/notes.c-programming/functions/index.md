@@ -1,4 +1,5 @@
 ---
+slug: "functions"
 title: "05. Functions"
 categories: c-programming
 ---

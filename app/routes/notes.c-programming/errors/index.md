@@ -1,4 +1,5 @@
 ---
+slug: "errors"
 title: "04. Errors"
 categories: c-programming
 ---

@@ -1,4 +1,5 @@
 ---
+slug: "pointers"
 title: "02. C Pointers"
 categories: c-programming
 ---

@@ -1,4 +1,5 @@
 ---
+slug: "variables"
 title: "07. Strings and Character array"
 categories: c-programming
 ---
