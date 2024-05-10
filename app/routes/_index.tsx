@@ -3,9 +3,7 @@ import { Link, useSearchParams } from "@remix-run/react";
 import { getPosts } from "../lib/posts";
 import { useUpdateQueryStringValueWithoutNavigation } from "../lib/utils";
 
-const ogImageUrl = "https://yajana.in/logo.jpg";
-
-// const absoluteOgImageUrl = new URL(ogImageUrl, import.meta.url).toString();
+const ogImageUrl = "/logo.jpg";
 
 export const meta = [
   {

@@ -31,7 +31,7 @@ export async function loader() {
   ]);
 }
 
-const ogImageUrl = "https://yajana.in/images/javascript.png";
+const ogImageUrl = "/images/javascript.png";
 
 export const meta = [
   {

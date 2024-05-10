@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "@remix-run/react";
 
-const ogImageUrl = "https://yajana.in/logo.jpg";
-
 export const meta = [
   {
     title: "Notes | Yajana's Blog",
@@ -12,7 +10,7 @@ export const meta = [
     name: "description",
   },
   {
-    content: ogImageUrl,
+    content: "/logo.jpg",
     property: "image",
   },
   {
@@ -24,7 +22,7 @@ export const meta = [
     name: "og:description",
   },
   {
-    content: ogImageUrl,
+    content: "/logo.jpg",
     property: "og:image",
   },
   {

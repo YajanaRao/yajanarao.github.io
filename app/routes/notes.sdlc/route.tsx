@@ -20,7 +20,7 @@ export async function loader() {
   return json([postFromModule(introduction), postFromModule(sdlcModels)]);
 }
 
-const ogImageUrl = "https://yajana.in/images/sdlc.png";
+const ogImageUrl = "/images/sdlc.png";
 
 export const meta = [
   {

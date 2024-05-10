@@ -19,7 +19,7 @@ function postFromModule(mod) {
   };
 }
 
-const ogImageUrl = "https://yajana.in/images/c-program.png";
+const ogImageUrl = "/images/c-program.png";
 
 export const meta = [
   {

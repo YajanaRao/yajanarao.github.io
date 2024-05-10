@@ -2,7 +2,7 @@ import * as React from "react";
 import ReactTrackPlayer from "./react-track-player.png";
 import Shortmic from "./shortmic.png";
 
-const ogImageUrl = "https://yajana.in/logo.jpg";
+const ogImageUrl = "/logo.jpg";
 
 export const meta = [
   {
