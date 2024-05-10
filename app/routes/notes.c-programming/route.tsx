@@ -19,8 +19,6 @@ function postFromModule(mod) {
   };
 }
 
-const ogImageUrl = "/images/c-program.png";
-
 export const meta = [
   {
     title: "C Programming | Yajana",
@@ -30,7 +28,7 @@ export const meta = [
     name: "description",
   },
   {
-    content: ogImageUrl,
+    content: "/images/c-program.png",
     property: "image",
   },
   {
@@ -42,7 +40,7 @@ export const meta = [
     name: "og:description",
   },
   {
-    content: ogImageUrl,
+    content: "/images/c-program.png",
     property: "og:image",
   },
   {
