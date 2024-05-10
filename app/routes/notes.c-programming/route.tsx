@@ -9,8 +9,8 @@ import * as Arrays from "./arrays.md";
 import * as ConditionalStatements from "./conditional-statements/index.mdx";
 import * as Pointers from "./pointers.md";
 import * as StructAndUnions from "./unions-and-struct.md";
-import * as Looping from "./looping/index.md";
-import * as Functions from "./functions/index.md";
+import * as Looping from "./looping/index.mdx";
+import * as Functions from "./functions/index.mdx";
 import * as Errors from "./errors/index.md";
 
 function postFromModule(mod) {
@@ -18,6 +18,46 @@ function postFromModule(mod) {
     ...mod.frontmatter,
   };
 }
+
+const ogImageUrl = "https://yajana.in/images/c-program.png";
+
+export const meta = [
+  {
+    title: "C Programming | Yajana",
+  },
+  {
+    content: "Yajana Rao's blog on Programming, Spirituality and Books",
+    name: "description",
+  },
+  {
+    content: ogImageUrl,
+    property: "image",
+  },
+  {
+    content: "C Programming | Yajana's Blog",
+    property: "og:title",
+  },
+  {
+    content: "Yajana Rao's blog on Programming, Spirituality and Books",
+    name: "og:description",
+  },
+  {
+    content: ogImageUrl,
+    property: "og:image",
+  },
+  {
+    content: "300",
+    property: "og:image:width",
+  },
+  {
+    content: "300",
+    property: "og:image:height",
+  },
+  {
+    content: "image/jpeg",
+    property: "og:image:type",
+  },
+];
 
 export async function loader() {
   // Return metadata about each of the posts for display on the index page.
@@ -55,19 +95,19 @@ export default function Index() {
         ))}
       </ul>
 
-      <section id={Introduction.frontmatter.slug} style={{ marginBottom: 20 }}>
+      <section id={Introduction.frontmatter.slug} style={{ marginBottom: 40 }}>
         <h1>{Introduction.frontmatter.title}</h1>
         <p>{Introduction.frontmatter.description}</p>
         <Introduction.default />
       </section>
 
-      <section id={Arrays.frontmatter.slug} style={{ marginBottom: 20 }}>
+      <section id={Arrays.frontmatter.slug} style={{ marginBottom: 40 }}>
         <h1>{Arrays.frontmatter.title}</h1>
         <p>{Arrays.frontmatter.description}</p>
         <Arrays.default />
       </section>
 
-      <section id={Pointers.frontmatter.slug} style={{ marginBottom: 20 }}>
+      <section id={Pointers.frontmatter.slug} style={{ marginBottom: 40 }}>
         <h1>{Pointers.frontmatter.title}</h1>
         <p>{Pointers.frontmatter.description}</p>
         <Pointers.default />
@@ -75,36 +115,36 @@ export default function Index() {
 
       <section
         id={ConditionalStatements.frontmatter.slug}
-        style={{ marginBottom: 20 }}
+        style={{ marginBottom: 40 }}
       >
         <h1>{ConditionalStatements.frontmatter.title}</h1>
         <p>{ConditionalStatements.frontmatter.description}</p>
         <ConditionalStatements.default />
       </section>
 
-      <section id={Errors.frontmatter.slug} style={{ marginBottom: 20 }}>
+      <section id={Errors.frontmatter.slug} style={{ marginBottom: 40 }}>
         <h1>{Errors.frontmatter.title}</h1>
         <p>{Errors.frontmatter.description}</p>
         <Errors.default />
       </section>
-      <section id={Functions.frontmatter.slug}>
+      <section id={Functions.frontmatter.slug} style={{ marginBottom: 40 }}>
         <h1>{Functions.frontmatter.title}</h1>
         <p>{Functions.frontmatter.description}</p>
         <Functions.default />
       </section>
-      <section id={Looping.frontmatter.slug} style={{ marginBottom: 20 }}>
+      <section id={Looping.frontmatter.slug} style={{ marginBottom: 40 }}>
         <h1>{Looping.frontmatter.title}</h1>
         <p>{Looping.frontmatter.description}</p>
         <Looping.default />
       </section>
-      <section id={Strings.frontmatter.slug} style={{ marginBottom: 20 }}>
+      <section id={Strings.frontmatter.slug} style={{ marginBottom: 40 }}>
         <h1>{Strings.frontmatter.title}</h1>
         <p>{Strings.frontmatter.description}</p>
         <Strings.default />
       </section>
       <section
         id={StructAndUnions.frontmatter.slug}
-        style={{ marginBottom: 20 }}
+        style={{ marginBottom: 40 }}
       >
         <h1>{StructAndUnions.frontmatter.title}</h1>
         <p>{StructAndUnions.frontmatter.description}</p>

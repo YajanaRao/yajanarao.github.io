@@ -20,6 +20,46 @@ export async function loader() {
   return json([postFromModule(introduction), postFromModule(sdlcModels)]);
 }
 
+const ogImageUrl = "https://yajana.in/images/sdlc.png";
+
+export const meta = [
+  {
+    title: "Software Development Lifecycle | Yajana",
+  },
+  {
+    content: "Yajana Rao's blog on Programming, Spirituality and Books",
+    name: "description",
+  },
+  {
+    content: ogImageUrl,
+    property: "image",
+  },
+  {
+    content: "Software Development Lifecycle | Yajana's Blog",
+    property: "og:title",
+  },
+  {
+    content: "Yajana Rao's blog on Programming, Spirituality and Books",
+    name: "og:description",
+  },
+  {
+    content: ogImageUrl,
+    property: "og:image",
+  },
+  {
+    content: "300",
+    property: "og:image:width",
+  },
+  {
+    content: "300",
+    property: "og:image:height",
+  },
+  {
+    content: "image/jpeg",
+    property: "og:image:type",
+  },
+];
+
 export default function Index() {
   const posts = useLoaderData<typeof loader>();
 

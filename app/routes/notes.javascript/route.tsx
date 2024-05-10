@@ -31,6 +31,46 @@ export async function loader() {
   ]);
 }
 
+const ogImageUrl = "https://yajana.in/images/javascript.png";
+
+export const meta = [
+  {
+    title: "Javascript | Yajana",
+  },
+  {
+    content: "Yajana Rao's blog on Programming, Spirituality and Books",
+    name: "description",
+  },
+  {
+    content: ogImageUrl,
+    property: "image",
+  },
+  {
+    content: "Javascript | Yajana's Blog",
+    property: "og:title",
+  },
+  {
+    content: "Yajana Rao's blog on Programming, Spirituality and Books",
+    name: "og:description",
+  },
+  {
+    content: ogImageUrl,
+    property: "og:image",
+  },
+  {
+    content: "300",
+    property: "og:image:width",
+  },
+  {
+    content: "300",
+    property: "og:image:height",
+  },
+  {
+    content: "image/jpeg",
+    property: "og:image:type",
+  },
+];
+
 export default function Index() {
   const posts = useLoaderData<typeof loader>();
 

@@ -1,8 +1,45 @@
 import React from "react";
 import { Link } from "@remix-run/react";
-import CProgramming from "../assets/images/topics/c-program.png";
-import Javascript from "../assets/images/topics/javascript.png";
-import Sdlc from "../assets/images/topics/sdlc.png";
+
+const ogImageUrl = "https://yajana.in/logo.jpg";
+
+export const meta = [
+  {
+    title: "Notes | Yajana's Blog",
+  },
+  {
+    content: "Yajana Rao's blog on Programming, Spirituality and Books",
+    name: "description",
+  },
+  {
+    content: ogImageUrl,
+    property: "image",
+  },
+  {
+    content: "Notes | Yajana's Blog",
+    property: "og:title",
+  },
+  {
+    content: "Yajana Rao's blog on Programming, Spirituality and Books",
+    name: "og:description",
+  },
+  {
+    content: ogImageUrl,
+    property: "og:image",
+  },
+  {
+    content: "300",
+    property: "og:image:width",
+  },
+  {
+    content: "300",
+    property: "og:image:height",
+  },
+  {
+    content: "image/jpeg",
+    property: "og:image:type",
+  },
+];
 
 const Courses = ({}) => {
   const categories = [
@@ -11,21 +48,21 @@ const Courses = ({}) => {
       title: "C Programming",
       description: "Beginer concepts related to c programming language",
       link: "c-programming",
-      image: CProgramming,
+      image: "/images/c-program.png",
     },
     {
       key: "javascript",
       title: "Javascript",
       description: "Fundamental programming concepts in JavaScript.",
       link: "javascript",
-      image: Javascript,
+      image: "/images/javascript.png",
     },
     {
       key: "sdlc",
       title: "SDLC",
       description: "Software development life cycle",
       link: "sdlc",
-      image: Sdlc,
+      image: "/images/sdlc.png",
     },
   ];
 
