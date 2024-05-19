@@ -7,7 +7,7 @@ description: Through a tried and tested combination of yoga, powerful breathing 
 
 Depression means low life energies, Sadhguru explains, while happiness means exuberant life energies.
 
-When your life comes to ease and when you come to ease, then happiness is a natural consequence. 
+When your life comes to ease and when you come to ease, then happiness is a natural consequence.
 
 In state of absolute acceptance life shall happen
 
@@ -26,7 +26,8 @@ In state of absolute acceptance life shall happen
 2. My responsibility is limitless
 3. What is there right now is all there is, It can't be any other way.
 4. I am not the body, I am not the mind.
-5. I am a mother to the world. 
+5. I am a mother to the world.
+
 ### Short Sudarshan Kriya (Proper Vision by Purifying Action) Practice
 
 As you expand inhale, contract exhale

@@ -1,7 +1,7 @@
 title: "C Programming";
 
 import { json } from "@remix-run/node";
-import { Link, useLoaderData } from "@remix-run/react";
+import { useLoaderData } from "@remix-run/react";
 
 import * as Introduction from "./introduction.mdx";
 import * as Strings from "./strings-and-character-array.md";

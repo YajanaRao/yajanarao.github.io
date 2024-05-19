@@ -18,9 +18,10 @@ It is time you work upon bringing yourself to ease – not only with other peopl
 
 > In agitation, everything is distorted. So, being at ease is most important, otherwise you will not experience life the way it is. ~ Sadhguru
 
-For all the obsession about accessing states of flow, creativity, hyper-focus, neuroplasticity etc. the two states of mind that serve as foundational entry points to all the rest are: 
-1) Alert but Calm
-2) Asleep
+For all the obsession about accessing states of flow, creativity, hyper-focus, neuroplasticity etc. the two states of mind that serve as foundational entry points to all the rest are:
+
+1. Alert but Calm
+2. Asleep
 
 In agitation, everything is distorted. So, being at ease is most important, otherwise you will not experience life the way it is. ~ Sadhguru
 
@@ -30,7 +31,7 @@ Playfulness, says Sadhguru, has been wrongly equated with irresponsibility. Inst
 
 Being playfull is not irresponsibility. Only when you are playfull you are responsive. When you are serious it is all about you.
 
-[meditation](./Meditation/meditation.md.md) is a natural process for one who is playfull. it does not accumulate karma.
+[meditation](./Meditation/meditation.md) is a natural process for one who is playfull. it does not accumulate karma.
 
 Everyone is seeking pleasentness and profoundness in life
 
@@ -43,9 +44,9 @@ If you want to be at ease you must have
 
 ### Practice:
 
-Everytime observer yourself for tensions in the body. Bring everything under consiciouness to ease.
+Everytime observer yourself for tensions in the body. Bring everything under consciousness to ease.
 
-###  References:
+### References:
 
 - https://youtu.be/diFkCJ802vY
 - https://twitter.com/hubermanlab/status/1433151192385740800?s=20&t=c7gbKcMvX_YMDHsxdtIkeA
