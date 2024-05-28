@@ -133,6 +133,23 @@ function About() {
         alternative to react-native-track-player with simple and easy to use
         API.
       </p>
+      <h3>
+        <a target="_blank" className="mx-1" href="">
+          Browser Recorder
+        </a>
+      </h3>
+      <iframe
+        width="315"
+        height="560"
+        // https://youtube.com/shorts/1_aKCXTcGMI?si=kTmzzZA8Nqc7WXNN
+        src="https://www.youtube.com/embed/1_aKCXTcGMI?si=kTmzzZA8Nqc7WXNN"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <p>A simple tool to convert web animations into high quality videos. </p>
+
       <h2>Elsewhere on the web</h2>
       <p>
         I share interesting quotes/ passages in my whatsapp channel
