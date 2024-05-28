@@ -73,7 +73,16 @@ function About() {
 
       <p>
         When I am not writing code or working on a blog post, I'm probably
-        spending my time either reading a book or meditating.
+        spending my time either
+        <a
+          target="_blank"
+          className="mx-1"
+          href="https://www.goodreads.com/yajanarao
+"
+        >
+          reading
+        </a>
+        or meditating.
       </p>
 
       <h2>Projects</h2>
@@ -134,7 +143,11 @@ function About() {
         API.
       </p>
       <h3>
-        <a target="_blank" className="mx-1" href="">
+        <a
+          target="_blank"
+          className="mx-1"
+          href="https://github.com/YajanaRao/BrowserRecorder"
+        >
           Browser Recorder
         </a>
       </h3>
@@ -148,7 +161,10 @@ function About() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-      <p>A simple tool to convert web animations into high quality videos. </p>
+      <p>
+        A simple tool to convert web animations into high quality videos using
+        python, selenium and opencv.
+      </p>
 
       <h2>Elsewhere on the web</h2>
       <p>
