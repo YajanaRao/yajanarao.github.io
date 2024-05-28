@@ -1,4 +1,6 @@
 import { Links, Meta, Outlet, Scripts } from "@remix-run/react";
+import { Analytics } from "@vercel/analytics/react";
+
 import "../styles/globals.css";
 import Layout from "@/components/layout";
 
@@ -22,6 +24,7 @@ export default function App() {
           <Outlet />
         </Layout>
         <Scripts />
+        <Analytics />
       </body>
     </html>
   );
