@@ -1,47 +1,55 @@
 import * as React from "react";
-import { Link, useSearchParams } from "@remix-run/react";
+import { Link, MetaFunction, useSearchParams } from "@remix-run/react";
 import { getPosts } from "../lib/posts";
 import { useUpdateQueryStringValueWithoutNavigation } from "../lib/utils";
+import { LoaderFunctionArgs, json } from "@remix-run/node";
 
-const ogImageUrl = "/logo.jpg";
+export const meta: MetaFunction<typeof loader> = (args) => {
+  let { siteUrl } = args.data || {};
+  return [
+    {
+      title: "Yajana's Blog",
+    },
+    {
+      content: "Yajana Rao's blog on Programming, Spirituality and Books",
+      name: "description",
+    },
+    {
+      content: `${siteUrl}/logo.jpg`,
+      property: "image",
+    },
+    {
+      content: "Yajana's Blog",
+      property: "og:title",
+    },
+    {
+      content: "Yajana Rao's blog on Programming, Spirituality and Books",
+      name: "og:description",
+    },
+    {
+      content: `${siteUrl}/logo.jpg`,
+      property: "og:image",
+    },
+    {
+      content: "300",
+      property: "og:image:width",
+    },
+    {
+      content: "300",
+      property: "og:image:height",
+    },
+    {
+      content: "image/jpeg",
+      property: "og:image:type",
+    },
+  ];
+};
 
-export const meta = [
-  {
-    title: "Yajana's Blog",
-  },
-  {
-    content: "Yajana Rao's blog on Programming, Spirituality and Books",
-    name: "description",
-  },
-  {
-    content: ogImageUrl,
-    property: "image",
-  },
-  {
-    content: "Yajana's Blog",
-    property: "og:title",
-  },
-  {
-    content: "Yajana Rao's blog on Programming, Spirituality and Books",
-    name: "og:description",
-  },
-  {
-    content: ogImageUrl,
-    property: "og:image",
-  },
-  {
-    content: "300",
-    property: "og:image:width",
-  },
-  {
-    content: "300",
-    property: "og:image:height",
-  },
-  {
-    content: "image/jpeg",
-    property: "og:image:type",
-  },
-];
+export const loader = async ({ request }: LoaderFunctionArgs) => {
+  let requestUrl = new URL(request.url);
+  let siteUrl = requestUrl.protocol + "//" + requestUrl.host;
+  return json({ siteUrl });
+};
 
 const BlogIndex = () => {
   const allPosts = getPosts();

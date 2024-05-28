@@ -1,46 +1,55 @@
 import * as React from "react";
 import ReactTrackPlayer from "./react-track-player.png";
 import Shortmic from "./shortmic.png";
+import { LoaderFunctionArgs, json } from "@remix-run/node";
+import { MetaFunction } from "@remix-run/react";
 
-const ogImageUrl = "/logo.jpg";
+export const meta: MetaFunction<typeof loader> = (args) => {
+  let { siteUrl } = args.data || {};
+  return [
+    {
+      title: "Yajana's Blog",
+    },
+    {
+      content: "Yajana Rao's blog on Programming, Spirituality and Books",
+      name: "description",
+    },
+    {
+      content: `${siteUrl}/logo.jpg`,
+      property: "image",
+    },
+    {
+      content: "Yajana's Blog",
+      property: "og:title",
+    },
+    {
+      content: "Yajana Rao's blog on Programming, Spirituality and Books",
+      name: "og:description",
+    },
+    {
+      content: `${siteUrl}/logo.jpg`,
+      property: "og:image",
+    },
+    {
+      content: "300",
+      property: "og:image:width",
+    },
+    {
+      content: "300",
+      property: "og:image:height",
+    },
+    {
+      content: "image/jpeg",
+      property: "og:image:type",
+    },
+  ];
+};
 
-export const meta = [
-  {
-    title: "Yajana's Blog",
-  },
-  {
-    content: "Yajana Rao's blog on Programming, Spirituality and Books",
-    name: "description",
-  },
-  {
-    content: ogImageUrl,
-    property: "image",
-  },
-  {
-    content: "Yajana's Blog",
-    property: "og:title",
-  },
-  {
-    content: "Yajana Rao's blog on Programming, Spirituality and Books",
-    name: "og:description",
-  },
-  {
-    content: ogImageUrl,
-    property: "og:image",
-  },
-  {
-    content: "300",
-    property: "og:image:width",
-  },
-  {
-    content: "300",
-    property: "og:image:height",
-  },
-  {
-    content: "image/jpeg",
-    property: "og:image:type",
-  },
-];
+export const loader = async ({ request }: LoaderFunctionArgs) => {
+  let requestUrl = new URL(request.url);
+  let siteUrl = requestUrl.protocol + "//" + requestUrl.host;
+  return json({ siteUrl });
+};
 
 function About() {
   return (
@@ -157,9 +166,9 @@ function About() {
         // https://youtube.com/shorts/1_aKCXTcGMI?si=kTmzzZA8Nqc7WXNN
         src="https://www.youtube.com/embed/1_aKCXTcGMI?si=kTmzzZA8Nqc7WXNN"
         title="YouTube video player"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
       <p>
         A simple tool to convert web animations into high quality videos using
