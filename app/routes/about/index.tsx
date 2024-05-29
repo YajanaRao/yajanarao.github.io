@@ -115,7 +115,7 @@ function About() {
                   Serenity Music Player
                 </div>
               </a>
-              <p className="text-gray-700 text-base">
+              <p className="text-gray-700 dark:text-white text-base">
                 A Open source music player built using react native as an
                 alternative to spotify. It allows to configure audio sources
                 from local, network and cloud. It also supports playlist, queue,
@@ -142,7 +142,7 @@ function About() {
               <a target="_blank" href="https://www.shortmic.com">
                 <div className="font-bold text-xl mb-2">Shortmic</div>
               </a>
-              <p className="text-gray-700 text-base">
+              <p className="text-gray-700 dark:text-white text-base">
                 Audio first social media platform where users can share their
                 thoughts, ideas, stories, jokes, poems, and more in audio
                 format. It is built using react native and supabase. Find the
@@ -190,7 +190,7 @@ function About() {
               >
                 <div className="font-bold text-xl mb-2">react-track-player</div>
               </a>
-              <p className="text-gray-700 text-base">
+              <p className="text-gray-700 dark:text-white text-base">
                 A react native library to play audio from local and network
                 sources. An alternative to react-native-track-player with simple
                 and easy to use API.
@@ -232,7 +232,7 @@ function About() {
               >
                 <div className="font-bold text-xl mb-2">Browser Recorder</div>
               </a>
-              <p className="text-gray-700 text-base">
+              <p className="text-gray-700 dark:text-white text-base">
                 A simple tool to convert web animations into high quality videos
                 using python, selenium and opencv.
               </p>
