@@ -96,84 +96,164 @@ function About() {
 
       <h2>Projects</h2>
       <p>I have created and contributed to few projects. Major ones are</p>
-      <h3>
-        <a
-          target="_blank"
-          className="mx-1"
-          href="https://github.com/YajanaRao/Serenity"
-        >
-          Serenity Music Player
-        </a>
-      </h3>
-      <img
-        src="https://raw.githubusercontent.com/YajanaRao/Serenity/develop/screenshots/banner.png"
-        height="257"
-        width="526"
-      />
-      <p>
-        A Open source music player built using react native as an alternative to
-        spotify. It allows to configure audio sources from local, network and
-        cloud. It also supports playlist, queue, repeat, shuffle and many more
-        features.
-      </p>
-      <h3>
-        <a target="_blank" className="mx-1" href="https://www.shortmic.com">
-          Shortmic
-        </a>
-      </h3>
-      <img src={Shortmic} height="257" width="526" />
 
-      <p>
-        Audio first social media platform where users can share their thoughts,
-        ideas, stories, jokes, poems, and more in audio format. It is built
-        using react native and supabase. Find the app on
-        <a
-          href="https://play.google.com/store/apps/details?id=com.echodrop&pcampaignid=web_share"
-          target="_blank"
-          className="mx-2"
-        >
-          playstore
-        </a>
-        and appstore.
-      </p>
-      <h3>
-        <a
-          target="_blank"
-          className="mx-1"
-          href="https://www.npmjs.com/package/react-track-player"
-        >
-          react-track-player
-        </a>
-      </h3>
-      <img src={ReactTrackPlayer} height="257" width="526" />
-      <p>
-        A react native library to play audio from local and network sources. An
-        alternative to react-native-track-player with simple and easy to use
-        API.
-      </p>
-      <h3>
-        <a
-          target="_blank"
-          className="mx-1"
-          href="https://github.com/YajanaRao/BrowserRecorder"
-        >
-          Browser Recorder
-        </a>
-      </h3>
-      <iframe
-        width="315"
-        height="560"
-        // https://youtube.com/shorts/1_aKCXTcGMI?si=kTmzzZA8Nqc7WXNN
-        src="https://www.youtube.com/embed/1_aKCXTcGMI?si=kTmzzZA8Nqc7WXNN"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      ></iframe>
-      <p>
-        A simple tool to convert web animations into high quality videos using
-        python, selenium and opencv.
-      </p>
+      <div className="flex flex-wrap">
+        <div className="lg:w-1/2 px-1">
+          <div className="rounded overflow-hidden shadow-lg">
+            <img
+              className="w-full h-64"
+              src="https://raw.githubusercontent.com/YajanaRao/Serenity/develop/screenshots/banner.png"
+              alt="Serenity Music Player"
+            />
+            <div className="px-6">
+              <a
+                target="_blank"
+                // className=" mx-1"
+                href="https://github.com/YajanaRao/Serenity"
+              >
+                <div className="font-bold text-xl mb-2">
+                  Serenity Music Player
+                </div>
+              </a>
+              <p className="text-gray-700 text-base">
+                A Open source music player built using react native as an
+                alternative to spotify. It allows to configure audio sources
+                from local, network and cloud. It also supports playlist, queue,
+                repeat, shuffle and many more features.
+              </p>
+            </div>
+            <div className="px-6 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #react-native
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #redux-toolkit
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #supabase
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="lg:w-1/2 px-1">
+          <div className="rounded overflow-hidden shadow-lg">
+            <img className="w-full h-64" src={Shortmic} alt="Shortmic" />
+            <div className="px-6">
+              <a target="_blank" href="https://www.shortmic.com">
+                <div className="font-bold text-xl mb-2">Shortmic</div>
+              </a>
+              <p className="text-gray-700 text-base">
+                Audio first social media platform where users can share their
+                thoughts, ideas, stories, jokes, poems, and more in audio
+                format. It is built using react native and supabase. Find the
+                app on{" "}
+                <a
+                  target="_blank"
+                  href="https://play.google.com/store/apps/details?id=com.echodrop&pcampaignid=web_share"
+                >
+                  playstore
+                </a>{" "}
+                and{" "}
+                <a href="https://apps.apple.com/us/app/shortmic/id1580190137">
+                  appstore
+                </a>
+              </p>
+            </div>
+            <div className="px-6 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #playstore
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #appstore
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #github
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #website
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="lg:w-1/2 px-1">
+          <div className="rounded overflow-hidden shadow-lg">
+            <img
+              className="w-full h-64"
+              src={ReactTrackPlayer}
+              alt="react-track-player"
+            />
+            <div className="px-6">
+              <a
+                target="_blank"
+                href="https://www.npmjs.com/package/react-track-player"
+              >
+                <div className="font-bold text-xl mb-2">react-track-player</div>
+              </a>
+              <p className="text-gray-700 text-base">
+                A react native library to play audio from local and network
+                sources. An alternative to react-native-track-player with simple
+                and easy to use API.
+              </p>
+            </div>
+            <div className="px-6 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #playstore
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #appstore
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #github
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #website
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="lg:w-1/2 px-1">
+          <div className="rounded overflow-hidden shadow-lg">
+            <div className="overflow-hidden my-6">
+              <iframe
+                className="w-full"
+                height="260"
+                src="https://www.youtube.com/embed/1_aKCXTcGMI?si=kTmzzZA8Nqc7WXNN"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="px-6">
+              <a
+                target="_blank"
+                href="https://github.com/YajanaRao/BrowserRecorder"
+              >
+                <div className="font-bold text-xl mb-2">Browser Recorder</div>
+              </a>
+              <p className="text-gray-700 text-base">
+                A simple tool to convert web animations into high quality videos
+                using python, selenium and opencv.
+              </p>
+            </div>
+            <div className="px-6 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #open-cv
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #selenium
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #python
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #open source
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <h2>Elsewhere on the web</h2>
       <p>
