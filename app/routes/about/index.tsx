@@ -91,6 +91,14 @@ function About() {
         >
           reading
         </a>
+        , listening to
+        <a
+          target="_blank"
+          className="mx-1"
+          href="https://open.spotify.com/user/31px6qslueb43ihrv6xa63oggaay?si=9039784e728c4094"
+        >
+          music
+        </a>
         or meditating.
       </p>
 
