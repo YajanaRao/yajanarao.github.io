@@ -106,10 +106,10 @@ function About() {
       <p>I have created and contributed to few projects. Major ones are</p>
 
       <div className="flex flex-wrap">
-        <div className="lg:w-1/2 px-1">
-          <div className="rounded overflow-hidden shadow-lg">
+        <div className="lg:w-1/2 p-1">
+          <div className="rounded overflow-hidden shadow-lg bg-white dark:bg-[#1e1e1e]">
             <img
-              className="w-full h-64"
+              className="w-full h-64 mt-0 mb-4"
               src="https://raw.githubusercontent.com/YajanaRao/Serenity/develop/screenshots/banner.png"
               alt="Serenity Music Player"
             />
@@ -143,9 +143,13 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 px-1">
-          <div className="rounded overflow-hidden shadow-lg">
-            <img className="w-full h-64" src={Shortmic} alt="Shortmic" />
+        <div className="lg:w-1/2 p-1">
+          <div className="rounded overflow-hidden shadow-lg bg-white dark:bg-[#1e1e1e]">
+            <img
+              className="w-full h-64 mt-0 mb-4"
+              src={Shortmic}
+              alt="Shortmic"
+            />
             <div className="px-6">
               <a target="_blank" href="https://www.shortmic.com">
                 <div className="font-bold text-xl mb-2">Shortmic</div>
@@ -184,10 +188,10 @@ function About() {
           </div>
         </div>
 
-        <div className="lg:w-1/2 px-1">
-          <div className="rounded overflow-hidden shadow-lg">
+        <div className="lg:w-1/2 p-1">
+          <div className="rounded overflow-hidden shadow-lg bg-white dark:bg-[#1e1e1e]">
             <img
-              className="w-full h-64"
+              className="w-full h-64 mt-0 mb-4"
               src={ReactTrackPlayer}
               alt="react-track-player"
             />
@@ -220,9 +224,9 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 px-1">
-          <div className="rounded overflow-hidden shadow-lg">
-            <div className="overflow-hidden my-6">
+        <div className="lg:w-1/2 p-1">
+          <div className="rounded overflow-hidden shadow-lg bg-white dark:bg-[#1e1e1e]">
+            <div className="overflow-hidden mb-6">
               <iframe
                 className="w-full"
                 height="260"
