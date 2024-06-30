@@ -162,7 +162,7 @@ function About() {
                   playstore
                 </a>{" "}
                 and{" "}
-                <a href="https://apps.apple.com/us/app/shortmic/id1580190137">
+                <a href="https://apps.apple.com/in/app/short-mic/id6481114995">
                   appstore
                 </a>
               </p>
