@@ -13,8 +13,6 @@ categories: "spirituality"
 
 - "It ain't what you don't know that gets you into trouble. It's what you know for sure that just ain't so." ~ Mark Twain
 
-- When you demand nothing of the world, nor of God, when you want nothing, seek nothing, expect nothing, then the Supreme State will come to you uninvited and unexpected. ~ Nisargadatta Maharaj
-
 - Humans are pattern-seeking story-telling animals, and we are quite adept at telling stories about patterns, whether they exist or not. ~ Michael Shermer
 
 - It is not daily increase but daily decrease, hack away the unessential. ~ Bruce Lee

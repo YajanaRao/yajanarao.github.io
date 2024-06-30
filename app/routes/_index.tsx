@@ -114,7 +114,7 @@ const BlogIndex = () => {
               className={
                 query === category
                   ? "m-1 px-4 py-1 rounded-full bg-[#ecc94b] text-[#000000]"
-                  : "m-1 px-4 py-1 rounded-full bg-[#f7f7f7] dark:bg-[#2e3039] text-inverse"
+                  : "m-1 px-4 py-1 rounded-full bg-white dark:bg-[#2e3039] text-inverse"
               }
               type="button"
               onClick={() => {
