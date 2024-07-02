@@ -19,6 +19,12 @@ const StartHerePage = () => {
           <li>Remix</li>
         </ul>
       </div>
+      <div>
+        <h1 className="text-black dark:text-white">What am I reading now</h1>
+        <h3 className="text-black dark:text-white">
+          Genome: Matt Ridley
+        </h3>
+        </div>
     </div>
   );
 };

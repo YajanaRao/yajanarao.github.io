@@ -16,6 +16,7 @@ export const getPosts = (): PostMeta[] => {
       "../routes/*.*.mdx",
       "../routes/*/route.mdx",
       "!../routes/draft.*.mdx",
+      "!../routes/drafts/*",
       // "!../routes/notes.*/*",
     ],
     { eager: true }

@@ -60,17 +60,6 @@ export async function getCourseData(id) {
   });
 }
 
-export function getAllCourseIds() {
-  const posts = [{ id: "c-programming" }, { id: "javascript" }, { id: "sdlc" }];
-  return posts.map((post) => {
-    return {
-      params: {
-        id: post.id,
-      },
-    };
-  });
-}
-
 function convertToSlug(slug) {
   return slug
     .toLowerCase()

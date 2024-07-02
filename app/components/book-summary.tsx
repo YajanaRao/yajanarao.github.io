@@ -28,10 +28,10 @@ function BookSummary() {
             </a>
           </h4>
           <p className="mb-3 text-gray-700 dark:text-white">
-            Entertaining and Eye opening 👌🏻 I had ready The beginning of
-            Infinity recently and I had been thinking of inductivism and
-            uncertainty. This book covers in depth into randomness and handling
-            black swan events.
+            Entertaining and Eye opening 👌🏻 I had read The beginning of Infinity
+            recently and I had been thinking of inductivism and uncertainty.
+            This book covers in depth into randomness and handling black swan
+            events.
           </p>
         </div>
       </div>
