@@ -14,15 +14,9 @@ export const meta = getMetaTags(frontmatter);
 
 > Imagine a speck of dust next to a planet a billion times the size of the earth. The speck of dust represents the odds in favor of your being born; the huge planet would be the odds against it. So stop sweating the small stuff. Don't be like the ingrate who got a castle as a present and worried about the mildew in the bathroom. Stop looking the gift horse in the mouth-remember that you are a **Black Swan**.
 
-<div className="flex flex-row items-center rounded-lg shadow dark:border-gray-700 bg-white dark:bg-[#2e3039] overflow-hidden">
+import BookSummary from '@/components/book-summary'
 
-    <img className="mr-4 my-0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1714172313l/242472._SX98_.jpg" alt="The Black Swan: The Impact of the Highly Improbable" style={{ height: '220px'}} />
-    <div className="flex flex-col justify-between p-4 leading-normal">
-        <h4 className="font-bold tracking-tight text-gray-900 dark:text-white"><a href="https://www.goodreads.com/book/show/242472.The_Black_Swan">The Black Swan: The Impact of the Highly Improbable</a> by <a href="https://www.goodreads.com/author/show/21559.Nassim_Nicholas_Taleb">Nassim Nicholas Taleb</a></h4>
-        <p className="mb-3 text-gray-700 dark:text-white">Entertaining and Eye opening 👌🏻 I had ready The beginning of Infinity recently and I had been thinking of inductivism and uncertainty. This book covers in depth into randomness and handling black swan events.</p>
-        <a href="https://www.goodreads.com/review/list/164445773-yajana-rao" className="mb-2">View all my reviews</a>
-    </div>
-</div>
+<BookSummary />
 
 ### 3 attributes of black swan events:
 - **Rarity**
@@ -52,11 +46,14 @@ Inequalities are such that one single observation can disproportionately impact 
 > I find it hard to explain that when you have a very limited loss you need to get as aggressive, as speculative, and sometimes as "unreasonable" as you can be.
 
 <table>
+<thead>
 <tr>
 <th className="border py-6">  </th>
 <th className="border py-6">Simple Payoffs</th>
 <th className="border py-6">Complex Payoffs</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td className="border py-6 text-center">Mediocristan</td>
 <td className="border py-6 text-center">Extremely Safe</td>
@@ -67,6 +64,7 @@ Inequalities are such that one single observation can disproportionately impact 
 <td className="border py-6 text-center">Safe</td>
 <td className="border py-6 text-center">Extremely Risky (Black Swan Domain)</td>
 </tr>
+</tbody>
 </table>
 
 ### Causes for the blindness to black swans
