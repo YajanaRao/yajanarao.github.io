@@ -1,0 +1,22 @@
+---
+title: "The Spark"
+categories: "meditation"
+date: "2024-07-04"
+description: "There was darkness everywhere. A spark was lit.  It expressed itself in different forms,  Dancing and Playing all the while it was on. When it became too feeble, It vanished into the darkness again."
+---
+
+import Info from "@/components/info";
+import { getMetaTags } from '@/lib/utils'
+
+<Info {...frontmatter} />
+
+export const meta = getMetaTags(frontmatter);
+
+import Universe from './universe.jpeg'
+
+<img src={Universe} alt="Universe" style={{ display: 'block', marginRight: 'auto', marginLeft: 'auto' }} />
+
+There was darkness everywhere. A spark was lit. <br/>
+It expressed itself in different forms,<br/> 
+Dancing and Playing all the while it was on.<br/>
+When it became too feeble, It vanished into the darkness again.
