@@ -67,7 +67,7 @@ const Footer = React.memo(() => {
         />
       </a>
 
-      <a href={social.discord} target="_blank" style={{ boxShadow: "none" }}>
+      {/* <a href={social.discord} target="_blank" style={{ boxShadow: "none" }}>
         <img
           src={Discord}
           alt={author.name}
@@ -78,7 +78,7 @@ const Footer = React.memo(() => {
             minWidth: 25,
           }}
         />
-      </a>
+      </a> */}
     </footer>
   );
 });
