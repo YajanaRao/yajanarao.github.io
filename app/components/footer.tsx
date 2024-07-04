@@ -1,6 +1,6 @@
 import React from "react";
 import { siteMetadata } from "../constants";
-import Discord from "../assets/images/discord.png";
+// import Discord from "../assets/images/discord.png";
 import Medium from "../assets/images/medium.png";
 import Twitter from "../assets/images/twitter.png";
 import Github from "../assets/images/github.png";
