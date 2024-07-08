@@ -3,7 +3,7 @@ import { siteMetadata } from "../constants";
 import Medium from "../assets/images/medium.png";
 import Twitter from "../assets/images/twitter.png";
 import Github from "../assets/images/github.png";
-import Linkedin from "../assets/images/linkedin.svg";
+import Linkedin from "../assets/images/linkedin.png";
 
 const Footer = React.memo(() => {
   const { author, social } = siteMetadata;
@@ -75,10 +75,11 @@ const Footer = React.memo(() => {
         <img
           src={Linkedin}
           alt={author.name}
-          width={"64"}
-          height={"42"}
+          width={"32"}
+          height={"32"}
           style={{
             minWidth: 25,
+            backgroundColor: "white",
           }}
         />
       </a>
