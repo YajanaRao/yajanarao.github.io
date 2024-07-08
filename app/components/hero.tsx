@@ -7,7 +7,7 @@ const Hero = () => {
   const { author, title } = siteMetadata;
 
   return (
-    <div className="flex flex-col sm:flex-row my-10">
+    <div className="flex flex-col sm:flex-row mt-10">
       <div className="justify-center items-center flex">
         <img
           src={ProfilePic}
