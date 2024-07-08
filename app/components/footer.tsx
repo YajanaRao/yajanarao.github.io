@@ -81,7 +81,7 @@ const Footer = React.memo(() => {
             minWidth: 25,
           }}
         />
-      </a> */}
+      </a>
     </footer>
   );
 });
