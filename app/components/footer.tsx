@@ -1,9 +1,9 @@
 import React from "react";
 import { siteMetadata } from "../constants";
-// import Discord from "../assets/images/discord.png";
 import Medium from "../assets/images/medium.png";
 import Twitter from "../assets/images/twitter.png";
 import Github from "../assets/images/github.png";
+import Linkedin from "../assets/images/linkedin.png";
 
 const Footer = React.memo(() => {
   const { author, social } = siteMetadata;
@@ -67,18 +67,22 @@ const Footer = React.memo(() => {
         />
       </a>
 
-      {/* <a href={social.discord} target="_blank" style={{ boxShadow: "none" }}>
+      <a
+        href={`https://www.linkedin.com/in/${social.linkedin}`}
+        target="_blank"
+        style={{ boxShadow: "none" }}
+      >
         <img
-          src={Discord}
+          src={Linkedin}
           alt={author.name}
           width={"32"}
           height={"32"}
-          className="m-2"
           style={{
             minWidth: 25,
+            backgroundColor: "white",
           }}
         />
-      </a> */}
+      </a>
     </footer>
   );
 });

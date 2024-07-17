@@ -11,5 +11,6 @@ export const siteMetadata = {
     github: "yajanarao",
     medium: "@yajanarao",
     discord: "https://discord.gg/qYZPqpQ",
+    linkedin: "yajanarao",
   },
 };
