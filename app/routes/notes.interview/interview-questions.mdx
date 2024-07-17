@@ -1,0 +1,100 @@
+---
+title: "Programming Interview Questions: Longest Increasing Subsequence"
+slug: questions/longest-increasing-subsequence
+date: "2020-08-16"
+categories: interview
+---
+
+## Question
+Given an integer array nums, return the length of the longest increasing subsequence.
+
+Example:
+
+```js
+> increasingSubsequence([10, 9, 2, 3, 7, 101, 18])
+> 4
+```
+
+```js
+> increasingSubsequence([4, 4, 4, 4, 3])
+> 1
+```
+
+```js
+> increasingSubsequence([0, 1, 0, 3, 2, 3])
+> 4
+```
+
+```js
+> increasingSubsequence([10, 9, 2, 5, 3, 7, 101, 18])
+> 4
+```
+
+## Solution
+
+### Attempt 1
+
+```js
+
+function increasingSubsequence(nums) {
+  let maxSeries = [];
+  let max = 1;
+  for (let i = 1; i < nums.length; i++) {
+    if(nums[i] > nums[i - 1]) {
+      max++;
+    } else if(i == nums.length -1) {
+      maxSeries.push(max);
+    } else {
+      maxSeries.push(max);
+      max = 1;
+    }
+  }
+  return Math.max(...maxSeries);
+}
+
+```
+
+- function finds the longest consecutive increasing subsequence, not the longest increasing subsequence in general. It only compares adjacent elements.
+
+- solution has a time complexity of O(n) and space complexity of O(n)
+
+- It will miss non-consecutive increasing subsequences.
+
+### Attempt 2
+
+
+```javascript
+function increasingSubsequence(nums) {
+    if (nums.length === 0) {
+        return 0;
+    }
+    
+    const n = nums.length;
+    const dp = new Array(n).fill(1);
+    
+    for (let i = 1; i < n; i++) {
+        for (let j = 0; j < i; j++) {
+            if (nums[i] > nums[j]) {
+                dp[i] = Math.max(dp[i], dp[j] + 1);
+            }
+        }
+    }
+    
+    return Math.max(...dp);
+}
+```
+
+This JavaScript implementation follows the same logic as the Python version:
+
+1. We first check if the input array is empty. If so, we return 0.
+
+2. We create a `dp` array of the same length as the input array, initialized with all 1s.
+
+3. We use nested loops to compare each element with all previous elements.
+
+4. If we find a smaller previous element, we update the current dp value if necessary.
+
+5. Finally, we return the maximum value in the dp array, which represents the length of the longest increasing subsequence.
+
+The time and space complexities remain the same: O(n^2) time and O(n) space, where n is the length of the input array.
+

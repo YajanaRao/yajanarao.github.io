@@ -62,6 +62,13 @@ const Courses = ({}) => {
       link: "sdlc",
       image: "/images/sdlc.png",
     },
+    {
+      key: "interview",
+      title: "Interview Preparation",
+      description: "Notes on interview preparation",
+      link: "interview",
+      image: "/images/interview.jpeg",
+    },
   ];
 
   return (
