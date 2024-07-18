@@ -30,9 +30,20 @@ Example:
 > 4
 ```
 
-## Solution
+
+*Subsequence*: A subsequence is a sequence derived from another sequence by deleting some or no elements without changing the order of the remaining elements.
+
+*Increasing Subsequence*: A subsequence where each element is greater than the previous one.
+
+*Non-Contiguous*: The elements of the subsequence do not have to be contiguous in the original array.
+
+
+<details>
+<summary>Solution</summary>
 
 ### Attempt 1
+
+_This was done without understanding the problem statement properly._
 
 ```js
 
@@ -61,7 +72,8 @@ function increasingSubsequence(nums) {
 - It will miss non-consecutive increasing subsequences.
 
 ### Attempt 2
-
+ 
+_With the help of chatgpt_
 
 ```javascript
 function increasingSubsequence(nums) {
@@ -98,3 +110,4 @@ This JavaScript implementation follows the same logic as the Python version:
 
 The time and space complexities remain the same: O(n^2) time and O(n) space, where n is the length of the input array.
 
+</details>
