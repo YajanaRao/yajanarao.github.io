@@ -1,5 +1,5 @@
 ---
-title: "Programming Interview Questions: Longest Increasing Subsequence"
+title: "Programming Interview Questions"
 slug: questions/longest-increasing-subsequence
 date: "2020-08-16"
 categories: interview
@@ -110,4 +110,52 @@ This JavaScript implementation follows the same logic as the Python version:
 
 The time and space complexities remain the same: O(n^2) time and O(n) space, where n is the length of the input array.
 
+</details>
+
+## Question 
+
+Define a FruitStand class that allows you to add different types of fruits with their quantities and prices, update them, and calculate the total value of all the fruits in the stand. 
+
+Implement the following methods: 
+- `addFruit(name, quantity, price)`
+- `updateQuantity(name, quantity)` 
+- `totalValue()`
+
+Example usage:
+
+```js
+// Create a new fruit stand
+let stand = FruitStand()
+
+// Add fruits to the stand
+stand.addFruit("apple", 10, 0.5)
+stand.addFruit("banana", 5, 0.2)
+stand.addFruit("cherry", 20, 0.1)
+
+// Update the quantity of an existing fruit
+stand.updateQuantity("banana", 10)
+
+// Calculate the total value of all fruits in the stand
+console.log(stand.totalValue())
+```
+
+
+<details>
+<summary>Solution</summary>
+
+```js
+
+class FruitStand {
+  fruits = {};
+  addFruit(name, quantity, price){
+    this.fruits[name] = {quantity, price};
+  }
+  updateQuantity(name, quantity){
+    this.fruits[name].quantity = quantity;
+  }
+  totalValue(){
+    return Object.values(this.fruits).reduce((total, fruit) => total + fruit.quantity * fruit.price, 0);
+  }
+}
+```
 </details>
