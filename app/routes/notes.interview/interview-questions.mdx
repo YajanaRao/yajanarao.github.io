@@ -218,3 +218,27 @@ Example:
 > sortNames(["Edward", "Alphonse", "Roy", "Winry"])
 > ["Alphonse", "Edward", "Winry", "Roy"]
 ```
+
+<details>
+<summary>Solution</summary>
+
+```js
+function sortNames(names) {
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  const countGroup = {}
+  for (let i = 0; i < names.length; i++) {
+    const vowelsCount = names[i].split('').filter(a => vowels.includes(a)).length
+   
+    const peers =  countGroup[vowelsCount] || []
+    countGroup[vowelsCount] = [...peers, names[i]]
+  }
+  
+  
+  const result = []
+  Object.keys(countGroup).sort((a, b) => b - a).map(i => {
+      const sort = countGroup[i].sort().forEach(word => result.push(word))
+  })
+  return result
+}
+```
+</details>
