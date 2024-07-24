@@ -203,3 +203,98 @@ function canPlantFlowers(flowers, k) {
 }
 ```
 </details>
+
+## Question
+
+Write a function that takes an array of integers and a target sum, and returns all unique quadruplets [a, b, c, d] in the array such that a + b + c + d = target. If it's impossible, return an empty array.
+
+Example:
+
+```js
+> fourSum([1, 0, -1, 0, -2, 2], 0)
+> [[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]
+
+> fourSum([], 0)
+> []
+
+> fourSum([1, -2, -5, -4, -3, 3, 3, 5], -11)
+> [[-5, -4, -3, 1]]
+```
+
+<details>
+<summary>Solution</summary>
+
+## Attempt 1
+
+```js
+function fourSum(data, targetSum) {
+    const result = []
+    for(let i=0; i < data.length; i++) {
+        for (let j=0; j< i;j++) {
+            for(let k =0; k < j; k++) {
+                for(let l=0; l< k; l++) {
+                    let sum = data[i]+ data[j] + data[k] + data[l]
+                    if(targetSum == sum) {
+                        result.push([data[i], data[j], data[k], data[l]])
+                    }
+                }
+            }
+        }
+    }
+    return result
+}
+
+```
+
+### Pros:
+- *Straightforward*: The logic is simple and easy to understand.
+
+
+### Cons:
+- *Time Complexity*: The time complexity of this solution is 𝑂(𝑛^4), where 𝑛 is the length of the input array. This is inefficient for larger arrays.
+
+- *Handling Duplicates*: This solution does not handle duplicates, so it may return the same quadruplet multiple times if the input array contains duplicate elements.
+- *Space Complexity*: The space complexity is 𝑂(1) for the algorithm itself, but the result array can grow significantly if there are many matching quadruplets.
+
+
+## Attemp 2
+
+```js
+function fourSum(nums, target) {
+    nums.sort((a, b) => a - b); // Sort the array
+    const result = [];
+    const n = nums.length;
+
+    for (let i = 0; i < n - 3; i++) {
+        if (i > 0 && nums[i] === nums[i - 1]) continue; // Skip duplicates for the first element
+
+        for (let j = i + 1; j < n - 2; j++) {
+            if (j > i + 1 && nums[j] === nums[j - 1]) continue; // Skip duplicates for the second element
+
+            let left = j + 1;
+            let right = n - 1;
+
+            while (left < right) {
+                const sum = nums[i] + nums[j] + nums[left] + nums[right];
+
+                if (sum === target) {
+                    result.push([nums[i], nums[j], nums[left], nums[right]]);
+
+                    // Skip duplicates for the third and fourth elements
+                    while (left < right && nums[left] === nums[left + 1]) left++;
+                    while (left < right && nums[right] === nums[right - 1]) right--;
+
+                    left++;
+                    right--;
+                } else if (sum < target) {
+                    left++;
+                } else {
+                    right--;
+                }
+            }
+        }
+    }
+
+    return result;
+}
+```
