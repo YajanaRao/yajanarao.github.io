@@ -206,6 +206,44 @@ function canPlantFlowers(flowers, k) {
 
 ## Question
 
+Write a function that takes a list of names and returns the names sorted by the number of vowels in each name in descending order. If two names have the same number of vowels, sort them alphabetically.
+
+Example:
+
+```js
+> sortNames(["Goku", "Vegeta", "Piccolo", "Gohan"])
+> ["Piccolo", "Vegeta", "Gohan", "Goku"]
+
+> sortNames(["Edward", "Alphonse", "Roy", "Winry"])
+> ["Alphonse", "Edward", "Winry", "Roy"]
+```
+
+<details>
+<summary>Solution</summary>
+
+```js
+function sortNames(names) {
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  const countGroup = {}
+  for (let i = 0; i < names.length; i++) {
+    const vowelsCount = names[i].split('').filter(a => vowels.includes(a)).length
+   
+    const peers =  countGroup[vowelsCount] || []
+    countGroup[vowelsCount] = [...peers, names[i]]
+  }
+  
+  
+  const result = []
+  Object.keys(countGroup).sort((a, b) => b - a).map(i => {
+      const sort = countGroup[i].sort().forEach(word => result.push(word))
+  })
+  return result
+}
+```
+</details>
+
+## Question
+
 Write a function that takes an array of integers and a target sum, and returns all unique quadruplets [a, b, c, d] in the array such that a + b + c + d = target. If it's impossible, return an empty array.
 
 Example:
@@ -298,3 +336,5 @@ function fourSum(nums, target) {
     return result;
 }
 ```
+
+</details>
