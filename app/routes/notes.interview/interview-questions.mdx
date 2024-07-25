@@ -338,3 +338,49 @@ function fourSum(nums, target) {
 ```
 
 </details>
+
+
+## Question
+
+Write a function that takes an array of integers and returns a new array containing only the even numbers, and sorted.
+
+Example:
+
+```js
+> onlyEvens([1, 2, 3, 4, 5, 2])
+> [2, 2, 4]
+
+> onlyEvens([7, 8, 1, 0, 2, 5])
+> [0, 2, 8]
+
+> onlyEvens([11, 13, 15])
+> []
+```
+
+<details>
+<summary>Solution</summary>
+
+### Attempt 1
+
+```js
+const onlyEvens = (nums) =>  nums.filter(n => !(n % 2)).sort()
+```
+
+The solution is concise and leverages JavaScript's higher-order functions filter and sort. However, there is a minor issue with the sort method. By default, the sort method sorts elements as strings, which can lead to incorrect orderings for numerical arrays.
+
+### Attempt 2
+
+```js
+const onlyEvens = (nums) => nums.filter(n => !(n % 2)).sort((a, b) => a - b);
+```
+
+#### Complexity:
+- Time Complexity:
+
+    Filtering: 𝑂(𝑛), where 𝑛 is the length of the input array.
+    Sorting: 𝑂(𝑚log𝑚), where 𝑚 is the number of even numbers.
+    Overall: 𝑂(𝑛+𝑚log⁡𝑚).
+
+- Space Complexity: 𝑂(𝑚), where 𝑚 is the number of even numbers, as a new array is created to store the even numbers
+
+</details>
