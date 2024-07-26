@@ -5,7 +5,7 @@ date: "2020-08-16"
 categories: interview
 ---
 
-## Question
+## Question 1
 Given an integer array nums, return the length of the longest increasing subsequence.
 
 Example:
@@ -112,7 +112,7 @@ The time and space complexities remain the same: O(n^2) time and O(n) space, whe
 
 </details>
 
-## Question 
+## Question 2
 
 Define a FruitStand class that allows you to add different types of fruits with their quantities and prices, update them, and calculate the total value of all the fruits in the stand. 
 
@@ -160,7 +160,7 @@ class FruitStand {
 ```
 </details>
 
-## Questions
+## Question 3
 
 Write a function that takes an array of integers representing the number of flowers planted in a line, and an integer k representing the number of additional flowers you want to plant. Return whether it's possible to plant all k flowers without planting any two flowers adjacent to each other.
 
@@ -204,7 +204,7 @@ function canPlantFlowers(flowers, k) {
 ```
 </details>
 
-## Question
+## Question 4
 
 Write a function that takes a list of names and returns the names sorted by the number of vowels in each name in descending order. If two names have the same number of vowels, sort them alphabetically.
 
@@ -242,7 +242,7 @@ function sortNames(names) {
 ```
 </details>
 
-## Question
+## Question 5
 
 Write a function that takes an array of integers and a target sum, and returns all unique quadruplets [a, b, c, d] in the array such that a + b + c + d = target. If it's impossible, return an empty array.
 
@@ -340,7 +340,7 @@ function fourSum(nums, target) {
 </details>
 
 
-## Question
+## Question 6
 
 Write a function that takes an array of integers and returns a new array containing only the even numbers, and sorted.
 
@@ -384,3 +384,29 @@ const onlyEvens = (nums) => nums.filter(n => !(n % 2)).sort((a, b) => a - b);
 - Space Complexity: 𝑂(𝑚), where 𝑚 is the number of even numbers, as a new array is created to store the even numbers
 
 </details>
+
+
+## Question 7
+
+Write a program that implements the DelayedTaskExecutor interface defined below. Think about how it would work if you ran the exec function multiple times in a row, before the task is run!
+
+Interfaces:
+```js
+interface Task {
+    // a blocking run
+    void run();
+
+    // when the task should be executed
+    long timeStamp(); 
+}
+
+interface DelayedTaskExecutor {
+   // executes task.run() at the given timestamp
+   void exec(Task task);
+}
+
+// usage
+executor.exec(new Task(10:00am));
+executor.exec(new Task(10:10am));
+executor.exec(new Task(10:05am));
+```
