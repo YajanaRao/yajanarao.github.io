@@ -463,3 +463,88 @@ function convertUnits(value, unit) {
 }
 ```
 </details>
+
+## Question 9
+
+The Spanish language uses inverted punctuation marks (¿ and ¡) in interrogative and exclamatory sentences. Write a function that takes in a string str, and adds ¿ and ¡ if they're needed. You can ignore exclamations in the middle of a sentence for this problem.
+
+Example:
+
+```js
+> fixInvertedPunc("Feliz cumpleaños!")
+> "¡Feliz cumpleaños!"
+
+> fixInvertedPunc("Ella ya se graduó de la universidad? ¡No!")
+> "¿Ella ya se graduó de la universidad? ¡No!"
+```
+
+<details>
+<summary>Solution</summary>
+
+My version
+
+```js
+function fixInvertedPunc(str) {
+  const puncs = ["?", "!"]
+  const invertedPuncMap = {
+    '?': '¿',
+    '!': '¡'
+  }
+  for (let punc of puncs) {
+    if(str.includes(punc)) {
+      const subStrings = str.split(punc)
+      str = subStrings.map((subStr, index) => index < subStrings.length -1 ? (subStr.includes(invertedPuncMap[punc]) ? `${subStr}${punc}` : `${invertedPuncMap[punc]}${subStr}${punc}`) : subStr).join('')
+    }
+  }
+  return str
+}
+
+```
+
+ChatGPT version
+
+```js
+function fixInvertedPunc(str) {
+  const invertedPuncMap = {
+    '?': '¿',
+    '!': '¡'
+  };
+
+  // Helper function to add inverted punctuation if needed
+  function addInvertedPunc(subStr, punc) {
+    if (!subStr.startsWith(invertedPuncMap[punc])) {
+      return `${invertedPuncMap[punc]}${subStr}`;
+    }
+    return subStr;
+  }
+
+  // Split the string into an array of words and punctuations
+  const tokens = str.split(/([?!])/); // This regex captures the punctuation marks
+
+  let result = '';
+
+  // Iterate over the tokens and add inverted punctuation where necessary
+  for (let i = 0; i < tokens.length; i++) {
+    if (tokens[i] === '?' || tokens[i] === '!') {
+      // Add inverted punctuation to the preceding substring
+      tokens[i - 1] = addInvertedPunc(tokens[i - 1], tokens[i]);
+    }
+    result += tokens[i]; // Build the result string
+  }
+
+  return result;
+}
+```
+
+#### Regular Expression: `/([?!])/`
+
+Breakdown:
+- / and /: These are the delimiters for the regular expression in JavaScript.
+
+- [ and ]: This denotes a character class. A character class matches any one of the characters inside the square brackets.
+
+- `?!`: Inside the character class, this matches either a ? or a !. This means any occurrence of ? or ! will be a match.
+
+- (): Parentheses denote a capturing group. This means whatever matches inside the parentheses will be captured and included in the result of the split.
+
+</details>
