@@ -45,6 +45,159 @@ export const meta: MetaFunction<typeof loader> = (args) => {
   ];
 };
 
+const skills = [
+  {
+    key: "frameworks",
+    text: "Frameworks",
+    value: [
+      {
+        text: "React Native",
+        image: "https://reactnative.dev/img/tiny_logo.png",
+      },
+      {
+        text: "Expo",
+        image:
+          "https://raw.githubusercontent.com/expo/expo/main/.github/resources/banner.png",
+      },
+      {
+        text: "React.js",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      },
+      {
+        text: "Remix.run",
+        image: "https://remix.run/_brand/remix-letter-light.png",
+      },
+      { text: "Vue.js", image: "https://vuejs.org/images/logo.png" },
+    ],
+  },
+  {
+    key: "stateManagement",
+    text: "State Management",
+    value: [
+      {
+        text: "Redux",
+        image:
+          "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
+      },
+      { text: "Vuex", image: "https://vuex.vuejs.org/vuex.png" },
+      {
+        text: "Zustand",
+        image:
+          "https://raw.githubusercontent.com/pmndrs/zustand/main/examples/demo/public/logo192.png",
+      },
+    ],
+  },
+  {
+    key: "uiLibraries",
+    text: "UI Libraries",
+    value: [
+      {
+        text: "React Native Paper",
+        image:
+          "https://callstack.github.io/react-native-paper/4.0/images/sidebar-logo.svg",
+      },
+      {
+        text: "Vuetify",
+        image:
+          "https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-light-atom.svg",
+      },
+      {
+        text: "Bootstrap",
+        image:
+          "https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg",
+      },
+      {
+        text: "Tailwind CSS",
+        image: "https://www.material-tailwind.com/svg/tailwind.svg",
+      },
+      {
+        text: "Material UI",
+        image: "https://www.material-tailwind.com/svg/tailwind.svg",
+      },
+    ],
+  },
+  {
+    key: "deployment",
+    text: "CI/CD Deployment tools",
+    value: ["Github Actions", "Vercel"],
+  },
+  {
+    key: "crashReporting",
+    text: "Crash Reporting",
+    value: ["Sentry"],
+  },
+  {
+    key: "databases",
+    text: "Databases",
+    value: ["Supabase", "Firebase", "Sqlite", "Postgres"],
+  },
+  {
+    key: "testing",
+    text: "Testing",
+    value: ["Jest", "Vitest", "Selenium"],
+  },
+  {
+    key: "analytics",
+    text: "Analytics",
+    value: ["Google Tag Manager", "Microsoft Clarity", "Google Analytics"],
+  },
+  {
+    key: "notification",
+    text: "Notification Services",
+    value: ["Firebase Cloud Messaging"],
+  },
+  {
+    key: "others",
+    text: "Others commonly used tools",
+    value: ["i18n"],
+  },
+];
+
+function SkillExplorer() {
+  const [skill, setSkill] = React.useState("");
+  function getSkills(skill) {
+    if (skill === "") return skills.map((item) => item.value).flat();
+    return skills.find((item) => item.key === skill)?.value;
+  }
+
+  const lists = getSkills(skill);
+  return (
+    <div className="flex not-prose">
+      <ul className="flex-none pr-4 list-none p-2">
+        {skills.map((item) => (
+          <li
+            key={item.key}
+            onClick={() => setSkill(item.key)}
+            onMouseEnter={() => setSkill(item.key)}
+            onMouseLeave={() => setSkill("")}
+            className={
+              skill === item.key
+                ? "cursor-default px-2 py-1 bg-[#ecc94b] mb-2"
+                : "cursor-pointer px-2 py-1 bg-white mb-2"
+            }
+          >
+            <h5>{item.text}</h5>
+          </li>
+        ))}
+      </ul>
+      <div className="flex-auto bg-white p-2">
+        <ul className="list-none grid  grid-cols-3 gap-2">
+          {lists.map((s) =>
+            s?.text ? (
+              <li key={s.text}>
+                <img className="h-8 w-8" alt={s.text} src={s.image} />
+              </li>
+            ) : (
+              <li key={s}>{s}</li>
+            )
+          )}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   let requestUrl = new URL(request.url);
   let siteUrl = requestUrl.protocol + "//" + requestUrl.host;
@@ -80,6 +233,11 @@ function About() {
         <li className="text-black dark:text-white">Javascript / Typescript</li>
       </ul>
 
+      <h2>Skills</h2>
+      <p>
+        I have experience working with the following technologies and tools:
+      </p>
+      <SkillExplorer />
       <p>
         When I am not writing code or working on a blog post, I'm probably
         spending my time either
