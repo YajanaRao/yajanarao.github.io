@@ -320,13 +320,6 @@ function About() {
         I created this website as a place to document my journey as I learn new
         things and share them with you.
       </p>
-      <p>Currently I am enthusiastic about:</p>
-      <ul className="ml-8">
-        <li className="text-black dark:text-white">React Native</li>
-        <li className="text-black dark:text-white">React.js / Vue.js</li>
-        <li className="text-black dark:text-white">Redux / Vuex</li>
-        <li className="text-black dark:text-white">Javascript / Typescript</li>
-      </ul>
 
       <h2>Skills</h2>
       <p>
