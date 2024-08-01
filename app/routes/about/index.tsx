@@ -80,7 +80,11 @@ const skills = [
         image:
           "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
       },
-      { text: "Vuex", image: "https://vuex.vuejs.org/vuex.png" },
+      {
+        text: "Vuex",
+        image:
+          "https://camo.githubusercontent.com/15c35cfe9d5758cb6f712966b2828f468baabac48faacb96438fe2e90989686e/68747470733a2f2f70696e69612e7675656a732e6f72672f6c6f676f2e737667",
+      },
       {
         text: "Zustand",
         image:
@@ -93,7 +97,7 @@ const skills = [
     text: "UI Libraries",
     value: [
       {
-        text: "React Native Paper",
+        text: "R N P",
         image:
           "https://callstack.github.io/react-native-paper/4.0/images/sidebar-logo.svg",
       },
@@ -108,49 +112,136 @@ const skills = [
           "https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg",
       },
       {
-        text: "Tailwind CSS",
+        text: "Tailwind",
         image: "https://www.material-tailwind.com/svg/tailwind.svg",
       },
       {
         text: "Material UI",
-        image: "https://www.material-tailwind.com/svg/tailwind.svg",
+        image: "https://v3.mui.com/static/images/material-ui-logo.svg",
+      },
+    ],
+  },
+  {
+    key: "baas",
+    text: "Backend As Service",
+    value: [
+      {
+        text: "Supabase",
+        image:
+          "https://asset.brandfetch.io/idvH9xelC8/id5_58I9qY.jpeg?updated=1716792318394",
+      },
+      {
+        text: "Firebase",
+        image:
+          "https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png",
+      },
+      {
+        text: "AWS Amplify",
+        image:
+          "https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9lNWJjNzliM2I4ZTU4NzQ3MmNkZTcwYThiY2U5OGRlYz9zaXplPTEwMCZkZWZhdWx0PXJldHJvIn0.Y4aBYppD2nT_7vR1A2tQJly-8piE9WNFTVy-PRQvi48",
       },
     ],
   },
   {
     key: "deployment",
     text: "CI/CD Deployment tools",
-    value: ["Github Actions", "Vercel"],
+    value: [
+      {
+        text: "Github Actions",
+        image: "https://avatars.githubusercontent.com/u/44036562?s=200&v=4",
+      },
+      {
+        text: "Vercel",
+        image: "https://avatars.githubusercontent.com/u/14985020?s=200&v=4",
+      },
+      {
+        text: "Vite",
+        image: "https://vitejs.dev/logo-with-shadow.png",
+      },
+    ],
   },
   {
     key: "crashReporting",
     text: "Crash Reporting",
-    value: ["Sentry"],
+    value: [
+      {
+        text: "Sentry",
+        image:
+          "https://companieslogo.com/img/orig/sentry-53b3eceb.png?t=1700712289",
+      },
+    ],
   },
   {
-    key: "databases",
-    text: "Databases",
-    value: ["Supabase", "Firebase", "Sqlite", "Postgres"],
+    key: "database",
+    text: "Database",
+    value: [
+      {
+        text: "Sqlite",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/9/97/Sqlite-square-icon.svg",
+      },
+      {
+        text: "Postgres",
+        image: "https://www.postgresql.org/media/img/about/press/elephant.png",
+      },
+    ],
   },
   {
     key: "testing",
     text: "Testing",
-    value: ["Jest", "Vitest", "Selenium"],
+    value: [
+      {
+        text: "Jest",
+        image:
+          "https://raw.githubusercontent.com/gilbarbara/logos/main/logos/jest.svg",
+      },
+      { text: "Vitest", image: "https://vitest.dev/logo-shadow.svg" },
+      {
+        text: "Selenium",
+        image: "https://www.svgrepo.com/show/354321/selenium.svg",
+      },
+    ],
   },
   {
     key: "analytics",
     text: "Analytics",
-    value: ["Google Tag Manager", "Microsoft Clarity", "Google Analytics"],
+    value: [
+      {
+        text: "Google Tag Manager",
+        image: "https://www.svgrepo.com/show/353827/google-tag-manager.svg",
+      },
+      {
+        text: "Microsoft Clarity",
+        image:
+          "https://clarity.microsoft.com/blog/wp-content/uploads/2022/02/256X256.png",
+      },
+      {
+        text: "Google Analytics",
+        image: "https://www.svgrepo.com/show/353804/google-analytics.svg",
+      },
+    ],
   },
   {
     key: "notification",
     text: "Notification Services",
-    value: ["Firebase Cloud Messaging"],
+    value: [
+      {
+        text: "Firebase Cloud Messaging",
+        image:
+          "https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png",
+      },
+    ],
   },
   {
     key: "others",
     text: "Others commonly used tools",
-    value: ["i18n"],
+    value: [
+      {
+        text: "i18n",
+        image:
+          "https://raw.githubusercontent.com/kazupon/vue-i18n/v8.x/assets/vue-i18n-logo.png",
+      },
+    ],
   },
 ];
 
@@ -161,7 +252,7 @@ function SkillExplorer() {
     return skills.find((item) => item.key === skill)?.value;
   }
 
-  const lists = getSkills(skill);
+  const lists = React.useMemo(() => getSkills(skill), [skill]);
   return (
     <div className="flex not-prose">
       <ul className="flex-none pr-4 list-none p-2">
@@ -182,16 +273,20 @@ function SkillExplorer() {
         ))}
       </ul>
       <div className="flex-auto bg-white p-2">
-        <ul className="list-none grid  grid-cols-3 gap-2">
-          {lists.map((s) =>
-            s?.text ? (
-              <li key={s.text}>
-                <img className="h-8 w-8" alt={s.text} src={s.image} />
-              </li>
-            ) : (
-              <li key={s}>{s}</li>
-            )
-          )}
+        <ul className="list-none grid  grid-cols-6 gap-2">
+          {lists.map((s) => (
+            <li
+              key={s.text}
+              className="px-2 py-1 flex flex-col justify-center items-center"
+            >
+              <img
+                className="h-10 w-10 rounded text-center"
+                alt={s.text}
+                src={s.image}
+              />
+              <p className="text-xs mt-1 text-center">{s.text}</p>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
