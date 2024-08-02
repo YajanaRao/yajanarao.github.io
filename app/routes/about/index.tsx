@@ -234,7 +234,7 @@ const skills = [
   },
   {
     key: "others",
-    text: "Others commonly used tools",
+    text: "Other common tools",
     value: [
       {
         text: "i18n",
@@ -255,7 +255,7 @@ function SkillExplorer() {
   const lists = React.useMemo(() => getSkills(skill), [skill]);
   return (
     <div className="flex not-prose">
-      <ul className="flex-none pr-4 list-none p-2">
+      <ul className="flex-none pr-4 list-none">
         {skills.map((item) => (
           <li
             key={item.key}
@@ -272,8 +272,11 @@ function SkillExplorer() {
           </li>
         ))}
       </ul>
-      <div className="flex-auto bg-white p-2">
-        <ul className="list-none grid  grid-cols-6 gap-2">
+      <div
+        className="flex-auto bg-white p-2 overflow-y-auto overflow-x-hidden"
+        style={{ maxHeight: "490px" }}
+      >
+        <ul className="list-none grid sm:grid-cols-3  md:grid-cols-6 gap-2">
           {lists.map((s) => (
             <li
               key={s.text}
