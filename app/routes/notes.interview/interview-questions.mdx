@@ -548,3 +548,39 @@ Breakdown:
 - (): Parentheses denote a capturing group. This means whatever matches inside the parentheses will be captured and included in the result of the split.
 
 </details>
+
+## Question 10
+
+Write a function that takes in a list (of length >= 3) of numbers, and returns the maximum product that can be obtained by multiplying any three integers from the list.
+
+Example:
+
+```js
+> maxProduct([2, 4, 1, 3, -5, 6])
+> 72 // 4*3*6
+```
+
+<details>
+<summary>Solution</summary>
+
+#### Attempt 1
+
+```js
+function maxProduct(data) {
+  let sorted = data.sort((a, b) => b-a)
+  return sorted[0] *  sorted[1] * sorted[2]
+}
+```
+
+#### Attempt 2
+
+```js
+
+function maxProduct(data) {
+  const sorted = data.sort((a, b) => b-a)
+  const product1 = sorted[0] *  sorted[1] * sorted[2]
+  const product2 = sorted[0] * sorted[data.length - 1] * sorted[data.length - 2]
+  return Math.max(product2, product1)
+}
+```
+</details>
