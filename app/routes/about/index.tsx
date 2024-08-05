@@ -264,8 +264,8 @@ function SkillExplorer() {
             onMouseLeave={() => setSkill("")}
             className={
               skill === item.key
-                ? "cursor-default px-2 py-1 bg-[#ecc94b] mb-2"
-                : "cursor-pointer px-2 py-1 bg-white mb-2"
+                ? "cursor-default px-2 py-1 bg-[#ecc94b] mb-2 text-gray-800 rounded"
+                : "cursor-pointer px-2 py-1 bg-white mb-2 text-gray-800 rounded"
             }
           >
             <h5>{item.text}</h5>
@@ -273,7 +273,7 @@ function SkillExplorer() {
         ))}
       </ul>
       <div
-        className="flex-auto bg-white p-2 overflow-y-auto overflow-x-hidden"
+        className="flex-auto bg-white p-2 overflow-y-auto overflow-x-hidden rounded"
         style={{ maxHeight: "490px" }}
       >
         <ul className="list-none grid sm:grid-cols-3  md:grid-cols-6 gap-2">
@@ -287,7 +287,7 @@ function SkillExplorer() {
                 alt={s.text}
                 src={s.image}
               />
-              <p className="text-xs mt-1 text-center">{s.text}</p>
+              <p className="text-xs mt-1 text-center text-gray-800">{s.text}</p>
             </li>
           ))}
         </ul>
