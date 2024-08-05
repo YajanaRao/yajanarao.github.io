@@ -53,22 +53,30 @@ const skills = [
       {
         text: "React Native",
         image: "https://reactnative.dev/img/tiny_logo.png",
+        link: "https://reactnative.dev",
       },
       {
         text: "Expo",
         image:
           "https://raw.githubusercontent.com/expo/expo/main/.github/resources/banner.png",
+        link: "https://expo.dev",
       },
       {
         text: "React.js",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+        link: "https://reactjs.org",
       },
       {
         text: "Remix.run",
         image: "https://remix.run/_brand/remix-letter-light.png",
+        link: "https://remix.run",
       },
-      { text: "Vue.js", image: "https://vuejs.org/images/logo.png" },
+      {
+        text: "Vue.js",
+        image: "https://vuejs.org/images/logo.png",
+        link: "https://vuejs.org",
+      },
     ],
   },
   {
@@ -79,45 +87,70 @@ const skills = [
         text: "Redux",
         image:
           "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
+        link: "https://redux.js.org",
       },
       {
         text: "Vuex",
         image:
           "https://camo.githubusercontent.com/15c35cfe9d5758cb6f712966b2828f468baabac48faacb96438fe2e90989686e/68747470733a2f2f70696e69612e7675656a732e6f72672f6c6f676f2e737667",
+        link: "https://vuex.vuejs.org",
       },
       {
         text: "Zustand",
         image:
           "https://raw.githubusercontent.com/pmndrs/zustand/main/examples/demo/public/logo192.png",
+        link: "https://zustand.surge.sh",
       },
     ],
   },
   {
     key: "uiLibraries",
-    text: "UI Libraries",
+    text: "UI / Component Libraries",
     value: [
+      {
+        text: "Storybook",
+        image:
+          "https://static-00.iconduck.com/assets.00/storybook-icon-icon-206x256-u88edyz4.png",
+        link: "https://storybook.js.org",
+      },
+      {
+        text: "Figma",
+        image: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
+        link: "https://www.figma.com",
+      },
       {
         text: "R N P",
         image:
           "https://callstack.github.io/react-native-paper/4.0/images/sidebar-logo.svg",
+        link: "https://callstack.github.io/react-native-paper",
       },
       {
         text: "Vuetify",
         image:
           "https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-light-atom.svg",
+        link: "https://vuetifyjs.com",
       },
       {
         text: "Bootstrap",
         image:
           "https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg",
+        link: "https://getbootstrap.com",
       },
       {
         text: "Tailwind",
         image: "https://www.material-tailwind.com/svg/tailwind.svg",
+        link: "https://tailwindcss.com",
       },
       {
         text: "Material UI",
         image: "https://v3.mui.com/static/images/material-ui-logo.svg",
+        link: "https://mui.com",
+      },
+      {
+        text: "Ag Grid",
+        image:
+          "https://blog.ag-grid.com/content/images/2021/11/200px-darkArtboard-5.png",
+        link: "https://www.ag-grid.com",
       },
     ],
   },
@@ -129,16 +162,19 @@ const skills = [
         text: "Supabase",
         image:
           "https://asset.brandfetch.io/idvH9xelC8/id5_58I9qY.jpeg?updated=1716792318394",
+        link: "https://supabase.io",
       },
       {
         text: "Firebase",
         image:
           "https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png",
+        link: "https://firebase.google.com",
       },
       {
         text: "AWS Amplify",
         image:
           "https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9lNWJjNzliM2I4ZTU4NzQ3MmNkZTcwYThiY2U5OGRlYz9zaXplPTEwMCZkZWZhdWx0PXJldHJvIn0.Y4aBYppD2nT_7vR1A2tQJly-8piE9WNFTVy-PRQvi48",
+        link: "https://aws.amazon.com/amplify",
       },
     ],
   },
@@ -149,14 +185,17 @@ const skills = [
       {
         text: "Github Actions",
         image: "https://avatars.githubusercontent.com/u/44036562?s=200&v=4",
+        link: "https://docs.github.com/en/actions",
       },
       {
         text: "Vercel",
         image: "https://avatars.githubusercontent.com/u/14985020?s=200&v=4",
+        link: "https://vercel.com",
       },
       {
         text: "Vite",
         image: "https://vitejs.dev/logo-with-shadow.png",
+        link: "https://vitejs.dev",
       },
     ],
   },
@@ -168,6 +207,7 @@ const skills = [
         text: "Sentry",
         image:
           "https://companieslogo.com/img/orig/sentry-53b3eceb.png?t=1700712289",
+        link: "https://sentry.io",
       },
     ],
   },
@@ -179,10 +219,12 @@ const skills = [
         text: "Sqlite",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/9/97/Sqlite-square-icon.svg",
+        link: "https://www.sqlite.org/index.html",
       },
       {
         text: "Postgres",
         image: "https://www.postgresql.org/media/img/about/press/elephant.png",
+        link: "https://www.postgresql.org",
       },
     ],
   },
@@ -194,11 +236,17 @@ const skills = [
         text: "Jest",
         image:
           "https://raw.githubusercontent.com/gilbarbara/logos/main/logos/jest.svg",
+        link: "https://jestjs.io",
       },
-      { text: "Vitest", image: "https://vitest.dev/logo-shadow.svg" },
+      {
+        text: "Vitest",
+        image: "https://vitest.dev/logo-shadow.svg",
+        link: "https://vitest.dev",
+      },
       {
         text: "Selenium",
         image: "https://www.svgrepo.com/show/354321/selenium.svg",
+        link: "https://www.selenium.dev",
       },
     ],
   },
@@ -209,15 +257,18 @@ const skills = [
       {
         text: "Google Tag Manager",
         image: "https://www.svgrepo.com/show/353827/google-tag-manager.svg",
+        link: "https://tagmanager.google.com",
       },
       {
         text: "Microsoft Clarity",
         image:
           "https://clarity.microsoft.com/blog/wp-content/uploads/2022/02/256X256.png",
+        link: "https://clarity.microsoft.com",
       },
       {
         text: "Google Analytics",
         image: "https://www.svgrepo.com/show/353804/google-analytics.svg",
+        link: "https://analytics.google.com",
       },
     ],
   },
@@ -226,9 +277,10 @@ const skills = [
     text: "Notification Services",
     value: [
       {
-        text: "Firebase Cloud Messaging",
+        text: "F C M",
         image:
           "https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png",
+        link: "https://firebase.google.com/docs/cloud-messaging",
       },
     ],
   },
@@ -240,6 +292,7 @@ const skills = [
         text: "i18n",
         image:
           "https://raw.githubusercontent.com/kazupon/vue-i18n/v8.x/assets/vue-i18n-logo.png",
+        link: "https://kazupon.github.io/vue-i18n",
       },
     ],
   },
@@ -274,13 +327,14 @@ function SkillExplorer() {
       </ul>
       <div
         className="flex-auto bg-white p-2 overflow-y-auto overflow-x-hidden rounded"
-        style={{ maxHeight: "490px" }}
+        style={{ height: "515px" }}
       >
         <ul className="list-none grid sm:grid-cols-3  md:grid-cols-6 gap-2">
           {lists.map((s) => (
             <li
               key={s.text}
-              className="px-2 py-1 flex flex-col justify-center items-center"
+              className="py-1 flex flex-col justify-center items-center cursor-pointer"
+              onClick={() => window.open(s.link, "_blank")}
             >
               <img
                 className="h-10 w-10 rounded text-center"

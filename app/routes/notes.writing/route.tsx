@@ -61,8 +61,6 @@ export const meta: MetaFunction<typeof loader> = (args) => {
 };
 
 export default function Index() {
-  const posts = useLoaderData<typeof loader>();
-
   return (
     <div>
       <h1>Writings</h1>
