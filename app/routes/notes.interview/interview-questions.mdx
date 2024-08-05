@@ -584,3 +584,45 @@ function maxProduct(data) {
 }
 ```
 </details>
+
+## Question 11
+
+Create a function that should take one argument n, which is a positive integer. The function should return the sum of all squared positive integers between 1 and n, inclusive.
+
+
+Example:
+
+```js
+> squares(5)
+> 55
+> squares(10)
+> 385
+> squares(25)
+> 5525
+> squares(100)
+> 338350
+```
+
+
+<details>
+<summary>Solution</summary>
+
+### Attempt 1
+
+```js
+function squares(num) {
+  let sum = 0
+  for(let i=1;i <= num; i++) {
+    sum = sum + i * i
+  }
+  return sum
+}
+```
+
+### Attempt 2
+
+```js
+function squares(n) {
+  return Array.from({length: n}, (_, i) => i + 1).reduce((acc, num) => acc + num * num, 0)
+}
+```
