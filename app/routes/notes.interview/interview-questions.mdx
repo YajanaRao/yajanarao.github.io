@@ -627,3 +627,45 @@ function squares(n) {
 }
 ```
 </details>
+
+## Question 12
+
+Write a "word wrapping" function that takes in a string and the maximum width of a line of text, and return the text "wrapped" to that line length. Include dashes for broken words (which is included in the length of that line), and don't let a line start with a non-alphanumeric character.
+
+Example:
+
+```js
+let string = "Hello, world! I am hungry."
+let length = 10
+
+> wrap(string, length)
+`Hello, wo-
+ rld! I am
+ hungry.`
+
+ ```
+<details>
+<summary>Solution</summary>
+
+### Attempt 1
+
+```js
+function wrap(string, length) {
+  let text = ""
+  let cursor = 0
+  while(cursor < string.length) {
+    if(cursor + 10 < string.length) text = text + ${string.slice(cursor, cursor+ 9)}-\n
+    else text = text + string.slice(cursor, cursor+ 9)
+    cursor = cursor + 10
+  }
+  return text
+}
+```
+
+#### Problems:
+
+- It always adds a hyphen before the newline character, even if the break happens at a space or a punctuation mark, which is not ideal.
+- It doesn't handle breaking words correctly to avoid lines starting with non-alphanumeric characters.
+- It hardcodes the line length to 10 instead of using the length parameter.
+
+</details>
