@@ -669,3 +669,38 @@ function wrap(string, length) {
 - It hardcodes the line length to 10 instead of using the length parameter.
 
 </details>
+
+## Question 13
+
+Imagine the users on your app are all typing slightly incorrectly, in that they shifted their hands one key to the right. Write a function that translates what they mean to say. The examples below assume an ANSI keyboard layout, you can choose how you want to do that!
+
+Example:
+
+```js
+> translateRightShift(';p; epeor')
+"lol wowie"
+
+> translateRightShift('ejp s, o')
+"who am i"
+```
+
+<details>
+<summary>Solution</summary>
+
+```js
+function translateRightShift(str) {
+  const keyboard = "1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./".split('')
+  return str.toLowercase().split('').map(char => char === ' ' ? char : keyboard[keyboard.indexOf(char) - 1]).join('')
+}
+```
+
+**Handling Edge Cases**:
+
+- The current implementation works well for most cases but might fail for characters at the very start of the keyboard string (e.g., 1 or q), as keyboard.indexOf(char) - 1 would access an out-of-bounds index.
+- To avoid this, you could add a condition to check if keyboard.indexOf(char) - 1 is less than 0 and handle it appropriately.
+
+**Uppercase Letters**:
+
+- The function currently doesn’t handle uppercase letters. To support them, you could either extend the keyboard string with uppercase characters or convert the input string to lowercase before processing.
+
+</details>

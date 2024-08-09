@@ -46,7 +46,21 @@ input:checked ~ .dot {
   background-color: #48bb78;
 }
 
-summary:hover {
-  cursor: pointer;
-  background-color: #6ee7b7;
+details {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 4px;
+  width: 100%;
+}
+
+summary {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #f7f7f7;
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+  }
 }
