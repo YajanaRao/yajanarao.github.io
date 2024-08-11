@@ -630,6 +630,84 @@ function squares(n) {
 
 ## Question 12
 
+Write a "word wrapping" function that takes in a string and the maximum width of a line of text, and return the text "wrapped" to that line length. Include dashes for broken words (which is included in the length of that line), and don't let a line start with a non-alphanumeric character.
+
+Example:
+
+```js
+let string = "Hello, world! I am hungry."
+let length = 10
+
+> wrap(string, length)
+`Hello, wo-
+ rld! I am
+ hungry.`
+
+ ```
+
+<details>
+<summary>Solution</summary>
+
+### Attempt 1
+
+```js
+function wrap(string, length) {
+  let text = ""
+  let cursor = 0
+  while(cursor < string.length) {
+    if(cursor + 10 < string.length) text = text + ${string.slice(cursor, cursor+ 9)}-\n
+    else text = text + string.slice(cursor, cursor+ 9)
+    cursor = cursor + 10
+  }
+  return text
+}
+```
+
+#### Problems:
+
+- It always adds a hyphen before the newline character, even if the break happens at a space or a punctuation mark, which is not ideal.
+- It doesn't handle breaking words correctly to avoid lines starting with non-alphanumeric characters.
+- It hardcodes the line length to 10 instead of using the length parameter.
+
+</details>
+
+## Question 13
+
+Imagine the users on your app are all typing slightly incorrectly, in that they shifted their hands one key to the right. Write a function that translates what they mean to say. The examples below assume an ANSI keyboard layout, you can choose how you want to do that!
+
+Example:
+
+```js
+> translateRightShift(';p; epeor')
+"lol wowie"
+
+> translateRightShift('ejp s, o')
+"who am i"
+```
+
+<details>
+<summary>Solution</summary>
+
+```js
+function translateRightShift(str) {
+  const keyboard = "1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./".split('')
+  return str.toLowercase().split('').map(char => char === ' ' ? char : keyboard[keyboard.indexOf(char) - 1]).join('')
+}
+```
+
+**Handling Edge Cases**:
+
+- The current implementation works well for most cases but might fail for characters at the very start of the keyboard string (e.g., 1 or q), as keyboard.indexOf(char) - 1 would access an out-of-bounds index.
+- To avoid this, you could add a condition to check if keyboard.indexOf(char) - 1 is less than 0 and handle it appropriately.
+
+**Uppercase Letters**:
+
+- The function currently doesn’t handle uppercase letters. To support them, you could either extend the keyboard string with uppercase characters or convert the input string to lowercase before processing.
+
+</details>
+
+## Question 14
+
 Given a direction and a number, write a function that outputs an arrow of asterisks with the height of that number! See the pattern below.
 
 Example:
@@ -656,9 +734,9 @@ $ printArrow('up', 2)
   *
  * *
 ```
-
 <details>
 <summary>Solution</summary>
+
 ```js
 
 function printArrow(direction, len) {

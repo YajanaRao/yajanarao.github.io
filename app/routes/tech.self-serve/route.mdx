@@ -1,0 +1,117 @@
+---
+title: "Basic Setup for Self-Serve Products"
+date: "2024-08-07"
+description: "A guide to setting up basic architecture for self-serve products"
+categories: marketing
+---
+
+import Info from '@/components/info';
+import { getMetaTags } from '@/lib/utils';
+
+<Info {...frontmatter} />
+
+## Self-serve first.
+
+A self-serve product is one where a customer can go through the full product experience — from signing up to first use to activating new features to managing their account to upgrading and/or cancellation — all without ever needing to interact with another person.
+
+
+A great self-serve product experience carefully examines every customer touchpoint and puts deep thought into how to simplify, streamline, and edit the various customer flows to help them accomplish what they need to, quickly and efficiently.
+
+### Key Requirements for Self-Serve Products
+
+- Intuitive User Interface (UI) and User Experience (UX)
+- Seamless Onboarding Process
+- Transparent and Flexible Pricing
+- Comprehensive Documentation and Support Resources
+- Self-Serve Support
+- Effective User Analytics
+- Security and Compliance
+
+### Problem Statement
+
+- Lack of User Insights
+- Inefficient Advertising Spend
+- Ineffective User Support
+- Lack of Compliance
+- Tag Management Complexity
+
+### Manage tag complexity with [Google tag manager](https://marketingplatform.google.com/about/tag-manager/)
+
+
+A tag management system that lets you configure and instantly deploy tags on your website or mobile app from easy to use web based interface. 
+Manage all your website tags without editing code. Google Tag Manager delivers simple, reliable, easily integrated tag management solutions— for free.
+
+Key Features:
+
+- **Tag Organization**: Efficiently manage all your tags in one place.
+- **Version Control**: Track changes and revert to previous versions if needed.
+- **Third-Party and Community-Developed Tag Templates**: Access a variety of pre-built tags for common tools.
+
+Benefits:
+
+- **Optimize Tag Deployment**: Ensure tags are loaded efficiently.
+- **Reduce Configuration Errors**: Minimize mistakes by using a centralized tag manager.
+- **Instant Modifications**: Modify and deploy tags instantly without editing site code.
+
+### Better User Insights with [Microsoft Clarity](https://clarity.microsoft.com/)
+
+Clarity is a free behavioral analytics, easy-to-use tool that captures how real people use your site
+
+Clarity is a free web analytics tool that helps you see what’s working on your site and where people get stuck. With features such as session recordings and heatmaps, you’ll gain a deeper understanding of how your users interact with your site, and get clear insights on how to improve your design to grow revenue and increase user retention.
+
+Key features:
+- **Session Recordings**: Examine user behavior as it happens, identifying smooth areas and drop-off points.
+- **Heatmaps**: Visualize where users click and scroll, revealing engagement hotspots and neglected areas.
+- **Insights**: Make data-driven decisions to streamline design and improve usability.
+- **Metrics Dashboard**: Get an overview of site performance, popular pages, and user demographics.
+- **Privacy Matters**: By default, Clarity masks sensitive content before uploading, ensuring user privacy.
+- **Scalability**: Supports large websites, processing data for millions of users without impacting performance.
+Easy Setup: Start monitoring activity in minutes with a straightforward setup process.
+
+#### Dead Clicks
+
+import DeadClicks from './clarity/dead-click-pencil.gif';
+
+<img src={DeadClicks} alt="Dead Clicks" />
+
+#### Largest Content Paint
+
+LCP reports the render time of the largest image or text block visible in the viewport, relative to when the user first navigated to the page.
+
+### Ensuring Compliance with CookieYes
+
+CookieYes Let's application to Generate a fully customizable cookie banner, record user consent and manage all your cookie compliance needs in one place.
+
+The way CookieYes works is that it scans your website for cookies and automatically generates a cookie banner that informs users about the cookies being used.
+
+
+- **Automated Compliance:** CookieYes automatically scanned the website for cookies and ensured compliance with GDPR, CCPA, and other regulations.
+- **Customizable Consent Banner:** They customized the consent banner to align with their brand, ensuring users were informed and consented to cookie usage.
+
+### In App Support with Intercom
+- Support to self serve users without living the app or website
+
+
+## Setup
+
+Go to [google tag manager](https://tagmanager.google.com/#/home) and select the container you want to use. If you don't have an account, create one by clicking on Create Account.
+Enter account details and create an account by accepting terms and conditions.
+
+After creating an account, you will see a modal with scripts to add to your website. Copy the scripts and add them to the index.html file of your website.
+
+import GTMSetup from './gtm/setup.gif';
+
+<img src={GTMSetup} alt="Google tag manager Setup" />
+
+1. Select container which you want to use for testing
+2. Add the scripts of the container in index.html files
+3. Add cookieYes script to google tag manager tags
+4. Set trigger as consent initialisation all pages in gtm
+5. In clarity settings -> setup: connect google tag manager with respective account and container
+6. Push user data and sms data to gtm via `userLoaded` and `smsDetailsLoaded` events
+7. Add intercom via community tags in google tag manager. Add site id from intercom
+8. In advance settings specify additional consent required for each tags
+9. add conversion linker
+10. Add google ads conversion tracking tag with conversion label and coverison id
+11. google ads trouble shooting is recognsing the event
+12. On live site, conversions are not showing up.
