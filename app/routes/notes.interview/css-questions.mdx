@@ -1,0 +1,73 @@
+---
+title: "CSS Questions"
+slug: css-bettle-questions
+date: "2024-08-16"
+categories: interview
+---
+
+
+
+<div id="css-battle-1" dangerouslySetInnerHTML={{
+  __html: `<div class="container">
+<div class='half'>
+  <div class="box top-left">
+  <div class='round with-border'></div>
+  </div>
+  <div class="box bottom-left">
+  <div class='round'></div>
+  </div>
+</div>
+<div class='half secound'>
+  <div class="box top-right">
+  <div class='round'></div>
+  </div>
+  <div class="box bottom-right">
+  <div class='round with-border'></div>
+  </div>
+</div>
+</div>
+<style>
+#css-battle-1 {
+  all: unset;
+.round{border-radius: 50%;background: #FADE8B;height: 100%;width: 100%}
+.with-border {background: #D86F45;border: 20px solid #FADE8B}
+.container {display: flex; height: 100%; background: #FADE8B;}
+.box {background: #D86F45;width: 100px;height: 100px}
+.half {flex: 1;flex-direction: column;justify-content: center;align-items: flex-end;display: flex}
+.secound {align-items: flex-start}
+.top-right {border-radius: 50% 50% 50% 0%}
+.top-left {border-radius: 50% 50% 0% 50%}
+.bottom-right {border-radius: 0% 50% 50% 50%}
+.bottom-left {border-radius: 50% 0% 50% 50%}
+}
+</style>`
+}}/>
+
+<details>
+<summary>Solution</summary>
+
+```html
+<div class="container">
+<div class='half'>
+<div class="box top-left"><div class='round with-border'></div></div>
+<div class="box bottom-left"><div class='round'></div></div>
+</div>
+<div class='half secound'>
+<div class="box top-right"><div class='round'></div></div>
+<div class="box bottom-right"><div class='round with-border'></div></div>
+</div></div>
+<style>
+*{background: #FADE8B}
+.round{border-radius: 50%;background: #FADE8B;height: 100%;width: 100%}
+.with-border {height: 60px;width: 60px;background: #D86F45;border: 20px solid #FADE8B}
+.container {display: flex; height: 100%}
+.box {background: #D86F45;width: 100px;height: 100px}
+.half {flex: 1;flex-direction: column;justify-content: center;align-items: flex-end;display: flex}
+.secound {align-items: flex-start}
+.top-right {border-radius: 50% 50% 50% 0%}
+.top-left {border-radius: 50% 50% 0% 50%}
+.bottom-right {border-radius: 0% 50% 50% 50%}
+.bottom-left {border-radius: 50% 0% 50% 50%}
+</style>
+```
+</details>

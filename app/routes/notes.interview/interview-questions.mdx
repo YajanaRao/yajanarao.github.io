@@ -1,7 +1,7 @@
 ---
-title: "Programming Interview Questions"
-slug: questions/longest-increasing-subsequence
-date: "2020-08-16"
+title: "Javascript Interview Questions"
+slug: javascript-interview-questions
+date: "2024-08-16"
 categories: interview
 ---
 
@@ -624,6 +624,83 @@ function squares(num) {
 ```js
 function squares(n) {
   return Array.from({length: n}, (_, i) => i + 1).reduce((acc, num) => acc + num * num, 0)
+}
+```
+</details>
+
+## Question 12
+
+Given a direction and a number, write a function that outputs an arrow of asterisks with the height of that number! See the pattern below.
+
+Example:
+```js
+$ printArrow('right', 3)
+*
+ *
+  *
+ *
+*
+
+$ printArrow('left', 5)
+    *
+   *
+  *
+ *
+*
+ *
+  *
+   *
+    *
+
+$ printArrow('up', 2)
+  *
+ * *
+```
+
+<details>
+<summary>Solution</summary>
+```js
+
+function printArrow(direction, len) {
+  let arrow = ''
+  let num = len - 1
+  if(direction === "right") {
+      for(let i=0; i<num; i++) {
+          for(let j=0; j<i;j++) {
+            arrow = arrow + ' '
+          }
+         arrow = arrow + '*\n'
+      }
+      for(let i=num; i>=0; i--) {
+          for(let j=0; j<i;j++) {
+            arrow = arrow + ' '
+          }
+         arrow = arrow + '*\n'
+      }
+  }
+  if(direction === "left") {
+      for(let i=num; i>0; i--) {
+          for(let j=0; j<i;j++) {
+            arrow = arrow + ' '
+          }
+         arrow = arrow + '*\n'
+      }
+      for(let i=0; i<=num; i++) {
+          for(let j=0; j<i;j++) {
+            arrow = arrow + ' '
+          }
+         arrow = arrow + '*\n'
+      }
+  }
+  if(direction === "top") {
+      for(let i=num; i>0; i--) {
+         arrow = arrow + ' '.repeat(i)
+         arrow = arrow + '*'
+         
+      }
+    arrow = arrow + '\n'
+  }
+  return arrow
 }
 ```
 </details>

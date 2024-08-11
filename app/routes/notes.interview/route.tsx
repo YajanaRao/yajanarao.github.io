@@ -3,7 +3,8 @@ title: "C Programming";
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
-import * as introduction from "./interview-questions.mdx";
+import * as JavascriptQuestions from "./interview-questions.mdx";
+import * as CssQuestions from "./css-questions.mdx";
 
 function postFromModule(mod) {
   return {
@@ -16,7 +17,10 @@ export async function loader() {
   // Referencing the posts here instead of in the Index component down below
   // lets us avoid bundling the actual posts themselves in the bundle for the
   // index page.
-  return json([postFromModule(introduction)]);
+  return json([
+    postFromModule(JavascriptQuestions),
+    postFromModule(CssQuestions),
+  ]);
 }
 
 const ogImageUrl = "/images/interview.jpeg";
@@ -77,10 +81,18 @@ export default function Index() {
         ))}
       </ul>
 
-      <section id={introduction.frontmatter.slug} style={{ marginBottom: 20 }}>
-        <h1>{introduction.frontmatter.title}</h1>
-        <p>{introduction.frontmatter.description}</p>
-        <introduction.default />
+      <section
+        id={JavascriptQuestions.frontmatter.slug}
+        style={{ marginBottom: 20 }}
+      >
+        <h1>{JavascriptQuestions.frontmatter.title}</h1>
+        <p>{JavascriptQuestions.frontmatter.description}</p>
+        <JavascriptQuestions.default />
+      </section>
+      <section id={CssQuestions.frontmatter.slug} style={{ marginBottom: 20 }}>
+        <h1>{CssQuestions.frontmatter.title}</h1>
+        <p>{CssQuestions.frontmatter.description}</p>
+        <CssQuestions.default />
       </section>
     </div>
   );
