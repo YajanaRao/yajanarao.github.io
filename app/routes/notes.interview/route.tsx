@@ -1,9 +1,9 @@
-title: "C Programming";
-
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
 import * as JavascriptQuestions from "./interview-questions.mdx";
+import * as JSQuestions from "./js-questions.mdx";
+import * as JSQuestions1 from "./js-questions-1.mdx";
 import * as CssQuestions from "./css-questions.mdx";
 
 function postFromModule(mod) {
@@ -88,6 +88,8 @@ export default function Index() {
         <h1>{JavascriptQuestions.frontmatter.title}</h1>
         <p>{JavascriptQuestions.frontmatter.description}</p>
         <JavascriptQuestions.default />
+        <JSQuestions.default />
+        <JSQuestions1.default />
       </section>
       <section id={CssQuestions.frontmatter.slug} style={{ marginBottom: 20 }}>
         <h1>{CssQuestions.frontmatter.title}</h1>
