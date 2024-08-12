@@ -3,6 +3,7 @@ import { Link, MetaFunction, useSearchParams } from "@remix-run/react";
 import { getPosts } from "../lib/posts";
 import { useUpdateQueryStringValueWithoutNavigation } from "../lib/utils";
 import { LoaderFunctionArgs, json } from "@remix-run/node";
+import dayjs from "dayjs";
 
 export const meta: MetaFunction<typeof loader> = (args) => {
   let { siteUrl } = args.data || {};
@@ -135,11 +136,7 @@ const BlogIndex = () => {
                 <Link to={`/${node.slug}`}>{title}</Link>
               </h2>
               <small className="text-gray-500 dark:text-gray-300">
-                {new Date(date).toLocaleDateString("en", {
-                  day: "numeric",
-                  month: "long",
-                  year: "numeric",
-                })}
+                {dayjs(date).format("MMMM D, YYYY")}
               </small>
             </header>
             <section>

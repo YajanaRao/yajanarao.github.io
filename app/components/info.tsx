@@ -1,4 +1,5 @@
 import * as React from "react";
+import dayjs from "dayjs";
 
 export const meta = () => {
   return [{ title: "Projects" }];
@@ -10,11 +11,7 @@ function Info({ title, date }: { title: string; date: string }) {
       <h1 className="mb-0">{title}</h1>
       <p className="mt-0 mb-0  text-gray-700 dark:text-gray-300">
         {" "}
-        {new Date(date).toLocaleDateString("en", {
-          day: "numeric",
-          month: "long",
-          year: "numeric",
-        })}
+        {dayjs(date).format("MMMM D, YYYY")}
       </p>
     </div>
   );
