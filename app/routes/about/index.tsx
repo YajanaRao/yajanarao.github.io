@@ -101,6 +101,12 @@ const skills = [
           "https://raw.githubusercontent.com/pmndrs/zustand/main/examples/demo/public/logo192.png",
         link: "https://zustand.surge.sh",
       },
+      {
+        text: "React Query",
+        image:
+          "https://tanstack.com/_build/assets/logo-color-600w-Bx4vtR8J.png",
+        link: "https://tanstack.com/query",
+      },
     ],
   },
   {
@@ -110,7 +116,7 @@ const skills = [
       {
         text: "Storybook",
         image:
-          "https://static-00.iconduck.com/assets.00/storybook-icon-icon-206x256-u88edyz4.png",
+          "https://raw.githubusercontent.com/storybookjs/brand/main/icon/icon-storybook-default.svg",
         link: "https://storybook.js.org",
       },
       {
@@ -363,10 +369,13 @@ function About() {
       <p>Software Engineer + Writer + Seeker of Truth</p>
       <p>
         My aspiration is to bring wellbeing into people lives through Technology
-        and other means. I currently live in Sagar, Karnataka, India 🇮🇳 . I am a
-        Software engineer, I have been working on converting ideas into software
-        application for almost {new Date().getFullYear() - 2017} + years. I am
-        currently working at{" "}
+        and other means. I currently live in{" "}
+        <a href="https://maps.app.goo.gl/nbyDvrEhSXjcjFSL9" target="_blank">
+          Sagar
+        </a>
+        , Karnataka, India 🇮🇳 . I am a Software engineer, I have been working on
+        converting ideas into software application for almost{" "}
+        {new Date().getFullYear() - 2017} + years. I am currently working at{" "}
         <a href="https://mammoth.io" target="_blank">
           Mammoth Analytics
         </a>
