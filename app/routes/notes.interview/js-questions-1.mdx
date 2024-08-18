@@ -1,0 +1,297 @@
+---
+title: "Javascript 1"
+slug: javascript-interview-questions
+date: "2024-08-16"
+categories: interview
+---
+
+## Question 11
+
+Create a function that should take one argument n, which is a positive integer. The function should return the sum of all squared positive integers between 1 and n, inclusive.
+
+
+Example:
+
+```js
+> squares(5)
+> 55
+> squares(10)
+> 385
+> squares(25)
+> 5525
+> squares(100)
+> 338350
+```
+
+
+<details>
+<summary>Solution</summary>
+
+### Attempt 1
+
+```js
+function squares(num) {
+  let sum = 0
+  for(let i=1;i <= num; i++) {
+    sum = sum + i * i
+  }
+  return sum
+}
+```
+
+### Attempt 2
+
+```js
+function squares(n) {
+  return Array.from({length: n}, (_, i) => i + 1).reduce((acc, num) => acc + num * num, 0)
+}
+```
+</details>
+
+## Question 12
+
+Write a "word wrapping" function that takes in a string and the maximum width of a line of text, and return the text "wrapped" to that line length. Include dashes for broken words (which is included in the length of that line), and don't let a line start with a non-alphanumeric character.
+
+Example:
+
+```js
+let string = "Hello, world! I am hungry."
+let length = 10
+
+> wrap(string, length)
+`Hello, wo-
+ rld! I am
+ hungry.`
+
+ ```
+
+<details>
+<summary>Solution</summary>
+
+### Attempt 1
+
+```js
+function wrap(string, length) {
+  let text = ""
+  let cursor = 0
+  while(cursor < string.length) {
+    if(cursor + 10 < string.length) text = text + ${string.slice(cursor, cursor+ 9)}-\n
+    else text = text + string.slice(cursor, cursor+ 9)
+    cursor = cursor + 10
+  }
+  return text
+}
+```
+
+#### Problems:
+
+- It always adds a hyphen before the newline character, even if the break happens at a space or a punctuation mark, which is not ideal.
+- It doesn't handle breaking words correctly to avoid lines starting with non-alphanumeric characters.
+- It hardcodes the line length to 10 instead of using the length parameter.
+
+</details>
+
+## Question 13
+
+Imagine the users on your app are all typing slightly incorrectly, in that they shifted their hands one key to the right. Write a function that translates what they mean to say. The examples below assume an ANSI keyboard layout, you can choose how you want to do that!
+
+Example:
+
+```js
+> translateRightShift(';p; epeor')
+"lol wowie"
+
+> translateRightShift('ejp s, o')
+"who am i"
+```
+
+<details>
+<summary>Solution</summary>
+
+```js
+function translateRightShift(str) {
+  const keyboard = "1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./".split('')
+  return str.toLowercase().split('').map(char => char === ' ' ? char : keyboard[keyboard.indexOf(char) - 1]).join('')
+}
+```
+
+**Handling Edge Cases**:
+
+- The current implementation works well for most cases but might fail for characters at the very start of the keyboard string (e.g., 1 or q), as keyboard.indexOf(char) - 1 would access an out-of-bounds index.
+- To avoid this, you could add a condition to check if keyboard.indexOf(char) - 1 is less than 0 and handle it appropriately.
+
+**Uppercase Letters**:
+
+- The function currently doesn’t handle uppercase letters. To support them, you could either extend the keyboard string with uppercase characters or convert the input string to lowercase before processing.
+
+</details>
+
+## Question 14
+
+Given a direction and a number, write a function that outputs an arrow of asterisks with the height of that number! See the pattern below.
+
+Example:
+```js
+$ printArrow('right', 3)
+*
+ *
+  *
+ *
+*
+
+$ printArrow('left', 5)
+    *
+   *
+  *
+ *
+*
+ *
+  *
+   *
+    *
+
+$ printArrow('up', 2)
+  *
+ * *
+```
+<details>
+<summary>Solution</summary>
+
+```js
+
+function printArrow(direction, len) {
+  let arrow = ''
+  let num = len - 1
+  if(direction === "right") {
+      for(let i=0; i<num; i++) {
+          for(let j=0; j<i;j++) {
+            arrow = arrow + ' '
+          }
+         arrow = arrow + '*\n'
+      }
+      for(let i=num; i>=0; i--) {
+          for(let j=0; j<i;j++) {
+            arrow = arrow + ' '
+          }
+         arrow = arrow + '*\n'
+      }
+  }
+  if(direction === "left") {
+      for(let i=num; i>0; i--) {
+          for(let j=0; j<i;j++) {
+            arrow = arrow + ' '
+          }
+         arrow = arrow + '*\n'
+      }
+      for(let i=0; i<=num; i++) {
+          for(let j=0; j<i;j++) {
+            arrow = arrow + ' '
+          }
+         arrow = arrow + '*\n'
+      }
+  }
+  if(direction === "top") {
+      for(let i=num; i>0; i--) {
+         arrow = arrow + ' '.repeat(i)
+         arrow = arrow + '*'
+         
+      }
+    arrow = arrow + '\n'
+  }
+  return arrow
+}
+```
+</details>
+
+## Question 15
+
+Given an array of logs and variable assignments, return a list of all unused variables.
+
+
+Examples:
+```js
+> findUnused(["a = 1", "b = a", "c = 2", "log(b)"]);
+> ["c"]
+
+> findUnused(["a = 1", "b = a", "c = 2", "log(c)"]);
+> ["a", "b"]
+```
+
+<details>
+<summary>Solution</summary>
+
+### Attempt 1
+```js
+ function findUnused(data) {
+   let stack = {}
+   for (const item of data) {
+     if(item.includes('=')) {
+       const values = item.split('=')
+       const variable = values[0].trim()
+       const value = values[1].trim()
+       if(!parseInt(value)) {
+         if(Object.keys(stack).includes(variable)) {
+           stack[variable]['ref'] = value
+         } else {
+           stack = {
+             ...stack,
+             [variable]: {
+               'ref': value
+             }
+           }
+         }
+       } else {
+         stack[variable] = value
+       }
+       
+     } else  if(item.includes('log')) {
+        let refKey = item.slice(4, -1)
+        while(refKey) {
+          newRefKey = stack[refKey]?.ref
+          delete stack[refKey]
+          refKey = newRefKey
+        }
+      }
+   } 
+   return Object.keys(stack)
+ }
+ ```
+
+#### Improvements
+
+- Use of Destructuring: Utilize destructuring to make the code cleaner when splitting the string by =.
+- Simplified Conditionals: Simplify the logic for updating the stack by directly assigning values and avoiding unnecessary checks.
+- Avoid Repeated Lookups: Remove the need for repeatedly checking the existence of a variable in the stack.
+- Consistent Variable Naming: Use meaningful and consistent variable names to make the code easier to follow.
+- Remove Redundant Code: Simplify the logic to remove unnecessary checks or operations.
+
+```js
+function findUnused(data) {
+  const stack = {};
+
+  for (const item of data) {
+    if (item.includes('=')) {
+      const [variable, value] = item.split('=').map(s => s.trim());
+
+      if (isNaN(value)) {
+        // Value is a reference, not a number
+        stack[variable] = { ref: value };
+      } else {
+        // Value is a number
+        stack[variable] = value;
+      }
+    } else if (item.includes('log')) {
+      let refKey = item.slice(4, -1);
+      // Follow the reference chain and remove used variables
+      while (refKey && stack[refKey]) {
+        const newRefKey = stack[refKey].ref;
+        delete stack[refKey];
+        refKey = newRefKey;
+      }
+    }
+  }
+
+  return Object.keys(stack);
+}
+```
+</details>

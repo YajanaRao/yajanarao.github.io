@@ -1,0 +1,251 @@
+---
+title: "Javascript 1"
+slug: javascript-interview-questions
+date: "2024-08-16"
+categories: interview
+---
+
+## Question 6
+
+Write a function that takes an array of integers and returns a new array containing only the even numbers, and sorted.
+
+Example:
+
+```js
+> onlyEvens([1, 2, 3, 4, 5, 2])
+> [2, 2, 4]
+
+> onlyEvens([7, 8, 1, 0, 2, 5])
+> [0, 2, 8]
+
+> onlyEvens([11, 13, 15])
+> []
+```
+
+<details>
+<summary>Solution</summary>
+
+### Attempt 1
+
+```js
+const onlyEvens = (nums) =>  nums.filter(n => !(n % 2)).sort()
+```
+
+The solution is concise and leverages JavaScript's higher-order functions filter and sort. However, there is a minor issue with the sort method. By default, the sort method sorts elements as strings, which can lead to incorrect orderings for numerical arrays.
+
+### Attempt 2
+
+```js
+const onlyEvens = (nums) => nums.filter(n => !(n % 2)).sort((a, b) => a - b);
+```
+
+#### Complexity:
+- Time Complexity:
+
+    Filtering: 𝑂(𝑛), where 𝑛 is the length of the input array.
+    Sorting: 𝑂(𝑚log𝑚), where 𝑚 is the number of even numbers.
+    Overall: 𝑂(𝑛+𝑚log⁡𝑚).
+
+- Space Complexity: 𝑂(𝑚), where 𝑚 is the number of even numbers, as a new array is created to store the even numbers
+
+</details>
+
+
+## Question 7
+
+Write a program that implements the DelayedTaskExecutor interface defined below. Think about how it would work if you ran the exec function multiple times in a row, before the task is run!
+
+Interfaces:
+```js
+interface Task {
+    // a blocking run
+    void run();
+
+    // when the task should be executed
+    long timeStamp(); 
+}
+
+interface DelayedTaskExecutor {
+   // executes task.run() at the given timestamp
+   void exec(Task task);
+}
+
+// usage
+executor.exec(new Task(10:00am));
+executor.exec(new Task(10:10am));
+executor.exec(new Task(10:05am));
+```
+
+## Question 8
+
+Write a function that converts between metric and imperial units. Break up the units into millimeters, centimeters, and meters for metric, and into inches and feet for imperial, up to 2 decimal places.
+
+
+Example:
+
+```js
+> convertUnits(7, "ft")
+> "2m 13cm 3.6mm"
+
+> convertUnits(44, "cm")
+> "1ft 5.32in"
+```
+
+<details>
+<summary>Solution</summary>
+
+```js
+
+const cmPerInch = 2.54;
+
+function convertUnits(value, unit) {
+	const metricUnits = ["km", "m", "cm"]
+	const imperialUnits = ["in", "ft"]
+	if(metricUnits.includes(unit)) {
+		let centimeters = value
+		if(unit === "km") {
+		  centimeters = value * 100000
+		}
+		if(unit === "m") {
+		  centimeters = value * 100  
+		}
+		let totalInches = centimeters / cmPerInch;
+		let feet = Math.floor(totalInches / 12)
+		let inches = totalInches % 12
+		return (feet && `${feet}ft `) + `${inches.toFixed(2)}in`
+	} else if(imperialUnits.includes(unit)) {
+	  let totalInches = value
+	  if(unit === "ft") {
+	    totalInches = value * 12
+	  }
+	  let totalCm = totalInches * cmPerInch;
+	  let meters = Math.floor(totalCm / 100)
+    totalCm -= meters * 100
+	  let cm = Math.floor(totalCm)
+	  let mm = Math.floor(totalCm - cm) * 10
+	  return `${meters}m ${cm}cm ${mm.toFixed(1)}mm`
+	}
+}
+```
+</details>
+
+## Question 9
+
+The Spanish language uses inverted punctuation marks (¿ and ¡) in interrogative and exclamatory sentences. Write a function that takes in a string str, and adds ¿ and ¡ if they're needed. You can ignore exclamations in the middle of a sentence for this problem.
+
+Example:
+
+```js
+> fixInvertedPunc("Feliz cumpleaños!")
+> "¡Feliz cumpleaños!"
+
+> fixInvertedPunc("Ella ya se graduó de la universidad? ¡No!")
+> "¿Ella ya se graduó de la universidad? ¡No!"
+```
+
+<details>
+<summary>Solution</summary>
+
+My version
+
+```js
+function fixInvertedPunc(str) {
+  const puncs = ["?", "!"]
+  const invertedPuncMap = {
+    '?': '¿',
+    '!': '¡'
+  }
+  for (let punc of puncs) {
+    if(str.includes(punc)) {
+      const subStrings = str.split(punc)
+      str = subStrings.map((subStr, index) => index < subStrings.length -1 ? (subStr.includes(invertedPuncMap[punc]) ? `${subStr}${punc}` : `${invertedPuncMap[punc]}${subStr}${punc}`) : subStr).join('')
+    }
+  }
+  return str
+}
+
+```
+
+ChatGPT version
+
+```js
+function fixInvertedPunc(str) {
+  const invertedPuncMap = {
+    '?': '¿',
+    '!': '¡'
+  };
+
+  // Helper function to add inverted punctuation if needed
+  function addInvertedPunc(subStr, punc) {
+    if (!subStr.startsWith(invertedPuncMap[punc])) {
+      return `${invertedPuncMap[punc]}${subStr}`;
+    }
+    return subStr;
+  }
+
+  // Split the string into an array of words and punctuations
+  const tokens = str.split(/([?!])/); // This regex captures the punctuation marks
+
+  let result = '';
+
+  // Iterate over the tokens and add inverted punctuation where necessary
+  for (let i = 0; i < tokens.length; i++) {
+    if (tokens[i] === '?' || tokens[i] === '!') {
+      // Add inverted punctuation to the preceding substring
+      tokens[i - 1] = addInvertedPunc(tokens[i - 1], tokens[i]);
+    }
+    result += tokens[i]; // Build the result string
+  }
+
+  return result;
+}
+```
+
+#### Regular Expression: `/([?!])/`
+
+Breakdown:
+- / and /: These are the delimiters for the regular expression in JavaScript.
+
+- [ and ]: This denotes a character class. A character class matches any one of the characters inside the square brackets.
+
+- `?!`: Inside the character class, this matches either a ? or a !. This means any occurrence of ? or ! will be a match.
+
+- (): Parentheses denote a capturing group. This means whatever matches inside the parentheses will be captured and included in the result of the split.
+
+</details>
+
+## Question 10
+
+Write a function that takes in a list (of length >= 3) of numbers, and returns the maximum product that can be obtained by multiplying any three integers from the list.
+
+Example:
+
+```js
+> maxProduct([2, 4, 1, 3, -5, 6])
+> 72 // 4*3*6
+```
+
+<details>
+<summary>Solution</summary>
+
+#### Attempt 1
+
+```js
+function maxProduct(data) {
+  let sorted = data.sort((a, b) => b-a)
+  return sorted[0] *  sorted[1] * sorted[2]
+}
+```
+
+#### Attempt 2
+
+```js
+
+function maxProduct(data) {
+  const sorted = data.sort((a, b) => b-a)
+  const product1 = sorted[0] *  sorted[1] * sorted[2]
+  const product2 = sorted[0] * sorted[data.length - 1] * sorted[data.length - 2]
+  return Math.max(product2, product1)
+}
+```
+</details>
