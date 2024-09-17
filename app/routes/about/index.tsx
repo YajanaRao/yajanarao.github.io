@@ -91,8 +91,7 @@ const skills = [
       },
       {
         text: "Vuex",
-        image:
-          "https://camo.githubusercontent.com/15c35cfe9d5758cb6f712966b2828f468baabac48faacb96438fe2e90989686e/68747470733a2f2f70696e69612e7675656a732e6f72672f6c6f676f2e737667",
+        image: "https://pinia.vuejs.org/logo.svg",
         link: "https://vuex.vuejs.org",
       },
       {
