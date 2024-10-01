@@ -23,6 +23,12 @@ import Info from "@/components/info";
 - `g,` - go to the newer change location
 - `gi` - place the cursor at the same position where it was left last time in the Insert mode
 - `*` or `#` - searches for the exact word at the cursor
+- % - End of the function block 
+- fc - Find (
+
+## Visual commands
+
+- `vi(` - Highlight inside `(`
 
 ## Edit commands
 
@@ -30,11 +36,17 @@ import Info from "@/components/info";
 - `ca"` change around `"`
 - `cit` change inside tag
 - `ciq` change inside quotes
+- `ci(` - Change Inside `(`
 - `cs'"` change surround `'` with `"`
 - `di"` delete inside `"`
 - `da"` delete around `"`
 - `dit` change inside tag
 - `dab` delete around brackets
+- `dib` delete inside brackets
+- `dap` delete around paragraph
+- `dip` delete inside paragraph
+- `di(` Delete inside (
+
 
 ## [vim-commentary](!https://github.com/tpope/vim-commentary)
 
@@ -59,4 +71,7 @@ import Info from "@/components/info";
 
 # switch between tabs
 
-gt -> Switch between tabs
+- `gt` -> Switch between tabs
+
+## References
+- https://world.hey.com/dhh/wonderful-vi-a1d034d3
