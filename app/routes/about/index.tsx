@@ -225,7 +225,7 @@ function About() {
             <a href="https://mammoth.io" target="_blank">
               Mammoth Analytics
             </a>
-            . I have a completed B. Sc in Electronics and Communication.
+            . I have completed B. Sc in Electronics and Communication.
           </p>
 
           <p>
