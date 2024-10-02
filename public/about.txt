@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Play
+- Font Author: Copyright (c) 2011, Jonas Hecksher, Playtypes, e-types AS (lasse@e-types.com), with Reserved Font Name 'Play', 'Playtype', 'Playtype Sans'.
+- Font Source: https://fonts.gstatic.com/s/play/v19/6aez4K2oVqwIjtI8Hp8Tx3A.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

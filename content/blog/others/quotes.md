@@ -5,7 +5,6 @@ date: "2019-08-25"
 categories: "spirituality"
 ---
 
-- "Guilt is society's voice speaking in your head."
 
 - I don't have time for things which are not real
 
