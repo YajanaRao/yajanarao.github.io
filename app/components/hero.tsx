@@ -12,8 +12,8 @@ const Hero = () => {
         <img
           src={ProfilePic}
           alt={author.name}
-          height={"100"}
-          width={"100"}
+          height={100}
+          width={100}
           className="mr-4"
           style={{
             minWidth: 100,

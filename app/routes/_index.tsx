@@ -1,5 +1,10 @@
 import * as React from "react";
-import { Link, MetaFunction, useSearchParams } from "@remix-run/react";
+import {
+  Link,
+  MetaFunction,
+  useLoaderData,
+  useSearchParams,
+} from "@remix-run/react";
 import { getPosts } from "../lib/posts";
 import { useUpdateQueryStringValueWithoutNavigation } from "../lib/utils";
 import { LoaderFunctionArgs, json } from "@remix-run/node";
@@ -49,13 +54,15 @@ export const meta: MetaFunction<typeof loader> = (args) => {
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   let requestUrl = new URL(request.url);
   let siteUrl = requestUrl.protocol + "//" + requestUrl.host;
-  return json({ siteUrl });
+
+  const posts = getPosts();
+
+  return json({ siteUrl, posts });
 };
 
 const BlogIndex = () => {
-  const allPosts = getPosts();
   const [searchParams] = useSearchParams();
-
+  const { posts: allPosts } = useLoaderData<typeof loader>();
   const [queryValue, setQuery] = React.useState(() => {
     return searchParams.get("q") ?? "";
   });

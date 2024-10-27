@@ -87,7 +87,6 @@ export function SunIcon() {
 const iconTransformOrigin = { transformOrigin: "50% 100px" };
 function DarkModeToggle() {
   const theme = useLoaderData<string>();
-  console.log("theme", theme);
   const fetcher = useFetcher();
 
   const iconSpanClassName =

@@ -1,7 +1,6 @@
 title: "C Programming";
 
-import { json } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { json, MetaFunction } from "@remix-run/node";
 
 import * as drafts from "./drafts.mdx";
 
