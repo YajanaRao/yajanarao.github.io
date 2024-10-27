@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useFetcher, useLoaderData } from "@remix-run/react";
 
 export function MoonIcon() {
   return (
@@ -86,52 +86,29 @@ export function SunIcon() {
 
 const iconTransformOrigin = { transformOrigin: "50% 100px" };
 function DarkModeToggle() {
-  const [mode, setMode] = React.useState("light");
+  const theme = useLoaderData<string>();
+  console.log("theme", theme);
+  const fetcher = useFetcher();
 
   const iconSpanClassName =
     "absolute inset-0 transform transition-transform duration-700 motion-reduce:duration-[0s]";
 
-  function toggleTheme() {
-    setMode(mode === "dark" ? "light" : "dark");
-    if (localStorage.theme === "dark") {
-      localStorage.theme = "light";
-      document.documentElement.classList.remove("dark");
-      document.documentElement.classList.add("light");
-      setMode("light");
-    } else {
-      localStorage.theme = "dark";
-      document.documentElement.classList.remove("light");
-      document.documentElement.classList.add("dark");
-      setMode("dark");
-    }
-  }
-
-  React.useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-      setMode("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, []);
-
   return (
-    <div>
+    <fetcher.Form method="post">
+      <input
+        type="hidden"
+        name="theme"
+        value={theme === "light" ? "dark" : "light"}
+      />
       <button
-        type="button"
         aria-label="Toggle Dark Mode"
-        onClick={toggleTheme}
         className="border-[#ecc94b] inline-flex items-center justify-center overflow-hidden rounded-full border-2 p-1 transition focus:outline-none"
       >
         {/* note that the duration is longer then the one on body, controlling the bg-color */}
         <div className="relative h-8 w-8">
           <span
             className={`${iconSpanClassName} ${
-              mode === "dark" ? "rotate-0" : "rotate-90"
+              theme === "dark" ? "rotate-0" : "rotate-90"
             }`}
             style={iconTransformOrigin}
           >
@@ -139,7 +116,7 @@ function DarkModeToggle() {
           </span>
           <span
             className={`${iconSpanClassName} ${
-              mode === "light" ? "rotate-0" : "rotate-90"
+              theme === "light" ? "rotate-0" : "rotate-90"
             }`}
             style={iconTransformOrigin}
           >
@@ -147,7 +124,7 @@ function DarkModeToggle() {
           </span>
         </div>
       </button>
-    </div>
+    </fetcher.Form>
   );
 }
 
