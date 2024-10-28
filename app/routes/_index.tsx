@@ -133,7 +133,7 @@ const BlogIndex = () => {
           <article key={node.slug} className="mb-8">
             <header>
               <h2 className="text-2xl mb-0 not-prose">
-                <Link to={`/${node.slug}`}>{title}</Link>
+                <Link prefetch="intent" to={`/${node.slug}`}>{title}</Link>
               </h2>
               <small className="text-gray-500 dark:text-gray-300">
                 {dayjs(date).format("MMMM D, YYYY")}
