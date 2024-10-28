@@ -5,7 +5,7 @@ export const siteMetadata = {
     summary: `Software Engineer + Writer + Seeker of Truth`,
   },
   description: `Personal blog of Yajana Rao`,
-  siteUrl: `https://yajanarao.github.io/`,
+  siteUrl: `https://yajana.in/`,
   social: {
     twitter: `yajanarao`,
     github: "yajanarao",
