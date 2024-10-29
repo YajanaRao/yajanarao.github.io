@@ -1,5 +1,3 @@
-title: "C Programming";
-
 import { json, MetaFunction } from "@remix-run/node";
 
 import * as drafts from "./drafts.mdx";
@@ -75,7 +73,6 @@ export default function Index() {
       >
         <p className="font-bold">Be Warned</p>
         <p>
-          {" "}
           ⚠️ Writings here are raw and haven't been edited, so expect
           grammatical and coherence issues at multiple places.
         </p>
