@@ -1,4 +1,54 @@
+import { LoaderFunctionArgs, MetaFunction, json } from '@remix-run/node';
 import * as React from 'react';
+
+export const meta: MetaFunction<typeof loader> = (args) => {
+  let { siteUrl } = args.data || {};
+  return [
+    {
+      title: "Yajana's Resume",
+    },
+    {
+      content: "Yajana Rao's Resume",
+      name: "description",
+    },
+    {
+      content: `${siteUrl}/logo.jpg`,
+      property: "image",
+    },
+    {
+      content: "Yajana's Resume",
+      property: "og:title",
+    },
+    {
+      content: "Yajana Rao's Resume",
+      name: "og:description",
+    },
+    {
+      content: `${siteUrl}/logo.jpg`,
+      property: "og:image",
+    },
+    {
+      content: "300",
+      property: "og:image:width",
+    },
+    {
+      content: "300",
+      property: "og:image:height",
+    },
+    {
+      content: "image/jpeg",
+      property: "og:image:type",
+    },
+  ];
+};
+
+export const loader = async ({ request }: LoaderFunctionArgs) => {
+  let requestUrl = new URL(request.url);
+  let siteUrl = requestUrl.protocol + "//" + requestUrl.host;
+
+  return json({ siteUrl });
+};
+
 
 function Resume() {
   return (
