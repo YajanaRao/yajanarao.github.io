@@ -1,5 +1,4 @@
 import { LoaderFunctionArgs, MetaFunction, json } from '@remix-run/node';
-import * as React from 'react';
 
 export const meta: MetaFunction<typeof loader> = (args) => {
   let { siteUrl } = args.data || {};
@@ -8,7 +7,7 @@ export const meta: MetaFunction<typeof loader> = (args) => {
       title: "Yajana's Resume",
     },
     {
-      content: "Yajana Rao's Resume",
+      content: "Focused and quick-learning Software Engineer with 7+ years of experience in building applications for various problem statements.",
       name: "description",
     },
     {
@@ -20,7 +19,7 @@ export const meta: MetaFunction<typeof loader> = (args) => {
       property: "og:title",
     },
     {
-      content: "Yajana Rao's Resume",
+      content: "Focused and quick-learning Software Engineer with 7+ years of experience in building applications for various problem statements.",
       name: "og:description",
     },
     {
