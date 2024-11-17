@@ -1,0 +1,105 @@
+---
+title: "Two Pointer Pattern"
+slug: javascript-interview-questions
+date: "2024-11-17"
+categories: dsa and problem solving
+---
+
+## 1. Two Sum
+
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+ 
+### Example 1:
+
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+
+### Example 2:
+
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
+
+### Example 3:
+
+Input: nums = [3,3], target = 6
+Output: [0,1]
+
+ 
+
+Constraints:
+
+- `2 <= nums.length <= 104`
+- `-109 <= nums[i] <= 109`
+- `-109 <= target <= 109`
+- Only one valid answer exists.
+
+ 
+Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
+
+## Intuition
+
+The problem is to find two numbers in the array that add up to a given target. A straightforward way would be to use two loops and check every combination of two numbers. However, this would be inefficient. 
+
+Sorting the array increases time complexity.
+
+A more efficient way would be to use a hashmap (or in JavaScript, a Map) to store the numbers we've seen so far and their indices. As we iterate through the array, for each number, we can check if the difference between the target and that number exists in the map. If it does, we've found our two numbers.
+
+## Approach
+
+Using HashMap and Javascript Object
+1. Initialize an empty Map.
+2. Iterate through the array.
+3. For each number, calculate the difference between the target and that number.
+4. Check if this difference exists in the Map.
+5. If it does, return the index of the difference from the Map and the current index.
+6. If not, add the current number and its index to the Map.
+
+
+## Complexity
+
+- Time complexity:
+
+The time complexity is (O(n)) because we iterate through the array once, and operations with the Map (both get and set) are on average (O(1)).
+
+- Space complexity:
+
+The space complexity is (O(n)) because in the worst case, we might store all numbers in the Map.
+
+## Code
+
+### HashMap
+```typescript 
+function twoSum(nums: number[], target: number): number[] {
+    const numToIndex = new Map()
+    for(let i:number =0; i<nums.length; i++) {
+        const complement = target - nums[i]
+        if(numToIndex.has(complement)) return [numToIndex.get(complement), i];
+        numToIndex.set(nums[i], i);
+    }
+};
+```
+- Map is more memory-intensive because of its advanced functionality and robust key handling.
+- The implementation uses a single pass through the array, storing each number's index in a Map.
+- Time complexity: O(n) - We traverse the list containing n elements only once.
+- Space complexity: O(n) - The extra space required depends on the number of items stored in the hash map, which stores at most n elements.
+
+### Object
+```typescript
+function twoSum(nums: number[], target: number): number[] {
+	const numToIndex = {};
+	for (let i:number = 0; i < nums.length; i++) {
+		const complement =  target - nums[i];
+		if(numToIndex[complement] !== undefined) return [numToIndex[complement], i];
+		numToIndex[nums[i]] = i;
+	}
+}
+```
+- Plain objects use slightly less space due to lower overhead.
+- The implementation uses a single pass through the array, storing each number's index in an object.
+- Time complexity: O(n) - We traverse the list containing n elements only once.
+- Space complexity: O(n) - The extra space required depends on the number of items stored in the object, which stores at most n elements.
