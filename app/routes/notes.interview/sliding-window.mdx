@@ -1,0 +1,89 @@
+---
+title: "Sliding Window Pattern"
+slug: javascript-interview-questions
+date: "2024-11-19"
+categories: dsa and problem solving
+---
+
+## 1. Slidng Window Pattern
+
+```js
+
+function maximumSubarraySum(nums, k) {
+    const n = nums.length;
+    if (k > n) return 0;
+
+    let maxSum = 0;
+    let currentSum = 0;
+    let windowStart = 0;
+    const uniqueElements = new Set();
+
+    for (let windowEnd = 0; windowEnd < n; windowEnd++) {
+        // Remove duplicates by shrinking the window from the start
+        while (uniqueElements.has(nums[windowEnd])) {
+            uniqueElements.delete(nums[windowStart]);
+            currentSum -= nums[windowStart];
+            windowStart++;
+        }
+
+        // Add the current element to the set and update the current sum
+        uniqueElements.add(nums[windowEnd]);
+        currentSum += nums[windowEnd];
+
+        // Check if the window size equals k
+        if (windowEnd - windowStart + 1 === k) {
+            maxSum = Math.max(maxSum, currentSum);
+            // Slide the window forward by removing the leftmost element
+            uniqueElements.delete(nums[windowStart]);
+            currentSum -= nums[windowStart];
+            windowStart++;
+        }
+    }
+
+    return maxSum;
+}
+
+```
+
+function takeCharacters(s: string, k: number): number {
+    // Step 1: Count total occurrences
+    const totalCount = { a: 0, b: 0, c: 0 };
+    for (const char of s) {
+        totalCount[char]++;
+    }
+    
+    // Check if it's possible to have at least k of each character
+    if (totalCount['a'] < k || totalCount['b'] < k || totalCount['c'] < k) {
+        return -1;
+    }
+    
+    const currentCount = { a: 0, b: 0, c: 0 };
+    const n = s.length;
+    let left = 0;
+    let minLength = n;
+
+    // Step 2: Sliding window to find the minimal subarray
+    for (let right = 0; right < n; right++) {
+        currentCount[s[right]] = (currentCount[s[right]] || 0) + 1;
+
+        // Shrink the window while the outside characters still meet the requirements
+        while (
+	    totalCount['a'] - currentCount['a'] >= k &&
+            totalCount['b'] - currentCount['b'] >= k &&
+            totalCount['c'] - currentCount['c'] >= k
+        ) {
+            minLength = Math.min(minLength, right - left + 1);
+            currentCount[s[left]]--;
+            left++;
+        }
+    }
+
+    // Step 3: Compute minimum minutes
+    return n - minLength;
+}
+
+// Example 1
+console.log(takeCharacters("aabaaaacaabc", 2)); // Output: 8
+
+// Example 2
+console.log(takeCharacters("a", 1)); // Output: -1
