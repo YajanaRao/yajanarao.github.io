@@ -9,6 +9,8 @@ import Info from "@/components/info";
 
 <Info {...frontmatter} />
 
+Link to Nvim dotfiles: https://github.com/YajanaRao/kickstart.nvim
+
 ## Navigation Commands
 
 - `H` – Go to the first line of current screen.
@@ -22,11 +24,13 @@ import Info from "@/components/info";
 - `g;` - go to the previous change location
 - `g,` - go to the newer change location
 - `gi` - place the cursor at the same position where it was left last time in the Insert mode
+- `gt` -> Switch between tabs
 - `*` or `#` - searches for the exact word at the cursor
 - % - End of the function block 
-- fc - Find (
-- You can also use `ZZ` to quickly save and close.
-- When navigating back to the start, you can also use `^` to go to non-whitespace chars.
+- f( - Find (
+- t( - Find Till (
+- `ZZ` - Save And Close
+- `^` - When navigating back to the start, you can also use `^` to go to non-whitespace chars.
 
 ## Visual commands
 
@@ -75,10 +79,6 @@ import Info from "@/components/info";
 
 - Bang version starts fzf in fullscreen mode
   `:FZF!`
-
-# switch between tabs
-
-- `gt` -> Switch between tabs
 
 ## References
 - https://world.hey.com/dhh/wonderful-vi-a1d034d3
