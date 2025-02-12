@@ -241,6 +241,9 @@ function About() {
       <p>
         I have experience working with the following technologies and tools:
       </p>
+      <p>
+        I keep a <a href="/uses"> uses</a> page updated with the stuff I use.
+      </p>
       <SkillExplorer />
 
       <p>

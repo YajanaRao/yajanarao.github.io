@@ -103,11 +103,6 @@ export const skills = [
         link: "https://tailwindcss.com",
       },
       {
-        text: "Material UI",
-        image: "https://v3.mui.com/static/images/material-ui-logo.svg",
-        link: "https://mui.com",
-      },
-      {
         text: "Ag Grid",
         image:
           "https://blog.ag-grid.com/content/images/2021/11/200px-darkArtboard-5.png",
@@ -278,20 +273,12 @@ export const projects = [
         key: "redux-toolkit",
       },
       {
-        text: "Supabase",
-        key: "supabase",
-      },
-      {
         text: "Firebase",
         key: "firebase",
       },
       {
         text: "Sentry",
         key: "sentry",
-      },
-      {
-        text: "Github Actions",
-        key: "github-actions",
       },
     ],
     source: [
@@ -300,6 +287,50 @@ export const projects = [
         link: "https://github.com/YajanaRao/Serenity",
         type: "github",
         text: "github.com",
+      },
+    ],
+  },
+  {
+    key: "shortmic",
+    title: "ShortMic",
+    cover: Shortmic,
+    link: "https://shortmic.com",
+    description:
+      " Audio first social media platform where users can share their thoughts, ideas, stories, jokes, poems, and more in audio format. It is built using react native and supabase.",
+    source: [
+      {
+        key: "playstore",
+        link: "https://play.google.com/store/apps/details?id=com.echodrop&pcampaignid=web_share",
+        type: "playstore",
+        text: "Playstore",
+      },
+      {
+        key: "appstore",
+        link: "https://apps.apple.com/in/app/short-mic/id6481114995",
+        type: "appstore",
+        text: "Appstore",
+      },
+    ],
+    tags: [
+      {
+        key: "expo",
+        text: "Expo",
+      },
+      {
+        key: "react-query",
+        text: "React Query",
+      },
+      {
+        key: "supabase",
+        text: "Supabase",
+      },
+      {
+        key: "eas",
+        text: "EAS",
+      },
+      {
+        key: "ms-clarity",
+        text: "Microsoft Clarity",
       },
     ],
   },
@@ -334,42 +365,6 @@ export const projects = [
       {
         text: "Llama",
         key: "llama",
-      },
-    ],
-  },
-  {
-    key: "shortmic",
-    title: "ShortMic",
-    cover: Shortmic,
-    link: "https://shortmic.com",
-    description:
-      " Audio first social media platform where users can share their thoughts, ideas, stories, jokes, poems, and more in audio format. It is built using react native and supabase.",
-    source: [
-      {
-        key: "playstore",
-        link: "https://play.google.com/store/apps/details?id=com.echodrop&pcampaignid=web_share",
-        type: "playstore",
-        text: "Playstore",
-      },
-      {
-        key: "appstore",
-        link: "https://apps.apple.com/in/app/short-mic/id6481114995",
-        type: "appstore",
-        text: "Appstore",
-      },
-    ],
-    tags: [
-      {
-        key: "expo",
-        text: "Expo",
-      },
-      {
-        key: "zustand",
-        text: "Zustand",
-      },
-      {
-        key: "ms-clarity",
-        text: "Microsoft Clarity",
       },
     ],
   },
