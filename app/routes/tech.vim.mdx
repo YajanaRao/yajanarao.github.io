@@ -9,6 +9,8 @@ import Info from "@/components/info";
 
 <Info {...frontmatter} />
 
+Link to Nvim dotfiles: https://github.com/YajanaRao/kickstart.nvim
+
 ## Navigation Commands
 
 - `H` – Go to the first line of current screen.
@@ -22,14 +24,16 @@ import Info from "@/components/info";
 - `g;` - go to the previous change location
 - `g,` - go to the newer change location
 - `gi` - place the cursor at the same position where it was left last time in the Insert mode
+- `gt` -> Switch between tabs
 - `*` or `#` - searches for the exact word at the cursor
 - % - End of the function block 
+- f( - Find (
+- t( - Find Till (
+- `ZZ` - Save And Close
+- `^` - When navigating back to the start, you can also use `^` to go to non-whitespace chars.
 - fc - Find (
-- gi - Go to last insert
 - `<C-i>` - Go to older cursor position in jump list
 - `<C-o>` - Go to newer cursor position in jump list
-- You can also use `ZZ` to quickly save and close.
-- When navigating back to the start, you can also use `^` to go to non-whitespace chars.
 
 ## Visual commands
 
@@ -42,7 +46,9 @@ import Info from "@/components/info";
 - `ca"` change around `"`
 - `cit` change inside tag
 - `ciq` change inside quotes
-- `ci(` - Change Inside `(`
+- `ci(` Change Inside `(`
+- `cia` Change inside arguments
+- `dab` Delete inside brackets
 - `cs'"` change surround `'` with `"`
 - `di"` delete inside `"`
 - `da"` delete around `"`
@@ -63,13 +69,6 @@ import Info from "@/components/info";
 -    Highlight surrounding with sh.
 -    Change number of neighbor lines with sn (see |MiniSurround-algorithm|).
 
-## [vim-commentary](!https://github.com/tpope/vim-commentary)
-
-- `gcc` to comment out a line (takes a count)
-- `gc` to comment out the target of a motion (for example, gcap to comment out a paragraph),
-- `gc` in visual mode to comment out the selection
-- `gc` in operator pending mode to target a comment.
-
 ## [FZF](!https://github.com/junegunn/fzf/blob/master/README-VIM.md)
 
 - Look for files under current directory
@@ -84,9 +83,7 @@ import Info from "@/components/info";
 - Bang version starts fzf in fullscreen mode
   `:FZF!`
 
-# switch between tabs
-
-- `gt` -> Switch between tabs
-
 ## References
 - https://world.hey.com/dhh/wonderful-vi-a1d034d3
+
+contrl+z to switch to terminal and fg to open vim again
