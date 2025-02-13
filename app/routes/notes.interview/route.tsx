@@ -1,6 +1,7 @@
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
+import * as BinarySearch from "./binary-search.mdx";
 import * as TwoPointers from "./two-pointers.mdx";
 import * as JavascriptQuestions from "./interview-questions.mdx";
 import * as JSQuestions from "./js-questions.mdx";
@@ -19,6 +20,7 @@ export async function loader() {
   // lets us avoid bundling the actual posts themselves in the bundle for the
   // index page.
   return json([
+    postFromModule(BinarySearch),
     postFromModule(TwoPointers),
     postFromModule(JavascriptQuestions),
     postFromModule(CssQuestions),
@@ -82,11 +84,13 @@ export default function Index() {
           </li>
         ))}
       </ul>
+      <section id={BinarySearch.frontmatter.slug} style={{ marginBottom: 20 }}>
+        <h1>{BinarySearch.frontmatter.title}</h1>
+        <p>{BinarySearch.frontmatter.description}</p>
+        <BinarySearch.default />
+      </section>
 
-      <section
-        id={TwoPointers.frontmatter.slug}
-        style={{ marginBottom: 20 }}
-      >
+      <section id={TwoPointers.frontmatter.slug} style={{ marginBottom: 20 }}>
         <h1>{TwoPointers.frontmatter.title}</h1>
         <p>{TwoPointers.frontmatter.description}</p>
         <TwoPointers.default />
