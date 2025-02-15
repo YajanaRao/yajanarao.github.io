@@ -1,6 +1,6 @@
 import * as React from "react";
 import { LoaderFunctionArgs, json } from "@remix-run/node";
-import { MetaFunction } from "@remix-run/react";
+import { Link, MetaFunction } from "@remix-run/react";
 import { projects, skills } from "./data";
 import WebLink from "@/assets/svg/WebLink";
 import Github from "@/assets/svg/Github";
@@ -225,7 +225,8 @@ function About() {
             <a href="https://mammoth.io" target="_blank">
               Mammoth Analytics
             </a>
-            . I have completed B. Sc in Electronics and Communication.
+            . You can find my full resume <Link to="/resume"> here</Link>. I
+            have completed B. Sc in Electronics and Communication.
           </p>
 
           <p>
