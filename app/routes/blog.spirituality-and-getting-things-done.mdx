@@ -6,8 +6,11 @@ categories: blog
 ---
 
 import Info from "@/components/info";
+import { getMetaTags } from '@/lib/utils';
 
 <Info {...frontmatter} />
+
+export const meta = getMetaTags(frontmatter);
 
 As I spent time into spirituality and meditation, I adopted a mindset of “going with the flow.” This approach meant letting go of rigid plans or waking up with a strict to-do list. Instead, I let the day define what needed to be done. Initially, this felt freeing and aligned with the spiritual ideals of surrender and acceptance. However, over time, I began to notice a downside: tasks were getting delayed, and my overall productivity took a hit.
 

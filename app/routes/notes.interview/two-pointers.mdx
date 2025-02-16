@@ -103,3 +103,65 @@ function twoSum(nums: number[], target: number): number[] {
 - The implementation uses a single pass through the array, storing each number's index in an object.
 - Time complexity: O(n) - We traverse the list containing n elements only once.
 - Space complexity: O(n) - The extra space required depends on the number of items stored in the object, which stores at most n elements.
+
+
+## 2. Longest Palindromic Substring
+
+Given a string s, return the longest palindromic substring in s.
+
+### Example 1:
+
+Input: s = "babad"
+Output: "bab"
+Explanation: "aba" is also a valid answer.
+
+Example 2:
+
+Input: s = "cbbd"
+Output: "bb"
+
+
+### Constraints:
+
+- 1 <= s.length <= 1000
+- s consist of only digits and English letters.
+
+
+### Approach
+
+
+- A palindrome is symmetric around its center.
+- Every palindrome has a center, from which it expands outward.
+- A palindrome can have:
+	- Odd length (e.g., "racecar", centered at "e")
+        - Even length (e.g., "abba", centered between "b" and "b")
+
+By treating each character and each pair of adjacent characters as a center, we can efficiently expand outward to check if we have a palindrome.
+
+```js
+function longestPalindrome(s) {
+    const n = s.length;
+    if (n <= 1) return s;
+
+    let start = 0, maxLength = 0;
+
+    function expandAroundCenter(left, right) {
+        while (left >= 0 && right < n && s[left] === s[right]) {
+            left--;
+            right++;
+        }
+        return right - left - 1;
+    }
+
+    for (let i = 0; i < n; i++) {
+        let len = Math.max(expandAroundCenter(i, i), expandAroundCenter(i, i + 1));
+
+        if (len > maxLength) {
+            maxLength = len;
+            start = i - Math.floor((len - 1) / 2);
+        }
+    }
+
+    return s.substring(start, start + maxLength);
+}
+```

@@ -1,10 +1,6 @@
 import * as React from "react";
 import dayjs from "dayjs";
 
-export const meta = () => {
-  return [{ title: "Projects" }];
-};
-
 function Info({ title, date }: { title: string; date: string }) {
   return (
     <div>

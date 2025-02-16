@@ -6,8 +6,11 @@ categories: blog
 ---
 
 import Info from "@/components/info";
+import { getMetaTags } from '@/lib/utils';
 
 <Info {...frontmatter} />
+
+export const meta = getMetaTags(frontmatter);
 
 Most of us see responsibility as control - about making choices and owning them. However life's outcomes are not entirely under our control. While we can influence the situations, many external factors also play a role. So what does it truly mean to be responsible ?
 
