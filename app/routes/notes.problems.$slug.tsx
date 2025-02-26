@@ -11,7 +11,7 @@ import remarkFrontmatter from "remark-frontmatter";
 import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 import rehypePrettyCode from "rehype-pretty-code";
 
-import Info from "@/components/Info";
+import Info from "@/components/info";
 
 export const loader: LoaderFunction = async ({ params }) => {
   const { slug } = params;

@@ -21,7 +21,7 @@ export default function DocsIndex() {
   const { mdxFiles } = useLoaderData<typeof loader>();
 
   return (
-    <div className="prose mx-auto">
+    <div className="prose dark:prose-invert mx-auto">
       <h1>Index</h1>
       <ul>
         {mdxFiles.map((slug: string) => (
