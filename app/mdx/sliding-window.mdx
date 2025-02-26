@@ -2,7 +2,7 @@
 title: "Sliding Window Pattern"
 slug: javascript-interview-questions
 date: "2024-11-19"
-categories: dsa and problem solving
+categories: "dsa and problem solving"
 ---
 
 ## 1. Slidng Window Pattern
@@ -45,6 +45,8 @@ function maximumSubarraySum(nums, k) {
 
 ```
 
+```js
+
 function takeCharacters(s: string, k: number): number {
     // Step 1: Count total occurrences
     const totalCount = { a: 0, b: 0, c: 0 };
@@ -82,8 +84,13 @@ function takeCharacters(s: string, k: number): number {
     return n - minLength;
 }
 
-// Example 1
+```
+## Example 1
+```js
 console.log(takeCharacters("aabaaaacaabc", 2)); // Output: 8
+```
 
-// Example 2
+## Example 2
+```js
 console.log(takeCharacters("a", 1)); // Output: -1
+```

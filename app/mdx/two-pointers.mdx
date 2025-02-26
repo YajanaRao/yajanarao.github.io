@@ -5,6 +5,25 @@ date: "2024-11-17"
 categories: dsa and problem solving
 ---
 
+The two-pointer technique is a powerful approach used to optimize algorithms involving arrays, strings, or linked lists. Instead of using nested loops (which can be slow), we use two variables ("pointers") that traverse the data in a structured way.
+
+
+## Types of Two-Pointer Approaches
+
+### 1. Opposite Direction (Two Ends)
+
+- Used for: Searching, sorting, pair sum, palindrome checking, etc.
+- Idea: One pointer starts at the beginning, and the other at the end. They move toward each other.
+
+### 2. Same Direction (Sliding Window)
+- Used for: Finding subarrays, longest substring problems, etc.
+- Idea: Both pointers move in the same direction to maintain a range.
+
+### 3. Fast and Slow Pointer (Tortoise and Hare)
+- Used for: Detecting cycles in linked lists, finding middle elements, etc.
+- Idea: One pointer moves slowly (one step at a time), while the other moves faster (two steps at a time).
+
+
 ## 1. Two Sum
 
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -15,9 +34,9 @@ You can return the answer in any order.
  
 ### Example 1:
 
-Input: nums = [2,7,11,15], target = 9
-Output: [0,1]
-Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+- Input: nums = [2,7,11,15], target = 9
+- Output: [0,1]
+- Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
 ### Example 2:
 
@@ -39,7 +58,7 @@ Constraints:
 - Only one valid answer exists.
 
  
-Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
+> Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
 ## Intuition
 
@@ -49,7 +68,7 @@ Sorting the array increases time complexity.
 
 A more efficient way would be to use a hashmap (or in JavaScript, a Map) to store the numbers we've seen so far and their indices. As we iterate through the array, for each number, we can check if the difference between the target and that number exists in the map. If it does, we've found our two numbers.
 
-## Approach
+## Approach for unsorted array using hashmap
 
 Using HashMap and Javascript Object
 1. Initialize an empty Map.
@@ -88,18 +107,19 @@ function twoSum(nums: number[], target: number): number[] {
 - Time complexity: O(n) - We traverse the list containing n elements only once.
 - Space complexity: O(n) - The extra space required depends on the number of items stored in the hash map, which stores at most n elements.
 
-### Object
-```typescript
-function twoSum(nums: number[], target: number): number[] {
-	const numToIndex = {};
-	for (let i:number = 0; i < nums.length; i++) {
-		const complement =  target - nums[i];
-		if(numToIndex[complement] !== undefined) return [numToIndex[complement], i];
-		numToIndex[nums[i]] = i;
-	}
+## Approach using Two pointer
+```js
+function twoSumSorted(nums, target) {
+    let left = 0, right = nums.length - 1;
+
+    while (left < right) {
+        let sum = nums[left] + nums[right];
+
+        if (sum === target) return [left, right];  // Found the pair
+        else if (sum < target) left++;   // Move left pointer
+        else right--;  // Move right pointer
+    }
+
+    return [];  // No solution (should not happen as per the problem)
 }
 ```
-- Plain objects use slightly less space due to lower overhead.
-- The implementation uses a single pass through the array, storing each number's index in an object.
-- Time complexity: O(n) - We traverse the list containing n elements only once.
-- Space complexity: O(n) - The extra space required depends on the number of items stored in the object, which stores at most n elements.
