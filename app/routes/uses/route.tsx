@@ -29,6 +29,11 @@ const UsesPage = () => {
         <h3>Coding setup</h3>
         <img src={Editor} alt="editor" className="rounded text-center" />
         <ul>
+          <li>
+            <a href="https://github.com/glzr-io/glazewm">
+              GlazeWM - Tiling Window Manager
+            </a>
+          </li>
           <li>Wezterm - Cross platform feature rich terminal</li>
           <li>
             NVIM - Hackable Personal Development Environment.
