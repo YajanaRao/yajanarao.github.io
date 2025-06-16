@@ -267,6 +267,9 @@ function About() {
         </a>
         or meditating.
       </p>
+      <p>
+        See my <a href="/now">now</a> page for what I am doing now.
+      </p>
 
       <h2>Projects</h2>
       <p>I have created and contributed to few projects. Major ones are</p>

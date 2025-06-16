@@ -1,11 +1,13 @@
 import React from "react";
 
-
 const StartHerePage = () => {
   return (
     <div>
       <div>
         <h1 className="text-black dark:text-white">What am I doing now?</h1>
+        <p className="text-black dark:text-white">
+          Updated June 16th, 2025, from my Office in HSR Layout, Bangalore
+        </p>
         <h3 className="text-black dark:text-white">
           Learning to build web applications
         </h3>
@@ -21,10 +23,12 @@ const StartHerePage = () => {
       </div>
       <div>
         <h1 className="text-black dark:text-white">What am I reading now</h1>
-        <h3 className="text-black dark:text-white">
-          Genome: Matt Ridley
-        </h3>
-        </div>
+        <ul>
+          <li className="text-black dark:text-white">
+            How The Mind Works by Steven Pinker
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
