@@ -59,7 +59,7 @@ export const skills = [
       {
         text: "React Query",
         image:
-          "https://tanstack.com/_build/assets/logo-color-600w-Bx4vtR8J.png",
+          "https://images.seeklogo.com/logo-png/43/1/react-query-logo-png_seeklogo-435661.png",
         link: "https://tanstack.com/query",
       },
     ],
