@@ -9,7 +9,15 @@ export default {
       "Fira Sans": ["Fira Sans", "sans-serif"],
       "Montserrat": ["Montserrat", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      typography: () => ({
+        DEFAULT: {
+          css: {
+            '--tw-prose-quote-borders': '#059669',
+            }
+        }
+      }),
+    },
   },
   plugins: [typography],
 } satisfies Config;
