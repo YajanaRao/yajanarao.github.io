@@ -2,17 +2,18 @@
 title: "Coding best practices"
 date: "2021-08-01T22:40:32.169Z"
 description: "Tips to become a better programmer"
-categories: best-practices
+categories: tech
 ---
 
 import Info from '@/components/info';
 import { getMetaTags } from '@/lib/utils';
 
 <Info {...frontmatter} />
+export const meta = getMetaTags(frontmatter);
 
 ## Be consistant with your editor
 
-It might be your IDE or code editor, Please don\'92t change them often. Code editors or IDE\'92s has there own keybindings, themes and functionality which takes a while for to get comfortable with
+It might be your IDE or code editor, Please don't change them often. Code editors or IDE\'92s has there own keybindings, themes and functionality which takes a while for to get comfortable with
 
 - Make some space for your code
 
@@ -22,29 +23,30 @@ Remove unwanted distractions apart from code from the editor space
 
 Understand the shortcuts for navigation and text input. It improves your performance
 
-## Create a wrapper around external libraries before using
-
-In case if you want to replace the library, You don't need to change every where if you have a wrapper created around it.
 
 ## Understand SOLID design principle
 
 SOLID is a popular set of design principles that are used in object-oriented software development. SOLID is an acronym that stands for five key design principles:
 
-- **Single responsibility principle**
+- ### Single responsibility principle
 
   A class should have one, and only one, reason to change.
 
-- **Open-closed principle**
+- ### Open-closed principle
 
   You should be able to extend a class’s behavior without modifying it. Or simply open for extension and closed for modification.
 
-- **Liskov substitution principle**
-- **Interface segregation principle**
-- **Dependency inversion principle**
+- ### Liskov substitution principle
+- ### Interface segregation principle
+- ### Dependency inversion principle
 
   Developer should depend on abstractions, not on concretions.
   high level modules should not depend upon low level modules. Both should depend on abstractions.
   abstractions should not depend on details. Details should depend upon abstractions.
+
+
+- Create a wrapper around external libraries before using
+	In case if you want to replace the library, You don't need to change every where if you have a wrapper created around it.
 
 ## AHA ( Avoid hasty abstractions )
 
