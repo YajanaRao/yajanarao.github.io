@@ -5,6 +5,13 @@ categories: tech
 date: "2021-10-11"
 ---
 
+
+import Info from '@/components/info';
+import { getMetaTags } from '@/lib/utils';
+
+<Info {...frontmatter} />
+export const meta = getMetaTags(frontmatter);
+
 ## What Is API Documentation?
 
 API documentation is technical content that documents the API. It includes instructions on how to effectively use and integrate the API. It also provides updates on the API’s lifecycle such as new versions or retirement. Some aspects of API documentation can be generated automatically via Swagger or other documents.
