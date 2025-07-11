@@ -208,8 +208,9 @@ function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Hi! I am Yajana.
+            Hello,
           </h1>
+          <p>I'm Yajana Rao.</p>
           <p>
             My aspiration is to bring wellbeing into people lives through
             Technology and other means. I currently live in{" "}
@@ -222,8 +223,8 @@ function About() {
             I am a Software engineer, I have been working on converting ideas
             into software application for almost{" "}
             {new Date().getFullYear() - 2017} + years. I am currently working at{" "}
-            <a href="https://mammoth.io" target="_blank">
-              Mammoth Analytics
+            <a href="https://humanisys.ai" target="_blank">
+              Humanisys Labs
             </a>
             . I have completed B. Sc in Electronics and Communication.
           </p>

@@ -3,7 +3,30 @@ import { Analytics } from "@vercel/analytics/react";
 import "../styles/globals.css";
 import Layout from "@/components/layout";
 import { themeCookie } from "@/lib/theme";
-import { ActionFunctionArgs, json, LoaderFunctionArgs } from "@remix-run/node";
+import {
+  ActionFunctionArgs,
+  json,
+  LinksFunction,
+  LoaderFunctionArgs,
+} from "@remix-run/node";
+
+export const links: LinksFunction = () => {
+  return [
+    {
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com",
+    },
+    {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossOrigin: "anonymous",
+    },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap",
+    },
+  ];
+};
 
 export async function loader({ request }: LoaderFunctionArgs) {
   const cookieString = request.headers.get("Cookie");

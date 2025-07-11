@@ -4,29 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Fira Sans";
-  src: url("./fonts/FiraSans-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("./fonts/Montserrat-VariableFont_wght.ttf");
-}
 
 @layer base {
   html {
-    font-family: Fira Sans, sans-serif;
+
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
   }
 
   /* Heading Styles */
   h1,
   h2,
   h3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 900;
   }
-  p > a {
+
+  p>a {
     color: #059669 !important;
     text-decoration: none;
   }
@@ -41,7 +38,7 @@
   background: #6ee7b7;
 }
 
-input:checked ~ .dot {
+input:checked~.dot {
   transform: translateX(100%);
   background-color: #48bb78;
 }
@@ -59,6 +56,7 @@ summary {
   padding-bottom: 4px;
   border-bottom: 1px solid #f0f0f0;
   background-color: #f7f7f7;
+
   &:hover {
     cursor: pointer;
     background-color: white;
