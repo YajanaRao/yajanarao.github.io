@@ -1,6 +1,6 @@
 import React from "react";
 
-const StartHerePage = () => {
+function StartHerePage() {
   return (
     <div>
       <div>
@@ -17,20 +17,20 @@ const StartHerePage = () => {
           takes to build software. It is complex, hard to maintain and modify.
         </p>
         <ul>
-          <li>Next.js</li>
           <li>Remix</li>
+          <li>Emotion</li>
         </ul>
       </div>
       <div>
         <h1 className="text-black dark:text-white">What am I reading now</h1>
         <ul>
           <li className="text-black dark:text-white">
-            How The Mind Works by Steven Pinker
+            Thinking, Fast and Slow by Daniel Kahneman
           </li>
         </ul>
       </div>
     </div>
   );
-};
+}
 
 export default StartHerePage;
